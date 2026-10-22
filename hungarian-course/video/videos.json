@@ -1,0 +1,50 @@
+[
+ {
+  "file": "01-hangrend.mp4",
+  "title": "Гармония гласных",
+  "week": 1,
+  "dur": 35.6,
+  "size": 1242126,
+  "summary": "Окончание повторяет ряд последнего гласного: házban, Permben, Técsőhöz; смешанные слова — по заднему ряду, только i/e — передний (Kirillnek)."
+ },
+ {
+  "file": "02-toldalek.mp4",
+  "title": "Агглютинация: слово из морфем",
+  "week": 2,
+  "dur": 30.8,
+  "size": 957265,
+  "summary": "Корень + суффиксы по порядку: ház → házam → házaim → házaimban (в моих домах); barát → barátom → barátommal."
+ },
+ {
+  "file": "03-irany.mp4",
+  "title": "Hova? Hol? Honnan?",
+  "week": 3,
+  "dur": 38.0,
+  "size": 1353278,
+  "summary": "Куда -ba/-be, -ra/-re, -hoz/-hez/-höz; где -ban/-ben, -n, -nál/-nél; откуда -ból/-ből, -ról/-ről, -tól/-től: Permbe megyek, Permben lakom, Permből jövök."
+ },
+ {
+  "file": "04-igekoto.mp4",
+  "title": "Глагольные приставки",
+  "week": 4,
+  "dur": 31.7,
+  "size": 1258750,
+  "summary": "megnézem → nem nézem meg → Ma nézem meg → meg akarom nézni: при отрицании и фокусе приставка уезжает за глагол."
+ },
+ {
+  "file": "05-targyas.mp4",
+  "title": "Определённое и неопределённое спряжение",
+  "week": 5,
+  "dur": 34.1,
+  "size": 1414975,
+  "summary": "látok egy házat / látom a házat: артикль a/az, имя или притяжательное → определённое спряжение (-om, -od, -ja, -juk, -játok, -ják)."
+ },
+ {
+  "file": "06-mult.mp4",
+  "title": "Прошедшее время",
+  "week": 6,
+  "dur": 33.9,
+  "size": 1410884,
+  "summary": "Корень + -t/-tt + личное окончание: tanultam, voltam, mentem, születtem; 1951-ben = ezerkilencszázötvenegyben."
+ }
+]

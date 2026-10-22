@@ -1,0 +1,143 @@
+<template>
+<style>
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:200 900;font-display:block;src:url('assets/fonts/SS4var-roman-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+2000-206F;}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:200 900;font-display:block;src:url('assets/fonts/SS4var-roman-latinext.woff2') format('woff2');unicode-range:U+0100-02FF;}
+@font-face{font-family:'Source Serif 4';font-style:italic;font-weight:200 900;font-display:block;src:url('assets/fonts/SS4var-italic-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+2000-206F;}
+@font-face{font-family:'Source Serif 4';font-style:italic;font-weight:200 900;font-display:block;src:url('assets/fonts/SS4var-italic-cyrillic.woff2') format('woff2');unicode-range:U+0400-045F,U+2116;}
+#root{position:absolute;inset:0;overflow:hidden;font-family:'Source Serif 4',serif;color:#211B16;
+  --ink:#211B16;--ru:#6A584A;--paper:#F4EDDF;--green:#2D6A4F;--blue:#3B6E9B;--ochre:#9A6B1F;--rule:#CBBBA0;}
+#root .paper{position:absolute;left:0;top:0;width:1280px;height:720px;}
+#root .hd{position:absolute;left:64px;top:38px;font-style:italic;font-weight:420;font-size:30px;line-height:40px;color:#3A3029;white-space:nowrap;}
+#root .hu{font-weight:650;font-optical-sizing:auto;white-space:nowrap;}
+#root .ru{font-style:italic;font-weight:400;color:#6A584A;white-space:nowrap;}
+#root .g{color:#2D6A4F;} #root .b{color:#3B6E9B;} #root .o{color:#9A6B1F;}
+#root canvas.full{position:absolute;left:0;top:0;width:1280px;height:720px;}
+
+#s6-wrap{position:absolute;inset:0;transform-origin:640px 360px;}
+#s6-cam{position:absolute;left:0;top:0;width:2560px;height:1440px;transform-origin:0 0;}
+#s6-map{position:absolute;left:0;top:0;width:2560px;height:1440px;}
+#root .lb{position:absolute;left:0;top:0;white-space:nowrap;}
+#root .lb .hu{display:block;font-size:34px;line-height:38px;font-variation-settings:"wght" 680;color:#211B16;text-shadow:0 0 6px #F3EAD6,0 0 2px #F3EAD6;}
+#root .lb .ru{display:block;font-size:22px;line-height:26px;color:#5A4A3E;text-shadow:0 0 5px #F3EAD6;}
+#root .lb .sp{display:inline-block;overflow:hidden;vertical-align:bottom;}
+#root .s6-cn{font-family:'Source Serif 4',serif;font-style:italic;font-size:30px;fill:#8A7558;fill-opacity:0.8;text-anchor:middle;}
+#s6-reg{font-style:italic;font-size:28px;color:#6A584A;letter-spacing:0.02em;}
+#s6-strip{position:absolute;left:0;top:612px;width:1280px;height:108px;background:linear-gradient(to bottom,rgba(244,237,223,0) 0%,rgba(244,237,223,0.94) 34%,rgba(244,237,223,0.97) 100%);}
+#s6-sent{position:absolute;left:64px;top:630px;font-size:38px;line-height:46px;font-variation-settings:"wght" 650;}
+#s6-tr{position:absolute;left:66px;top:676px;font-size:25px;line-height:30px;}
+#s6-hdbg{position:absolute;left:0;top:0;width:1280px;height:110px;background:linear-gradient(to bottom,rgba(244,237,223,0.92) 40%,rgba(244,237,223,0));}
+
+</style>
+<div id="root" data-composition-id="s6" data-width="1280" data-height="720" data-duration="21.034">
+<div id="s6-wrap">
+  <img class="paper" src="assets/img/paper.jpg" alt="" />
+  <div id="s6-cam" data-layout-allow-overflow>
+    <svg id="s6-map" viewBox="0 0 2560 1440" data-layout-ignore>
+      <defs>
+        <pattern id="s6-pl" patternUnits="userSpaceOnUse" width="512" height="512"><image href="assets/img/landTile.png" width="512" height="512"/></pattern>
+        <pattern id="s6-pw" patternUnits="userSpaceOnUse" width="512" height="512"><image href="assets/img/waterTile.png" width="512" height="512"/></pattern>
+        <linearGradient id="s6-rg" gradientUnits="userSpaceOnUse" x1="682.8" y1="925.5" x2="1749.6" y2="392.8"><stop offset="0" stop-color="#9A6B1F"/><stop offset="1" stop-color="#2D6A4F"/></linearGradient>
+        <filter id="s6-soft" x="-2%" y="-2%" width="104%" height="104%"><feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="3" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="5" xChannelSelector="R" yChannelSelector="G"/></filter>
+        <mask id="s6-rm" maskUnits="userSpaceOnUse" x="0" y="0" width="2560" height="1440"><path id="s6-rmp" fill="none" stroke="#fff" stroke-width="16" stroke-linecap="round"/></mask>
+      </defs>
+      <rect x="-400" y="-400" width="3360" height="2240" fill="url(#s6-pw)"/>
+      <g filter="url(#s6-soft)">
+        <path id="s6-land" fill="url(#s6-pl)" stroke="#8E7B5C" stroke-width="1.6" stroke-opacity="0.75"/>
+      </g>
+      <path id="s6-bord" fill="none" stroke="#8F7C61" stroke-width="1.3" stroke-dasharray="7 5" stroke-opacity="0.75"/>
+      <g id="s6-names"></g>
+      <g id="s6-carp"></g>
+      <g id="s6-ural"></g>
+      <path id="s6-route" fill="none" stroke="url(#s6-rg)" stroke-width="5" stroke-dasharray="14 10" stroke-linecap="round" mask="url(#s6-rm)"/>
+      <circle id="s6-ring" cx="682.8" cy="925.5" r="14" fill="none" stroke="#9A6B1F" stroke-width="3"/>
+      <circle id="s6-dcs" cx="682.8" cy="925.5" r="9" fill="#9A6B1F" stroke="#FBF6EA" stroke-width="3"/>
+      <circle id="s6-dpm" cx="1749.6" cy="392.8" r="9" fill="#2D6A4F" stroke="#FBF6EA" stroke-width="3"/>
+      <circle id="s6-head" r="7" fill="#2D6A4F" stroke="#FBF6EA" stroke-width="2.5"/>
+    </svg>
+  </div>
+  <div class="lb" id="s6-lcs" data-layout-allow-overflow><span class="hu">Csománfalv<span id="s6-cA">a</span><span class="sp" id="s6-cE"><span class="o" id="s6-cE2">ról</span></span></span><span class="ru">Чумалёво</span></div>
+  <div class="lb" id="s6-lur" data-layout-allow-overflow><span class="hu"><span class="sp" id="s6-uP">az&nbsp;</span>Urál<span class="sp" id="s6-uE"><span class="g" id="s6-uE2">ba</span></span></span><span class="ru">Урал</span></div>
+  <div class="lb" id="s6-lpm"><span class="hu">Perm</span><span class="ru">Пермь</span></div>
+  <div class="lb" id="s6-lreg"><span id="s6-reg">Закарпатье</span></div>
+  <div id="s6-hdbg"></div>
+  <div class="hd" id="s6-hd">Из Чумалёва на Урал</div>
+  <div id="s6-strip"></div>
+  <div class="hu" id="s6-sent">A nagyapám Csománfalvá<span class="o">ról</span> az Urál<span class="g">ba</span> költözött.</div>
+  <div class="ru" id="s6-tr">Мой дед переехал из Чумалёва на Урал.</div>
+</div>
+</div>
+<script>
+(function () {
+const T = {"dur": 12.107, "ru": [{"t": 0.6, "end": 7.811, "text": "Дед Кирилла родился в Чумалёве, в Закарпатье, а потом переехал на Урал. По-венгерски это звучит так.", "parts": [{"t": 0.6, "dur": 7.161, "text": "Дед Кирилла родился в Чумалёве, в Закарпатье, а потом переехал на Урал. По-венгерски это звучит так.", "w": [["Дед", 0.7], ["Кирилла", 1.128], ["родился", 1.487], ["в", 1.892], ["Чумалёве", 1.927], ["в", 2.656], ["Закарпатье", 2.679], ["а", 3.524], ["потом", 3.675], ["переехал", 3.987], ["на", 4.45], ["Урал", 4.554], ["По-венгерски", 5.789], ["это", 6.564], ["звучит", 6.819], ["так", 7.247]]}]}], "hu": [{"t": 8.011, "dur": 3.096, "text": "A nagyapám Csománfalváról az Urálba költözött.", "w": [["A", 8.12], ["nagyapám", 8.252], ["Csománfalváról", 8.826], ["az", 9.737], ["Urálba", 9.914], ["költözött", 10.37]]}], "parts": [{"t": 0.6, "dur": 7.161, "text": "Дед Кирилла родился в Чумалёве, в Закарпатье, а потом переехал на Урал. По-венгерски это звучит так.", "w": [["Дед", 0.7], ["Кирилла", 1.128], ["родился", 1.487], ["в", 1.892], ["Чумалёве", 1.927], ["в", 2.656], ["Закарпатье", 2.679], ["а", 3.524], ["потом", 3.675], ["переехал", 3.987], ["на", 4.45], ["Урал", 4.554], ["По-венгерски", 5.789], ["это", 6.564], ["звучит", 6.819], ["так", 7.247]]}], "slot": 21.034, "next": 8.327};
+
+const MD = window.MAP_DATA, NS = "http://www.w3.org/2000/svg";
+document.getElementById("s6-land").setAttribute("d", MD.land);
+document.getElementById("s6-bord").setAttribute("d", MD.borders);
+const [cx, cy] = MD.cs, [px, py] = MD.perm;
+const RD = `M${cx} ${cy} C ${cx + 180} ${cy - 330}, ${px - 560} ${py + 40}, ${px} ${py}`;
+document.getElementById("s6-route").setAttribute("d", RD); document.getElementById("s6-rmp").setAttribute("d", RD);
+// little painted mountains along the ridges
+function ridge(gid, pts, n, w, seed) {
+  const g = document.getElementById(gid), L = [0]; for (let i = 1; i < pts.length; i++) L.push(L[i - 1] + Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]));
+  const out = [];
+  for (let k = 0; k < n; k++) { const d = (k + 0.5) / n * L[L.length - 1]; let i = 1; while (i < L.length - 1 && L[i] < d) i++; const t = (d - L[i - 1]) / (L[i] - L[i - 1]);
+    const x = pts[i - 1][0] + (pts[i][0] - pts[i - 1][0]) * t + ((k * 37 + seed) % 11 - 5) * 2.2, y = pts[i - 1][1] + (pts[i][1] - pts[i - 1][1]) * t + ((k * 53 + seed) % 7 - 3) * 2;
+    const m = ["mtn1", "mtn2", "mtn3"][(k + seed) % 3], O = window.OBJ_MANIFEST[m], ww = w * (O.w / O.S) / 38;
+    const im = document.createElementNS(NS, "image"); im.setAttribute("href", `assets/img/${m}.png`); im.setAttribute("width", ww.toFixed(1)); im.setAttribute("height", (ww * O.h / O.w).toFixed(1));
+    im.setAttribute("x", (x - ww / 2).toFixed(1)); im.setAttribute("y", (y - ww * O.h / O.w * 0.8).toFixed(1)); g.appendChild(im); out.push(im); }
+  return out;
+}
+const carp = ridge("s6-carp", MD.carp, 10, 28, 1), ural = ridge("s6-ural", MD.ural, 15, 50, 2);
+// camera over the 2560x1440 map; labels are HTML pinned to map points at a constant screen size
+const C = { x: cx + 40, y: cy - 40, z: 1.75 }, cam = document.getElementById("s6-cam");
+for (const [nm, [x, y]] of Object.entries(MD.names)) { const t = document.createElementNS(NS, "text"); t.setAttribute("x", x); t.setAttribute("y", y); t.setAttribute("class", "s6-cn"); t.textContent = nm; document.getElementById("s6-names").appendChild(t); }
+const LB = [["#s6-lcs", cx + 22, cy - 34, 0, -0.5], ["#s6-lur", MD.ural[2][0] - 34, MD.ural[2][1] + 46, -1, -0.5], ["#s6-lpm", px - 16, py + 4, -1, -0.5], ["#s6-lreg", cx - 10, cy + 70, -0.5, 0]].map(([s, x, y, ax, ay]) => [document.querySelector(s), x, y, ax, ay]);
+const route = document.getElementById("s6-route"), rmp = document.getElementById("s6-rmp"), head = document.getElementById("s6-head");
+const RL = rmp.getTotalLength() || 1500; rmp.style.strokeDasharray = RL + 40; const S = { r: 0 };
+const RP = []; for (let i = 0; i <= 200; i++) { const q = rmp.getPointAtLength(RL * i / 200); RP.push([q.x, q.y]); }
+const LW = LB.map(([el]) => [el.offsetWidth, el.offsetHeight]);
+function frame() {
+  const tx = 640 - C.x * C.z, ty = 360 - C.y * C.z;
+  cam.style.transform = `translate(${tx.toFixed(2)}px, ${ty.toFixed(2)}px) scale(${C.z.toFixed(4)})`;
+  for (let i = 0; i < LB.length; i++) { const [el, x, y, ax, ay] = LB[i], [w, h] = LW[i]; el.style.transform = `translate(${(tx + x * C.z + ax * w).toFixed(1)}px, ${(ty + y * C.z + ay * h).toFixed(1)}px)`; }
+  rmp.style.strokeDashoffset = (RL + 40) * (1 - S.r);
+  const f = S.r * 200, i0 = Math.min(199, Math.floor(f)), u = f - i0, p = { x: RP[i0][0] + (RP[i0 + 1][0] - RP[i0][0]) * u, y: RP[i0][1] + (RP[i0 + 1][1] - RP[i0][1]) * u }; head.setAttribute("cx", p.x); head.setAttribute("cy", p.y); head.style.opacity = S.r > 0.01 && S.r < 0.995 ? 1 : 0;
+}
+const W = T.parts[0].w, at = (word) => (W.find((w) => w[0].startsWith(word)) || [0, 0])[1];
+const tCs = at("Чумал"), tZk = at("Закарп"), tUr = at("Урал"), HW = T.hu[0].w, hRol = HW[2][1], hBa = HW[4][1];
+const tl = gsap.timeline({ paused: true, onUpdate: frame });
+tl.to({ v: 0 }, { v: 1, duration: T.slot, ease: "none" }, 0);
+// transition in: an iris opens from the «откуда?» card of the flowchart
+tl.fromTo("#s6-wrap", { clipPath: "circle(0px at 1056px 599px)" }, { clipPath: "circle(1500px at 1056px 599px)", duration: 0.75, ease: "power3.in" }, 0);
+tl.fromTo("#s6-hd", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 0.6);
+// the village, then the region
+tl.fromTo("#s6-dcs", { attr: { r: 0 } }, { attr: { r: 9 }, duration: 0.5, ease: "back.out(2)" }, tCs - 0.2);
+tl.fromTo("#s6-ring", { attr: { r: 10 }, opacity: 0.9 }, { attr: { r: 46 }, opacity: 0, duration: 1.3, ease: "power2.out" }, tCs);
+tl.fromTo("#s6-lcs", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.out" }, tCs + 0.05);
+tl.fromTo(carp, { opacity: 0 }, { opacity: 1, duration: 0.4, stagger: 0.05 }, tZk - 0.4);
+tl.fromTo("#s6-lreg", { opacity: 0 }, { opacity: 1, duration: 0.5 }, tZk);
+// pull back and travel north-east; the route draws itself, the Urals rise as it arrives
+tl.to(C, { x: 1330, y: 662, z: 0.85, duration: 2.6, ease: "power2.inOut" }, tUr - 1.6);
+tl.to("#s6-lreg", { opacity: 0, duration: 0.4 }, tUr - 1.2);
+tl.fromTo(S, { r: 0 }, { r: 1, duration: 2.3, ease: "power1.inOut" }, tUr - 1.3);
+tl.fromTo(ural, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.45, stagger: 0.06, ease: "power2.out" }, tUr - 0.2);
+tl.fromTo("#s6-lur", { opacity: 0 }, { opacity: 1, duration: 0.5 }, tUr + 0.3);
+tl.fromTo("#s6-dpm", { attr: { r: 0 } }, { attr: { r: 9 }, duration: 0.5, ease: "back.out(2)" }, tUr + 0.9);
+tl.fromTo("#s6-lpm", { opacity: 0 }, { opacity: 1, duration: 0.5 }, tUr + 1.0);
+// the Hungarian sentence: endings grow onto the map labels as they are spoken
+tl.fromTo("#s6-strip", { opacity: 0 }, { opacity: 1, duration: 0.5 }, T.hu[0].t - 0.3);
+tl.fromTo("#s6-sent", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, T.hu[0].t - 0.15);
+tl.fromTo("#s6-cE", { width: 0 }, { width: "auto", duration: 0.45, ease: "power3.out" }, hRol + 0.25);
+tl.fromTo("#s6-uE", { width: 0 }, { width: "auto", duration: 0.45, ease: "power3.out" }, hBa + 0.1);
+tl.fromTo("#s6-uP", { width: 0 }, { width: "auto", duration: 0.45, ease: "power3.out" }, hBa - 0.12);
+tl.fromTo("#s6-tr", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, HW[5][1] + 0.3);
+// becomes the blurred backdrop of the next scene
+tl.fromTo("#s6-wrap", { filter: "blur(0px) brightness(1)", scale: 1 }, { filter: "blur(14px) brightness(0.93)", scale: 1.04, duration: 0.8, ease: "power2.inOut" }, T.dur);
+tl.set("#s6-cA", { textContent: "a" }, 0); tl.set("#s6-cA", { textContent: "á" }, hRol + 0.25);
+frame();
+window.__timelines = window.__timelines || {};
+window.__timelines["s6"] = tl;
+
+})();
+</script>
+</template>

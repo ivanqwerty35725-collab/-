@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1280, height=720" />
+<title>a ház</title>
+<script src="assets/js/gsap.min.js"></script>
+<style>
+@font-face{font-family:'SS4';font-style:normal;font-weight:200 900;font-display:block;src:url('assets/fonts/SS4var-roman-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+2000-206F;}
+@font-face{font-family:'SS4';font-style:normal;font-weight:200 900;font-display:block;src:url('assets/fonts/SS4var-roman-latinext.woff2') format('woff2');unicode-range:U+0100-02FF;}
+@font-face{font-family:'SS4';font-style:italic;font-weight:200 900;font-display:block;src:url('assets/fonts/SS4var-italic-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+2000-206F;}
+@font-face{font-family:'SS4';font-style:italic;font-weight:200 900;font-display:block;src:url('assets/fonts/SS4var-italic-cyrillic.woff2') format('woff2');unicode-range:U+0400-045F;}
+:root{--paper:#F2EEE6;--ink:#15181B;--green:#2D6A4F;--blue:#3B6E9B;--ochre:#9A6B1F;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:1280px;height:720px;overflow:hidden;background:var(--paper);}
+#root{position:relative;width:1280px;height:720px;overflow:hidden;font-family:'SS4',serif;}
+.layer{position:absolute;left:0;top:0;width:1280px;height:720px;}
+#paper{background:var(--paper);}
+#ochre{background:var(--ochre);}
+#world{color:var(--ink);}
+#house{background:var(--green);color:var(--paper);clip-path:polygon(0.0px 0.0px, 640.0px 0.0px, 1280.0px 0.0px, 1280.0px 720.0px, 0.0px 720.0px);}
+#blue{background:var(--blue);transform-origin:50% 100%;}
+.word{position:absolute;left:262.2px;top:350.0px;width:0;height:200px;}
+.mk{position:absolute;top:0;height:200px;width:200px;clip-path:inset(-80px -60px 25px -60px);}
+.g,.acc{position:absolute;left:0;top:0;display:block;font-size:200px;line-height:200px;white-space:pre;
+  font-optical-sizing:auto;font-variation-settings:"wght" 720;will-change:transform;}
+.g.art{font-variation-settings:"wght" 420;}
+.acc{clip-path:inset(0px 0px 131px 0px);}
+.endba{position:absolute;left:0;top:0;width:0;height:200px;}
+#sub{color:var(--paper);}
+#e{display:inline-block;}
+.sl{position:absolute;left:268.2px;top:563px;height:60px;width:600px;clip-path:inset(-30px -20px 8px -20px);}
+.sl .s{position:absolute;left:0;top:0;font-style:italic;font-size:46px;line-height:52px;white-space:pre;
+  font-variation-settings:"wght" 440;font-optical-sizing:auto;}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="hb" x="-30%" y="0" width="160%" height="100%"><feGaussianBlur id="hblur" stdDeviation="0 0"/></filter></svg>
+
+<div id="root" data-composition-id="main" data-start="0" data-duration="11" data-width="1280" data-height="720">
+  <div id="paper" class="layer"></div>
+  <div id="ochre" class="layer"></div>
+  <div id="world" class="layer"><div class="word"><span class="mk mk-a0" style="left:0px"><span class="g g-a0 art">a</span></span><span class="mk mk-h" style="left:136.2px"><span class="g g-h ">h</span></span><span class="mk mk-a1" style="left:249.1px"><span class="g g-a1 ">a</span></span><span class="acc g-acc" style="left:249.1px">á</span><span class="mk mk-z" style="left:346.3px"><span class="g g-z ">z</span></span><div class="endba" style="filter:url(#hb)"><span class="mk mk-b" style="left:434.2px"><span class="g g-b ">b</span></span><span class="mk mk-a2" style="left:544.9px"><span class="g g-a2 ">a</span></span></div><span class="mk mk-n" style="left:641.9px"><span class="g g-n ">n</span></span><span class="mk mk-o" style="left:547.3px"><span class="g g-o ">ó</span></span><span class="mk mk-l" style="left:652.0px"><span class="g g-l ">l</span></span></div></div>
+  <div id="house" class="layer"><div id="blue" class="layer"></div><div class="word"><span class="mk mk-a0" style="left:0px"><span class="g g-a0 art">a</span></span><span class="mk mk-h" style="left:136.2px"><span class="g g-h ">h</span></span><span class="mk mk-a1" style="left:249.1px"><span class="g g-a1 ">a</span></span><span class="acc g-acc" style="left:249.1px">á</span><span class="mk mk-z" style="left:346.3px"><span class="g g-z ">z</span></span><div class="endba" style="filter:url(#hb)"><span class="mk mk-b" style="left:434.2px"><span class="g g-b ">b</span></span><span class="mk mk-a2" style="left:544.9px"><span class="g g-a2 ">a</span></span></div><span class="mk mk-n" style="left:641.9px"><span class="g g-n ">n</span></span><span class="mk mk-o" style="left:547.3px"><span class="g g-o ">ó</span></span><span class="mk mk-l" style="left:652.0px"><span class="g g-l ">l</span></span></div></div>
+  <div id="sub" class="layer">
+    <div class="sl" id="sl1"><span class="s" id="s1">в дом</span><span class="s" id="s1e" style="left:0">в дом<span id="e">е</span></span></div>
+    <div class="sl" id="sl2"><span class="s" id="s2">из дома</span></div>
+  </div>
+  <audio id="v1" class="clip" src="assets/audio/v1.mp3" data-start="0.86" data-duration="1.872" data-track-index="2" data-volume="1"></audio>
+  <audio id="v2" class="clip" src="assets/audio/v2.mp3" data-start="3.62" data-duration="1.968" data-track-index="2" data-volume="1"></audio>
+  <audio id="v3" class="clip" src="assets/audio/v3.mp3" data-start="7.02" data-duration="2.016" data-track-index="2" data-volume="1"></audio>
+</div>
+
+<script>
+(function(){
+  const C = {"L": 176.2, "R": 1103.7, "J": 694.9, "EAVE": 290, "TAN": 0.5095254494944288, "W": 1280, "H": 720, "OY": 470};
+  const tl = gsap.timeline({paused:true});
+  const W = (v) => '"wght" ' + v;
+  const both = (k) => '.g-' + k;          // same glyph in the ink copy and the paper copy
+
+  // ---------- field geometry: one state object, painted as a pure function of it
+  // f: 0 = full frame, 1 = house; r: right wall; o: ochre opening 0..1
+  const S = {f: 0, r: C.R, k: 0.9};
+  const house = document.getElementById('house'), ochre = document.getElementById('ochre');
+  const lerp = (a, b, t) => a + (b - a) * t;
+  function paint(){
+    const l = C.L, r = S.r, cx = (l + r) / 2, apex = C.EAVE - (r - l) / 2 * C.TAN, f = S.f;
+    const pts = [[lerp(0, l, f), lerp(0, C.EAVE, f)], [lerp(C.W/2, cx, f), lerp(0, apex, f)],
+                 [lerp(C.W, r, f), lerp(0, C.EAVE, f)], [lerp(C.W, r, f), C.H], [lerp(0, l, f), C.H]];
+    house.style.clipPath = 'polygon(' + pts.map(p => p[0].toFixed(2) + 'px ' + p[1].toFixed(2) + 'px').join(', ') + ')';
+    // ochre: the wide house outline scaled about the house centre (k < 1 hides it behind the house)
+    const k = S.k, ox = C.W / 2, oy = C.OY, wl = C.L, wr = C.R, wa = C.EAVE - (wr - wl) / 2 * C.TAN;
+    const op = [[wl, C.EAVE], [(wl + wr) / 2, wa], [wr, C.EAVE], [wr, C.H], [wl, C.H]]
+      .map(p => [ox + (p[0] - ox) * k, oy + (p[1] - oy) * k]);
+    ochre.style.clipPath = 'polygon(' + op.map(p => p[0].toFixed(2) + 'px ' + p[1].toFixed(2) + 'px').join(', ') + ')';
+  }
+  paint();
+
+  // ---------- initial states
+    gsap.set('.g-acc', {x: 0, y: -250});
+  gsap.set('.endba', {x: 640});
+  gsap.set(['.g-b','.g-a2'], {fontVariationSettings: W(880)});
+  gsap.set(['.g-n','.g-o','.g-l'], {y: 200, fontVariationSettings: W(300)});
+  gsap.set('#s1, #s1e, #s2', {y: 56});
+  gsap.set('#blue', {scaleY: 0});
+  gsap.set('#s1e', {opacity: 0});
+
+  // ---------- 1 · a házba (0 – 3.5)
+  // the acute falls onto the a: haz -> ház; its landing folds the world into a house
+  tl.to('.g-acc', {y: 0, duration: 0.42, ease: 'power3.in'}, 0.14);
+  // the green world folds into the house
+  tl.to(S, {f: 1, duration: 0.85, ease: 'power3.inOut', onUpdate: paint}, 0.56);
+  // -ba arrives from outside and crosses the wall
+  tl.to('.endba', {x: 0, duration: 0.9, ease: 'power3.out'}, 1.02);
+  tl.to(['.g-b','.g-a2'], {fontVariationSettings: W(720), duration: 0.9, ease: 'power2.out'}, 1.02);
+  tl.fromTo('#hblur', {attr:{stdDeviation:'22 0'}}, {attr:{stdDeviation:'0 0'}, duration: 0.4, ease: 'power2.out'}, 1.02);
+  // russian gloss
+  tl.to('#s1', {y: 0, duration: 0.6, ease: 'expo.out'}, 1.9);
+
+  // ---------- 2 · a házban (3.5 – 7)
+  tl.fromTo('#blue', {scaleY: 0}, {scaleY: 1, duration: 0.75, ease: 'power2.inOut'}, 3.42);
+  tl.to('.g-n', {y: 0, duration: 0.7, ease: 'expo.out'}, 3.86);
+  tl.to('.g-n', {fontVariationSettings: W(720), duration: 0.8, ease: 'power2.out'}, 3.86);
+  tl.set('#s1', {opacity: 0}, 3.9); tl.set('#s1e', {opacity: 1, y: 0}, 3.9);
+  tl.fromTo('#e', {y: 56}, {y: 0, duration: 0.6, ease: 'expo.out', immediateRender: false}, 3.92);
+
+  // ---------- 3 · a házból (7 – 11)
+  tl.to(['.g-a2','.g-n'], {y: 200, duration: 0.24, ease: 'power3.in', stagger: 0.03}, 6.98);
+  tl.to(['.g-o','.g-l'], {y: 0, duration: 0.7, ease: 'expo.out', stagger: 0.05}, 7.24);
+  tl.to(['.g-o','.g-l'], {fontVariationSettings: W(720), duration: 0.7, ease: 'power2.out', stagger: 0.05}, 7.24);
+  tl.to(S, {k: 3.4, duration: 1.0, ease: 'power2.inOut', onUpdate: paint}, 7.2);
+  tl.to(S, {r: C.J, duration: 0.85, ease: 'power3.inOut', onUpdate: paint}, 7.36);
+  tl.to('#s1e', {y: 56, duration: 0.28, ease: 'power3.in'}, 7.05);
+  tl.to('#s2', {y: 0, duration: 0.6, ease: 'expo.out'}, 7.45);
+
+  tl.set({}, {}, 11);
+  window.__timelines = window.__timelines || {};
+  window.__timelines['main'] = tl;
+  tl.seek(0);
+})();
+</script>
+</body>
+</html>

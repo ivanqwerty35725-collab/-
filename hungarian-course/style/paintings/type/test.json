@@ -1,0 +1,4 @@
+{"elements":[
+ {"name":"t1","css":"left:80px;bottom:90px","html":"<div class='plaque'><div class='hu'>a ház<span style='color:#2D6A4F'>ba</span></div><div class='ru'>в дом</div></div>"},
+ {"name":"t2","css":"left:28px;bottom:22px","html":"<div class='attr'>Иван Билибин, «Василиса Прекрасная», 1899–1900</div>"}
+]}

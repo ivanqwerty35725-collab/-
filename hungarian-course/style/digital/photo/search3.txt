@@ -1,0 +1,27 @@
+== tájház haswbstatement:P275=Q6938433|P275=Q20007257|P275=Q14947546|P275=Q19125117
+  File:A tájház Füzesgyarmaton.jpg | 5472x3648 | CC0
+  File:Apetloni tájház.jpg | 900x638 | CC BY 3.0
+  File:Balatonberény, tájház.jpg | 2304x1728 | CC0
+  File:Cigánd, tájház, flags.jpg | 895x345 | CC0
+  File:Cigánd, tájház.JPG | 2304x1728 | CC0
+  File:Csíki tájház.JPG | 3264x2448 | CC BY 3.0
+  File:Lábod, tájház.jpg | 2304x1728 | CC0
+  File:Mezőcsokonya, tájház.JPG | 922x692 | CC0
+  File:Nagybánya, Tájház múzeum - panoramio.jpg | 3008x2000 | CC BY 3.0
+  File:Nagybánya, Tájház múzeum - panoramio - h laca.jpg | 3008x2000 | CC BY 3.0
+  File:Nagybánya, Tájház múzeum - panoramio - h laca (1).jpg | 3008x2000 | CC BY 3.0
+  File:Nagybánya, Tájház múzeum - panoramio - h laca (2).jpg | 3008x2000 | CC BY 3.0
+  File:Nagybánya, Tájház múzeum - panoramio - h laca (3).jpg | 2000x3008 | CC BY 3.0
+  File:Nagyrákos, tájház.jpg | 2304x1728 | CC0
+  File:Ruszin Tájház.jpg | 3047x2659 | CC BY 4.0
+  File:Sarród, tájház.jpg | 1000x667 | CC BY 3.0
+  File:Tájház, Szente, Árpád út - panoramio.jpg | 1280x960 | CC BY 3.0
+  File:Tájház, Záhony.jpg | 2000x1500 | CC0
+  File:Vésztő, Mesterségek Háza és Tájház, Kossuth utca 14, Veszto 09.jpg | 5184x3456 | CC BY 3.0
+  File:Őcsény tájház homlokzat 2025.jpg | 4080x2296 | CC BY 4.0
+== parasztház haswbstatement:P275=Q6938433|P275=Q20007257|P275=Q14947546|P275=Q19125117
+Traceback (most recent call last):
+  File "/tmp/claude-0/-home-user--/26b0ee40-e351-58da-864e-84e1c80e1382/scratchpad/hu/style/digital/tools/commons.py", line 23, in <module>
+    for p in (d.get("query",{}).get("pages",{}) or {}).values():
+              ^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'

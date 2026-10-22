@@ -1,0 +1,26 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body style="margin:0;background:#888">
+<svg width="0" height="0" style="position:absolute">
+ <filter id="rough-s" x="-3%" y="-3%" width="106%" height="106%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="2" seed="12" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/></filter>
+ <filter id="rough-m" x="-3%" y="-3%" width="106%" height="106%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.025" numOctaves="3" seed="8" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="5" xChannelSelector="R" yChannelSelector="G"/></filter>
+ <filter id="rough-l" x="-3%" y="-3%" width="106%" height="106%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="3" seed="4" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="9" xChannelSelector="R" yChannelSelector="G"/></filter>
+</svg>
+<script src="gouache.js"></script>
+<script src="kirill-paint.js"></script>
+<script src="objects-paint.js"></script>
+<script>
+window.__export = function (groups) {
+  const out = {};
+  if (groups.includes("kirill")) {
+    const K = paintKirill(); out.kirill = {};
+    for (const [k, v] of Object.entries(K)) {
+      const dec = (pl) => pl.filter((_, i) => i % 2 === 0).map((p) => [Math.round(p[0] * 10) / 10, Math.round(p[1] * 10) / 10]);
+      out.kirill[k] = { png: v.c.toDataURL("image/png"), ox: v.ox, oy: v.oy, S: v.S, w: v.c.width, h: v.c.height, outline: v.outline.map((pl) => ({ p: dec(pl), c: 1 })).concat((v.detail || []).map((pl) => ({ p: pl.map((q) => [Math.round(q[0] * 10) / 10, Math.round(q[1] * 10) / 10]), c: 0 }))) };
+    }
+  }
+  if (groups.includes("objects") && window.paintObjects) {
+    const O = paintObjects(); out.objects = {};
+    for (const [k, v] of Object.entries(O)) out.objects[k] = { png: v.c.toDataURL(v.jpg ? "image/jpeg" : "image/png", 0.9), jpg: !!v.jpg, w: v.c.width, h: v.c.height, meta: v.meta || {} };
+  }
+  return out;
+};
+</script></body></html>

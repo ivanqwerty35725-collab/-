@@ -1,0 +1,119 @@
+<!-- s2 · spot gouache illustration + kinetic type -->
+<style>
+#s2-wrap{position:absolute;inset:0;}
+#s2-cam{position:absolute;inset:0;}
+#s2-house{position:absolute;}
+#s2-door{position:absolute;transform-origin:0% 50%;}
+#s2-svg{position:absolute;left:0;top:0;width:1280px;height:720px;overflow:visible;}
+#s2-word{position:absolute;left:738px;top:356px;height:140px;width:520px;}
+#root .s2w{position:absolute;top:0;font-size:118px;line-height:140px;font-variation-settings:"wght" 700;}
+#s2-mk{position:absolute;left:0;top:0;width:330px;height:150px;overflow:hidden;}
+#s2-root{position:absolute;left:0;top:0;}
+#s2-end{position:absolute;top:0;}
+#s2-lbl{position:absolute;left:738px;top:282px;height:60px;width:400px;}
+#s2-lbl .hu{font-size:46px;line-height:56px;font-variation-settings:"wght" 700;}
+#s2-lbl .ru{font-size:32px;margin-left:14px;}
+#s2-trm{position:absolute;left:742px;top:500px;width:420px;height:64px;overflow:hidden;}
+#s2-tr{position:absolute;left:0;top:0;font-size:52px;line-height:62px;}
+</style>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="s2-hb" x="-40%" y="0" width="180%" height="100%"><feGaussianBlur id="s2-hblur" stdDeviation="0 0"/></filter></svg>
+<div id="s2-wrap">
+  <img class="paper" src="assets/img/paper.jpg" alt="" />
+  <div id="s2-cam">
+    <img id="s2-house" src="assets/img/house.png" alt="" />
+    <img id="s2-door" src="assets/img/door.png" alt="" />
+    <canvas id="s2-cv" class="full" width="1280" height="720"></canvas>
+  </div>
+  <div class="hd" id="s2-hd">Кирилл идёт в дом</div>
+  <svg id="s2-svg" viewBox="0 0 1280 720" data-layout-ignore>
+    <path id="s2-hs" d="M1214 600 L1214 312 L962 156 L710 312 L710 600 Z" fill="#2D6A4F" fill-opacity="0.06" stroke="none"/>
+    <path id="s2-ho" d="M1214 382 L1214 312 L962 156 L710 312 L710 600 L1214 600 L1214 506" fill="none" stroke="#2D6A4F" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+    <path id="s2-gt" d="M1214 382 L1214 444" fill="none" stroke="#2D6A4F" stroke-width="3" stroke-linecap="round"/>
+    <path id="s2-gb" d="M1214 506 L1214 444" fill="none" stroke="#2D6A4F" stroke-width="3" stroke-linecap="round"/>
+  </svg>
+  <div id="s2-lbl"><span class="hu g" id="s2-lh">Hova?</span><span class="ru" id="s2-lr">куда?</span></div>
+  <div id="s2-word" data-layout-allow-overflow>
+    <div id="s2-mk"><span class="s2w hu" id="s2-root">a ház</span></div>
+    <span class="s2w hu g" id="s2-end" style="filter:url(#s2-hb)">ba</span>
+  </div>
+  <div id="s2-trm" data-layout-allow-overflow><span class="ru" id="s2-tr">в дом</span></div>
+</div>
+<script>
+const K = window.KIRILL, O = window.OBJ_MANIFEST;
+const cv = document.getElementById("s2-cv"), ctx = cv.getContext("2d");
+const clamp = (v, a, b) => (v < a ? a : v > b ? b : v), seg = (t, a, b) => clamp((t - a) / (b - a), 0, 1);
+const eio = (x) => (x < 0.5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2);
+const HS = 0.95, HX = 318, HY = 668;                       // house: scale, centre x, ground y
+const H = O.house, D = O.door;
+const place = (el, m) => { el.style.left = (HX + m.ox * HS) + "px"; el.style.top = (HY + m.oy * HS) + "px"; el.style.width = (m.w / m.S * HS) + "px"; el.style.height = (m.h / m.S * HS) + "px"; };
+place(document.getElementById("s2-house"), H); place(document.getElementById("s2-door"), D);
+const dX0 = HX + 40 * HS, dX1 = HX + 145 * HS, dY0 = HY - 228 * HS;
+document.getElementById("s2-cam").style.transformOrigin = ((dX0 + dX1) / 2) + "px " + (HY - 116 * HS) + "px";
+// measure the root so the ending docks exactly after "ház"
+const rootW = (() => { const m = document.createElement("canvas").getContext("2d"); m.font = "700 118px 'Source Serif 4'"; return m.measureText("a ház").width; })();
+document.getElementById("s2-end").style.left = (rootW + 2) + "px";
+// Kirill: walks in from the left along the house, steps through the doorway, vanishes behind the jamb
+const KS = 0.95, X0 = -80, XD = (dX0 + dX1) / 2 + 6, TW0 = 0.35, TW1 = 4.0, XIN = dX1 + 52;
+function kx(t) { if (t < TW1) return X0 + (XD - X0) * (t - TW0) / (TW1 - TW0); return XD + (XIN - XD) * eio(seg(t, TW1, TW1 + 1.2)); }
+function render(t) {
+  ctx.clearRect(0, 0, 1280, 720);
+  const x = kx(t), d = (x - X0) / KS, ph = (2 * Math.PI * d) / 150;
+  const inside = seg(t, TW1 - 0.2, TW1 + 0.5);
+  const amp = 1 - 0.45 * seg(t, TW1 + 0.4, TW1 + 1.2);
+  const P = Object.assign(K.walk(ph, amp), { x, y: HY - 4 * inside, s: KS * (1 - 0.06 * inside) });
+  if (x > XIN - 1) return;
+  ctx.save(); ctx.beginPath(); ctx.rect(0, 0, dX1, 720); ctx.clip();
+  if (inside < 1) K.shadow(ctx, P, 0.22 * (1 - inside));
+  K.draw(ctx, P);
+  if (inside > 0) { ctx.globalCompositeOperation = "source-atop"; ctx.fillStyle = `rgba(40,28,20,${0.45 * inside})`; ctx.fillRect(dX0, dY0, dX1 - dX0, HY - dY0 + 10); ctx.globalCompositeOperation = "source-over"; }
+  ctx.restore();
+}
+// organic ink-blot reveal of the whole scene (transition in)
+const wrap = document.getElementById("s2-wrap");
+const BL = [[990, 400, 0], [600, 210, 0.1], [260, 560, 0.18], [1180, 640, 0.14]];
+function blot(p) {
+  if (p >= 1) { wrap.style.clipPath = "none"; return; }
+  let d = "";
+  BL.forEach(([cx, cy, dl], j) => { const q = clamp((p - dl) / (1 - dl), 0, 1), R = 1100 * Math.pow(q, 1.6); if (R < 1) return;
+    for (let i = 0; i <= 48; i++) { const a = (i / 48) * Math.PI * 2, r = R * (1 + 0.1 * Math.sin(a * 5 + j) + 0.06 * Math.sin(a * 11 + 2 * j)); d += (i ? "L" : "M") + (cx + Math.cos(a) * r).toFixed(1) + " " + (cy + Math.sin(a) * r).toFixed(1); } d += "Z"; });
+  wrap.style.clipPath = d ? `path('${d}')` : "inset(50%)";
+}
+K.load().then(() => {
+  const S = { blot: 0, zoom: 1 };
+  const tl = gsap.timeline({ paused: true, onUpdate: () => { render(tl.time()); blot(S.blot); } });
+  tl.to({ v: 0 }, { v: 1, duration: T.slot, ease: "none" }, 0);
+  tl.fromTo(S, { blot: 0 }, { blot: 1, duration: 0.8, ease: "power2.in" }, 0);
+  tl.fromTo("#s2-hd", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 0.5);
+  // the house outline draws itself while the narrator names the house
+  const ho = document.getElementById("s2-ho"), L = ho.getTotalLength() || 2400;
+  tl.fromTo(ho, { strokeDasharray: L, strokeDashoffset: L }, { strokeDashoffset: 0, duration: 1.2, ease: "power2.inOut" }, 0.7);
+  tl.fromTo("#s2-hs", { opacity: 0 }, { opacity: 1, duration: 0.8 }, 1.3);
+  tl.fromTo(["#s2-gt", "#s2-gb"], { opacity: 0 }, { opacity: 1, duration: 0.3 }, 1.75);
+  tl.fromTo("#s2-root", { y: 150, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "expo.out" }, 1.4);
+  // question label on «куда?»
+  const q = T.ru[0].parts[1].t;
+  tl.fromTo("#s2-lh", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, q - 0.05);
+  tl.fromTo("#s2-lr", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, q + 0.12);
+  // the door swings in before Kirill reaches it, and shuts behind him
+  tl.fromTo("#s2-door", { scaleX: 1, skewY: 0, filter: "brightness(1)" }, { scaleX: 0.16, skewY: -6, filter: "brightness(0.55)", duration: 0.7, ease: "power2.inOut" }, TW1 - 1.1);
+  tl.to("#s2-door", { scaleX: 1, skewY: 0, filter: "brightness(1)", duration: 0.6, ease: "power2.inOut" }, TW1 + 1.35);
+  // -ba arrives from outside and passes through the wall, which opens for it
+  const fly = T.ru[0].parts[2].t + 1.05;
+  tl.fromTo("#s2-end", { x: 420, fontVariationSettings: '"wght" 880' }, { x: 0, fontVariationSettings: '"wght" 700', duration: 0.95, ease: "power3.out" }, fly);
+  tl.fromTo("#s2-hblur", { attr: { stdDeviation: "26 0" } }, { attr: { stdDeviation: "0 0" }, duration: 0.55, ease: "power2.out" }, fly);
+  tl.fromTo("#s2-gt", { attr: { d: "M1214 382 L1214 444" } }, { attr: { d: "M1214 382 L1214 384" }, duration: 0.25, ease: "power2.out" }, fly + 0.05);
+  tl.fromTo("#s2-gb", { attr: { d: "M1214 506 L1214 444" } }, { attr: { d: "M1214 506 L1214 504" }, duration: 0.25, ease: "power2.out" }, fly + 0.05);
+  tl.to("#s2-gt", { attr: { d: "M1214 382 L1214 444" }, duration: 0.45, ease: "power2.inOut" }, fly + 0.55);
+  tl.to("#s2-gb", { attr: { d: "M1214 506 L1214 444" }, duration: 0.45, ease: "power2.inOut" }, fly + 0.55);
+  // spoken: the ending glows once, the gloss appears
+  const hu = T.hu[0].w[1][1];
+  tl.fromTo("#s2-end", { scale: 1 }, { keyframes: [{ scale: 1.06, duration: 0.15, ease: "power2.out" }, { scale: 1, duration: 0.45, ease: "power2.inOut" }] }, hu);
+  tl.fromTo("#s2-tr", { y: 64, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, ease: "expo.out" }, hu + 0.25);
+  // transition out: the camera pushes through the doorway into the next scene
+  tl.fromTo("#s2-cam", { scale: 1 }, { scale: 22, duration: 0.9, ease: "power3.in" }, T.dur - 0.25);
+  tl.fromTo(["#s2-svg", "#s2-word", "#s2-lbl", "#s2-trm", "#s2-hd"], { opacity: 1 }, { opacity: 0, duration: 0.3, ease: "power1.in" }, T.dur - 0.3);
+  tl.seek(0); render(0); blot(0);
+  window.__timelines = window.__timelines || {};
+  window.__timelines["s2"] = tl;
+});
+</script>

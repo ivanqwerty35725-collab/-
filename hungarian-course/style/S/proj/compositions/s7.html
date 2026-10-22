@@ -1,0 +1,106 @@
+<template>
+<style>
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:200 900;font-display:block;src:url('assets/fonts/SS4var-roman-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+2000-206F;}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:200 900;font-display:block;src:url('assets/fonts/SS4var-roman-latinext.woff2') format('woff2');unicode-range:U+0100-02FF;}
+@font-face{font-family:'Source Serif 4';font-style:italic;font-weight:200 900;font-display:block;src:url('assets/fonts/SS4var-italic-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+2000-206F;}
+@font-face{font-family:'Source Serif 4';font-style:italic;font-weight:200 900;font-display:block;src:url('assets/fonts/SS4var-italic-cyrillic.woff2') format('woff2');unicode-range:U+0400-045F,U+2116;}
+#root{position:absolute;inset:0;overflow:hidden;font-family:'Source Serif 4',serif;color:#211B16;
+  --ink:#211B16;--ru:#6A584A;--paper:#F4EDDF;--green:#2D6A4F;--blue:#3B6E9B;--ochre:#9A6B1F;--rule:#CBBBA0;}
+#root .paper{position:absolute;left:0;top:0;width:1280px;height:720px;}
+#root .hd{position:absolute;left:64px;top:38px;font-style:italic;font-weight:420;font-size:30px;line-height:40px;color:#3A3029;white-space:nowrap;}
+#root .hu{font-weight:650;font-optical-sizing:auto;white-space:nowrap;}
+#root .ru{font-style:italic;font-weight:400;color:#6A584A;white-space:nowrap;}
+#root .g{color:#2D6A4F;} #root .b{color:#3B6E9B;} #root .o{color:#9A6B1F;}
+#root canvas.full{position:absolute;left:0;top:0;width:1280px;height:720px;}
+
+#s7-wrap{position:absolute;inset:0;}
+#s7-dim{position:absolute;inset:0;background:rgba(244,237,223,0.35);}
+#s7-card{position:absolute;left:150px;top:130px;width:600px;height:476px;border-radius:30px;background:rgba(252,249,243,0.94);
+  box-shadow:0 1px 2px rgba(60,40,20,0.08),0 18px 44px rgba(60,40,20,0.14);overflow:hidden;transform-origin:50% 60%;}
+#s7-head{position:absolute;left:0;top:0;width:600px;height:92px;border-bottom:1px solid #E8DFCE;}
+#s7-av1{position:absolute;left:28px;top:18px;width:56px;height:56px;border-radius:50%;background:#3E5574;color:#F6F0E3;font-size:30px;line-height:56px;text-align:center;font-variation-settings:"wght" 650;}
+#s7-name{position:absolute;left:100px;top:16px;font-size:30px;line-height:36px;font-variation-settings:"wght" 650;color:#211B16;}
+#s7-st{position:absolute;left:101px;top:52px;font-size:21px;line-height:26px;color:#7A6A5C;}
+#root .bub{position:absolute;padding:12px 24px 15px;border-radius:26px;font-size:42px;line-height:50px;font-variation-settings:"wght" 650;white-space:nowrap;}
+#s7-b1{left:28px;top:116px;background:#FFFFFF;border:1px solid #E6DDCB;border-bottom-left-radius:8px;transform-origin:0% 100%;}
+#s7-b2{right:96px;top:262px;background:#DDEBE2;border-bottom-right-radius:8px;transform-origin:100% 100%;}
+#root .tr{position:absolute;font-size:26px;line-height:32px;}
+#s7-t1{left:34px;top:200px;}
+#s7-t2{right:100px;top:346px;text-align:right;}
+#root .typ{position:absolute;width:100px;height:60px;border-radius:30px;}
+#s7-k1{left:28px;top:116px;background:#FFFFFF;border:1px solid #E6DDCB;transform-origin:0% 100%;}
+#s7-k2{right:96px;top:262px;background:#DDEBE2;transform-origin:100% 100%;}
+#root .typ i{position:absolute;top:24px;width:12px;height:12px;border-radius:50%;background:#8C7C6C;}
+#s7-av2{position:absolute;right:26px;top:276px;width:58px;height:58px;border-radius:50%;background:#E3ECE5;overflow:hidden;}
+#s7-av2 canvas{width:58px;height:58px;}
+#s7-bar{position:absolute;left:24px;bottom:22px;width:552px;height:54px;border-radius:27px;border:1px solid #E3D9C6;background:#FBF8F2;}
+#s7-ph{position:absolute;left:24px;top:12px;font-style:italic;font-size:22px;color:#A39382;}
+
+</style>
+<div id="root" data-composition-id="s7" data-width="1280" data-height="720" data-duration="8.927">
+<div id="s7-wrap">
+  <div id="s7-dim"></div>
+  <canvas id="s7-cv" class="full" width="1280" height="720"></canvas>
+  <div class="hd" id="s7-hd">Вопрос консула</div>
+  <div id="s7-card">
+    <div id="s7-head"><div id="s7-av1">K</div><div id="s7-name">Konzul</div><div class="ru" id="s7-st">в сети</div></div>
+    <div class="typ" id="s7-k1"><i style="left:22px"></i><i style="left:44px"></i><i style="left:66px"></i></div>
+    <div class="bub hu" id="s7-b1"><span class="o">Honnan</span> jön?</div>
+    <div class="ru tr" id="s7-t1">Откуда вы?</div>
+    <div class="typ" id="s7-k2"><i style="left:22px"></i><i style="left:44px"></i><i style="left:66px"></i></div>
+    <div class="bub hu" id="s7-b2">Perm<span class="o">ből</span> jövök.</div>
+    <div class="ru tr" id="s7-t2">Я из Перми.</div>
+    <div id="s7-av2"><canvas id="s7-pc" width="116" height="116"></canvas></div>
+    <div id="s7-bar"><span id="s7-ph">Сообщение</span></div>
+  </div>
+</div>
+</div>
+<script>
+(function () {
+const T = {"dur": 8.327, "ru": [{"t": 0.5, "end": 3.108, "text": "Именно такой вопрос может задать консул.", "parts": [{"t": 0.5, "dur": 2.558, "text": "Именно такой вопрос может задать консул.", "w": [["Именно", 0.6], ["такой", 1.028], ["вопрос", 1.306], ["может", 1.688], ["задать", 2.035], ["консул", 2.417]]}]}], "hu": [{"t": 3.708, "dur": 1.023, "text": "Honnan jön?", "w": [["Honnan", 3.817], ["jön", 4.258]]}, {"t": 6.231, "dur": 1.096, "text": "Permből jövök.", "w": [["Permből", 6.34], ["jövök", 6.81]]}], "parts": [{"t": 0.5, "dur": 2.558, "text": "Именно такой вопрос может задать консул.", "w": [["Именно", 0.6], ["такой", 1.028], ["вопрос", 1.306], ["может", 1.688], ["задать", 2.035], ["консул", 2.417]]}], "slot": 8.927, "next": 8.866};
+
+const K = window.KIRILL;
+const H1 = T.hu[0].t, H2 = T.hu[1].t;
+function dots(sel, t0, t1) { // typing indicator: three dots, a travelling bounce (pure function of time)
+  const ds = document.querySelectorAll(sel + " i");
+  return (t) => { const on = t >= t0 && t <= t1; ds.forEach((d, i) => { const ph = (t - t0) * 7 - i * 0.9; d.style.transform = on ? `translateY(${(-5 * Math.max(0, Math.sin(ph))).toFixed(2)}px)` : "none"; d.style.opacity = on ? (0.45 + 0.55 * Math.max(0, Math.sin(ph))).toFixed(2) : 0.45; }); };
+}
+const d1 = dots("#s7-k1", 1.3, H1 - 0.15), d2 = dots("#s7-k2", 4.75, H2 - 0.15);
+K.load().then(() => {
+  // gouache portrait for Kirill's avatar
+  const pc = document.getElementById("s7-pc").getContext("2d");
+  K.draw(pc, Object.assign(K.stand("F"), { x: 58, y: 66 + 179 * 2.25, s: 2.25, look: 1.2 }));
+  const cv = document.getElementById("s7-cv"), ctx = cv.getContext("2d");
+  const clamp = (v, a, b) => (v < a ? a : v > b ? b : v), seg = (t, a, b) => clamp((t - a) / (b - a), 0, 1), eo = (x) => 1 - Math.pow(1 - x, 3);
+  function kir(t) { // Kirill stands beside the conversation and turns to it; a small nod when he answers
+    ctx.clearRect(0, 0, 1280, 720); const a = eo(seg(t, 0.3, 1.1));
+    const P = Object.assign(K.stand("F"), { x: 1010 + 60 * (1 - a), y: 694, s: 2.3, alpha: a });
+    P.look = -3.4 * eo(seg(t, 1.0, 1.6)); P.head = -0.05 * eo(seg(t, 1.0, 1.6)) + 0.06 * Math.sin(Math.PI * seg(t, H2 - 0.1, H2 + 0.5)); P.bob = 0.5 * Math.sin(t * 1.9);
+    K.shadow(ctx, P, 0.2 * a); K.draw(ctx, P);
+  }
+  const tl = gsap.timeline({ paused: true, onUpdate: () => { const t = tl.time(); d1(t); d2(t); kir(t); } });
+  tl.to({ v: 0 }, { v: 1, duration: T.slot, ease: "none" }, 0);
+  // the card springs up over the map, which falls out of focus behind it
+  tl.fromTo("#s7-dim", { opacity: 0 }, { opacity: 1, duration: 0.7 }, 0);
+  tl.fromTo("#s7-card", { y: 120, scale: 0.9, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.9, ease: "elastic.out(1, 0.75)" }, 0.05);
+  tl.fromTo("#s7-hd", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 0.4);
+  const spring = "elastic.out(1, 0.62)";
+  tl.fromTo("#s7-k1", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.6, ease: spring }, 1.25);
+  tl.to("#s7-k1", { scale: 0.6, opacity: 0, duration: 0.15, ease: "power2.in" }, H1 - 0.2);
+  tl.fromTo("#s7-b1", { scale: 0.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.85, ease: spring }, H1 - 0.12);
+  tl.fromTo("#s7-t1", { opacity: 0, y: -6 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, H1 + 0.75);
+  tl.fromTo("#s7-av2", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.7, ease: spring }, 4.6);
+  tl.fromTo("#s7-k2", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.6, ease: spring }, 4.7);
+  tl.to("#s7-k2", { scale: 0.6, opacity: 0, duration: 0.15, ease: "power2.in" }, H2 - 0.2);
+  tl.fromTo("#s7-b2", { scale: 0.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.85, ease: spring }, H2 - 0.12);
+  tl.fromTo("#s7-t2", { opacity: 0, y: -6 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, H2 + 0.75);
+  // out: the card recedes and softens as the next card arrives
+  tl.to(["#s7-card", "#s7-cv"], { scale: 0.92, filter: "blur(10px)", opacity: 0.4, duration: 0.6, ease: "power2.in" }, T.dur);
+  tl.seek(0); d1(0); d2(0); kir(0);
+  window.__timelines = window.__timelines || {};
+  window.__timelines["s7"] = tl;
+});
+
+})();
+</script>
+</template>

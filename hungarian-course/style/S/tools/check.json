@@ -1,0 +1,350 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 10
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 7,
+    "findings": [
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 32.924,
+        "selector": "#s3-hd",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 64,
+          "top": 9.95,
+          "right": 276.16,
+          "bottom": 50.95,
+          "width": 212.16,
+          "height": 41
+        },
+        "containerSelector": "#s4-wrap > img:nth-of-type(1)",
+        "text": "Теперь он в доме",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {},
+        "sourceFile": "compositions/s3.html",
+        "bbox": {
+          "x": 64,
+          "y": 9.95,
+          "width": 212.16,
+          "height": 41
+        },
+        "firstSeen": 32.924,
+        "lastSeen": 32.924,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          32.924
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 32.924,
+        "selector": "#s3-wrap",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 0,
+          "top": -27.05,
+          "right": 1280,
+          "bottom": 692.95,
+          "width": 1280,
+          "height": 720
+        },
+        "containerSelector": "#s3 > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1280,
+          "bottom": 720,
+          "width": 1280,
+          "height": 720
+        },
+        "overflow": {
+          "top": 27.05
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/s3.html",
+        "bbox": {
+          "x": 0,
+          "y": -27.05,
+          "width": 1280,
+          "height": 720
+        },
+        "firstSeen": 32.924,
+        "lastSeen": 32.924,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          32.924
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 40.022,
+        "selector": "#s4-h",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 64,
+          "top": 35,
+          "right": 824.41,
+          "bottom": 104,
+          "width": 760.41,
+          "height": 69
+        },
+        "containerSelector": "#s5-hd",
+        "text": "Девять окончаний в одной таблице",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/s4.html",
+        "bbox": {
+          "x": 64,
+          "y": 35,
+          "width": 760.41,
+          "height": 69
+        },
+        "firstSeen": 40.022,
+        "lastSeen": 40.022,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          40.022
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 40.022,
+        "selector": "#s4-a1 > span:nth-of-type(5)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 477.38,
+          "top": 291,
+          "right": 501.83,
+          "bottom": 360,
+          "width": 24.45,
+          "height": 69
+        },
+        "containerSelector": "#s5-n0 > span:nth-of-type(1)",
+        "text": "a",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/s4.html",
+        "bbox": {
+          "x": 477.38,
+          "y": 291,
+          "width": 24.45,
+          "height": 69
+        },
+        "firstSeen": 40.022,
+        "lastSeen": 40.022,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          40.022
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 40.022,
+        "selector": "#s4-a2 > span:nth-of-type(5)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 765.38,
+          "top": 291,
+          "right": 789.83,
+          "bottom": 360,
+          "width": 24.45,
+          "height": 69
+        },
+        "containerSelector": "#s5-n0 > span:nth-of-type(1)",
+        "text": "a",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/s4.html",
+        "bbox": {
+          "x": 765.38,
+          "y": 291,
+          "width": 24.45,
+          "height": 69
+        },
+        "firstSeen": 40.022,
+        "lastSeen": 40.022,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          40.022
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 48.232,
+        "selector": "#s5-n0 > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 186.37,
+          "top": 46.58,
+          "right": 532.26,
+          "bottom": 113.11,
+          "width": 345.89,
+          "height": 66.53
+        },
+        "containerSelector": "#s5-hd",
+        "text": "Есть движение?",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/s5.html",
+        "bbox": {
+          "x": 186.37,
+          "y": 46.58,
+          "width": 345.89,
+          "height": 66.53
+        },
+        "firstSeen": 48.232,
+        "lastSeen": 48.232,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          48.232
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 73.375,
+        "selector": "#s7-hd",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 64,
+          "top": 37,
+          "right": 263.75,
+          "bottom": 78,
+          "width": 199.75,
+          "height": 41
+        },
+        "containerSelector": "#s8-hd",
+        "text": "Вопрос консула",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/s7.html",
+        "bbox": {
+          "x": 64,
+          "y": 37,
+          "width": 199.75,
+          "height": 41
+        },
+        "firstSeen": 73.375,
+        "lastSeen": 73.375,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          73.375
+        ]
+      }
+    ],
+    "duration": 89.794,
+    "samples": [
+      2.993,
+      8.979,
+      14.966,
+      20.952,
+      26.938,
+      32.924,
+      38.911,
+      44.897,
+      50.883,
+      56.87,
+      62.856,
+      68.842,
+      74.828,
+      80.815,
+      86.801
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 7,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      2.993,
+      20.952,
+      44.897,
+      62.856,
+      86.801
+    ],
+    "checked": 43,
+    "passed": 43
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "step": 0.14999999999999858,
+    "samples": 599
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  },
+  "saved": {
+    "id": "bab58e39-1c48-4fe8-b6b0-d42df656d122",
+    "revision": "6d49538a-95ad-49ff-9d6e-1d2e85228c69",
+    "report": "/tmp/claude-0/-home-user--/26b0ee40-e351-58da-864e-84e1c80e1382/scratchpad/hu/style/S/proj/.hyperframes/artifacts/checks/bab58e39-1c48-4fe8-b6b0-d42df656d122.json",
+    "attribution": "recorded-revision"
+  },
+  "_meta": {
+    "version": "0.8.185",
+    "latestVersion": "0.8.185",
+    "updateAvailable": false
+  }
+}

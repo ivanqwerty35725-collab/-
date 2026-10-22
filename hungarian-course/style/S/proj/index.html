@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1280, height=720" />
+<title>Hova? Hol? Honnan? · пробный ролик</title>
+<script src="assets/js/gsap.min.js"></script>
+<script src="assets/js/kirill-manifest.js"></script>
+<script src="assets/js/objects-manifest.js"></script>
+<script src="assets/js/map-data.js"></script>
+<script src="assets/js/kirill.js"></script>
+<style>
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:200 900;font-display:block;src:url('assets/fonts/SS4var-roman-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+2000-206F;}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:200 900;font-display:block;src:url('assets/fonts/SS4var-roman-latinext.woff2') format('woff2');unicode-range:U+0100-02FF;}
+@font-face{font-family:'Source Serif 4';font-style:italic;font-weight:200 900;font-display:block;src:url('assets/fonts/SS4var-italic-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+2000-206F;}
+@font-face{font-family:'Source Serif 4';font-style:italic;font-weight:200 900;font-display:block;src:url('assets/fonts/SS4var-italic-cyrillic.woff2') format('woff2');unicode-range:U+0400-045F,U+2116;}
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { width:1280px; height:720px; overflow:hidden; background:#F4EDDF; }
+#root { position:relative; width:1280px; height:720px; overflow:hidden; background:#F4EDDF; }
+#ground { position:absolute; left:0; top:0; width:1280px; height:720px; }
+#grain-overlay { position:absolute; inset:0; pointer-events:none; z-index:1000; overflow:hidden; }
+#grain-overlay .grain-texture { position:absolute; top:-50%; left:-50%; width:200%; height:200%; opacity:0.05; mix-blend-mode:multiply;
+  background:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  animation: hf-grain-noise 0.5s steps(1) 181 both; }
+@keyframes hf-grain-noise { 0%,100%{transform:translate(0,0)} 10%{transform:translate(-5%,-5%)} 20%{transform:translate(-10%,5%)} 30%{transform:translate(5%,-10%)} 40%{transform:translate(-5%,15%)} 50%{transform:translate(-10%,5%)} 60%{transform:translate(15%,0)} 70%{transform:translate(0,10%)} 80%{transform:translate(-15%,0)} 90%{transform:translate(10%,5%)} }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="89.794" data-width="1280" data-height="720">
+  <img id="ground" src="assets/img/paper.jpg" alt="" />
+  <div id="s1" data-composition-id="s1" data-composition-src="compositions/s1.html" data-start="0.0" data-duration="15.319" data-track-index="1" data-track-kind="graphics" data-width="1280" data-height="720" style="z-index:10"></div>
+  <div id="s2" data-composition-id="s2" data-composition-src="compositions/s2.html" data-start="14.719" data-duration="10.355" data-track-index="2" data-track-kind="graphics" data-width="1280" data-height="720" style="z-index:20"></div>
+  <div id="s3" data-composition-id="s3" data-composition-src="compositions/s3.html" data-start="24.474" data-duration="8.589" data-track-index="3" data-track-kind="graphics" data-width="1280" data-height="720" style="z-index:30"></div>
+  <div id="s4" data-composition-id="s4" data-composition-src="compositions/s4.html" data-start="32.463" data-duration="7.544" data-track-index="4" data-track-kind="graphics" data-width="1280" data-height="720" style="z-index:40"></div>
+  <div id="s5" data-composition-id="s5" data-composition-src="compositions/s5.html" data-start="39.407" data-duration="13.59" data-track-index="5" data-track-kind="graphics" data-width="1280" data-height="720" style="z-index:50"></div>
+  <div id="s6" data-composition-id="s6" data-composition-src="compositions/s6.html" data-start="52.397" data-duration="21.034" data-track-index="6" data-track-kind="graphics" data-width="1280" data-height="720" style="z-index:60"></div>
+  <div id="s7" data-composition-id="s7" data-composition-src="compositions/s7.html" data-start="64.504" data-duration="8.927" data-track-index="7" data-track-kind="graphics" data-width="1280" data-height="720" style="z-index:70"></div>
+  <div id="s8" data-composition-id="s8" data-composition-src="compositions/s8.html" data-start="72.831" data-duration="9.466" data-track-index="8" data-track-kind="graphics" data-width="1280" data-height="720" style="z-index:80"></div>
+  <div id="s9" data-composition-id="s9" data-composition-src="compositions/s9.html" data-start="81.698" data-duration="8.096" data-track-index="9" data-track-kind="graphics" data-width="1280" data-height="720" style="z-index:90"></div>
+  <!-- registry: grain-overlay (finite iterations) -->
+  <div id="grain-overlay"><div class="grain-texture"></div></div>
+  <audio id="voice" class="clip" src="assets/audio/voice.mp3" data-start="0" data-duration="89.794" data-track-index="20" data-volume="1"></audio>
+</div>
+<script>
+window.__timelines = window.__timelines || {};
+const tl = gsap.timeline({ paused: true });
+tl.set({}, {}, 89.794);
+window.__timelines["main"] = tl;
+</script>
+</body>
+</html>

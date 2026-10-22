@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1280, height=720" />
+    <script src="assets/lib/gsap.min.js"></script>
+    <style>
+      @font-face{font-family:'Source Serif 4';font-style:normal;font-weight:600;font-display:block;src:url('assets/fonts/SourceSerif4-600-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+      @font-face{font-family:'Source Serif 4';font-style:normal;font-weight:600;font-display:block;src:url('assets/fonts/SourceSerif4-600-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+      @font-face{font-family:'Source Serif 4';font-style:normal;font-weight:600;font-display:block;src:url('assets/fonts/SourceSerif4-600-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+      @font-face{font-family:'Source Serif 4';font-style:normal;font-weight:700;font-display:block;src:url('assets/fonts/SourceSerif4-700-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+      @font-face{font-family:'Source Serif 4';font-style:normal;font-weight:700;font-display:block;src:url('assets/fonts/SourceSerif4-700-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+      @font-face{font-family:'Source Serif 4';font-style:normal;font-weight:700;font-display:block;src:url('assets/fonts/SourceSerif4-700-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+      @font-face{font-family:'Source Serif 4';font-style:italic;font-weight:400 600;font-display:block;src:url('assets/fonts/SourceSerif4-italic-cyrillic.woff2') format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+      @font-face{font-family:'Source Serif 4';font-style:italic;font-weight:400 600;font-display:block;src:url('assets/fonts/SourceSerif4-italic-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+      @font-face{font-family:'Source Serif 4';font-style:italic;font-weight:400 600;font-display:block;src:url('assets/fonts/SourceSerif4-italic-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+      
+      :root {
+        --ink: #211a13;
+        --sub: #6a5b4b;
+        --plate: rgba(251, 247, 239, 0.9);
+        --c-ba: #2d6a4f;
+        --c-ban: #3b6e9b;
+        --c-bol: #9a6b1f;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1280px; height: 720px; overflow: hidden; background: #1a1410; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; }
+      #gl { position: absolute; left: 0; top: 0; width: 1280px; height: 720px; display: block; }
+      .shade {
+        position: absolute; left: 0; right: 0; bottom: 0; height: 300px; pointer-events: none; z-index: 2;
+        background: linear-gradient(to top, rgba(20, 12, 6, 0.42), rgba(20, 12, 6, 0.18) 45%, rgba(20, 12, 6, 0));
+      }
+      .cap {
+        position: absolute; left: 0; right: 0; bottom: 74px; z-index: 5;
+        display: flex; justify-content: center;
+      }
+      .plate {
+        position: relative;
+        padding: 20px 52px 22px;
+        border-radius: 26px;
+        background: var(--plate);
+        backdrop-filter: blur(16px) saturate(1.1);
+        -webkit-backdrop-filter: blur(16px) saturate(1.1);
+        box-shadow: 0 24px 60px rgba(25, 14, 6, 0.38), 0 2px 0 rgba(255, 255, 255, 0.55) inset;
+        text-align: center;
+        will-change: transform, opacity, filter;
+      }
+      .hu {
+        font-family: 'Source Serif 4', serif; font-weight: 700; font-size: 84px; line-height: 1.0;
+        color: var(--ink); letter-spacing: -0.012em; white-space: nowrap;
+      }
+      .hu .end { display: inline-block; }
+      .ru {
+        margin-top: 8px;
+        font-family: 'Source Serif 4', serif; font-style: italic; font-weight: 500; font-size: 33px; line-height: 1.1;
+        color: var(--sub); white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="11.5" data-width="1280" data-height="720">
+      <canvas id="gl" width="1280" height="720" data-layout-allow-overflow></canvas>
+      <div class="shade" id="shade"></div>
+
+      <div id="cap1" class="cap clip" data-start="0.6" data-duration="3.1" data-track-index="1">
+        <div class="plate" id="p1">
+          <div class="hu">a ház<span class="end" id="e1" style="color: var(--c-ba)">ba</span></div>
+          <div class="ru">в дом</div>
+        </div>
+      </div>
+      <div id="cap2" class="cap clip" data-start="4.35" data-duration="2.95" data-track-index="2">
+        <div class="plate" id="p2">
+          <div class="hu">a ház<span class="end" id="e2" style="color: var(--c-ban)">ban</span></div>
+          <div class="ru">в доме</div>
+        </div>
+      </div>
+      <div id="cap3" class="cap clip" data-start="7.9" data-duration="3.6" data-track-index="3">
+        <div class="plate" id="p3">
+          <div class="hu">a ház<span class="end" id="e3" style="color: var(--c-bol)">ból</span></div>
+          <div class="ru">из дома</div>
+        </div>
+      </div>
+
+      <audio id="vo1" class="clip" src="assets/audio/hazba.mp3" data-start="0.85" data-track-index="10" data-volume="1"></audio>
+      <audio id="vo2" class="clip" src="assets/audio/hazban.mp3" data-start="4.55" data-track-index="11" data-volume="1"></audio>
+      <audio id="vo3" class="clip" src="assets/audio/hazbol.mp3" data-start="8.1" data-track-index="12" data-volume="1"></audio>
+    </div>
+
+    <script>
+      // 3D build gate: the module resolves this when meshes, shadows and shaders are ready
+      window.__hf = window.__hf || {};
+      window.__hf.buildReady = window.__hf.buildReady || {};
+      window.__hf.buildReady.house = new Promise((res) => { window.__hfResolveScene = res; });
+      window.addEventListener("hf-seek", (e) => { window.__hfLastT = e.detail.time; });
+
+      const tl = gsap.timeline({ paused: true });
+      const caps = [
+        ["#p1", "#e1", 0.6, 3.7],
+        ["#p2", "#e2", 4.35, 7.3],
+        ["#p3", "#e3", 7.9, 11.5],
+      ];
+      caps.forEach(([p, e, a, b], i) => {
+        tl.fromTo(p, { opacity: 0, y: 22, scale: 0.97, filter: "blur(8px)" },
+          { opacity: 1, y: 0, scale: 1, filter: "blur(0px)", duration: 0.7, ease: "power3.out" }, a);
+        tl.fromTo(e, { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, a + 0.28);
+        if (i < 2) tl.to(p, { opacity: 0, y: -10, filter: "blur(6px)", duration: 0.45, ease: "power2.in" }, b - 0.5);
+      });
+      tl.fromTo("#shade", { opacity: 0.6 }, { opacity: 1, duration: 1, ease: "none" }, 0);
+      tl.set({}, {}, 11.5);
+      window.__timelines["main"] = tl;
+    </script>
+    <script type="module" src="assets/scene.js"></script>
+  </body>
+</html>

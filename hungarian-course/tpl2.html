@@ -1,0 +1,322 @@
+<title>Венгерский до присяги</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: ledger of days. Left rail of views, one column of records with codes like a source register. */
+:root{
+  --bg:#f5f6f2; --panel:#ffffff; --fg:#1c2226; --muted:#5d6871; --line:#d8ddd6;
+  --accent:#2d6a4f; --accent-ink:#ffffff; --soft:#e4efe8; --warn:#9a6b1f; --warn-bg:#f6ecd8; --bad:#9b3b3b; --bad-bg:#f5e1e1;
+  --display:"Source Serif 4",Georgia,serif; --body:"IBM Plex Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#15191b;--panel:#1d2225;--fg:#e4e7e2;--muted:#9aa5a9;--line:#2f373b;--accent:#6fbf94;--accent-ink:#0f1a14;--soft:#1f2f27;--warn:#d9b35c;--warn-bg:#2d2615;--bad:#e08a8a;--bad-bg:#331d1d;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#15191b;--panel:#1d2225;--fg:#e4e7e2;--muted:#9aa5a9;--line:#2f373b;--accent:#6fbf94;--accent-ink:#0f1a14;--soft:#1f2f27;--warn:#d9b35c;--warn-bg:#2d2615;--bad:#e08a8a;--bad-bg:#331d1d;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.5;margin:0}
+.wrap{max-width:900px;margin:0 auto;padding-block:18px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1{font-family:var(--display);font-weight:700;font-size:28px;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:600;font-size:20px;margin:0 0 8px;text-wrap:balance}
+h3{font-size:15px;font-weight:600;margin:0 0 6px}
+.sub{color:var(--muted);font-size:13px;margin-top:2px}
+.top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:flex-end;border-bottom:1px solid var(--line);padding-bottom:12px}
+.stat{font-family:var(--mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.stat b{color:var(--fg);font-weight:500}
+nav{display:flex;gap:4px;flex-wrap:wrap;margin:14px 0 18px}
+nav button{background:none;border:1px solid var(--line);color:var(--fg);padding:6px 12px;border-radius:999px;font:inherit;font-size:13px;cursor:pointer}
+nav button[aria-current="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+nav button:focus-visible,button:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.code{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.02em}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:14px 16px;margin-bottom:12px;min-width:0}
+.card.done{border-color:var(--accent)}
+.head{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:baseline}
+.kind{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.theme{font-family:var(--display);font-size:17px;font-weight:600;margin:6px 0 10px}
+ul.tasks{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+ul.tasks li{display:grid;grid-template-columns:22px 1fr auto;gap:10px;align-items:start}
+ul.tasks input{width:18px;height:18px;margin:3px 0 0;accent-color:var(--accent)}
+ul.tasks .min{font-family:var(--mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+ul.tasks a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--soft)}
+ul.tasks li.cp{background:var(--warn-bg);padding:6px 8px;border-radius:4px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}
+button.b{background:var(--accent);color:var(--accent-ink);border:0;padding:7px 12px;border-radius:4px;font:inherit;font-size:13px;font-weight:600;cursor:pointer}
+button.g{background:none;border:1px solid var(--line);color:var(--fg);padding:6px 10px;border-radius:4px;font:inherit;font-size:13px;cursor:pointer}
+select,textarea{font:inherit;font-size:14px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg);padding:6px 8px}
+textarea{width:100%;min-height:90px;resize:vertical}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.dcell{border:1px solid var(--line);border-radius:4px;padding:8px;background:var(--panel);cursor:pointer;min-width:0}
+.dcell.done{background:var(--soft);border-color:var(--accent)}
+.dcell.today{outline:2px solid var(--accent)}
+.dcell .d{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.bar{height:6px;background:var(--line);border-radius:3px;overflow:hidden;margin-top:6px}
+.bar i{display:block;height:100%;background:var(--accent)}
+.out{white-space:pre-wrap;background:var(--soft);border-radius:4px;padding:10px 12px;margin-top:8px;font-size:14px;min-width:0;overflow-wrap:anywhere}
+.msg{padding:8px 10px;border-radius:4px;margin-top:6px;white-space:pre-wrap;overflow-wrap:anywhere}
+.msg.u{background:var(--panel);border:1px solid var(--line)}
+.msg.a{background:var(--soft)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+.tbl{overflow-x:auto}
+.tag{font-family:var(--mono);font-size:11px;padding:1px 6px;border-radius:3px;background:var(--soft)}
+.tag.ne{background:var(--warn-bg);color:var(--warn)}
+.tag.bad{background:var(--bad-bg);color:var(--bad)}
+.note{color:var(--muted);font-size:13px}
+.hid{display:none}
+.sub2{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:12px}
+.sub2 button{background:none;border:1px solid var(--line);color:var(--fg);padding:5px 10px;border-radius:4px;font:inherit;font-size:13px;cursor:pointer}
+.sub2 button[aria-current="true"]{background:var(--soft);border-color:var(--accent);font-weight:600}
+.fc{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:28px 18px;text-align:center;min-height:150px;display:flex;flex-direction:column;justify-content:center;gap:8px}
+.fc .hu{font-family:var(--display);font-size:30px;font-weight:600;overflow-wrap:anywhere}
+.fc .ru{font-size:17px;color:var(--muted)}
+.spk{background:none;border:1px solid var(--line);border-radius:999px;width:34px;height:34px;cursor:pointer;color:var(--accent);font-size:16px;vertical-align:middle}
+.opt{display:block;width:100%;text-align:left;background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:8px 10px;margin-top:6px;font:inherit;cursor:pointer;color:var(--fg)}
+.opt.ok{border-color:var(--accent);background:var(--soft)}
+.opt.no{border-color:var(--bad);background:var(--bad-bg)}
+.q{font-size:16px;margin-top:14px;font-weight:500}
+.diff .ok{color:var(--accent)}.diff .no{color:var(--bad);text-decoration:line-through}.diff .miss{color:var(--warn);font-weight:600}
+.mm{list-style:none;padding-left:18px;border-left:2px solid var(--line);margin:4px 0}
+.mm>li{margin:4px 0;position:relative}
+.mm>li::before{content:"";position:absolute;left:-18px;top:11px;width:14px;height:2px;background:var(--line)}
+.mm .root{font-family:var(--display);font-size:18px;font-weight:600}
+.mm .k{font-weight:600}
+svg text{font-family:var(--body)}
+.svgbox{overflow-x:auto}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+kbd{font-family:var(--mono);font-size:12px;border:1px solid var(--line);border-radius:3px;padding:0 4px}
+@media (prefers-reduced-motion:no-preference){.bar i{transition:width .3s}}
+</style>
+<div class="wrap">
+<div class="top">
+  <div><h1>Венгерский до присяги</h1><div class="sub">300 дней, старт 24 октября 2026, без выходных. Цель: беседа с консулом на упрощённой натурализации.</div></div>
+  <div class="stat" id="stat">день — · выполнено — · слов —</div>
+</div>
+<nav id="nav">
+  <button data-v="today" aria-current="true">Сегодня</button>
+  <button data-v="week">Неделя</button>
+  <button data-v="month">Месяц</button>
+  <button data-v="plan">Весь план</button>
+  <button data-v="train">Тренажёр</button>
+  <button data-v="schemes">Схемы</button>
+  <button data-v="res">Ресурсы и правила</button>
+</nav>
+<div id="view"></div>
+<div class="card" id="claudebox">
+  <h2>Разобрать задание с Claude</h2>
+  <div class="note" id="cbctx">Контекст: день не выбран</div>
+  <textarea id="cbin" placeholder="Вставьте свой текст по-венгерски, или напишите «дай упражнение», или ответьте консулу"></textarea>
+  <div class="row">
+    <button class="b" id="cbgo">Разобрать задание</button>
+    <button class="g" id="cbconsul">Диалог с консулом</button>
+    <button class="g" id="cbclear">Очистить</button>
+    <span class="note">В режиме консула первая строка ответа озвучивается.</span>
+    <span class="note" id="cbstate"></span>
+  </div>
+  <div id="cbout"></div>
+</div>
+</div>
+<script>
+const P = __PLAN__;
+const DAYS=P.days, WEEKS=P.weeks, RES=P.res;
+const state={progress:{},weeks:{},work:{},cards:{}}; let db=null,sample=null,uid=null,view='today',sel=null;
+const todayIdx=()=>{const t=new Date();t.setHours(0,0,0,0);const s=new Date(P.start+'T00:00:00');const i=Math.round((t-s)/864e5);return Math.min(299,Math.max(0,i));};
+function lsGet(k){try{return JSON.parse(localStorage.getItem(k)||'null')}catch(e){return null}}
+function lsSet(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+async function save(col,id,data){state[col][id]=Object.assign({},state[col][id]||{},data);lsSet(col+'/'+id,state[col][id]);
+  if(db){try{await db.collection(col).doc(id).set(state[col][id])}catch(e){setState('Не сохранилось в базу: '+(e.message||e.code))}}
+  render();}
+function setState(t){document.getElementById('cbstate').textContent=t}
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+function doneCount(d){const p=state.progress[d.id];return p&&p.done?Object.keys(p.done).filter(k=>p.done[k]).length:0}
+function isDone(d){return doneCount(d)===d.tasks.length}
+function dayCard(d,full){const p=state.progress[d.id]||{};const w=WEEKS[d.w-1];
+  let h=`<div class="card ${isDone(d)?'done':''}" id="day-${d.n}"><div class="head"><span class="code">${d.id} · ${d.date} · ${d.dow}</span><span class="kind">${d.kind}${d.cp?' · контрольная точка '+d.cp:''}</span></div>`;
+  h+=`<div class="theme">Неделя ${d.w}: ${esc(w.theme)}</div>`;
+  h+=`<ul class="tasks">`+d.tasks.map((t,i)=>{const r=RES[t.r];const link=r?`<a href="${r[1]}" target="_blank" rel="noopener">${esc(r[0])}</a> · `:'';
+    const go=t.go?` <button class="g" data-go="${t.go}" data-day="${d.n}" style="padding:1px 8px;font-size:12px">открыть</button>`:'';
+    return `<li class="${t.r==='consul'&&t.t.startsWith('КОНТР')?'cp':''}"><input type="checkbox" id="c-${d.n}-${i}" data-d="${d.id}" data-i="${i}" ${p.done&&p.done[i]?'checked':''}><label for="c-${d.n}-${i}">${(r&&r[1])?link:''}${esc(t.t)}${go}</label><span class="min">${t.m} мин</span></li>`}).join('')+`</ul>`;
+  if(full){h+=`<div class="row"><button class="g" data-ctx="${d.n}">Выбрать для разбора</button>`;
+    if(d.dow==='вс'){h+=`<label class="note">Самооценка недели ${d.w}: <select data-w="${d.w}" id="w-${d.w}"><option value="">—</option><option value="ok" ${state.weeks[d.w]?.a==='ok'?'selected':''}>усвоена</option><option value="part" ${state.weeks[d.w]?.a==='part'?'selected':''}>частично</option><option value="redo" ${state.weeks[d.w]?.a==='redo'?'selected':''}>переделать</option></select></label>`}
+    h+=`</div><div class="row"><textarea id="n-${d.n}" data-note="${d.id}" placeholder="Заметка дня: что было трудно, что повторить" style="min-height:48px">${esc(p.note||'')}</textarea></div>`;
+    h+=`<div class="note" style="margin-top:8px">Грамматика недели: ${w.grammar.map(esc).join(' · ')}. Лексика: ${esc(w.vocab)}. Duolingo: ${esc(w.duo)}. Вопрос консула: <b>${esc(w.q)}</b></div>`;
+    if(state.work[d.id]?.a){h+=`<div class="out"><b>Последний разбор Claude</b>\n${esc(state.work[d.id].a)}</div>`}}
+  return h+`</div>`}
+function render(){const v=document.getElementById('view');const ti=todayIdx();const done=DAYS.filter(isDone).length;
+  document.getElementById('stat').innerHTML=`день <b>${ti+1}</b>/300 · выполнено <b>${done}</b> дней · слов ≈ <b>${Math.min(3500,DAYS.slice(0,ti+1).filter(isDone).length*12)}</b>`;
+  document.querySelectorAll('#nav button').forEach(b=>b.setAttribute('aria-current',b.dataset.v===view));
+  let h='';
+  if(view==='today'){const d=DAYS[ti];sel=sel??d.n;h+=dayCard(DAYS[sel-1],true);
+    if(sel!==d.n)h=`<div class="note" style="margin-bottom:8px">Показан день ${sel}. <button class="g" id="back">К сегодняшнему</button></div>`+h;}
+  else if(view==='week'){const d=DAYS[sel?sel-1:ti];const wk=WEEKS[d.w-1];h+=`<div class="card"><h2>Неделя ${d.w}: ${esc(wk.theme)}</h2><div class="note">Грамматика: ${wk.grammar.map(esc).join(' · ')}<br>Лексика: ${esc(wk.vocab)} · Duolingo: ${esc(wk.duo)} · <a href="${wk.hr}" target="_blank" rel="noopener">раздел Hungarian Reference</a><br>Письменное задание недели: ${esc(wk.writing)}<br>Вопрос консула: <b>${esc(wk.q)}</b></div></div>`;
+    h+=DAYS.filter(x=>x.w===d.w).map(x=>dayCard(x,true)).join('')}
+  else if(view==='month'){const d=DAYS[sel?sel-1:ti];const m=d.m;const md=DAYS.filter(x=>x.m===m);const dn=md.filter(isDone).length;
+    h+=`<div class="card"><h2>Месяц ${m}</h2><div class="note">Контрольная точка: ${esc(P.cp[m])}</div><div class="bar"><i style="width:${dn/md.length*100}%"></i></div><div class="note">${dn} из ${md.length} дней выполнено</div><div class="row">`+[1,2,3,4,5,6,7,8,9,10].map(i=>`<button class="g" data-m="${i}">М${i}</button>`).join('')+`</div></div><div class="grid">`;
+    h+=md.map(x=>`<div class="dcell ${isDone(x)?'done':''} ${x.n===ti+1?'today':''}" data-open="${x.n}"><div class="d">${x.id.slice(8)} · ${x.date.slice(5)} ${x.dow}</div><div>${esc(x.kind)}${x.cp?' · КТ'+x.cp:''}</div><div class="bar"><i style="width:${doneCount(x)/x.tasks.length*100}%"></i></div></div>`).join('')+`</div>`}
+  else if(view==='plan'){h+=`<div class="card"><h2>43 недели</h2><div class="tbl"><table><tr><th>Нед.</th><th>Даты</th><th>Тема</th><th>Duolingo</th><th>Вопрос консула</th><th>Оценка</th></tr>`+WEEKS.map(w=>{const f=DAYS[(w.n-1)*7];const l=DAYS[Math.min(299,w.n*7-1)];const a=state.weeks[w.n]?.a;return `<tr><td class="code"><a href="#" data-wk="${w.n}">W${String(w.n).padStart(2,'0')}</a></td><td class="code">${f.date.slice(5)}–${l.date.slice(5)}</td><td>${esc(w.theme)}</td><td class="code">${esc(w.duo)}</td><td>${esc(w.q)}</td><td>${a?`<span class="tag ${a==='redo'?'bad':a==='part'?'ne':''}">${{ok:'усвоена',part:'частично',redo:'переделать'}[a]}</span>`:'—'}</td></tr>`}).join('')+`</table></div></div>`;
+    h+=`<div class="card"><h2>Контрольные точки</h2><div class="tbl"><table><tr><th>КТ</th><th>День</th><th>Задача</th></tr>`+Object.keys(P.cp).map(k=>`<tr><td class="code">${k}</td><td class="code">D${String(k*30).padStart(3,'0')} · ${DAYS[k*30-1].date}</td><td>${esc(P.cp[k])}</td></tr>`).join('')+`</table></div></div>`}
+  else if(view==='train'){h+=renderTrain()}
+  else if(view==='schemes'){h+=renderSchemes()}
+  else{h+=document.getElementById('restpl').innerHTML}
+  v.innerHTML=h;afterRender();}
+document.getElementById('nav').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;view=b.dataset.v;render()});
+document.getElementById('view').addEventListener('change',e=>{const t=e.target;
+  if(t.dataset.d){const p=state.progress[t.dataset.d]||{};const done=Object.assign({},p.done||{});done[t.dataset.i]=t.checked;save('progress',t.dataset.d,{done})}
+  else if(t.dataset.w){save('weeks',t.dataset.w,{a:t.value})}
+  else if(t.dataset.note){save('progress',t.dataset.note,{note:t.value})}});
+document.getElementById('view').addEventListener('click',e=>{const t=e.target.closest('[data-go],[data-ctx],[data-open],[data-m],[data-wk],#back');if(!t)return;
+  if(t.id==='back'){sel=null;render();return}
+  if(t.dataset.go){sel=+t.dataset.day;const g=t.dataset.go;if(g==='claude'||g==='consul'){setCtx();document.getElementById('claudebox').scrollIntoView({behavior:'smooth'});if(g==='consul')ask('consul');}else{view=g==='schemes'?'schemes':'train';sub=g;render();window.scrollTo({top:0,behavior:'smooth'})}return}
+  if(t.dataset.ctx){sel=+t.dataset.ctx;setCtx();document.getElementById('claudebox').scrollIntoView({behavior:'smooth'});return}
+  if(t.dataset.open){sel=+t.dataset.open;view='today';render();setCtx();return}
+  if(t.dataset.m){sel=(+t.dataset.m-1)*30+1;render();return}
+  if(t.dataset.wk){e.preventDefault();sel=(+t.dataset.wk-1)*7+1;view='week';render();}});
+function setCtx(){const d=DAYS[(sel??todayIdx()+1)-1];document.getElementById('cbctx').textContent=`Контекст: ${d.id} · неделя ${d.w} «${WEEKS[d.w-1].theme}»`}
+function sysPrompt(mode){const d=DAYS[(sel??todayIdx()+1)-1];const w=WEEKS[d.w-1];
+  const base=`Ты преподаватель венгерского языка как иностранного. Ученик: Кирилл, русскоязычный, учит венгерский с нуля для собеседования в консульстве Венгрии по упрощённой натурализации (предки из Чумалёво и Новобарово, Закарпатье; прадед Фёдор Бабич 1903 г., прабабушка Анна Олексишенец 1910 г., дед Иван Фёдорович 1951 г., Чумалёво; сам родился в Лысьве в 2002 г., историк, работает в Яндексе). Сегодня день ${d.n} из 300, неделя ${d.w}, тема недели: «${w.theme}». Грамматика недели: ${w.grammar.join('; ')}. Лексика: ${w.vocab}. Письменное задание недели: ${w.writing}. Используй только грамматику и лексику пройденных недель (недели 1–${d.w}). Отвечай по-русски, венгерские примеры давай с переводом.`;
+  if(mode==='consul')return base+` Режим: ролевая игра «собеседование у консула». Ты консул Венгрии. Говори по-венгерски, коротко, на уровне недели ${d.w}, по одному вопросу за реплику, начни с вопроса «${w.q}». Если ученик пишет по-русски или ошибается, дай в скобках по-русски короткую подсказку и правильный вариант, затем продолжай по-венгерски. После 6 реплик ученика подведи итог по-русски: 3 главные ошибки и что повторить.`;
+  return base+` Режим: разбор задания. Если ученик прислал текст по-венгерски: исправь каждую ошибку, объясни правило в одну-две строки, покажи правильную версию целиком, затем дай 3 коротких упражнения на те же ошибки. Если ученик просит упражнение: дай 8 предложений для перевода или заполнения пропусков по грамматике дня, затем после его ответа проверь. Будь конкретен и краток.`;}
+let consulMsgs=null;
+async function ask(mode){if(!sample){setState('Кнопка работает только внутри claude.ai, здесь Claude недоступен.');return}
+  const inp=document.getElementById('cbin').value.trim();const out=document.getElementById('cbout');const d=DAYS[(sel??todayIdx()+1)-1];
+  let msgs;
+  if(mode==='consul'){if(!consulMsgs)consulMsgs=[];if(inp)consulMsgs.push({role:'user',content:inp});if(!consulMsgs.length||consulMsgs[consulMsgs.length-1].role!=='user')consulMsgs.push({role:'user',content:'Jó napot kívánok!'});
+    msgs=[{role:'user',content:sysPrompt('consul')+'\n\nНачинаем.'},{role:'assistant',content:'Rendben, kezdjük.'},...consulMsgs];}
+  else{if(!inp){setState('Напишите текст или «дай упражнение».');return}consulMsgs=null;msgs=[{role:'user',content:sysPrompt('task')+'\n\nТекст ученика:\n'+inp}]}
+  setState('Claude думает…');const box=document.createElement('div');box.className='msg a';box.textContent='…';out.appendChild(box);
+  if(inp){const u=document.createElement('div');u.className='msg u';u.textContent=inp;out.insertBefore(u,box)}
+  try{const r=await sample(msgs,{cache:false,onText:t=>{box.textContent=t.text||'…'}});box.textContent=r.text;setState('');
+    if(mode==='consul'){consulMsgs.push({role:'assistant',content:r.text});const hu=r.text.replace(/\([^)]*\)/g,'').split('\n')[0];speak(hu)}
+    await save('work',d.id,{q:inp,a:r.text,mode,ts:Date.now()});document.getElementById('cbin').value='';}
+  catch(e){box.textContent='Ошибка: '+(e.message||e.code);setState('')}}
+document.getElementById('cbgo').onclick=()=>ask('task');
+document.getElementById('cbconsul').onclick=()=>ask('consul');
+document.getElementById('cbclear').onclick=()=>{document.getElementById('cbout').innerHTML='';consulMsgs=null;setState('')};
+
+// ---------- TTS ----------
+let voice=null,voicesReady=false;
+function pickVoice(){const vs=speechSynthesis.getVoices();voice=vs.find(v=>/^hu/i.test(v.lang))||null;voicesReady=true;document.querySelectorAll('.ttsnote').forEach(n=>n.textContent=voice?`Голос: ${voice.name}`:'Венгерского голоса на устройстве нет: добавьте венгерский в настройках речи системы (Windows: язык и речь; Android: Google TTS; iPhone: Универсальный доступ, Устная речь, Голоса).')}
+if('speechSynthesis' in window){pickVoice();speechSynthesis.onvoiceschanged=pickVoice}
+function speak(t,slow){if(!('speechSynthesis' in window)){setState('Синтез речи недоступен в этом браузере.');return}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang='hu-HU';if(voice)u.voice=voice;u.rate=slow?0.6:0.9;speechSynthesis.speak(u)}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-say]');if(b){speak(b.dataset.say,b.dataset.slow==='1')}});
+// ---------- trainer ----------
+let sub='cards',card=null,exSet=null,exI=0,exScore=0,listenState=null;
+const ALLW=[];Object.keys(P.words).forEach(w=>P.words[w].forEach((p,i)=>ALLW.push({id:`w${w}-${i}`,w:+w,hu:p[0],ru:p[1]})));
+const curWeek=()=>DAYS[(sel??todayIdx()+1)-1].w;
+const BOX=[0,1,3,7,14,30,60];
+function dueCards(){const now=Date.now();const wk=curWeek();return ALLW.filter(c=>c.w<=wk).map(c=>({c,s:state.cards[c.id]||{box:0,due:0}})).filter(x=>x.s.due<=now)}
+function nextCard(){const d=dueCards();const unseen=d.filter(x=>!state.cards[x.c.id]);const old=d.filter(x=>state.cards[x.c.id]);const seenToday=Object.values(state.cards).filter(s=>s.first&&s.first>Date.now()-864e5).length;
+  const pool=(seenToday<15&&unseen.length)?[...old,...unseen.slice(0,15-seenToday)]:old; if(!pool.length)return null;return pool[Math.floor(Math.random()*pool.length)].c}
+function grade(ok){if(!card)return;const s=state.cards[card.id]||{box:0,first:Date.now()};const box=ok?Math.min(6,s.box+1):0;const due=Date.now()+BOX[box]*864e5;save('cards',card.id,{box,due,first:s.first||Date.now()});card=null}
+function renderTrain(){const wk=curWeek();let h=`<div class="sub2">`+[['cards','Карточки'],['dict','Диктант'],['ex','Упражнения'],['listen','Аудирование']].map(([k,n])=>`<button data-sub="${k}" aria-current="${sub===k}">${n}</button>`).join('')+`</div><div class="note ttsnote" style="margin-bottom:8px"></div>`;
+  if(sub==='cards'){const due=dueCards().length;const learned=Object.values(state.cards).filter(s=>s.box>=3).length;if(!card)card=nextCard();
+    h+=`<div class="card"><div class="head"><span class="code">недели 1–${wk} · к повтору: ${due} · выучено (ящик 3+): ${learned} из ${ALLW.filter(c=>c.w<=wk).length}</span><span class="note">15 новых в день, интервалы 1·3·7·14·30·60 дней</span></div>`;
+    if(card){h+=`<div class="fc" id="fc"><div class="hu">${esc(card.hu)} <button class="spk" data-say="${esc(card.hu)}" title="озвучить">▶</button></div><div class="ru hid" id="fcru">${esc(card.ru)}</div></div><div class="row"><button class="b" id="fcshow">Показать перевод</button><button class="g" id="fcno">Не помню</button><button class="g" id="fcok">Помню</button><span class="note">ящик ${(state.cards[card.id]||{box:0}).box}</span></div>`}
+    else h+=`<div class="fc"><div class="ru">На сегодня карточек нет. Следующие появятся по интервалам или с новой неделей.</div></div>`;
+    h+=`<details style="margin-top:12px"><summary class="note">Слова недели ${wk}</summary><div class="tbl"><table>`+P.words[wk].map(p=>`<tr><td>${esc(p[0])} <button class="spk" data-say="${esc(p[0])}">▶</button></td><td>${esc(p[1])}</td></tr>`).join('')+`</table></div></details></div>`}
+  if(sub==='dict'){const ss=P.dict[wk];h+=`<div class="card"><h2>Диктант, неделя ${wk}</h2><div class="note">Нажмите ▶, напишите услышанное, проверьте. Медленно: ▷. Буквы с диакритикой обязательны.</div>`;
+    ss.forEach((s,i)=>{h+=`<div class="q">${i+1}. <button class="spk" data-say="${esc(s[0])}">▶</button> <button class="spk" data-say="${esc(s[0])}" data-slow="1">▷</button> <span class="note">${esc(s[1])}</span></div><div class="row"><input id="dict-${i}" style="flex:1;min-width:200px;font:inherit;padding:6px 8px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg)" placeholder="напишите по-венгерски" lang="hu" autocomplete="off"><button class="g" data-dchk="${i}">Проверить</button></div><div class="diff note" id="dres-${i}"></div>`});
+    h+=`</div>`}
+  if(sub==='ex'){h+=`<div class="card"><h2>Упражнения, неделя ${wk}</h2>`;
+    if(!exSet){const built=P.ex[wk];h+=`<div class="note">${built?'Встроенный набор из 5 заданий с объяснениями.':'Для этой недели набор генерирует Claude по грамматике недели: 8 заданий с автопроверкой.'}</div><div class="row">${built?'<button class="b" id="exstart">Начать встроенный</button>':''}<button class="${built?'g':'b'}" id="exgen">Сгенерировать с Claude</button></div>`}
+    else if(exI<exSet.length){const q=exSet[exI];h+=`<div class="note">${exI+1} из ${exSet.length} · верно: ${exScore}</div><div class="q">${esc(q[0])}</div>`+q[1].map(o=>`<button class="opt" data-opt="${esc(o)}">${esc(o)}</button>`).join('')+`<div class="out hid" id="exwhy"></div><div class="row"><button class="g hid" id="exnext">Дальше</button></div>`}
+    else{h+=`<div class="q">Готово: ${exScore} из ${exSet.length}.</div><div class="row"><button class="b" id="exreset">Ещё раз</button><button class="g" id="exgen">Новый набор от Claude</button></div>`}
+    h+=`</div>`}
+  if(sub==='listen'){const L=P.listen[wk];h+=`<div class="card"><h2>Аудирование, неделя ${wk}</h2>`;
+    const cur=listenState&&listenState.w===wk?listenState:(L?{w:wk,text:L[0],qs:L[1]}:null);
+    if(cur){h+=`<div class="row"><button class="b" data-say="${esc(cur.text)}">▶ Прослушать</button><button class="g" data-say="${esc(cur.text)}" data-slow="1">▷ Медленно</button><button class="g" id="lshow">Показать текст</button></div><div class="out hid" id="ltext">${esc(cur.text)}</div><div class="q">Ответьте по-венгерски (можно коротко):</div>`+cur.qs.map((q,i)=>`<div class="note" style="margin-top:6px">${i+1}. ${esc(q)}</div><input id="lq-${i}" style="width:100%;font:inherit;padding:6px 8px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg)" lang="hu" autocomplete="off">`).join('')+`<div class="row"><button class="b" id="lcheck">Проверить с Claude</button><button class="g" id="lgen">Новый текст от Claude</button></div><div id="lres"></div>`}
+    else h+=`<div class="note">Для этой недели текст создаёт Claude по лексике недели: 4–5 предложений и 3 вопроса.</div><div class="row"><button class="b" id="lgen">Создать текст</button></div><div id="lres"></div>`;
+    h+=`</div>`}
+  return h}
+function norm(s){return s.toLowerCase().replace(/[.,!?;:«»"']/g,'').replace(/\s+/g,' ').trim()}
+function diffWords(a,b){const A=norm(a).split(' '),B=norm(b).split(' ');let out='';const m=Math.max(A.length,B.length);let ok=0;for(let i=0;i<m;i++){if(A[i]===B[i]){out+=`<span class="ok">${esc(B[i]||'')}</span> `;ok++}else out+=`<span class="no">${esc(A[i]||'·')}</span> <span class="miss">${esc(B[i]||'')}</span> `}return {html:out,score:ok+'/'+B.length}}
+async function genEx(){if(!sample){setState('Claude недоступен здесь.');return}const wk=curWeek(),w=WEEKS[wk-1];setState('Claude составляет упражнения…');
+  try{const r=await sample.json(`Составь 8 заданий по венгерскому для недели ${wk}: тема «${w.theme}», грамматика: ${w.grammar.join('; ')}, лексика: ${w.vocab}. Ученик русскоязычный, уровень A1${wk>20?'-A2':''}, знает только материал недель 1–${wk}. Каждое задание: предложение с пропуском ___ или короткий вопрос, 3 варианта (один верный), объяснение правила по-русски в одну строку. Верни ТОЛЬКО JSON: {"items":[{"q":"...","opts":["..","..",".."],"a":"верный вариант","why":"..."}]}`,{modelTier:'default'});
+    exSet=r.items.map(x=>[x.q,x.opts,x.a,x.why]);exI=0;exScore=0;setState('');render()}catch(e){setState('Не вышло: '+(e.message||e.code))}}
+async function genListen(){if(!sample){setState('Claude недоступен здесь.');return}const wk=curWeek(),w=WEEKS[wk-1];setState('Claude пишет текст…');
+  try{const r=await sample.json(`Напиши короткий текст по-венгерски (4–5 простых предложений) для аудирования, неделя ${wk}, тема «${w.theme}», лексика: ${w.vocab}, грамматика только из недель 1–${wk}. Персонаж: Кирилл из Перми, предки из Чумалёво (Csománfalva), Закарпатье. Затем 3 вопроса по тексту по-русски. Верни ТОЛЬКО JSON: {"text":"...","qs":["..","..",".."]}`,{modelTier:'default'});
+    listenState={w:wk,text:r.text,qs:r.qs};setState('');render()}catch(e){setState('Не вышло: '+(e.message||e.code))}}
+async function checkListen(){if(!sample){setState('Claude недоступен здесь.');return}const wk=curWeek();const cur=listenState&&listenState.w===wk?listenState:{text:P.listen[wk][0],qs:P.listen[wk][1]};const ans=cur.qs.map((q,i)=>`${i+1}. ${q} — ${document.getElementById('lq-'+i).value}`).join('\n');const box=document.getElementById('lres');box.innerHTML='<div class="msg a">…</div>';
+  try{const r=await sample(`Текст по-венгерски: «${cur.text}». Вопросы и ответы ученика (русскоязычный, A1): \n${ans}\nОцени каждый ответ: понял ли текст, исправь венгерский, объясни по-русски кратко. В конце: сколько из ${cur.qs.length} верно.`,{cache:false,onText:t=>{box.firstChild.textContent=t.text||'…'}});box.firstChild.textContent=r.text;await save('work',DAYS[(sel??todayIdx()+1)-1].id,{q:ans,a:r.text,mode:'listen',ts:Date.now()})}catch(e){box.firstChild.textContent='Ошибка: '+(e.message||e.code)}}
+function afterRender(){const v=document.getElementById('view');
+  v.querySelectorAll('[data-sub]').forEach(b=>b.onclick=()=>{sub=b.dataset.sub;render()});
+  const $=id=>document.getElementById(id);
+  if($('fcshow'))$('fcshow').onclick=()=>{$('fcru').classList.remove('hid');speak(card.hu)};
+  if($('fcok'))$('fcok').onclick=()=>grade(true); if($('fcno'))$('fcno').onclick=()=>grade(false);
+  v.querySelectorAll('[data-dchk]').forEach(b=>b.onclick=()=>{const i=+b.dataset.dchk;const r=diffWords($('dict-'+i).value,P.dict[curWeek()][i][0]);$('dres-'+i).innerHTML=r.html+` <b>${r.score}</b>`});
+  if($('exstart'))$('exstart').onclick=()=>{exSet=P.ex[curWeek()];exI=0;exScore=0;render()};
+  if($('exgen'))$('exgen').onclick=genEx; if($('exreset'))$('exreset').onclick=()=>{exI=0;exScore=0;render()};
+  v.querySelectorAll('[data-opt]').forEach(b=>b.onclick=()=>{if($('exnext').classList.contains('hid')===false)return;const q=exSet[exI];const ok=b.dataset.opt===q[2];b.classList.add(ok?'ok':'no');if(ok)exScore++;else v.querySelectorAll('[data-opt]').forEach(x=>{if(x.dataset.opt===q[2])x.classList.add('ok')});$('exwhy').textContent=(ok?'Верно. ':'Неверно. ')+q[3];$('exwhy').classList.remove('hid');$('exnext').classList.remove('hid')});
+  if($('exnext'))$('exnext').onclick=()=>{exI++;render()};
+  if($('lshow'))$('lshow').onclick=()=>$('ltext').classList.toggle('hid');
+  if($('lgen'))$('lgen').onclick=genListen; if($('lcheck'))$('lcheck').onclick=checkListen;
+  if(voicesReady)pickVoice();
+  v.querySelectorAll('.mermaid').forEach(()=>{});}
+// ---------- schemes ----------
+function harmonySVG(){const back=['a','á','o','ó','u','ú'],front=['e','é','i','í'],round=['ö','ő','ü','ű'];
+  const grp=(x,title,arr,col)=>`<g><rect x="${x}" y="30" width="200" height="120" rx="8" fill="var(--soft)" stroke="var(--line)"/><text x="${x+100}" y="55" text-anchor="middle" font-size="13" font-weight="600" fill="var(--fg)">${title}</text>`+arr.map((v,i)=>`<text x="${x+25+i*30}" y="95" text-anchor="middle" font-size="22" font-family="Source Serif 4,serif" fill="var(--accent)">${v}</text>`).join('')+`<text x="${x+100}" y="130" text-anchor="middle" font-size="12" fill="var(--muted)">${col}</text></g>`;
+  return `<div class="svgbox"><svg viewBox="0 0 660 260" width="100%" style="max-width:660px" role="img" aria-label="Гармония гласных"><text x="330" y="18" text-anchor="middle" font-size="14" font-weight="600" fill="var(--fg)">Гармония гласных: окончание повторяет ряд последнего гласного корня</text>${grp(10,'Задний ряд (mély)',back,'-ban · -nak · -ból · -hoz · -val · -ul')}${grp(230,'Передний неогубл. (magas)',front,'-ben · -nek · -ből · -hez · -vel · -ül')}${grp(450,'Передний огубл.',round,'-ben · -nek · -ből · -höz · -vel · -ül')}<text x="20" y="185" font-size="13" fill="var(--fg)">ház → ház<tspan fill="var(--accent)" font-weight="600">ban</tspan>, Perm → Perm<tspan fill="var(--accent)" font-weight="600">ben</tspan>, Csománfalva → Csománfalvá<tspan fill="var(--accent)" font-weight="600">n</tspan>, Técső → Técső<tspan fill="var(--accent)" font-weight="600">höz</tspan></text><text x="20" y="210" font-size="13" fill="var(--fg)">Смешанные слова: решает последний гласный (Kirill → Kirill<tspan fill="var(--accent)" font-weight="600">nek</tspan>; sofőr → sofőr<tspan fill="var(--accent)" font-weight="600">nek</tspan>).</text><text x="20" y="235" font-size="13" fill="var(--muted)">i, í, e, é в корнях заднего ряда бывают нейтральными: híd → hídon, cél → célból.</text></svg></div>`}
+function casesTable(){const r=[['','Hova? куда','Hol? где','Honnan? откуда'],['внутрь (в)','-ba / -be','-ban / -ben','-ból / -ből'],['на поверхности (на)','-ra / -re','-n / -on / -en / -ön','-ról / -ről'],['рядом (к, у)','-hoz / -hez / -höz','-nál / -nél','-tól / -től']];
+  return `<div class="tbl"><table>`+r.map((row,i)=>`<tr>${row.map((c,j)=>i===0||j===0?`<th>${c}</th>`:`<td class="code">${c}</td>`).join('')}</tr>`).join('')+`</table></div><div class="note">Движение в город: Budapest<b>re</b>, Perm<b>be</b> (иностранные города обычно -ba/-be, венгерские чаще -ra/-re). Проверка: hol → ban/n/nál, hova → ba/ra/hoz, honnan → ból/ról/tól.</div>`}
+function conjTable(){const h=['','tanul (задн.)','beszél (перед.)','ül (огубл.)','olvas (-s)','lakik (ikes)'];const rows=[['én','tanulok','beszélek','ülök','olvasok','lakom'],['te','tanulsz','beszélsz','ülsz','olvasol','laksz'],['ő / ön','tanul','beszél','ül','olvas','lakik'],['mi','tanulunk','beszélünk','ülünk','olvasunk','lakunk'],['ti','tanultok','beszéltek','ültök','olvastok','laktok'],['ők / önök','tanulnak','beszélnek','ülnek','olvasnak','laknak']];
+  return `<div class="tbl"><table><tr>${h.map(x=>`<th>${x}</th>`).join('')}</tr>`+rows.map(r=>`<tr>${r.map((c,j)=>j?`<td class="code">${c}</td>`:`<th>${c}</th>`).join('')}</tr>`).join('')+`</table></div>`}
+function defTable(){const rows=[['én','látok','látom'],['te','látsz','látod'],['ő / ön','lát','látja'],['mi','látunk','látjuk'],['ti','láttok','látjátok'],['ők / önök','látnak','látják']];
+  return `<div class="tbl"><table><tr><th></th><th>неопределённое: egy házat, valamit, без объекта</th><th>определённое: a házat, Csománfalvát, őt, azt</th></tr>`+rows.map(r=>`<tr><th>${r[0]}</th><td class="code">${r[1]}</td><td class="code">${r[2]}</td></tr>`).join('')+`</table></div><div class="note">Определённый объект: артикль a/az, имя собственное, притяжательное (a házam), őt/őket/önt, ezt/azt, придаточное с hogy. Объект 1–2 лица (engem, téged, minket, titeket): неопределённое. Особый случай: -lak/-lek = я тебя.</div>`}
+function pastTable(){const rows=[['én','tanultam','tanultam','voltam','mentem'],['te','tanultál','tanultad','voltál','mentél'],['ő','tanult','tanulta','volt','ment'],['mi','tanultunk','tanultuk','voltunk','mentünk'],['ti','tanultatok','tanultátok','voltatok','mentetek'],['ők','tanultak','tanulták','voltak','mentek']];
+  return `<div class="tbl"><table><tr><th></th><th>неопр.</th><th>опр.</th><th>van</th><th>megy</th></tr>`+rows.map(r=>`<tr><th>${r[0]}</th>${r.slice(1).map(c=>`<td class="code">${c}</td>`).join('')}</tr>`).join('')+`</table></div><div class="note">Показатель -t-/-tt-: olvas → olvasott, ért → értett, fizet → fizetett. Даты: 1903-ban = ezerkilencszázháromban.</div>`}
+function mindmap(wk){const w=WEEKS[wk-1];const d=DAYS.slice((wk-1)*7,wk*7);
+  return `<ul class="mm"><li><span class="root">Неделя ${wk}: ${esc(w.theme)}</span><ul class="mm"><li><span class="k">Грамматика</span><ul class="mm">${w.grammar.map(g=>`<li>${esc(g)}</li>`).join('')}</ul></li><li><span class="k">Лексика</span>: ${esc(w.vocab)}<ul class="mm">${P.words[wk].slice(0,8).map(p=>`<li>${esc(p[0])} <span class="note">${esc(p[1])}</span></li>`).join('')}<li class="note">… всего 25 слов, см. Карточки</li></ul></li><li><span class="k">Письмо</span>: ${esc(w.writing)}</li><li><span class="k">Вопрос консула</span>: ${esc(w.q)} <button class="spk" data-say="${esc(w.q)}">▶</button></li><li><span class="k">Diktálás</span><ul class="mm">${P.dict[wk].map(s=>`<li>${esc(s[0])} <button class="spk" data-say="${esc(s[0])}">▶</button></li>`).join('')}</ul></li><li><span class="k">Duolingo</span>: ${esc(w.duo)}</li></ul></li></ul>`}
+function renderSchemes(){const wk=curWeek();let h=`<div class="sub2">`+[['schemes','Майндкарта недели'],['harm','Гармония гласных'],['cases','Карта падежей'],['conj','Настоящее время'],['def','Определённое спряжение'],['past','Прошедшее время']].map(([k,n])=>`<button data-sub="${k}" aria-current="${sub===k}">${n}</button>`).join('')+`</div>`;
+  if(sub==='schemes'||!['harm','cases','conj','def','past'].includes(sub)){h+=`<div class="card"><div class="row" style="margin:0 0 8px"><button class="g" id="wkprev">← неделя</button><span class="code">W${String(wk).padStart(2,'0')}</span><button class="g" id="wknext">неделя →</button></div>${mindmap(wk)}</div>`}
+  if(sub==='harm')h+=`<div class="card"><h2>Гармония гласных</h2>${harmonySVG()}</div>`;
+  if(sub==='cases')h+=`<div class="card"><h2>Карта падежей места: 3×3</h2>${casesTable()}<h3 style="margin-top:14px">Остальные частые</h3><div class="note">-t винительный (házat) · -nak/-nek дательный и обладание (nekem van) · -val/-vel с кем/чем (busszal) · -kor время (hétkor) · -ig до (estig) · -ért ради (miért) · -ként в качестве (történészként) · -ul/-ül на языке (magyarul)</div></div>`;
+  if(sub==='conj')h+=`<div class="card"><h2>Настоящее время, неопределённое спряжение</h2>${conjTable()}<div class="note">-s/-sz/-z в 2 л.: olvasol, nézel, főzöl. Ikes: -om/-em/-öm в 1 л. Неправильные: megy → megyek, mész, megy; jön → jövök, jössz, jön; van → vagyok, vagy, van, vagyunk, vagytok, vannak.</div></div>`;
+  if(sub==='def')h+=`<div class="card"><h2>Определённое и неопределённое спряжение</h2>${defTable()}</div>`;
+  if(sub==='past')h+=`<div class="card"><h2>Прошедшее время</h2>${pastTable()}</div>`;
+  return h}
+document.getElementById('view').addEventListener('click',e=>{if(e.target.id==='wkprev'||e.target.id==='wknext'){const wk=curWeek()+(e.target.id==='wkprev'?-1:1);if(wk<1||wk>43)return;sel=(wk-1)*7+1;render()}});
+
+// boot
+(function(){for(const d of DAYS){const p=lsGet('progress/'+d.id);if(p)state.progress[d.id]=p;const w=lsGet('work/'+d.id);if(w)state.work[d.id]=w}for(let i=1;i<=43;i++){const w=lsGet('weeks/'+i);if(w)state.weeks[i]=w}for(const c of ALLW){const s=lsGet('cards/'+c.id);if(s)state.cards[c.id]=s}render();setCtx();})();
+(async()=>{if(!window.claude?.use)return;
+  const [u,d,s]=await Promise.all([claude.use('user'),claude.use('db'),claude.use('sample')]);sample=s;
+  if(s)setState('');else setState('Разбор с Claude недоступен в этом просмотре.');
+  if(!d)return;db=d;
+  for(const col of ['progress','weeks','work','cards']){db.collection(col).onSnapshot(snap=>{snap.docs.forEach(doc=>{state[col][doc.id]=doc.data()});render()},()=>{})}
+})();
+</script>
+<template id="restpl">
+<div class="card"><h2>Ресурсы: что проверено, что нет</h2>
+<div class="note" style="margin-bottom:8px">Пометки как в родословной базе: <span class="tag">документ</span> проверено 21.10.2026 по самому сайту; <span class="tag ne">НЕ ТОЧНО</span> проверить не удалось, использовать с оглядкой.</div>
+<div class="tbl"><table><tr><th>Ресурс</th><th>Роль в плане</th><th>Что проверено</th><th>Статус</th></tr>
+<tr><td><a href="https://www.duolingo.com/course/hu/en/Learn-Hungarian" target="_blank" rel="noopener">Duolingo, венгерский с английского</a></td><td>Скелет курса, ежедневно 15 мин</td><td>110 юнитов: секция 1 (9, вводная), секции 2–3 (по 30, A1), секция 4 (41, A2). План проходит 1–3 полностью и 4-ю до 41-го юнита с ускорением в конце.</td><td><span class="tag">документ</span></td></tr>
+<tr><td><a href="https://ankiweb.net/shared/info/593843988" target="_blank" rel="noopener">Anki: Hungarian spoonfed</a></td><td>Словарь и предложения, ежедневно 15 мин</td><td>Предложения с аудио из Tatoeba и FSI, отсортированы так, что частые слова вводятся по одному. Исходники открыты на GitHub (vlecomte/hungarian-spoonfed). Число карточек не проверено.</td><td><span class="tag">документ</span></td></tr>
+<tr><td><a href="https://www.hungarianreference.com/" target="_blank" rel="noopener">Hungarian Reference</a></td><td>Грамматический справочник, пн/ср/пт</td><td>Разделы: алфавит и произношение, существительные и падежи, глаголы, притяжательность, порядок слов. Отдельной страницы про гармонию гласных нет, её даю я.</td><td><span class="tag">документ</span></td></tr>
+<tr><td><a href="https://www.hungarianpod101.com/free-pathway" target="_blank" rel="noopener">HungarianPod101, бесплатный аккаунт</a></td><td>Аудирование, вт/чт, первые 20 недель</td><td>Бесплатно: первые 3 урока каждой серии, новые уроки 3 недели после выхода, слово дня, списки слов. Остальное платно. Серии Absolute Beginner Season 1 (25 уроков), Can Introduce Yourself, Top 25 Questions.</td><td><span class="tag">документ</span></td></tr>
+<tr><td><a href="https://tandem.net/" target="_blank" rel="noopener">Tandem</a></td><td>Живая речь, суббота</td><td>Бесплатно: переписка, аудио- и видеозвонки, исправления. Лимиты на переводы и число новых собеседников в день, цифры не подтверждены.</td><td><span class="tag ne">НЕ ТОЧНО</span></td></tr>
+<tr><td><a href="https://www.clozemaster.com/languages/learn-hungarian-online" target="_blank" rel="noopener">Clozemaster</a></td><td>Слова в контексте, с 17-й недели</td><td>Группы по частотности от 100 до 50 000 слов, Fast Track. Бесплатная регистрация, лимиты не указаны. Сам сайт советует его не начинающим.</td><td><span class="tag">документ</span></td></tr>
+<tr><td><a href="https://www.youtube.com/@HungarianPod101" target="_blank" rel="noopener">YouTube: HungarianPod101</a></td><td>Видео, вт/чт, недели 21–30</td><td>Канал существует, около 40 тыс. подписчиков по стороннему обзору. Каналы «Easy Hungarian» и «Hungarian with Sziszi» подтвердить не удалось, из плана убраны.</td><td><span class="tag ne">НЕ ТОЧНО</span></td></tr>
+<tr><td><a href="https://mediaklikk.hu/kossuth-radio-elo/" target="_blank" rel="noopener">Médiaklikk, Kossuth Rádió</a></td><td>Фон, воскресенья и вт/чт с 31-й недели</td><td>Официальный портал венгерского общественного вещания. Доступность из России не проверена, при блокировке подойдёт любое венгерское радио.</td><td><span class="tag ne">НЕ ТОЧНО</span></td></tr>
+<tr><td><a href="https://mnyi.eu/en/oktatasi-anyagok/magyarok-tankonyvcsalad" target="_blank" rel="noopener">MagyarOK A1 Kompakt</a></td><td>Источник последовательности грамматики</td><td>Учебник теперь только печатный и платный, PDF издатель объявляет нелегальными, бесплатных онлайн-упражнений нет. В план вошла его последовательность тем (главы 2–8), а не сам учебник. Покупка (около 30–40 евро) не обязательна.</td><td><span class="tag">документ</span></td></tr>
+<tr><td>Balassi Intézet, курсы для диаспоры</td><td>Не в плане</td><td>Бесплатного онлайн-курса для диаспоры на 2026 год не найдено. Есть летний университет в Будапеште (4 недели, стипендия, срок подачи на 2026 истёк в марте). Узнать в консульстве о курсах для заявителей.</td><td><span class="tag bad">не подтверждено</span></td></tr>
+</table></div></div>
+<div class="card"><h2>Что делается внутри страницы</h2>
+<div class="tbl"><table><tr><th>Формат</th><th>Как реализовано</th><th>Ограничение</th></tr>
+<tr><td>Аудио</td><td>Синтез венгерской речи вашего устройства (hu-HU): слова, диктанты, тексты, реплики консула, обычный и медленный темп</td><td>Нужен венгерский голос в системе; качество зависит от устройства</td></tr>
+<tr><td>Карточки</td><td>1075 слов по 25 на неделю, интервалы Лейтнера 1·3·7·14·30·60 дней, прогресс в базе</td><td>Только слова из плана; Anki остаётся по желанию</td></tr>
+<tr><td>Диктант</td><td>129 предложений, по 3 на неделю, сверка по словам с подсветкой</td><td>Проверка по словам, не по буквам внутри слова</td></tr>
+<tr><td>Упражнения</td><td>Недели 1–8 встроены с объяснениями, остальные генерирует Claude в JSON, страница проверяет сама</td><td>Генерация только внутри claude.ai</td></tr>
+<tr><td>Аудирование</td><td>Тексты с озвучкой, вопросы, проверку ответов делает Claude</td><td>Встроено 4 текста, остальные от Claude</td></tr>
+<tr><td>Схемы и майндкарты</td><td>Гармония гласных, карта падежей, 3 таблицы спряжений, майндкарта каждой недели</td><td>Статичны, рисованы вручную</td></tr>
+<tr><td>Видео</td><td>Нет</td><td>Встраивание видео в страницу запрещено, только ссылки на YouTube</td></tr>
+<tr><td>Ваша речь</td><td>Нет</td><td>Микрофон недоступен; произношение проверяет собеседник в Tandem</td></tr>
+</table></div></div>
+<div class="card"><h2>Правила плана</h2>
+<ul style="margin:0;padding-left:18px">
+<li><b>База каждый день:</b> Anki 15 мин и Duolingo 15 мин. Эти два пункта не пропускаются даже в тяжёлый день.</li>
+<li><b>Пн, ср, пт:</b> грамматика: раздел Hungarian Reference плюс упражнение от Claude по кнопке внизу.</li>
+<li><b>Вт, чт:</b> аудирование и письменное задание недели, разбор через кнопку.</li>
+<li><b>Сб:</b> Tandem и диалог с консулом. <b>Вс:</b> слушание фоном и самооценка недели.</li>
+<li><b>Самооценка «переделать»</b> означает: следующую неделю повторяем ту же тему, остальной план сдвигается на неделю. Это нормально.</li>
+<li><b>Контрольная точка</b> каждые 30 дней сдаётся через «Диалог с консулом» и получает статус в заметке дня: сдано / не сдано.</li>
+<li><b>Если день пропущен,</b> его не навёрстывают: ставят галочки только за сделанное и идут дальше. Важна цепочка, а не идеальность.</li>
+<li><b>Прогресс</b> хранится в базе страницы, если вы вошли в claude.ai, и дублируется в браузере. Claude в чате может прочитать ваши галочки и заметки и скорректировать план.</li>
+</ul></div>
+</template>

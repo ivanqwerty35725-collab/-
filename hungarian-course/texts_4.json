@@ -1,0 +1,3949 @@
+{
+ "232": {
+  "hu": "– Jó napot kívánok! Foglaljon helyet. Milyen dokumentumokat hozott?\n– Jó napot kívánok! Elhoztam a nagyapám születési anyakönyvi kivonatát és az útlevelemet.\n– Mikor és hol állították ki a kivonatot?\n– Ezerkilencszázötvenegyben, Csománfalván. A nagyapám ott született.\n– Van hozzá hiteles fordítás?\n– Igen, a fordítás hiteles, és apostille is van rajta.\n– Mit tartalmaz még a mappa?\n– Az ezerkilencszázhuszonegyes népszámlálás másolatát és a beregszászi levéltár kivonatait.\n– Ezek a dokumentumok igazolják, hogy a felmenői magyar állampolgárok voltak?\n– Igen. A dédapám, Babics Fjodor ezerkilencszázháromban született Csománfalván, és szerepel a népszámlálásban.\n– Értem. Hiányzik még valami?\n– A dédanyám halotti anyakönyvi kivonata még hiányzik, de a jövő héten pótolom.",
+  "ru": "– Добрый день! Присаживайтесь. Какие документы вы принесли?\n– Добрый день! Я принёс свидетельство о рождении моего деда и свой паспорт.\n– Когда и где было выдано свидетельство?\n– В 1951 году, в Чумалёве. Мой дед родился там.\n– К нему есть заверенный перевод?\n– Да, перевод заверенный, и на нём есть апостиль.\n– Что ещё содержит папка?\n– Копию переписи 1921 года и выписки из архива в Берегово.\n– Эти документы подтверждают, что ваши предки были венгерскими гражданами?\n– Да. Мой прадед, Фёдор Бабич, родился в 1903 году в Чумалёве и значится в переписи.\n– Понятно. Чего-нибудь ещё не хватает?\n– Пока не хватает свидетельства о смерти прабабушки, но на следующей неделе я его донесу.",
+  "gloss": [
+   [
+    "foglaljon helyet",
+    "присаживайтесь"
+   ],
+   [
+    "születési anyakönyvi kivonat",
+    "свидетельство о рождении"
+   ],
+   [
+    "kiállították",
+    "выдали (документ)"
+   ],
+   [
+    "hiteles fordítás",
+    "заверенный перевод"
+   ],
+   [
+    "apostille",
+    "апостиль"
+   ],
+   [
+    "tartalmaz",
+    "содержит"
+   ],
+   [
+    "mappa",
+    "папка"
+   ],
+   [
+    "népszámlálás",
+    "перепись населения"
+   ],
+   [
+    "igazolják",
+    "подтверждают"
+   ],
+   [
+    "szerepel",
+    "значится, фигурирует"
+   ],
+   [
+    "halotti anyakönyvi kivonat",
+    "свидетельство о смерти"
+   ],
+   [
+    "pótolom",
+    "я восполню, донесу"
+   ]
+  ],
+  "qs": [
+   "В каком году и где было выдано свидетельство о рождении деда?",
+   "Какие ещё документы лежат в папке Кирилла?",
+   "Какого документа пока не хватает?"
+  ]
+ },
+ "233": {
+  "hu": "Ma elmondom, milyen dokumentumaim vannak, és mit bizonyítanak. A legfontosabb okmány a nagyapám születési anyakönyvi kivonata. Ezerkilencszázötvenegyben állították ki Csománfalván, és tartalmazza a szülei nevét: Babics Fjodor és Alekszinec Anna. Ez bizonyítja, hogy a nagyapám a dédapám fia. A második dokumentum az ezerkilencszázhuszonegyes népszámlálás másolata. Ebben a dédapám úgy szerepel, mint Csománfalva lakosa, aki ezerkilencszázháromban született. Ezerkilencszázháromban a falu még a Magyar Királysághoz tartozott, tehát a dédapám magyar állampolgár volt. A harmadik dokumentum a beregszászi levéltár kivonata a dédanyámról, aki Újbárdon született ezerkilencszáztízben. Minden okmányhoz hiteles fordítást csatoltam. A fordítások apostille-lal érvényesek.",
+  "ru": "Сегодня я расскажу, какие у меня есть документы и что они доказывают. Самый важный документ — свидетельство о рождении моего деда. Оно выдано в 1951 году в Чумалёве и содержит имена его родителей: Фёдор Бабич и Анна Олексишенец. Это доказывает, что мой дед — сын моего прадеда. Второй документ — копия переписи 1921 года. В ней прадед значится как житель Чумалёва, родившийся в 1903 году. В 1903 году село ещё относилось к Королевству Венгрия, значит, прадед был венгерским гражданином. Третий документ — выписка из архива в Берегово о прабабушке, которая родилась в Новобарове в 1910 году. К каждому документу я приложил заверенный перевод. Переводы действительны с апостилем.",
+  "gloss": [
+   [
+    "bizonyítanak",
+    "доказывают"
+   ],
+   [
+    "tartalmazza",
+    "содержит (опред. спряж.)"
+   ],
+   [
+    "a szülei nevét",
+    "имена его родителей"
+   ],
+   [
+    "népszámlálás",
+    "перепись"
+   ],
+   [
+    "lakosa",
+    "(его) житель"
+   ],
+   [
+    "Magyar Királyság",
+    "Королевство Венгрия"
+   ],
+   [
+    "tartozott",
+    "принадлежал, относился"
+   ],
+   [
+    "levéltár",
+    "архив"
+   ],
+   [
+    "csatoltam",
+    "я приложил"
+   ],
+   [
+    "érvényesek",
+    "действительны"
+   ]
+  ],
+  "qs": [
+   "Чьи имена указаны в свидетельстве о рождении деда?",
+   "Кем значится прадед в переписи 1921 года?",
+   "Где и когда родилась прабабушка?"
+  ]
+ },
+ "234": {
+  "hu": "A népszámlálás nagyon fontos forrás a családom történetében. Ezerkilencszázhuszonegyben Csehszlovákia számolta össze Kárpátalja lakosait. A népszámlálási ív tartalmazza a nevet, a születési évet, a nemzetiséget és a vallást. A dédapám, Babics Fjodor tizennyolc éves volt akkor. Az íven az áll, hogy ruszin nemzetiségű és görögkatolikus vallású. A család később ortodox lett. A foglalkozásánál ez szerepel: cipész. A szülei is szerepelnek ugyanazon az íven. A másolatot a beregszászi levéltárból kaptam, pecséttel. Ez a dokumentum bizonyítja, hogy a dédapám ezerkilencszázhúsz előtt is Csománfalván lakott.",
+  "ru": "Перепись — очень важный источник в истории моей семьи. В 1921 году Чехословакия провела перепись жителей Закарпатья. Переписной лист содержит имя, год рождения, национальность и вероисповедание. Моему прадеду, Фёдору Бабичу, тогда было восемнадцать лет. В листе написано, что он русин по национальности и греко-католик по вере. Позже семья стала православной. В графе занятия значится: сапожник. Его родители тоже значатся на том же листе. Копию я получил из архива в Берегово, с печатью. Этот документ доказывает, что прадед жил в Чумалёве и до 1920 года.",
+  "gloss": [
+   [
+    "forrás",
+    "источник"
+   ],
+   [
+    "összeszámolta",
+    "пересчитала, провела перепись"
+   ],
+   [
+    "népszámlálási ív",
+    "переписной лист"
+   ],
+   [
+    "tartalmazza",
+    "содержит"
+   ],
+   [
+    "nemzetiségű",
+    "по национальности"
+   ],
+   [
+    "vallású",
+    "по вероисповеданию"
+   ],
+   [
+    "később",
+    "позже"
+   ],
+   [
+    "az áll, hogy",
+    "там написано, что"
+   ],
+   [
+    "szerepel",
+    "значится"
+   ],
+   [
+    "ugyanazon az íven",
+    "на том же листе"
+   ],
+   [
+    "pecséttel",
+    "с печатью"
+   ]
+  ],
+  "qs": [
+   "Сколько лет было прадеду во время переписи 1921 года?",
+   "Какая национальность и вера указаны в переписном листе?",
+   "Откуда Кирилл получил копию переписного листа?"
+  ]
+ },
+ "235": {
+  "hu": "Tegnap e-mailt kaptam a beregszászi levéltárból. A levélben az ügyintéző azt írja, hogy megtalálták a dédanyám adatait. Alekszinec Anna ezerkilencszáztízben született Újbárdon, a técsői járásban. Az anyakönyvben az apja neve is szerepel. A levéltár kiállított egy hivatalos kivonatot, amely két oldalból áll. A kivonat ukrán nyelvű, ezért hiteles fordítást kell kérnem. A fordítás körülbelül egy hétig tart. Az eredetit postán küldik Permbe. Az illetéket már kifizettem, nem volt drága. Nagyon örülök, mert most már semmi sem hiányzik a felmenő ágról.",
+  "ru": "Вчера я получил электронное письмо из архива в Берегово. В письме сотрудник пишет, что они нашли данные моей прабабушки. Анна Олексишенец родилась в 1910 году в Новобарове, в Тячевском районе. В метрической книге указано и имя её отца. Архив выдал официальную выписку, которая состоит из двух страниц. Выписка на украинском языке, поэтому мне нужно заказать заверенный перевод. Перевод занимает примерно неделю. Оригинал отправят по почте в Пермь. Пошлину я уже оплатил, это было недорого. Я очень рад, потому что теперь по восходящей линии ничего не хватает.",
+  "gloss": [
+   [
+    "levéltár",
+    "архив"
+   ],
+   [
+    "ügyintéző",
+    "сотрудник, делопроизводитель"
+   ],
+   [
+    "megtalálták",
+    "нашли"
+   ],
+   [
+    "járás",
+    "район"
+   ],
+   [
+    "hivatalos",
+    "официальный"
+   ],
+   [
+    "két oldalból áll",
+    "состоит из двух страниц"
+   ],
+   [
+    "hiteles fordítás",
+    "заверенный перевод"
+   ],
+   [
+    "tart",
+    "длится"
+   ],
+   [
+    "küldik",
+    "отправляют"
+   ],
+   [
+    "illeték",
+    "пошлина"
+   ],
+   [
+    "felmenő ág",
+    "восходящая линия (предков)"
+   ]
+  ],
+  "qs": [
+   "Откуда Кирилл получил электронное письмо?",
+   "Где и когда родилась прабабушка Анна?",
+   "На каком языке составлена выписка и что с ней нужно сделать?"
+  ]
+ },
+ "236": {
+  "hu": "– Apa, megvan még a nagyapa régi útlevele?\n– Igen, a szekrényben van, de már régen lejárt.\n– Nem baj, a konzulnak nem az útlevél kell, hanem a születési anyakönyvi kivonat.\n– Azt már odaadtam neked tavaly. Ki van állítva ezerkilencszázötvenegyben, Csománfalván.\n– Tudom, de a fordító azt kérdezi, hogy az eredeti pecsét jól olvasható-e.\n– Nézd meg, a pecsét kék, és minden adat jól látszik.\n– És a te születési anyakönyvi kivonatod? Az is kell, mert igazolja, hogy a nagyapa az apád.\n– Persze, megvan, Liszvában állították ki ezerkilencszázhetvennyolcban.\n– Köszönöm. Akkor holnap elviszem mind a kettőt a fordítóhoz.\n– Jó, fiam. Mikor kell beadni a kérelmet?\n– Az időpont a konzulátuson októberben lesz.",
+  "ru": "– Папа, старый паспорт деда ещё сохранился?\n– Да, он в шкафу, но срок давно истёк.\n– Не беда, консулу нужен не паспорт, а свидетельство о рождении.\n– Его я уже отдал тебе в прошлом году. Оно выдано в 1951 году в Чумалёве.\n– Знаю, но переводчик спрашивает, хорошо ли читается оригинальная печать.\n– Посмотри, печать синяя, и все данные хорошо видны.\n– А твоё свидетельство о рождении? Оно тоже нужно, потому что подтверждает, что дед — твой отец.\n– Конечно, есть, его выдали в Лысьве в 1978 году.\n– Спасибо. Тогда завтра я отнесу оба переводчику.\n– Хорошо, сынок. Когда нужно подавать заявление?\n– Приём в консульстве будет в октябре.",
+  "gloss": [
+   [
+    "megvan",
+    "есть, сохранился"
+   ],
+   [
+    "szekrény",
+    "шкаф"
+   ],
+   [
+    "lejárt",
+    "истёк (срок)"
+   ],
+   [
+    "nem baj",
+    "не беда"
+   ],
+   [
+    "odaadtam",
+    "я отдал"
+   ],
+   [
+    "ki van állítva",
+    "выдан (документ)"
+   ],
+   [
+    "fordító",
+    "переводчик"
+   ],
+   [
+    "olvasható",
+    "читаемый, разборчивый"
+   ],
+   [
+    "látszik",
+    "видно"
+   ],
+   [
+    "mind a kettőt",
+    "оба"
+   ],
+   [
+    "beadni",
+    "подать"
+   ]
+  ],
+  "qs": [
+   "Где лежит старый паспорт деда и почему он не нужен?",
+   "Когда и где выдано свидетельство о рождении отца?",
+   "Куда Кирилл отнесёт оба документа завтра?"
+  ]
+ },
+ "237": {
+  "hu": "A hiteles fordítás nem egyszerű dolog. Permben csak két fordító tud magyarra fordítani, és mind a kettő drága. Egy oldal fordítása ezer rubelbe kerül. A fordító pontosan lefordítja a neveket, a dátumokat és a pecsét szövegét is. Fontos, hogy a nevek ugyanúgy szerepeljenek, mint az útlevélben. A fordítás után a dokumentumot hitelesíteni kell. Az apostille-t Permben a hivatalban kapom meg, ehhez három nap kell. A dédapám neve a magyar fordításban Babics Fjodor, a dédanyámé Alekszinec Anna. A régi okmányokban a nevek néha másképp szerepelnek. Ezért a fordító minden oldalra ráírja az eredeti és a magyar nevet is.",
+  "ru": "Заверенный перевод — дело непростое. В Перми только два переводчика умеют переводить на венгерский, и оба дорогие. Перевод одной страницы стоит тысячу рублей. Переводчик точно переводит имена, даты и даже текст печати. Важно, чтобы имена были написаны так же, как в паспорте. После перевода документ нужно заверить. Апостиль я получаю в Перми в ведомстве, на это нужно три дня. Имя моего прадеда в венгерском переводе — Babics Fjodor, прабабушки — Alekszinec Anna. В старых документах имена иногда пишутся иначе. Поэтому переводчик на каждой странице пишет и оригинальное, и венгерское имя.",
+  "gloss": [
+   [
+    "dolog",
+    "дело, вещь"
+   ],
+   [
+    "fordító",
+    "переводчик"
+   ],
+   [
+    "lefordítja",
+    "переводит (опред. спряж.)"
+   ],
+   [
+    "szöveg",
+    "текст"
+   ],
+   [
+    "ugyanúgy, mint",
+    "так же, как"
+   ],
+   [
+    "oldal",
+    "страница"
+   ],
+   [
+    "hitelesíteni kell",
+    "нужно заверить"
+   ],
+   [
+    "hivatal",
+    "ведомство, учреждение"
+   ],
+   [
+    "másképp",
+    "иначе, по-другому"
+   ],
+   [
+    "ráírja",
+    "надписывает (на)"
+   ],
+   [
+    "eredeti",
+    "оригинальный, подлинный"
+   ]
+  ],
+  "qs": [
+   "Сколько стоит перевод одной страницы?",
+   "Сколько дней занимает получение апостиля?",
+   "Что делает переводчик, если имя в старом документе написано иначе?"
+  ]
+ },
+ "238": {
+  "hu": "Péntek van, és a mappa majdnem kész. Elmondom, mi van benne. Első: a nagyapám születési anyakönyvi kivonata, hiteles fordítással. Második: az apám születési anyakönyvi kivonata, amely igazolja, hogy a nagyapám az ő apja. Harmadik: az én születési anyakönyvi kivonatom és az útlevelem másolata. Negyedik: az ezerkilencszázhuszonegyes népszámlálás másolata a beregszászi levéltárból. Ötödik: a dédanyám levéltári kivonata, amely még fordítás alatt van. A honosítási kérelmet már kitöltöttem, de még nem írtam alá. A nyomtatványban szerepel a lakóhelyem, a születési időm és a családi állapotom. Minden mellékelve lesz, és akkor benyújthatom a kérelmet.",
+  "ru": "Сегодня пятница, и папка почти готова. Расскажу, что в ней. Первое: свидетельство о рождении моего деда с заверенным переводом. Второе: свидетельство о рождении моего отца, которое подтверждает, что мой дед — его отец. Третье: моё свидетельство о рождении и копия паспорта. Четвёртое: копия переписи 1921 года из архива в Берегово. Пятое: архивная выписка о прабабушке, которая ещё в переводе. Заявление о натурализации я уже заполнил, но ещё не подписал. В бланке указаны моё место жительства, дата рождения и семейное положение. Всё будет приложено, и тогда я смогу подать заявление.",
+  "gloss": [
+   [
+    "majdnem kész",
+    "почти готова"
+   ],
+   [
+    "mappa",
+    "папка"
+   ],
+   [
+    "hiteles fordítással",
+    "с заверенным переводом"
+   ],
+   [
+    "igazolja",
+    "подтверждает"
+   ],
+   [
+    "másolata",
+    "его копия"
+   ],
+   [
+    "levéltári kivonat",
+    "архивная выписка"
+   ],
+   [
+    "fordítás alatt van",
+    "находится в переводе"
+   ],
+   [
+    "kitöltöttem",
+    "я заполнил"
+   ],
+   [
+    "nyomtatvány",
+    "бланк"
+   ],
+   [
+    "családi állapot",
+    "семейное положение"
+   ],
+   [
+    "mellékelve",
+    "приложено"
+   ],
+   [
+    "benyújthatom",
+    "могу подать"
+   ]
+  ],
+  "qs": [
+   "Что подтверждает свидетельство о рождении отца?",
+   "Какой документ ещё находится в переводе?",
+   "Какие данные указаны в бланке заявления?"
+  ]
+ },
+ "239": {
+  "hu": "– Hol dolgozik, és mivel foglalkozik pontosan?\n– Egy nagy IT-cégnél dolgozom Permben, adatelemző vagyok.\n– Mit csinál egy adatelemző?\n– Adatokat gyűjtök és elemzek. A cég ezekből az eredményekből hoz döntéseket.\n– Mióta dolgozik ott?\n– Kétezer-huszonöt óta, tehát két éve. Előtte kezdő voltam egy kisebb cégnél.\n– Milyen végzettsége van?\n– Történész vagyok. A permi pedagógiai egyetemen tanultam, történelem szakon.\n– Érdekes. Hogyan lett egy történészből adatelemző?\n– Az egyetemen sok forrással és adattal dolgoztam. A módszer hasonló: keresni, ellenőrizni, megérteni.\n– Szereti a munkáját?\n– Igen, nagyon. A csapatom kedves, és a vezetőm tapasztalt informatikus.",
+  "ru": "– Где вы работаете и чем именно занимаетесь?\n– Я работаю в большой IT-компании в Перми, я аналитик данных.\n– Что делает аналитик данных?\n– Я собираю и анализирую данные. На основе этих результатов компания принимает решения.\n– С какого времени вы там работаете?\n– С 2025 года, то есть два года. До этого я был новичком в фирме поменьше.\n– Какое у вас образование?\n– Я историк. Я учился в пермском педагогическом университете, на историческом отделении.\n– Интересно. Как из историка получился аналитик данных?\n– В университете я много работал с источниками и данными. Метод похожий: искать, проверять, понимать.\n– Вам нравится ваша работа?\n– Да, очень. Моя команда дружелюбная, а мой руководитель — опытный айтишник.",
+  "gloss": [
+   [
+    "adatelemző",
+    "аналитик данных"
+   ],
+   [
+    "gyűjtök",
+    "собираю"
+   ],
+   [
+    "elemzek",
+    "анализирую"
+   ],
+   [
+    "döntéseket hoz",
+    "принимает решения"
+   ],
+   [
+    "előtte",
+    "до этого"
+   ],
+   [
+    "kezdő",
+    "начинающий, новичок"
+   ],
+   [
+    "végzettség",
+    "образование"
+   ],
+   [
+    "pedagógiai",
+    "педагогический"
+   ],
+   [
+    "szakon",
+    "на отделении, по специальности"
+   ],
+   [
+    "hasonló",
+    "похожий"
+   ],
+   [
+    "ellenőrizni",
+    "проверять"
+   ],
+   [
+    "tapasztalt",
+    "опытный"
+   ]
+  ],
+  "qs": [
+   "Кем и где работает Кирилл?",
+   "С какого года он работает в большой IT-компании?",
+   "Что, по словам Кирилла, общего у историка и аналитика данных?"
+  ]
+ },
+ "240": {
+  "hu": "Elmesélem egy munkanapomat. Reggel kilenckor érkezem az irodába, de néha otthonról dolgozom. Először megnézem az e-maileket és a csapat üzeneteit. Aztán elkezdem az adatelemzést: a programom beolvassa az adatokat, és én táblázatokat készítek. Délben a kollégáimmal ebédelek az iroda mellett. Délután a vezetőmmel beszélünk a projekt eredményeiről. Ha valami nem jó az adatokban, újra ellenőrzöm az egészet. Este hatkor befejezem a munkát. A munka után még egy órát magyarul tanulok. Ez a nap nem könnyű, de érdekes.",
+  "ru": "Расскажу об одном своём рабочем дне. Утром в девять я приезжаю в офис, но иногда работаю из дома. Сначала я смотрю электронную почту и сообщения команды. Потом начинаю анализ данных: моя программа считывает данные, а я готовлю таблицы. В полдень я обедаю с коллегами рядом с офисом. После обеда мы с руководителем обсуждаем результаты проекта. Если что-то не так в данных, я заново проверяю всё целиком. В шесть вечера я заканчиваю работу. После работы я ещё час учу венгерский. Этот день нелёгкий, но интересный.",
+  "gloss": [
+   [
+    "munkanap",
+    "рабочий день"
+   ],
+   [
+    "érkezem",
+    "я прибываю, приезжаю"
+   ],
+   [
+    "üzenet",
+    "сообщение"
+   ],
+   [
+    "beolvassa",
+    "считывает"
+   ],
+   [
+    "táblázat",
+    "таблица"
+   ],
+   [
+    "készítek",
+    "я готовлю, делаю"
+   ],
+   [
+    "kollégáimmal",
+    "с моими коллегами"
+   ],
+   [
+    "eredményeiről",
+    "о его результатах"
+   ],
+   [
+    "újra",
+    "заново"
+   ],
+   [
+    "az egészet",
+    "всё целиком"
+   ],
+   [
+    "befejezem",
+    "я заканчиваю"
+   ]
+  ],
+  "qs": [
+   "Во сколько Кирилл приезжает в офис?",
+   "Что он делает с данными после того, как программа их считывает?",
+   "Чем Кирилл занимается после работы?"
+  ]
+ },
+ "241": {
+  "hu": "Kétezer-tizenkilencben kezdtem el az egyetemet Permben. A permi pedagógiai egyetemen tanultam, a történelem karon. A szakom történelem volt, és a tanulmányok öt évig tartottak. Sok vizsgát tettem le: régi nyelveket, forrásokat és módszereket tanultunk. A diplomamunkámat a kárpátaljai ruszinok történetéről írtam. Ehhez a beregszászi levéltár forrásait is használtam. Akkor találtam meg a dédapám nevét a népszámlálásban. A diplomámat kétezer-huszonnégyben kaptam meg. Az egyetem után nem lettem tanár, hanem adatelemző. De a történelem mindig a szakmám marad.",
+  "ru": "В 2019 году я поступил в университет в Перми. Я учился в пермском педагогическом университете, на историческом факультете. Моя специальность была история, и учёба длилась пять лет. Я сдал много экзаменов: мы изучали старые языки, источники и методы. Дипломную работу я написал об истории закарпатских русинов. Для этого я использовал и источники архива в Берегово. Тогда я и нашёл имя прадеда в переписи. Диплом я получил в 2024 году. После университета я стал не учителем, а аналитиком данных. Но история навсегда остаётся моей профессией.",
+  "gloss": [
+   [
+    "kezdtem el",
+    "я начал"
+   ],
+   [
+    "pedagógiai",
+    "педагогический"
+   ],
+   [
+    "kar",
+    "факультет"
+   ],
+   [
+    "szak",
+    "специальность"
+   ],
+   [
+    "tanulmányok",
+    "учёба, занятия"
+   ],
+   [
+    "tartottak",
+    "длились"
+   ],
+   [
+    "vizsgát tettem le",
+    "я сдал экзамен"
+   ],
+   [
+    "diplomamunka",
+    "дипломная работа"
+   ],
+   [
+    "használtam",
+    "я использовал"
+   ],
+   [
+    "hanem",
+    "а (после отрицания)"
+   ],
+   [
+    "szakmám",
+    "моя профессия"
+   ]
+  ],
+  "qs": [
+   "В каком году Кирилл поступил в университет?",
+   "О чём была его дипломная работа?",
+   "Когда он получил диплом?"
+  ]
+ },
+ "242": {
+  "hu": "A csapatunkban hat ember dolgozik. A vezetőnk, Pável, tapasztalt informatikus, tíz éve dolgozik a cégnél. Két programozó írja a programokat, két elemző dolgozik az adatokkal, és egy kezdő kolléga most tanul. Én vagyok az egyik elemző. A mostani projektünk egy nagy bolt adatairól szól: mit vesznek az emberek, és mikor. Az eredményeket minden héten megmutatjuk a vezetőnek. A kollégáim tudják, hogy magyarul tanulok, és néha kérdeznek a családomról. Pável azt mondta, hogy a konzuli időpontra kapok egy szabadnapot. Jó csapatban dolgozni, mert együtt könnyebb megoldani a nehéz dolgokat.",
+  "ru": "В нашей команде работает шесть человек. Наш руководитель, Павел, опытный айтишник, десять лет работает в компании. Два программиста пишут программы, два аналитика работают с данными, а один начинающий коллега сейчас учится. Я один из аналитиков. Наш нынешний проект — о данных большого магазина: что покупают люди и когда. Результаты мы каждую неделю показываем руководителю. Мои коллеги знают, что я учу венгерский, и иногда спрашивают о моей семье. Павел сказал, что на приём в консульстве я получу выходной. Хорошо работать в команде, потому что вместе легче решать трудные задачи.",
+  "gloss": [
+   [
+    "csapat",
+    "команда"
+   ],
+   [
+    "vezető",
+    "руководитель"
+   ],
+   [
+    "programozó",
+    "программист"
+   ],
+   [
+    "elemző",
+    "аналитик"
+   ],
+   [
+    "mostani",
+    "нынешний"
+   ],
+   [
+    "szól (valamiről)",
+    "(это) о чём-то"
+   ],
+   [
+    "megmutatjuk",
+    "мы показываем"
+   ],
+   [
+    "szabadnap",
+    "выходной день"
+   ],
+   [
+    "együtt",
+    "вместе"
+   ],
+   [
+    "megoldani",
+    "решить"
+   ],
+   [
+    "dolgokat",
+    "дела, задачи"
+   ]
+  ],
+  "qs": [
+   "Сколько человек работает в команде Кирилла?",
+   "О чём нынешний проект команды?",
+   "Что пообещал Павел на день приёма в консульстве?"
+  ]
+ },
+ "243": {
+  "hu": "– Pável, beszélhetnék veled egy percre?\n– Persze, Kirill. Mi a kérdés?\n– Októberben Moszkvába kell utaznom a magyar konzulátusra. Szeretnék két szabadnapot kérni.\n– Melyik napokra?\n– Október tizenkettedikére és tizenharmadikára. Az időpont tizenharmadikán, délelőtt tízkor van.\n– Jó, lehet. A projekt akkor már nem lesz sürgős.\n– Köszönöm. Az elemzést előtte befejezem, és a táblázatokat elküldöm a csapatnak.\n– Az jó lesz. Miért kell személyesen menni? Nem lehet online?\n– Nem, a konzul személyesen beszélget velem, magyarul.\n– Értem. Akkor sok sikert! Mióta tanulsz magyarul?\n– Nyolc hónapja, minden nap. Már elég jól beszélek, de még nehéz.\n– Biztosan sikerülni fog. Hozz nekünk egy üveg tokaji bort!",
+  "ru": "– Павел, можно с тобой поговорить минутку?\n– Конечно, Кирилл. В чём вопрос?\n– В октябре мне нужно ехать в Москву в венгерское консульство. Я хотел бы попросить два выходных.\n– На какие дни?\n– На двенадцатое и тринадцатое октября. Приём тринадцатого, в десять утра.\n– Хорошо, можно. Проект к тому времени уже не будет срочным.\n– Спасибо. Анализ я закончу до этого, а таблицы отправлю команде.\n– Это будет хорошо. Почему нужно ехать лично? Нельзя онлайн?\n– Нет, консул беседует со мной лично, по-венгерски.\n– Понятно. Тогда удачи! Сколько ты уже учишь венгерский?\n– Восемь месяцев, каждый день. Я уже довольно хорошо говорю, но всё ещё трудно.\n– Наверняка получится. Привези нам бутылку токайского вина!",
+  "gloss": [
+   [
+    "beszélhetnék veled",
+    "я мог бы с тобой поговорить"
+   ],
+   [
+    "egy percre",
+    "на минутку"
+   ],
+   [
+    "szabadnap",
+    "выходной день"
+   ],
+   [
+    "táblázat",
+    "таблица"
+   ],
+   [
+    "sürgős",
+    "срочный"
+   ],
+   [
+    "elküldöm",
+    "я отправлю"
+   ],
+   [
+    "személyesen",
+    "лично"
+   ],
+   [
+    "online",
+    "онлайн"
+   ],
+   [
+    "sok sikert",
+    "удачи"
+   ],
+   [
+    "sikerülni fog",
+    "получится"
+   ],
+   [
+    "üveg",
+    "бутылка"
+   ],
+   [
+    "tokaji bor",
+    "токайское вино"
+   ]
+  ],
+  "qs": [
+   "На какие дни Кирилл просит выходные?",
+   "Почему нельзя пройти собеседование онлайн?",
+   "Что Павел просит привезти?"
+  ]
+ },
+ "244": {
+  "hu": "Sokan kérdezik, hogyan lett egy történészből adatelemző. Szerintem a két szakma hasonló. A történész forrásokat keres, és ellenőrzi, hogy igazak-e. Az adatelemző adatokat keres, és ellenőrzi, hogy jók-e. A módszer ugyanaz: kérdést teszünk fel, adatot gyűjtünk, és eredményt kapunk. Az egyetemen megtanultam türelmesen olvasni a régi írásokat. Most ugyanilyen türelemmel olvasom az adatokat. A levéltári kutatás a családomról is ezt a módszert használja. Amikor a dédapám nevét kerestem a népszámlálásban, úgy dolgoztam, mint a munkahelyemen. Tehát a történelem nagyon hasznos volt a munkámban is.",
+  "ru": "Многие спрашивают, как из историка получился аналитик данных. По-моему, две эти профессии похожи. Историк ищет источники и проверяет, правдивы ли они. Аналитик ищет данные и проверяет, хороши ли они. Метод один и тот же: мы ставим вопрос, собираем данные и получаем результат. В университете я научился терпеливо читать старые тексты. Теперь с таким же терпением я читаю данные. Архивное исследование о моей семье тоже использует этот метод. Когда я искал имя прадеда в переписи, я работал так же, как на работе. Так что история оказалась очень полезной и в моей работе.",
+  "gloss": [
+   [
+    "sokan",
+    "многие"
+   ],
+   [
+    "hasonló",
+    "похожий"
+   ],
+   [
+    "igazak-e",
+    "правдивы ли"
+   ],
+   [
+    "ugyanaz",
+    "тот же самый"
+   ],
+   [
+    "kérdést teszünk fel",
+    "мы ставим вопрос"
+   ],
+   [
+    "türelmesen",
+    "терпеливо"
+   ],
+   [
+    "írás",
+    "текст, письменный документ"
+   ],
+   [
+    "ugyanilyen",
+    "такой же"
+   ],
+   [
+    "használja",
+    "использует"
+   ],
+   [
+    "hasznos",
+    "полезный"
+   ]
+  ],
+  "qs": [
+   "Что делает историк с источниками?",
+   "Чему Кирилл научился в университете?",
+   "Как Кирилл работал, когда искал имя прадеда в переписи?"
+  ]
+ },
+ "245": {
+  "hu": "Mik a szakmai céljaim? Először is szeretnék jobb elemző lenni, ezért új programokat tanulok. A vezetőm szerint két év múlva én is vezethetek egy kis csapatot. Másodszor szeretnék olyan projekten dolgozni, amely a történelemmel is kapcsolatos: régi adatok elemzésén. Van egy álmom: egy levéltári projekt Kárpátaljáról, ahol a régi népszámlálásokat elemezzük. Ehhez jól kell tudnom magyarul, mert a források nagy része magyar nyelvű. Ha megkapom az állampolgárságot, Európában is dolgozhatok majd. Nem akarok azonnal elköltözni, de a lehetőség fontos nekem. A tanulás soha nem fejeződik be. A szakmám és a családom története így találkozik.",
+  "ru": "Каковы мои профессиональные цели? Во-первых, я хочу стать лучшим аналитиком, поэтому учу новые программы. По мнению моего руководителя, через два года я тоже смогу руководить небольшой командой. Во-вторых, я хотел бы работать над проектом, связанным и с историей: над анализом старых данных. У меня есть мечта: архивный проект о Закарпатье, где мы анализируем старые переписи. Для этого мне нужно хорошо знать венгерский, потому что большая часть источников на венгерском. Если я получу гражданство, я смогу работать и в Европе. Я не хочу сразу переезжать, но возможность для меня важна. Учёба никогда не заканчивается. Так встречаются моя профессия и история моей семьи.",
+  "gloss": [
+   [
+    "szakmai cél",
+    "профессиональная цель"
+   ],
+   [
+    "két év múlva",
+    "через два года"
+   ],
+   [
+    "vezethetek",
+    "я смогу руководить"
+   ],
+   [
+    "kapcsolatos",
+    "связанный (с)"
+   ],
+   [
+    "álom",
+    "мечта"
+   ],
+   [
+    "elemezzük",
+    "мы анализируем"
+   ],
+   [
+    "nagy része",
+    "большая часть"
+   ],
+   [
+    "azonnal",
+    "сразу"
+   ],
+   [
+    "lehetőség",
+    "возможность"
+   ],
+   [
+    "fejeződik be",
+    "заканчивается"
+   ]
+  ],
+  "qs": [
+   "Что, по мнению руководителя, Кирилл сможет делать через два года?",
+   "О каком архивном проекте мечтает Кирилл?",
+   "Хочет ли он сразу переехать после получения гражданства?"
+  ]
+ },
+ "246": {
+  "hu": "– Szeretne Magyarországon élni?\n– Egyelőre nem tervezek átköltözni. Permben van a munkám, és Liszvában él a családom.\n– Akkor miért fontos önnek a magyar állampolgárság?\n– Mert a felmenőim magyar állampolgárok voltak, és ez a családom identitásának része. Később szeretnék gyakrabban Magyarországra utazni.\n– Járt már Magyarországon?\n– Még nem, de jövőre szeretnék elutazni Budapestre és Kárpátaljára is.\n– Hol van a bejelentett lakcíme?\n– Liszvában, a szüleim házában vagyok bejelentve, de Permben lakom albérletben, a város központjában.\n– Dolgozott valaha külföldön?\n– Nem, még soha. Csak Oroszországban dolgoztam.\n– Ha később Magyarországon szeretne dolgozni, mivel foglalkozna?\n– Adatelemzőként szeretnék dolgozni, és magyar levéltári forrásokat kutatni.",
+  "ru": "– Вы хотели бы жить в Венгрии?\n– Пока я не планирую переезжать. В Перми у меня работа, а в Лысьве живёт моя семья.\n– Тогда почему венгерское гражданство для вас важно?\n– Потому что мои предки были венгерскими гражданами, и это часть идентичности моей семьи. Позже я хотел бы чаще ездить в Венгрию.\n– Вы уже бывали в Венгрии?\n– Ещё нет, но в следующем году хочу съездить в Будапешт и в Закарпатье.\n– Где у вас зарегистрированный адрес?\n– В Лысьве, я прописан в доме родителей, но живу в Перми на съёмной квартире, в центре города.\n– Вы когда-нибудь работали за границей?\n– Нет, ещё никогда. Я работал только в России.\n– Если позже вы захотите работать в Венгрии, чем бы вы занимались?\n– Я хотел бы работать аналитиком данных и исследовать венгерские архивные источники.",
+  "gloss": [
+   [
+    "egyelőre",
+    "пока что"
+   ],
+   [
+    "átköltözni",
+    "переехать"
+   ],
+   [
+    "identitásának része",
+    "часть (его) идентичности"
+   ],
+   [
+    "később",
+    "позже"
+   ],
+   [
+    "gyakrabban",
+    "чаще"
+   ],
+   [
+    "bejelentett lakcím",
+    "зарегистрированный адрес, прописка"
+   ],
+   [
+    "bejelentve vagyok",
+    "я прописан"
+   ],
+   [
+    "albérlet",
+    "съёмная квартира"
+   ],
+   [
+    "központ",
+    "центр"
+   ],
+   [
+    "valaha",
+    "когда-либо"
+   ],
+   [
+    "külföldön",
+    "за границей"
+   ],
+   [
+    "foglalkozna",
+    "занимался бы"
+   ]
+  ],
+  "qs": [
+   "Планирует ли Кирилл сейчас переезжать в Венгрию?",
+   "Где он прописан, а где живёт на самом деле?",
+   "Чем он хотел бы заниматься, если будет работать в Венгрии?"
+  ]
+ },
+ "247": {
+  "hu": "Permben élek, egy bérelt lakásban a város központjában. Az albérlet nem olcsó, de megfizethető: a fizetésem egyharmadát költöm rá. Perm nagy város, több mint egymillió ember lakik itt. A szüleim Liszvában élnek, amely száz kilométerre van Permtől. Minden második hétvégén hazautazom vonattal, az utazás két óráig tart. Liszva a szülőföldem: ott jártam iskolába, és ott él a nagyapám is. Az egyetemi években sokszor ingáztam Perm és Liszva között. Most a bejelentett lakcímem is a szüleimnél van, Liszvában. A lakcímkártyámon ezért a liszvai cím szerepel. Ez fontos lesz a konzulnál is.",
+  "ru": "Я живу в Перми, в съёмной квартире в центре города. Аренда не дешёвая, но посильная: я трачу на неё треть зарплаты. Пермь — большой город, здесь живёт больше миллиона человек. Мои родители живут в Лысьве, которая в ста километрах от Перми. Каждые вторые выходные я езжу домой на поезде, дорога длится два часа. Лысьва — моя родина: там я ходил в школу, и там живёт мой дед. В университетские годы я часто ездил туда-сюда между Пермью и Лысьвой. Сейчас мой зарегистрированный адрес тоже у родителей, в Лысьве. Поэтому в моей карточке адреса указан лысьвенский адрес. Это будет важно и у консула.",
+  "gloss": [
+   [
+    "bérelt lakás",
+    "съёмная квартира"
+   ],
+   [
+    "megfizethető",
+    "посильный по цене"
+   ],
+   [
+    "fizetés",
+    "зарплата"
+   ],
+   [
+    "egyharmadát költöm rá",
+    "трачу на это треть"
+   ],
+   [
+    "központjában",
+    "в центре"
+   ],
+   [
+    "kilométerre van",
+    "находится в ... километрах"
+   ],
+   [
+    "hétvégén",
+    "в выходные"
+   ],
+   [
+    "tart",
+    "длится"
+   ],
+   [
+    "szülőföld",
+    "родина, родной край"
+   ],
+   [
+    "ingáztam",
+    "я ездил туда-сюда"
+   ],
+   [
+    "cím",
+    "адрес"
+   ],
+   [
+    "lakcímkártya",
+    "карточка адреса"
+   ]
+  ],
+  "qs": [
+   "Какую часть зарплаты Кирилл тратит на аренду?",
+   "На каком расстоянии от Перми находится Лысьва?",
+   "Какой адрес указан в карточке адреса Кирилла?"
+  ]
+ },
+ "248": {
+  "hu": "Októberben Moszkvába utazom a konzulátusra. Perm és Moszkva között a távolság körülbelül ezernégyszáz kilométer. Repülővel megyek, mert a vonat majdnem egy napig megy. A repülőtér Permtől húsz kilométerre van, busszal megyek ki. A repülőjegy nem olcsó, de már megvettem. Moszkvában két éjszakára bérelek szállást a konzulátus közelében. Az időpontom tizenharmadikán délelőtt van, ezért előző nap érkezem. A mappát és az útlevelemet kézben viszem, nem a nagy táskában. Este még egyszer átnézem a kérdéseket és a válaszokat. Magyarországra ez még nem utazás, de ez az első lépés.",
+  "ru": "В октябре я еду в Москву в консульство. Расстояние между Пермью и Москвой — примерно 1400 километров. Я лечу самолётом, потому что поезд идёт почти сутки. Аэропорт в двадцати километрах от Перми, я поеду туда на автобусе. Билет на самолёт не дешёвый, но я его уже купил. В Москве я снимаю жильё на две ночи недалеко от консульства. Мой приём тринадцатого числа до полудня, поэтому я приезжаю накануне. Папку и паспорт я везу в руках, а не в большой сумке. Вечером я ещё раз просмотрю вопросы и ответы. Это ещё не поездка в Венгрию, но это первый шаг.",
+  "gloss": [
+   [
+    "távolság",
+    "расстояние"
+   ],
+   [
+    "mappa",
+    "папка"
+   ],
+   [
+    "repülővel",
+    "самолётом"
+   ],
+   [
+    "repülőtér",
+    "аэропорт"
+   ],
+   [
+    "megvettem",
+    "я купил"
+   ],
+   [
+    "éjszakára",
+    "на ночь"
+   ],
+   [
+    "szállást bérelek",
+    "снимаю жильё"
+   ],
+   [
+    "közelében",
+    "вблизи"
+   ],
+   [
+    "előző nap",
+    "накануне"
+   ],
+   [
+    "kézben",
+    "в руках"
+   ],
+   [
+    "átnézem",
+    "просмотрю"
+   ],
+   [
+    "lépés",
+    "шаг"
+   ]
+  ],
+  "qs": [
+   "Почему Кирилл летит самолётом, а не едет поездом?",
+   "На сколько ночей он снимает жильё в Москве?",
+   "Что он везёт в руках, а не в сумке?"
+  ]
+ },
+ "249": {
+  "hu": "A nagyapám szülőföldje Kárpátalja, de én még soha nem jártam ott. Csománfalva ma Ukrajnában van, a técsői járásban, a Tisza közelében. Permtől nagyon messze van: több mint háromezer kilométer. Most nehéz odautazni, mert a határ nem mindig van nyitva, és a jegy drága. A nagyapám ezerkilencszáznyolcvanötben látta utoljára a faluját. Azt mondja, hogy a ház a templom mellett még áll. Szeretném egyszer meglátogatni a rokonaimat, akik Técsőn élnek. Magyarországról talán könnyebb lesz odautazni, mert Beregszász közel van a magyar határhoz. Egyelőre csak térképen nézem a falut, és a nagyapám történeteit hallgatom. De a szülőföld a szívemben is van.",
+  "ru": "Родина моего деда — Закарпатье, но я там ещё никогда не был. Чумалёво сегодня находится в Украине, в Тячевском районе, недалеко от Тисы. От Перми это очень далеко: больше трёх тысяч километров. Сейчас туда трудно ехать, потому что граница не всегда открыта, а билет дорогой. Дед в последний раз видел своё село в 1985 году. Он говорит, что дом рядом с церковью всё ещё стоит. Я хотел бы однажды навестить родственников, которые живут в Тячеве. Из Венгрии, наверное, будет легче туда поехать, потому что Берегово близко к венгерской границе. Пока я только смотрю на село по карте и слушаю рассказы деда. Но родина есть и в моём сердце.",
+  "gloss": [
+   [
+    "szülőföld",
+    "родина, родной край"
+   ],
+   [
+    "járás",
+    "район"
+   ],
+   [
+    "közelében",
+    "вблизи"
+   ],
+   [
+    "odautazni",
+    "поехать туда"
+   ],
+   [
+    "nyitva van",
+    "открыта"
+   ],
+   [
+    "utoljára",
+    "в последний раз"
+   ],
+   [
+    "még áll",
+    "всё ещё стоит"
+   ],
+   [
+    "meglátogatni",
+    "навестить"
+   ],
+   [
+    "határhoz",
+    "к границе"
+   ],
+   [
+    "hallgatom",
+    "я слушаю"
+   ],
+   [
+    "szívemben",
+    "в моём сердце"
+   ]
+  ],
+  "qs": [
+   "Где сегодня находится Чумалёво?",
+   "Когда дед в последний раз видел своё село?",
+   "Почему из Венгрии, возможно, легче поехать в Чумалёво?"
+  ]
+ },
+ "250": {
+  "hu": "– Szása, te jártál már külföldön?\n– Igen, kétszer voltam Törökországban, és egyszer Kazahsztánban. És te?\n– Még soha. De jövőre Magyarországra akarok utazni.\n– Kell oda vízum?\n– Most még kell, de ha megkapom a magyar állampolgárságot, már nem kell.\n– Az jó. És hogyan utazol? Repülővel?\n– Igen, Moszkvából Budapestre, de nincs közvetlen járat, ezért Isztambulon át megyek.\n– Hol fogsz lakni?\n– Szállást bérelek Budapesten egy hétre, utána vonattal megyek Beregszászra, a határ mellé.\n– Miért pont oda?\n– Mert onnan közel van a nagyapám faluja, Csománfalva. Oda is szeretnék átmenni, ha lehet.\n– Jó utat előre is! Hozz nekem egy magyar térképet!",
+  "ru": "– Саша, ты уже бывал за границей?\n– Да, два раза был в Турции и один раз в Казахстане. А ты?\n– Ещё никогда. Но в следующем году хочу поехать в Венгрию.\n– Туда нужна виза?\n– Сейчас ещё нужна, но если я получу венгерское гражданство, уже не нужна.\n– Это хорошо. А как ты поедешь? Самолётом?\n– Да, из Москвы в Будапешт, но прямого рейса нет, поэтому лечу через Стамбул.\n– Где будешь жить?\n– Сниму жильё в Будапеште на неделю, потом поездом поеду в Берегово, к границе.\n– Почему именно туда?\n– Потому что оттуда близко село моего деда, Чумалёво. Туда я тоже хотел бы перейти, если получится.\n– Заранее счастливого пути! Привези мне венгерскую карту!",
+  "gloss": [
+   [
+    "külföldön",
+    "за границей"
+   ],
+   [
+    "kétszer",
+    "дважды"
+   ],
+   [
+    "vízum",
+    "виза"
+   ],
+   [
+    "közvetlen járat",
+    "прямой рейс"
+   ],
+   [
+    "Isztambulon át",
+    "через Стамбул"
+   ],
+   [
+    "szállást bérelek",
+    "сниму жильё"
+   ],
+   [
+    "a határ mellé",
+    "к границе"
+   ],
+   [
+    "miért pont oda",
+    "почему именно туда"
+   ],
+   [
+    "átmenni",
+    "перейти"
+   ],
+   [
+    "jó utat",
+    "счастливого пути"
+   ],
+   [
+    "előre is",
+    "заранее"
+   ],
+   [
+    "térkép",
+    "карта"
+   ]
+  ],
+  "qs": [
+   "Где уже бывал Саша?",
+   "Почему Кирилл полетит через Стамбул?",
+   "Куда Кирилл поедет из Будапешта на поезде?"
+  ]
+ },
+ "251": {
+  "hu": "Jövőre először utazom Magyarországra. Ez a tervem: Budapesten kezdem, ahol a repülőtérről busszal és metróval megyek a szállásra. Egy kis albérletet foglalok a Duna közelében egy hétre; ez még megfizethető. Megnézem a Parlamentet és a budai várat, és magyarul beszélek a boltban, a piacon és az étteremben. Utána vonattal megyek keletre, Debrecenbe, majd Beregszászra. Ott szeretnék elmenni a levéltárba, ahol a dédanyám adatait találták meg. Ha az ukrán határ nyitva lesz, átmegyek Csománfalvára is. Két hét alatt sok mindent láthatok. A nagyapám azt kérte, hogy fényképezzem le a régi templomot. Ez az utazás nekem nem csak látogatás, hanem hazatérés is.",
+  "ru": "В следующем году я впервые поеду в Венгрию. Мой план такой: начинаю с Будапешта, где из аэропорта еду на автобусе и метро к жилью. Я бронирую маленькую квартиру недалеко от Дуная на неделю; это ещё по карману. Посмотрю Парламент и Будайскую крепость и буду говорить по-венгерски в магазине, на рынке и в ресторане. Потом на поезде поеду на восток, в Дебрецен, затем в Берегово. Там я хочу сходить в архив, где нашли данные моей прабабушки. Если украинская граница будет открыта, перейду и в Чумалёво. За две недели я могу увидеть многое. Дед попросил, чтобы я сфотографировал старую церковь. Эта поездка для меня не просто визит, а возвращение домой.",
+  "gloss": [
+   [
+    "először",
+    "впервые"
+   ],
+   [
+    "szállás",
+    "жильё, ночлег"
+   ],
+   [
+    "foglalok",
+    "бронирую"
+   ],
+   [
+    "a budai vár",
+    "Будайская крепость"
+   ],
+   [
+    "étterem",
+    "ресторан"
+   ],
+   [
+    "keletre",
+    "на восток"
+   ],
+   [
+    "nyitva lesz",
+    "будет открыта"
+   ],
+   [
+    "sok mindent",
+    "многое"
+   ],
+   [
+    "fényképezzem le",
+    "чтобы я сфотографировал"
+   ],
+   [
+    "látogatás",
+    "визит, посещение"
+   ],
+   [
+    "hazatérés",
+    "возвращение домой"
+   ]
+  ],
+  "qs": [
+   "Где Кирилл бронирует жильё в Будапеште и на сколько?",
+   "Куда он поедет из Будапешта на поезде?",
+   "О чём попросил его дед?"
+  ]
+ },
+ "252": {
+  "hu": "A héten sokat gondolkodtam arról, hol szeretnék élni. Egyelőre Oroszországban maradok, mert itt van a munkám, a családom és a barátaim. A nagyapám idős, és nem akarok tőle messze élni. De a magyar állampolgárság új lehetőségeket ad: szabadon utazhatok az Európai Unióban, és később ott is dolgozhatok. Talán öt év múlva átköltözöm Budapestre, talán nem. A távolság Perm és Budapest között háromezer-ötszáz kilométer, de repülővel csak öt óra. A bejelentett lakcímem Liszvában marad, és a lakcímkártyámat nem kell cserélni. A konzulnak őszintén elmondom: a szülőföldem az Urál, de a gyökereim Kárpátalján vannak. Két hazám van, és ez nem baj. Ezt a gondolatot még jobban meg kell tanulnom magyarul kifejezni.",
+  "ru": "На этой неделе я много думал о том, где хотел бы жить. Пока я остаюсь в России, потому что здесь моя работа, семья и друзья. Мой дед стар, и я не хочу жить далеко от него. Но венгерское гражданство даёт новые возможности: я смогу свободно ездить по Европейскому союзу, а позже и работать там. Может быть, через пять лет я перееду в Будапешт, может быть, нет. Расстояние между Пермью и Будапештом — 3500 километров, но самолётом всего пять часов. Мой зарегистрированный адрес остаётся в Лысьве, и карточку адреса менять не нужно. Консулу я честно скажу: моя родина — Урал, но мои корни в Закарпатье. У меня две родины, и это не беда. Эту мысль мне нужно научиться ещё лучше выражать по-венгерски.",
+  "gloss": [
+   [
+    "gondolkodtam arról",
+    "я думал о том"
+   ],
+   [
+    "egyelőre",
+    "пока что"
+   ],
+   [
+    "lehetőség",
+    "возможность"
+   ],
+   [
+    "szabadon",
+    "свободно"
+   ],
+   [
+    "öt év múlva",
+    "через пять лет"
+   ],
+   [
+    "átköltözöm",
+    "я перееду"
+   ],
+   [
+    "cserélni",
+    "менять"
+   ],
+   [
+    "őszintén",
+    "честно"
+   ],
+   [
+    "gyökereim",
+    "мои корни"
+   ],
+   [
+    "nem baj",
+    "не беда"
+   ],
+   [
+    "gondolat",
+    "мысль"
+   ],
+   [
+    "kifejezni",
+    "выразить"
+   ]
+  ],
+  "qs": [
+   "Почему Кирилл пока остаётся в России?",
+   "Сколько часов лететь из Перми в Будапешт?",
+   "Что Кирилл честно скажет консулу о своей родине и корнях?"
+  ]
+ },
+ "253": {
+  "hu": "– Jó napot kívánok! Kérem, mutatkozzon be röviden.\n– Jó napot kívánok! Babics Kirill vagyok, huszonöt éves, Permben élek.\n– Hol született, és hol van a lakóhelye?\n– Tessék? Elnézést, hogy mondta? Nem hallottam jól a második részt.\n– Hol van a lakóhelye, vagyis hol lakik most?\n– Értem, köszönöm. Liszvában születtem, de most Permben lakom.\n– Mi a foglalkozása?\n– Hát, tulajdonképpen történész vagyok, de adatelemzőként dolgozom egy IT-cégnél.\n– Mesélje el röviden, honnan származik a családja!\n– Szóval, a dédapám Csománfalván született, Kárpátalján. Akarom mondani, a nagyapám is ott született, ezerkilencszázötvenegyben.\n– Mi volt a dédapja foglalkozása?\n– Egy pillanat, hadd gondolkozzam... Cipész volt, és később bányában dolgozott Franciaországban.\n– Rendben, köszönöm. Világos.\n– Köszönöm, hogy lassan beszélt. Egyébként ez nagyon fontos nekem.",
+  "ru": "– Добрый день! Пожалуйста, коротко представьтесь.\n– Добрый день! Я Кирилл Бабич, мне двадцать пять лет, живу в Перми.\n– Где вы родились и где ваше место жительства?\n– Простите? Извините, как вы сказали? Я не расслышал вторую часть.\n– Где ваше место жительства, то есть где вы сейчас живёте?\n– Понял, спасибо. Я родился в Лысьве, но сейчас живу в Перми.\n– Кто вы по профессии?\n– Ну, вообще-то я историк, но работаю аналитиком данных в IT-компании.\n– Расскажите коротко, откуда ваша семья!\n– Так вот, мой прадед родился в Чумалёве, в Закарпатье. То есть, мой дед тоже там родился, в 1951 году.\n– Кем был ваш прадед?\n– Минутку, дайте подумать... Он был сапожником, а позже работал в шахте во Франции.\n– Хорошо, спасибо. Ясно.\n– Спасибо, что говорили медленно. Кстати, это для меня очень важно.",
+  "gloss": [
+   [
+    "mutatkozzon be",
+    "представьтесь"
+   ],
+   [
+    "tessék?",
+    "простите? (переспрос)"
+   ],
+   [
+    "hogy mondta?",
+    "как вы сказали?"
+   ],
+   [
+    "részt",
+    "часть (вин. п.)"
+   ],
+   [
+    "vagyis",
+    "то есть"
+   ],
+   [
+    "hát",
+    "ну"
+   ],
+   [
+    "tulajdonképpen",
+    "вообще-то, собственно"
+   ],
+   [
+    "szóval",
+    "так вот, значит"
+   ],
+   [
+    "akarom mondani",
+    "то есть, я хотел сказать"
+   ],
+   [
+    "egy pillanat",
+    "минутку"
+   ],
+   [
+    "hadd gondolkozzam",
+    "дайте подумать"
+   ],
+   [
+    "egyébként",
+    "кстати"
+   ]
+  ],
+  "qs": [
+   "Какую часть вопроса Кирилл не расслышал?",
+   "Какую ошибку он исправил словами «akarom mondani»?",
+   "Где позже работал прадед Кирилла?"
+  ]
+ },
+ "254": {
+  "hu": "Hát, szóval, elmondom a családom történetét úgy, ahogy a konzulnak fogom. Tulajdonképpen három nemzedékről van szó. A dédapám, Babics Fjodor ezerkilencszázháromban született Csománfalván, ami akkor Magyarországhoz tartozott. Cipész volt, és egyébként Franciaországban is dolgozott, egy szénbányában. A dédanyám, Alekszinec Anna Újbárdról származik, ezerkilencszáztízben született. A nagyapám ezerkilencszázötvenegyben született, vagyis már a Szovjetunióban. Tengerész volt, azután favágó lett, és az Urálba költözött. Az apám, Iván már Liszvában született ezerkilencszázhetvennyolcban. Én pedig kétezer-kettőben, ugyanott. Tehát a család útja Kárpátaljáról az Urálig vezet.",
+  "ru": "Ну, так вот, расскажу историю моей семьи так, как расскажу консулу. Собственно, речь идёт о трёх поколениях. Мой прадед, Фёдор Бабич, родился в 1903 году в Чумалёве, которое тогда относилось к Венгрии. Он был сапожником и, кстати, работал и во Франции, в угольной шахте. Моя прабабушка, Анна Олексишенец, родом из Новобарова, она родилась в 1910 году. Мой дед родился в 1951 году, то есть уже в Советском Союзе. Он был моряком, потом стал лесорубом и переехал на Урал. Мой отец, Иван, родился уже в Лысьве в 1978 году. А я — в 2002 году, там же. Итак, путь семьи ведёт из Закарпатья на Урал.",
+  "gloss": [
+   [
+    "úgy, ahogy",
+    "так, как"
+   ],
+   [
+    "tulajdonképpen",
+    "собственно, вообще-то"
+   ],
+   [
+    "nemzedékről van szó",
+    "речь идёт о поколениях"
+   ],
+   [
+    "tartozott",
+    "относился, принадлежал"
+   ],
+   [
+    "egyébként",
+    "кстати"
+   ],
+   [
+    "szénbánya",
+    "угольная шахта"
+   ],
+   [
+    "származik",
+    "происходит, родом из"
+   ],
+   [
+    "vagyis",
+    "то есть"
+   ],
+   [
+    "ugyanott",
+    "там же"
+   ],
+   [
+    "tehát",
+    "итак"
+   ],
+   [
+    "az Urálig vezet",
+    "ведёт до Урала"
+   ]
+  ],
+  "qs": [
+   "О скольких поколениях идёт речь?",
+   "Откуда родом прабабушка Анна?",
+   "Где родился отец Кирилла и в каком году?"
+  ]
+ },
+ "255": {
+  "hu": "Minden szerdán beszélek Zoltánnal, a tandem partneremmel Debrecenből. Ő oroszul tanul, én magyarul, ezért fél órát beszélünk magyarul, fél órát oroszul. Régen, ha nem jutott eszembe egy szó, egyszerűen nem mondtam semmit. Zoltán azt tanácsolta, hogy mondjak kis szavakat: hát, szóval, egy pillanat. Ezek a szavak segítenek, és a beszélgetés nem áll meg. Most már azt mondom: egy pillanat, hadd gondolkozzam, és közben megkeresem a szót. Ha rosszat mondok, azt mondom: akarom mondani, és újra mondom. Zoltán szerint így sokkal jobban beszélek. Egyébként a múlt héten már nem is kellett oroszul beszélnünk. Szerencsére a tandem díjmentes, csak idő kell hozzá.",
+  "ru": "Каждую среду я разговариваю с Золтаном, моим тандем-партнёром из Дебрецена. Он учит русский, я венгерский, поэтому полчаса мы говорим по-венгерски, полчаса по-русски. Раньше, если я не мог вспомнить слово, я просто ничего не говорил. Золтан посоветовал говорить маленькие слова: hát, szóval, egy pillanat. Эти слова помогают, и разговор не останавливается. Теперь я говорю: минутку, дайте подумать, — и тем временем ищу слово. Если я скажу неправильно, я говорю: akarom mondani, и повторяю заново. По словам Золтана, так я говорю намного лучше. Кстати, на прошлой неделе нам уже не пришлось говорить по-русски. К счастью, тандем бесплатный, нужно только время.",
+  "gloss": [
+   [
+    "tandem partner",
+    "тандем-партнёр"
+   ],
+   [
+    "nem jutott eszembe",
+    "я не мог вспомнить"
+   ],
+   [
+    "szó",
+    "слово"
+   ],
+   [
+    "egyszerűen",
+    "просто"
+   ],
+   [
+    "azt tanácsolta",
+    "посоветовал"
+   ],
+   [
+    "nem áll meg",
+    "не останавливается"
+   ],
+   [
+    "közben",
+    "тем временем"
+   ],
+   [
+    "megkeresem",
+    "ищу, нахожу"
+   ],
+   [
+    "a múlt héten",
+    "на прошлой неделе"
+   ],
+   [
+    "szerencsére",
+    "к счастью"
+   ],
+   [
+    "díjmentes",
+    "бесплатный"
+   ],
+   [
+    "idő",
+    "время"
+   ]
+  ],
+  "qs": [
+   "Откуда Золтан и что он изучает?",
+   "Что раньше делал Кирилл, когда не мог вспомнить слово?",
+   "Что посоветовал Золтан?"
+  ]
+ },
+ "256": {
+  "hu": "Tegnap felhívtam a moszkvai konzulátust, hogy megkérdezzem az időpontot. Egy ügyintéző vette fel a telefont, és gyorsan beszélt. Először azt mondtam: elnézést, tessék? Hogy mondta? Ő lassabban megismételte: október tizenharmadika, délelőtt tíz óra. Aztán megkérdeztem, mit jelent a levélben az a szó, hogy „meghallgatás”. Azt felelte, hogy ez maga a beszélgetés a konzullal. Utána elfelejtettem megkérdezni, hány példányban kell a másolat. Szerencsére az e-mailben minden benne volt: két példány, eredeti és másolat. Rendben, akkor minden világos. Tulajdonképpen ez volt az első igazi telefonbeszélgetésem magyarul, és sikerült.",
+  "ru": "Вчера я позвонил в московское консульство, чтобы спросить о времени приёма. Трубку взял сотрудник, и говорил он быстро. Сначала я сказал: извините, простите? Как вы сказали? Он медленнее повторил: тринадцатое октября, десять утра. Потом я спросил, что означает в письме слово «meghallgatás». Он ответил, что это и есть беседа с консулом. Потом я забыл спросить, в скольких экземплярах нужна копия. К счастью, в электронном письме всё было: два экземпляра, оригинал и копия. Хорошо, тогда всё ясно. Собственно, это был мой первый настоящий телефонный разговор по-венгерски, и он удался.",
+  "gloss": [
+   [
+    "felhívtam",
+    "я позвонил"
+   ],
+   [
+    "ügyintéző",
+    "сотрудник"
+   ],
+   [
+    "vette fel a telefont",
+    "взял трубку"
+   ],
+   [
+    "gyorsan",
+    "быстро"
+   ],
+   [
+    "megismételte",
+    "повторил"
+   ],
+   [
+    "mit jelent",
+    "что означает"
+   ],
+   [
+    "szó",
+    "слово"
+   ],
+   [
+    "meghallgatás",
+    "собеседование, слушание"
+   ],
+   [
+    "azt felelte",
+    "ответил"
+   ],
+   [
+    "példány",
+    "экземпляр"
+   ],
+   [
+    "igazi",
+    "настоящий"
+   ],
+   [
+    "sikerült",
+    "удалось"
+   ]
+  ],
+  "qs": [
+   "Зачем Кирилл позвонил в консульство?",
+   "Что, по словам сотрудника, означает слово «meghallgatás»?",
+   "Что Кирилл забыл спросить и где нашёл ответ?"
+  ]
+ },
+ "257": {
+  "hu": "– Szia, Kirill! Hogy vagy? Mi újság a kérelemmel?\n– Szia, Zoli! Jól vagyok. Szóval, megjött a levél a konzulátusról, október tizenharmadikán lesz az időpont.\n– Ez nagyszerű! Hogy mondják magyarul azt, hogy „собеседование”?\n– Azt hiszem, meghallgatás vagy beszélgetés. A levélben meghallgatás áll.\n– Igen, pontosan. És mit jelent az, hogy „egyszerűsített honosítás”? Tudod?\n– Persze: ez az az út, amikor valaki a magyar felmenői miatt kap állampolgárságot.\n– Ügyes vagy! Egyébként mit csinálsz a hétvégén?\n– Hát, mondjuk, tanulok. Nem, akarom mondani, szombaton a nagyapámhoz utazom Liszvába.\n– Ugye ő született Csománfalván?\n– Igen, ő. Egy pillanat, hadd gondolkozzam... ezerkilencszázötvenegyben, igen.\n– Látod, már nem is kell gondolkoznod. Jövő héten ugyanekkor?\n– Rendben, jövő szerdán. Köszönöm, Zoli, szia!",
+  "ru": "– Привет, Кирилл! Как дела? Что нового с заявлением?\n– Привет, Золи! Хорошо. Так вот, пришло письмо из консульства, приём будет тринадцатого октября.\n– Это отлично! Как по-венгерски сказать «собеседование»?\n– Думаю, meghallgatás или beszélgetés. В письме написано meghallgatás.\n– Да, точно. А что значит «egyszerűsített honosítás»? Знаешь?\n– Конечно: это путь, когда кто-то получает гражданство благодаря венгерским предкам.\n– Молодец! Кстати, что делаешь в выходные?\n– Ну, скажем, учусь. Нет, то есть, в субботу еду к деду в Лысьву.\n– Он ведь родился в Чумалёве?\n– Да, он. Минутку, дайте подумать... в 1951 году, да.\n– Видишь, тебе уже и думать не надо. На следующей неделе в то же время?\n– Хорошо, в следующую среду. Спасибо, Золи, пока!",
+  "gloss": [
+   [
+    "mi újság",
+    "что нового"
+   ],
+   [
+    "megjött",
+    "пришло"
+   ],
+   [
+    "nagyszerű",
+    "отлично"
+   ],
+   [
+    "hogy mondják magyarul",
+    "как сказать по-венгерски"
+   ],
+   [
+    "azt hiszem",
+    "я думаю"
+   ],
+   [
+    "mit jelent",
+    "что значит"
+   ],
+   [
+    "miatt",
+    "из-за, благодаря"
+   ],
+   [
+    "ügyes vagy",
+    "молодец"
+   ],
+   [
+    "hétvégén",
+    "в выходные"
+   ],
+   [
+    "mondjuk",
+    "скажем"
+   ],
+   [
+    "ugye",
+    "ведь, не так ли"
+   ],
+   [
+    "ugyanekkor",
+    "в то же время"
+   ]
+  ],
+  "qs": [
+   "Когда будет приём в консульстве?",
+   "Как Кирилл объяснил, что такое «egyszerűsített honosítás»?",
+   "Что Кирилл будет делать в субботу?"
+  ]
+ },
+ "258": {
+  "hu": "Az a bajom, hogy gyorsan beszélek, és összekeverem a neveket és az éveket. Például azt mondom: az apám Csománfalván született, akarom mondani, a nagyapám. Vagy azt mondom: ezerkilencszázötvenegyben, vagyis nem, a dédapám ezerkilencszázháromban. Ez nem nagy baj, ha utána jól mondom. A konzul is ember, és érti, hogy ez nehéz nekem. Zoltán szerint a magyarok is sokszor mondják: akarom mondani, vagyis, illetve. Ezért most lassabban beszélek, és minden név előtt egy pillanatra megállok. A dédapám: Fjodor. A nagyapám: Iván. Az apám: szintén Iván. Így már nem keverem össze őket.",
+  "ru": "Моя беда в том, что я говорю быстро и путаю имена и годы. Например, я говорю: мой отец родился в Чумалёве, то есть, мой дед. Или говорю: в 1951 году, то есть нет, прадед — в 1903-м. Это не большая беда, если потом я говорю правильно. Консул тоже человек и понимает, что мне это трудно. По словам Золтана, венгры тоже часто говорят: akarom mondani, vagyis, illetve. Поэтому теперь я говорю медленнее и перед каждым именем на секунду останавливаюсь. Прадед: Фёдор. Дед: Иван. Отец: тоже Иван. Так я их больше не путаю.",
+  "gloss": [
+   [
+    "az a bajom, hogy",
+    "моя беда в том, что"
+   ],
+   [
+    "gyorsan",
+    "быстро"
+   ],
+   [
+    "összekeverem",
+    "я путаю"
+   ],
+   [
+    "például",
+    "например"
+   ],
+   [
+    "akarom mondani",
+    "то есть, я хотел сказать"
+   ],
+   [
+    "vagyis",
+    "то есть"
+   ],
+   [
+    "illetve",
+    "вернее"
+   ],
+   [
+    "egy pillanatra",
+    "на секунду"
+   ],
+   [
+    "megállok",
+    "я останавливаюсь"
+   ],
+   [
+    "szintén",
+    "тоже, также"
+   ]
+  ],
+  "qs": [
+   "Что именно путает Кирилл, когда говорит быстро?",
+   "Какие слова, по словам Золтана, часто используют сами венгры?",
+   "Что Кирилл теперь делает перед каждым именем?"
+  ]
+ },
+ "259": {
+  "hu": "Ezen a héten a kis szavakat tanultam: hát, szóval, tehát, egyébként. Először furcsák voltak, mert oroszul másképp beszélünk. De most már értem, hogy ezek a szavak segítenek, amikor gondolkodom, és a beszélgetés nem áll meg. A legjobb az, hogy „hadd gondolkozzam”. Ezt mondom, amikor nem jut eszembe egy név vagy egy év. A konzulnál is mondhatom, mert udvarias és világos. Megtanultam azt is, hogy ha nem értek valamit, nem baj: tessék? hogy mondta? Azt hiszem, ezen a héten jobban beszélek. Sajnos még sokat hibázom, de szerencsére van még három hónapom. Tehát: rendben, értem, világos — ezt mondom magamnak is.",
+  "ru": "На этой неделе я учил маленькие слова: hát, szóval, tehát, egyébként. Сначала они казались странными, потому что по-русски мы говорим иначе. Но теперь я понимаю, что эти слова помогают, когда я думаю, и разговор не останавливается. Лучшее из них — «hadd gondolkozzam». Я говорю это, когда не могу вспомнить имя или год. Его можно сказать и консулу, потому что оно вежливое и ясное. Я также понял, что если я чего-то не понимаю, это не беда: tessék? hogy mondta? Думаю, на этой неделе я говорю лучше. К сожалению, я ещё много ошибаюсь, но, к счастью, у меня есть ещё три месяца. Итак: rendben, értem, világos — это я говорю и самому себе.",
+  "gloss": [
+   [
+    "furcsák voltak",
+    "были странными"
+   ],
+   [
+    "másképp",
+    "иначе"
+   ],
+   [
+    "gondolkodom",
+    "я думаю, размышляю"
+   ],
+   [
+    "nem áll meg",
+    "не останавливается"
+   ],
+   [
+    "nem jut eszembe",
+    "не могу вспомнить"
+   ],
+   [
+    "udvarias",
+    "вежливый"
+   ],
+   [
+    "világos",
+    "ясный, понятно"
+   ],
+   [
+    "nem baj",
+    "не беда"
+   ],
+   [
+    "hibázom",
+    "я ошибаюсь"
+   ],
+   [
+    "sajnos",
+    "к сожалению"
+   ],
+   [
+    "szerencsére",
+    "к счастью"
+   ],
+   [
+    "magamnak",
+    "самому себе"
+   ]
+  ],
+  "qs": [
+   "Почему маленькие слова сначала казались Кириллу странными?",
+   "Какое выражение Кирилл считает лучшим и когда его говорит?",
+   "Сколько времени у него осталось до собеседования?"
+  ]
+ },
+ "260": {
+  "hu": "– Jó napot kívánok! Foglaljon helyet. Kérem, mutassa be magát.\n– Jó napot kívánok! Babics Kirill vagyok, huszonöt éves. Liszvában születtem, és Permben élek.\n– Mi a foglalkozása, és hol dolgozik?\n– Történész vagyok, de adatelemzőként dolgozom egy permi IT-cégnél.\n– Miért szeretne magyar állampolgár lenni?\n– Mert a felmenőim magyar állampolgárok voltak, és fontos nekem a családom története és identitása.\n– Honnan származik a családja?\n– Kárpátaljáról. A dédapám, Babics Fjodor ezerkilencszázháromban született Csománfalván, Máramaros vármegyében. Cipész volt, később a franciaországi szénbányákban dolgozott, azután hazatért.\n– És a nagyapja?\n– A nagyapám ezerkilencszázötvenegyben született Csománfalván. Tengerész volt, aztán favágó, és az Urálba költözött.\n– Milyen dokumentumokat hozott?\n– A nagyapám és az apám születési anyakönyvi kivonatát, az ezerkilencszázhuszonegyes népszámlálás másolatát és a beregszászi levéltár kivonatait, hiteles fordítással.\n– Köszönöm, ez minden kérdésem.\n– Köszönöm szépen a lehetőséget. Viszontlátásra!",
+  "ru": "– Добрый день! Присаживайтесь. Пожалуйста, представьтесь.\n– Добрый день! Я Кирилл Бабич, мне двадцать пять лет. Я родился в Лысьве и живу в Перми.\n– Кто вы по профессии и где работаете?\n– Я историк, но работаю аналитиком данных в пермской IT-компании.\n– Почему вы хотите стать венгерским гражданином?\n– Потому что мои предки были венгерскими гражданами, и для меня важны история и идентичность моей семьи.\n– Откуда ваша семья?\n– Из Закарпатья. Мой прадед, Фёдор Бабич, родился в 1903 году в Чумалёве, в комитате Марамарош. Он был сапожником, позже работал в угольных шахтах во Франции, потом вернулся домой.\n– А ваш дед?\n– Мой дед родился в 1951 году в Чумалёве. Он был моряком, потом лесорубом, и переехал на Урал.\n– Какие документы вы принесли?\n– Свидетельства о рождении деда и отца, копию переписи 1921 года и выписки из архива в Берегово, с заверенным переводом.\n– Спасибо, это все мои вопросы.\n– Большое спасибо за возможность. До свидания!",
+  "gloss": [
+   [
+    "mutassa be magát",
+    "представьтесь"
+   ],
+   [
+    "adatelemzőként",
+    "в качестве аналитика данных"
+   ],
+   [
+    "felmenőim",
+    "мои предки"
+   ],
+   [
+    "identitás",
+    "идентичность"
+   ],
+   [
+    "származik",
+    "происходит, родом"
+   ],
+   [
+    "vármegye",
+    "комитат (область)"
+   ],
+   [
+    "szénbánya",
+    "угольная шахта"
+   ],
+   [
+    "hazatért",
+    "вернулся домой"
+   ],
+   [
+    "tengerész",
+    "моряк"
+   ],
+   [
+    "favágó",
+    "лесоруб"
+   ],
+   [
+    "hiteles fordítással",
+    "с заверенным переводом"
+   ],
+   [
+    "lehetőség",
+    "возможность"
+   ]
+  ],
+  "qs": [
+   "В каком комитате родился прадед Кирилла?",
+   "Кем был дед Кирилла до переезда на Урал?",
+   "Какие документы Кирилл принёс на собеседование?"
+  ]
+ },
+ "261": {
+  "hu": "Tegnap Zoltán volt a konzul, és én válaszoltam a kérdéseire. A próba húsz percig tartott, és utána megbeszéltük a hibákat. Az első hiba: a határozott ragozás. Azt mondtam: „elhoztam a kivonat”, de így kell: „elhoztam a kivonatot”. A második hiba: a hangrend a gyors válaszokban, „Permban” helyett „Permben”. A harmadik: a számok. Az ezerkilencszázhuszonegyet túl gyorsan mondtam, és Zoltán nem értette. Szerencsére a tempóm jó volt, és folyékonyan beszéltem a családról. Zoltán szerint a kiejtésem érthető, csak a hangsúly néha nem az első szótagon van. Három gyenge pontom van tehát: a ragozás, a hangrend és a számok. Ezeket a jövő héten gyakorolom.",
+  "ru": "Вчера Золтан был консулом, а я отвечал на его вопросы. Проба длилась двадцать минут, и потом мы обсудили ошибки. Первая ошибка: определённое спряжение. Я сказал: «elhoztam a kivonat», а нужно так: «elhoztam a kivonatot». Вторая ошибка: гармония гласных в быстрых ответах, «Permben» вместо «Permban». Третья: числа. 1921 я сказал слишком быстро, и Золтан не понял. К счастью, темп у меня был хороший, и о семье я говорил бегло. По словам Золтана, моё произношение понятное, только ударение иногда не на первом слоге. Итак, у меня три слабых места: спряжение, гармония гласных и числа. На следующей неделе я буду их отрабатывать.",
+  "gloss": [
+   [
+    "próba",
+    "проба, репетиция"
+   ],
+   [
+    "tartott",
+    "длилась"
+   ],
+   [
+    "megbeszéltük",
+    "мы обсудили"
+   ],
+   [
+    "hiba",
+    "ошибка"
+   ],
+   [
+    "határozott ragozás",
+    "определённое спряжение"
+   ],
+   [
+    "hangrend",
+    "гармония гласных"
+   ],
+   [
+    "helyett",
+    "вместо"
+   ],
+   [
+    "folyékonyan",
+    "бегло"
+   ],
+   [
+    "kiejtés",
+    "произношение"
+   ],
+   [
+    "érthető",
+    "понятный"
+   ],
+   [
+    "szótag",
+    "слог"
+   ],
+   [
+    "gyenge pont",
+    "слабое место"
+   ]
+  ],
+  "qs": [
+   "Сколько длилась пробная беседа?",
+   "Какие три слабых места нашёл Кирилл?",
+   "Что Золтан сказал о произношении Кирилла?"
+  ]
+ },
+ "262": {
+  "hu": "A tempó nagyon fontos a meghallgatáson. Ha túl gyorsan beszélek, több hibát csinálok, és a konzul nem ért meg. Ha túl lassan beszélek, akadozva beszélek, és úgy látszik, hogy nem tudok magyarul. A jó tempó közepes: egy mondat, egy rövid szünet, aztán a másik mondat. A szünetben gondolkodom, és megkeresem a jó szavakat. Zoltán azt mondta, hogy a magyarok is tartanak szünetet, ezért ez nem furcsa. A hangsúly is fontos: minden szóban az első szótag erős. Otthon hangosan olvasom a mondatokat, és felveszem a telefonnal. Aztán meghallgatom, és keresem a hibákat. Minden nappal kevesebb lesz.",
+  "ru": "Темп очень важен на собеседовании. Если я говорю слишком быстро, делаю больше ошибок, и консул меня не понимает. Если говорю слишком медленно, речь звучит с запинками, и кажется, что я не знаю венгерского. Хороший темп — средний: одно предложение, короткая пауза, потом следующее предложение. В паузе я думаю и подбираю нужные слова. Золтан сказал, что венгры тоже делают паузы, поэтому это не странно. Ударение тоже важно: в каждом слове первый слог сильный. Дома я читаю предложения вслух и записываю на телефон. Потом прослушиваю и ищу ошибки. С каждым днём их становится меньше.",
+  "gloss": [
+   [
+    "tempó",
+    "темп"
+   ],
+   [
+    "meghallgatás",
+    "собеседование"
+   ],
+   [
+    "akadozva",
+    "с запинками"
+   ],
+   [
+    "úgy látszik",
+    "кажется"
+   ],
+   [
+    "közepes",
+    "средний"
+   ],
+   [
+    "szünet",
+    "пауза"
+   ],
+   [
+    "tartanak szünetet",
+    "делают паузу"
+   ],
+   [
+    "hangsúly",
+    "ударение"
+   ],
+   [
+    "szótag",
+    "слог"
+   ],
+   [
+    "hangosan",
+    "вслух"
+   ],
+   [
+    "felveszem",
+    "записываю"
+   ],
+   [
+    "minden nappal",
+    "с каждым днём"
+   ]
+  ],
+  "qs": [
+   "Что происходит, если Кирилл говорит слишком быстро?",
+   "Какой темп Кирилл считает хорошим?",
+   "Что он делает дома с предложениями?"
+  ]
+ },
+ "263": {
+  "hu": "Szombaton Liszvában voltam a nagyapámnál, és neki mondtam el a családunk történetét magyarul. Ő nem beszél magyarul, de néhány szót ismer a gyerekkorából: kenyér, templom, Técső. Amikor azt mondtam, hogy „Csománfalván született”, mosolygott, és azt mondta: igen. Nekem ez volt a legjobb gyakorlat, mert nyugodt voltam, és nem izgultam. A nagyapám nyugodtan hallgatott, és nem javított ki, mert nem tudott. Utána oroszul kérdezte: „Jól mondtad a nevemet?” Igen, mondtam: Iván, ezerkilencszázötvenegy. Este felvettem a történetet a telefonomra, és elküldtem Zoltánnak. Zoltán azt írta vissza, hogy a tempó jó, és csak két hibát hallott. A nagyapám szerint pedig úgy beszéltem, mint régen a szomszédok Csománfalván.",
+  "ru": "В субботу я был в Лысьве у деда и ему рассказал историю нашей семьи по-венгерски. Он не говорит по-венгерски, но несколько слов знает с детства: kenyér, templom, Técső. Когда я сказал «Csománfalván született», он улыбнулся и сказал: да. Для меня это была лучшая практика, потому что я был спокоен и не волновался. Дед спокойно слушал и не поправлял, потому что не мог. Потом он спросил по-русски: «Ты правильно сказал моё имя?» Да, сказал я: Иван, 1951. Вечером я записал рассказ на телефон и отправил Золтану. Золтан написал в ответ, что темп хороший и он услышал только две ошибки. А по словам деда, я говорил так, как когда-то соседи в Чумалёве.",
+  "gloss": [
+   [
+    "gyerekkorából",
+    "из детства"
+   ],
+   [
+    "mosolygott",
+    "улыбнулся"
+   ],
+   [
+    "gyakorlat",
+    "практика, упражнение"
+   ],
+   [
+    "nyugodt",
+    "спокойный"
+   ],
+   [
+    "izgultam",
+    "я волновался"
+   ],
+   [
+    "nem javított ki",
+    "не поправлял"
+   ],
+   [
+    "felvettem",
+    "я записал"
+   ],
+   [
+    "elküldtem",
+    "я отправил"
+   ],
+   [
+    "azt írta vissza",
+    "написал в ответ"
+   ],
+   [
+    "szomszédok",
+    "соседи"
+   ]
+  ],
+  "qs": [
+   "Какие венгерские слова знает дед?",
+   "Почему для Кирилла это была лучшая практика?",
+   "Сколько ошибок услышал Золтан в записи?"
+  ]
+ },
+ "264": {
+  "hu": "– Jó napot kívánok! Mikor és hol született?\n– Jó napot kívánok! Kétezer-kettő április tizenkettedikén születtem Liszvában, Oroszországban.\n– Mi a családi állapota?\n– Nőtlen vagyok, gyerekem nincs.\n– Hol tanult, és mi a végzettsége?\n– A permi pedagógiai egyetemen tanultam, történelem szakon. Kétezer-huszonnégyben kaptam meg a diplomámat.\n– Kérem, mondja el, mit igazol a népszámlálási másolat!\n– Azt igazolja, hogy a dédapám ezerkilencszázhuszonegyben Csománfalván lakott, és ott is született ezerkilencszázháromban, amikor a falu még Magyarországhoz tartozott.\n– Hogy hívták a dédanyját?\n– Alekszinec Annának. Ezerkilencszáztízben született Újbárdon, és ortodox vallású volt.\n– Mit tervez az állampolgárság után?\n– Egyelőre Permben maradok, de szeretnék gyakrabban Magyarországra utazni, és később talán ott dolgozni.\n– Köszönöm, ez minden. Az értesítést a döntésről körülbelül fél év múlva kapja meg, levélben. Minden jót kívánok!\n– Köszönöm szépen, viszontlátásra!",
+  "ru": "– Добрый день! Когда и где вы родились?\n– Добрый день! Я родился 12 апреля 2002 года в Лысьве, в России.\n– Ваше семейное положение?\n– Я холост, детей нет.\n– Где вы учились и какое у вас образование?\n– Я учился в пермском педагогическом университете, по специальности история. Диплом получил в 2024 году.\n– Пожалуйста, расскажите, что подтверждает копия переписи!\n– Она подтверждает, что мой прадед в 1921 году жил в Чумалёве и там же родился в 1903 году, когда село ещё относилось к Венгрии.\n– Как звали вашу прабабушку?\n– Анна Олексишенец. Она родилась в 1910 году в Новобарове и была православной.\n– Что вы планируете после получения гражданства?\n– Пока остаюсь в Перми, но хотел бы чаще ездить в Венгрию, а позже, возможно, работать там.\n– Спасибо, это всё. Уведомление о решении вы получите примерно через полгода, письмом. Всего вам доброго!\n– Большое спасибо, до свидания!",
+  "gloss": [
+   [
+    "pedagógiai",
+    "педагогический"
+   ],
+   [
+    "szakon",
+    "по специальности"
+   ],
+   [
+    "családi állapot",
+    "семейное положение"
+   ],
+   [
+    "nőtlen",
+    "холост"
+   ],
+   [
+    "végzettség",
+    "образование"
+   ],
+   [
+    "igazol",
+    "подтверждает"
+   ],
+   [
+    "tartozott",
+    "относился"
+   ],
+   [
+    "hogy hívták",
+    "как звали"
+   ],
+   [
+    "vallású",
+    "вероисповедания"
+   ],
+   [
+    "egyelőre",
+    "пока что"
+   ],
+   [
+    "értesítés",
+    "уведомление"
+   ],
+   [
+    "fél év múlva",
+    "через полгода"
+   ]
+  ],
+  "qs": [
+   "Когда родился Кирилл?",
+   "Что подтверждает копия переписи?",
+   "Когда Кирилл получит уведомление о решении?"
+  ]
+ },
+ "265": {
+  "hu": "A kiejtésem már érthető, de néhány hang még nehéz. A hosszú és a rövid magánhangzók között nagy a különbség: „kor” és „kór” nem ugyanaz. Az „a” hang is más, mint az oroszban. A „gy” és a „ty” hangot sokáig gyakoroltam: magyar, nagy, Mátyás. A hangsúly mindig az első szótagon van, de a mondat végén a hang lemegy. Az oroszban a hangsúly más, ezért ez nehéz nekem. Zoltán szerint a legnagyobb hibám az, hogy az „e” hangokat túl röviden mondom. Ezért most minden reggel tíz percig csak hangokat ismétlek. Ez nem érdekes, de fontos gyakorlat. Azt hiszem, a konzul megérti majd, amit mondok.",
+  "ru": "Моё произношение уже понятное, но некоторые звуки ещё трудны. Между долгими и краткими гласными большая разница: «kor» и «kór» — не одно и то же. Звук «a» тоже отличается от русского. Звуки «gy» и «ty» я долго отрабатывал: magyar, nagy, Mátyás. Ударение всегда на первом слоге, но в конце предложения тон опускается. В русском ударение другое, поэтому мне это трудно. По словам Золтана, моя самая большая ошибка — что звуки «e» я произношу слишком коротко. Поэтому теперь каждое утро по десять минут я повторяю только звуки. Это неинтересно, но важное упражнение. Думаю, консул поймёт, что я говорю.",
+  "gloss": [
+   [
+    "kiejtés",
+    "произношение"
+   ],
+   [
+    "érthető",
+    "понятный"
+   ],
+   [
+    "hang",
+    "звук"
+   ],
+   [
+    "magánhangzó",
+    "гласный"
+   ],
+   [
+    "különbség",
+    "разница"
+   ],
+   [
+    "ugyanaz",
+    "одно и то же"
+   ],
+   [
+    "sokáig",
+    "долго"
+   ],
+   [
+    "hangsúly",
+    "ударение"
+   ],
+   [
+    "szótag",
+    "слог"
+   ],
+   [
+    "a mondat végén",
+    "в конце предложения"
+   ],
+   [
+    "lemegy",
+    "опускается"
+   ],
+   [
+    "ismétlek",
+    "я повторяю"
+   ]
+  ],
+  "qs": [
+   "Какие два слова показывают разницу между долгими и краткими гласными?",
+   "Какая, по словам Золтана, самая большая ошибка Кирилла?",
+   "Что Кирилл делает каждое утро по десять минут?"
+  ]
+ },
+ "266": {
+  "hu": "Ez volt a harmincnyolcadik hét: az első próba. Két meghallgatást csináltunk Zoltánnal, és mind a kettő jól ment. Az első után három gyenge pontot találtunk: a határozott ragozás, a hangrend és a számok. A második próbán már kevesebb hibát csináltam, és nyugodtabb voltam. A szókincsem elég nagy a családról és a dokumentumokról, de a hírekről még keveset tudok mondani. A nyelvtan közepes: a múlt idő jó, de az utasítások még nehezek. A kiejtésem érthető, a tempóm jó. Magabiztosabb lettem, mert látom, hogy a konzul kérdéseit értem. Jövő héten a gyenge pontokat gyakorolom, és a híreket hallgatom a rádióban. Még három hónap van az igazi meghallgatásig.",
+  "ru": "Это была тридцать восьмая неделя: первая проба. Мы с Золтаном провели два собеседования, и оба прошли хорошо. После первого мы нашли три слабых места: определённое спряжение, гармония гласных и числа. На второй пробе я сделал уже меньше ошибок и был спокойнее. Мой словарный запас о семье и документах достаточно большой, но о новостях я ещё мало могу сказать. Грамматика средняя: прошедшее время хорошо, но повеления ещё трудны. Произношение понятное, темп хороший. Я стал увереннее, потому что вижу, что понимаю вопросы консула. На следующей неделе я буду отрабатывать слабые места и слушать новости по радио. До настоящего собеседования ещё три месяца.",
+  "gloss": [
+   [
+    "próba",
+    "проба"
+   ],
+   [
+    "jól ment",
+    "прошло хорошо"
+   ],
+   [
+    "gyenge pont",
+    "слабое место"
+   ],
+   [
+    "határozott ragozás",
+    "определённое спряжение"
+   ],
+   [
+    "hangrend",
+    "гармония гласных"
+   ],
+   [
+    "szókincs",
+    "словарный запас"
+   ],
+   [
+    "hírek",
+    "новости"
+   ],
+   [
+    "nyelvtan",
+    "грамматика"
+   ],
+   [
+    "közepes",
+    "средний"
+   ],
+   [
+    "múlt idő",
+    "прошедшее время"
+   ],
+   [
+    "magabiztosabb",
+    "увереннее"
+   ],
+   [
+    "rádió",
+    "радио"
+   ]
+  ],
+  "qs": [
+   "Сколько пробных собеседований было на этой неделе?",
+   "О чём Кирилл пока мало может сказать?",
+   "Сколько времени осталось до настоящего собеседования?"
+  ]
+ },
+ "267": {
+  "hu": "– Apa, mit hallottál ma a hírekben?\n– A rádió szerint holnap esik az eső, és csak tizenöt fok lesz. Te hallgatsz magyar híreket?\n– Igen, minden reggel. Ma a magyar kormány bejelentette, hogy új törvény lesz a nyugdíjról.\n– És mi van a magyar gazdasággal?\n– Azt mondták, hogy az árak drágulnak, de nem nagyon. A forgalom Budapesten nagy volt egy baleset miatt.\n– Értettél mindent?\n– Nem mindent, de a számokat és a kulcsszavakat igen. A sportot könnyebb érteni: a magyar csapat nyert kettő egyre.\n– Kivel volt a mérkőzés?\n– Az osztrákokkal. A miniszterelnök is ott volt a mérkőzésen.\n– Látod, lassan már mindent értesz.\n– Nem, apa, akarom mondani: csak a felét. De két hete még a felét sem értettem.",
+  "ru": "– Папа, что ты слышал сегодня в новостях?\n– По радио сказали, что завтра будет дождь и всего пятнадцать градусов. Ты слушаешь венгерские новости?\n– Да, каждое утро. Сегодня венгерское правительство объявило, что будет новый закон о пенсиях.\n– А что с венгерской экономикой?\n– Сказали, что цены растут, но не сильно. Движение в Будапеште было большим из-за аварии.\n– Ты всё понял?\n– Не всё, но числа и ключевые слова — да. Спорт понимать легче: венгерская команда выиграла два — один.\n– С кем был матч?\n– С австрийцами. Премьер-министр тоже был на матче.\n– Видишь, ты уже почти всё понимаешь.\n– Нет, папа, то есть: только половину. Но две недели назад я не понимал и половины.",
+  "gloss": [
+   [
+    "hírek",
+    "новости"
+   ],
+   [
+    "a rádió szerint",
+    "по радио, согласно радио"
+   ],
+   [
+    "esik az eső",
+    "идёт дождь"
+   ],
+   [
+    "fok",
+    "градус"
+   ],
+   [
+    "kormány",
+    "правительство"
+   ],
+   [
+    "bejelentette",
+    "объявило"
+   ],
+   [
+    "törvény",
+    "закон"
+   ],
+   [
+    "nyugdíj",
+    "пенсия"
+   ],
+   [
+    "drágulnak",
+    "дорожают"
+   ],
+   [
+    "forgalom",
+    "движение, трафик"
+   ],
+   [
+    "baleset miatt",
+    "из-за аварии"
+   ],
+   [
+    "kulcsszavak",
+    "ключевые слова"
+   ]
+  ],
+  "qs": [
+   "Какая погода ожидается завтра, по словам отца?",
+   "Что объявило венгерское правительство?",
+   "С каким счётом и против кого выиграла венгерская команда?"
+  ]
+ },
+ "268": {
+  "hu": "Ma reggel megnéztem az időjárást Permben és Budapesten. Permben tizennyolc fok van, és esik az eső. Budapesten harminckét fok van, és süt a nap. A különbség tizennégy fok. Az Urálban a nyár rövid, és a tél hosszú: novembertől áprilisig hideg van. Magyarországon nyáron nagyon meleg van, néha harmincöt fok is. A magyar rádió minden órában mondja az időjárást: „Holnap délelőtt süt a nap, délután esik az eső.” Ezeket a mondatokat már értem, mert minden nap ugyanazokat a szavakat hallom. A fokokat is könnyű érteni, ha a számokat jól tudom. Télen Permben mínusz húsz fok van, és ezt már magyarul is tudom mondani.",
+  "ru": "Сегодня утром я посмотрел погоду в Перми и Будапеште. В Перми восемнадцать градусов и идёт дождь. В Будапеште тридцать два градуса и светит солнце. Разница — четырнадцать градусов. На Урале лето короткое, а зима длинная: с ноября по апрель холодно. В Венгрии летом очень жарко, иногда даже тридцать пять градусов. Венгерское радио каждый час сообщает погоду: «Завтра до полудня светит солнце, после полудня идёт дождь». Эти предложения я уже понимаю, потому что каждый день слышу одни и те же слова. Градусы тоже легко понять, если хорошо знаешь числа. Зимой в Перми минус двадцать, и это я уже умею сказать по-венгерски.",
+  "gloss": [
+   [
+    "időjárás",
+    "погода"
+   ],
+   [
+    "fok",
+    "градус"
+   ],
+   [
+    "süt a nap",
+    "светит солнце"
+   ],
+   [
+    "különbség",
+    "разница"
+   ],
+   [
+    "nyár",
+    "лето"
+   ],
+   [
+    "tél",
+    "зима"
+   ],
+   [
+    "hideg van",
+    "холодно"
+   ],
+   [
+    "meleg van",
+    "жарко, тепло"
+   ],
+   [
+    "ugyanazokat a szavakat",
+    "одни и те же слова"
+   ],
+   [
+    "mínusz",
+    "минус"
+   ]
+  ],
+  "qs": [
+   "Какая погода в Перми и в Будапеште сегодня?",
+   "С какого по какой месяц на Урале холодно?",
+   "Почему Кирилл уже понимает прогноз погоды по радио?"
+  ]
+ },
+ "269": {
+  "hu": "Ma reggel a rádióban három hírt hallottam. Az első: a kormány bejelentette, hogy jövőre új törvény lesz az iskolákról, és a parlament ősszel szavaz róla. A második hír a gazdaságról szólt: az árak két százalékkal drágultak, és egy kiló kenyér ára hatszáz forint. A harmadik hír: a köztársasági elnök Budapesten találkozott a lengyel elnökkel. A hírek után az időjárás jött: holnap huszonnyolc fok lesz, és süt a nap. Nem értettem minden szót, de a fontos dolgokat igen. Leírtam a számokat: kettő, hatszáz, huszonnyolc. Ez jó gyakorlat a konzuli meghallgatásra, mert ott is gyorsan beszélnek. A hírek nyelve nehezebb, mint a családi történeté.",
+  "ru": "Сегодня утром по радио я услышал три новости. Первая: правительство объявило, что в следующем году будет новый закон о школах, и парламент осенью будет по нему голосовать. Вторая новость была об экономике: цены выросли на два процента, и килограмм хлеба стоит шестьсот форинтов. Третья новость: президент республики встретился в Будапеште с польским президентом. После новостей шла погода: завтра будет двадцать восемь градусов и солнце. Я понял не каждое слово, но важное — да. Я записал числа: два, шестьсот, двадцать восемь. Это хорошая тренировка перед консульским собеседованием, потому что там тоже говорят быстро. Язык новостей труднее, чем язык семейной истории.",
+  "gloss": [
+   [
+    "hír",
+    "новость"
+   ],
+   [
+    "kormány",
+    "правительство"
+   ],
+   [
+    "törvény",
+    "закон"
+   ],
+   [
+    "parlament",
+    "парламент"
+   ],
+   [
+    "ősszel szavaz róla",
+    "осенью голосует по нему"
+   ],
+   [
+    "szólt (valamiről)",
+    "была о чём-то"
+   ],
+   [
+    "százalékkal",
+    "на ... процентов"
+   ],
+   [
+    "köztársasági elnök",
+    "президент республики"
+   ],
+   [
+    "lengyel",
+    "польский"
+   ],
+   [
+    "dolgokat",
+    "вещи, дела"
+   ],
+   [
+    "leírtam",
+    "я записал"
+   ]
+  ],
+  "qs": [
+   "О чём будет новый закон и когда парламент будет голосовать?",
+   "На сколько процентов выросли цены?",
+   "С кем встретился президент республики?"
+  ]
+ },
+ "270": {
+  "hu": "Vasárnap este sportot hallgattam a magyar rádióban. A magyar válogatott az osztrákokkal játszott, és három egyre nyert. Az első gól a tizenkettedik percben volt, a második a negyvenötödikben. A harmadik gól a nyolcvankilencedik percben jött. Az osztrák gól a hatvanadik percben volt. Negyvenezer ember volt a mérkőzésen. A műsorvezető nagyon gyorsan beszélt, de a számokat megértettem. A sportban sok szám van: percek, gólok, nézők. Ezért a sport jó gyakorlat a számok hallására. A nagyapám is szereti a focit, és megkérdezte, ki nyert.",
+  "ru": "В воскресенье вечером я слушал спорт по венгерскому радио. Сборная Венгрии играла с австрийцами и выиграла три — один. Первый гол был на двенадцатой минуте, второй — на сорок пятой. Третий гол пришёл на восемьдесят девятой минуте. Австрийский гол был на шестидесятой минуте. На матче было сорок тысяч человек. Ведущий говорил очень быстро, но числа я понял. В спорте много чисел: минуты, голы, зрители. Поэтому спорт — хорошая тренировка для восприятия чисел на слух. Мой дед тоже любит футбол и спросил, кто выиграл.",
+  "gloss": [
+   [
+    "sport",
+    "спорт"
+   ],
+   [
+    "válogatott",
+    "сборная"
+   ],
+   [
+    "osztrák",
+    "австрийский"
+   ],
+   [
+    "játszott",
+    "играла"
+   ],
+   [
+    "nyert",
+    "выиграла"
+   ],
+   [
+    "gól",
+    "гол"
+   ],
+   [
+    "percben",
+    "на минуте"
+   ],
+   [
+    "mérkőzés",
+    "матч"
+   ],
+   [
+    "műsorvezető",
+    "ведущий"
+   ],
+   [
+    "nézők",
+    "зрители"
+   ],
+   [
+    "foci",
+    "футбол"
+   ]
+  ],
+  "qs": [
+   "С каким счётом выиграла сборная Венгрии?",
+   "На какой минуте был австрийский гол?",
+   "Сколько зрителей было на матче?"
+  ]
+ },
+ "271": {
+  "hu": "– Szia, Zoli! Milyen idő van nálatok Debrecenben?\n– Szia! Nagyon meleg, harmincnégy fok, és egész héten süt a nap. És Permben?\n– Itt csak húsz fok van, és tegnap egész nap esett az eső.\n– Hallgattad ma a híreket?\n– Igen, azt mondták, hogy a kenyér ára megint drágult. Ez igaz?\n– Sajnos igaz. A boltban egy kiló kenyér már hatszáz forint. Minden drágul: a tej, a hús, az albérlet.\n– Nálunk is drágulnak az árak, de a rubelt és a forintot nehéz összehasonlítani.\n– És mi újság a kérelemmel? Felkészültél?\n– Azt hiszem, igen. A számokat már jól hallom, az időjárást is értem. A kormányról és a törvényekről még nehéz beszélni.\n– A konzul nem fog politikáról kérdezni, ne aggódj.\n– Tudom, de a rádiót a nyelv miatt hallgatom, nem a politika miatt.\n– Okos. Jövő héten ugyanekkor?\n– Igen, szia!",
+  "ru": "– Привет, Золи! Какая у вас погода в Дебрецене?\n– Привет! Очень жарко, тридцать четыре градуса, и всю неделю светит солнце. А в Перми?\n– Здесь всего двадцать градусов, и вчера весь день шёл дождь.\n– Ты слушал сегодня новости?\n– Да, сказали, что хлеб опять подорожал. Это правда?\n– К сожалению, правда. В магазине килограмм хлеба уже шестьсот форинтов. Всё дорожает: молоко, мясо, аренда.\n– У нас цены тоже растут, но рубль и форинт трудно сравнивать.\n– А что нового с заявлением? Ты подготовился?\n– Думаю, да. Числа я уже хорошо слышу, погоду тоже понимаю. О правительстве и законах ещё трудно говорить.\n– Консул не будет спрашивать о политике, не волнуйся.\n– Знаю, но радио я слушаю ради языка, а не ради политики.\n– Умно. На следующей неделе в то же время?\n– Да, пока!",
+  "gloss": [
+   [
+    "milyen idő van",
+    "какая погода"
+   ],
+   [
+    "nálatok",
+    "у вас"
+   ],
+   [
+    "meleg",
+    "жарко"
+   ],
+   [
+    "egész héten",
+    "всю неделю"
+   ],
+   [
+    "esett az eső",
+    "шёл дождь"
+   ],
+   [
+    "drágult",
+    "подорожал"
+   ],
+   [
+    "összehasonlítani",
+    "сравнивать"
+   ],
+   [
+    "felkészültél",
+    "ты подготовился"
+   ],
+   [
+    "politika",
+    "политика"
+   ],
+   [
+    "ne aggódj",
+    "не волнуйся"
+   ],
+   [
+    "a nyelv miatt",
+    "ради языка"
+   ],
+   [
+    "okos",
+    "умно, умный"
+   ]
+  ],
+  "qs": [
+   "Какая погода в Дебрецене и в Перми?",
+   "Сколько стоит килограмм хлеба в Венгрии, по словам Золтана?",
+   "Почему Кирилл слушает радио?"
+  ]
+ },
+ "272": {
+  "hu": "A számok a legnehezebbek hallás után. Amikor a konzul azt kérdezi: „Mikor született a dédapja?”, gyorsan kell válaszolnom: ezerkilencszázháromban. Ezért minden nap gyakorolom a dátumokat. Ezerkilencszázhárom: a dédapám, ezerkilencszáztíz: a dédanyám, ezerkilencszázhúsz: Trianon. Ezerkilencszázharminckilenc: Kárpátalja visszakerült Magyarországhoz, ezerkilencszáznegyvennégy: a Szovjetunió. Ezerkilencszázötvenegy: a nagyapám, ezerkilencszázhetvennyolc: az apám, kétezer-kettő: én. A rádióban az árakat is figyelem: ezerkétszáz forint, háromezer-ötszáz forint. Zoltán felolvas tíz számot, én leírom őket, aztán ellenőrizzük. Tegnap tízből nyolcat jól írtam le. Jövő héten tíz lesz.",
+  "ru": "Числа труднее всего воспринимать на слух. Когда консул спрашивает: «Когда родился ваш прадед?», мне нужно быстро ответить: в 1903 году. Поэтому каждый день я тренирую даты. 1903: прадед, 1910: прабабушка, 1920: Трианон. 1939: Закарпатье вернулось к Венгрии, 1944: Советский Союз. 1951: дед, 1978: отец, 2002: я. По радио я слежу и за ценами: 1200 форинтов, 3500 форинтов. Золтан читает вслух десять чисел, я их записываю, потом мы проверяем. Вчера из десяти я правильно записал восемь. На следующей неделе будет десять.",
+  "gloss": [
+   [
+    "hallás után",
+    "на слух"
+   ],
+   [
+    "gyorsan kell válaszolnom",
+    "мне нужно быстро ответить"
+   ],
+   [
+    "dátum",
+    "дата"
+   ],
+   [
+    "visszakerült",
+    "вернулось (обратно)"
+   ],
+   [
+    "figyelem",
+    "я слежу (за)"
+   ],
+   [
+    "felolvas",
+    "читает вслух"
+   ],
+   [
+    "leírom őket",
+    "я их записываю"
+   ],
+   [
+    "ellenőrizzük",
+    "мы проверяем"
+   ],
+   [
+    "tízből nyolcat",
+    "восемь из десяти"
+   ],
+   [
+    "jól írtam le",
+    "я правильно записал"
+   ]
+  ],
+  "qs": [
+   "Какой год Кирилл связывает с Трианоном?",
+   "В каком году Закарпатье вернулось к Венгрии?",
+   "Сколько чисел из десяти Кирилл вчера записал правильно?"
+  ]
+ },
+ "273": {
+  "hu": "Ezen a héten a gyenge pontjaimat gyakoroltam. A határozott ragozás már jobban megy: „látom a dokumentumot”, „elhoztam a kivonatot”, „ismerem a falut”. A hangrend a gyors válaszokban is jobb lett: Permben, Liszvában, Csománfalván, Budapesten. A számokat a rádióból tanultam: árak, fokok, évek, percek. A hírek nehezek, de a kulcsszavakat már értem: kormány, törvény, választás, miniszterelnök. Az időjárást minden nap meghallgatom, és le is írom. A sport jó gyakorlat volt, mert a mérkőzésekben sok a szám. Zoltán szerint a tempóm most jobb, mint két hete. Még majdnem három hónap van a meghallgatásig. Jövő héten lesz a második nagy próba.",
+  "ru": "На этой неделе я отрабатывал свои слабые места. Определённое спряжение уже идёт лучше: «látom a dokumentumot», «elhoztam a kivonatot», «ismerem a falut». Гармония гласных в быстрых ответах тоже стала лучше: Permben, Liszvában, Csománfalván, Budapesten. Числа я учил по радио: цены, градусы, годы, минуты. Новости трудны, но ключевые слова я уже понимаю: правительство, закон, выборы, премьер-министр. Погоду я каждый день слушаю и записываю. Спорт был хорошей тренировкой, потому что в матчах много чисел. По словам Золтана, мой темп теперь лучше, чем две недели назад. До собеседования ещё почти три месяца. На следующей неделе будет вторая большая проба.",
+  "gloss": [
+   [
+    "gyenge pont",
+    "слабое место"
+   ],
+   [
+    "határozott ragozás",
+    "определённое спряжение"
+   ],
+   [
+    "jobban megy",
+    "идёт лучше"
+   ],
+   [
+    "hangrend",
+    "гармония гласных"
+   ],
+   [
+    "kulcsszavak",
+    "ключевые слова"
+   ],
+   [
+    "választás",
+    "выборы"
+   ],
+   [
+    "miniszterelnök",
+    "премьер-министр"
+   ],
+   [
+    "le is írom",
+    "я и записываю"
+   ],
+   [
+    "mérkőzés",
+    "матч"
+   ],
+   [
+    "két hete",
+    "две недели назад"
+   ],
+   [
+    "próba",
+    "проба"
+   ]
+  ],
+  "qs": [
+   "Какие три примера определённого спряжения приводит Кирилл?",
+   "Откуда он учил числа?",
+   "Что будет на следующей неделе?"
+  ]
+ },
+ "274": {
+  "hu": "– Jó napot kívánok! Kérem, foglaljon helyet. Ön a kérelmező?\n– Jó napot kívánok, tisztelt konzul úr! Igen, Babics Kirill vagyok, én vagyok a kérelmező.\n– Kérem, sorolja fel, milyen mellékleteket csatolt a kérelemhez!\n– Először a nagyapám születési anyakönyvi kivonatát, amelyet ezerkilencszázötvenegyben állítottak ki Csománfalván. Másodszor az apám és a saját születési anyakönyvi kivonatomat.\n– Ezek igazolják a felmenő ágat?\n– Igen: a nagyapám az apám apja, és az apám az én apám. A három kivonat együtt mutatja a családfát.\n– Mit igazol a népszámlálási másolat?\n– Azt, hogy a dédapám ezerkilencszázhuszonegyben Csománfalván lakott, és ezerkilencszázháromban született, amikor a falu Magyarországhoz tartozott.\n– Van minden okmányhoz hiteles fordítás?\n– Igen, minden fordítás hiteles, és az eredetiken apostille van. Az ukrán nyelvű levéltári kivonatot is lefordíttattam.\n– Hiányzik valami a mellékletek közül?\n– Tudomásom szerint semmi. Az ellenőrzést kétszer megcsináltam otthon.\n– Köszönöm. Az összefoglalás világos volt. Értesítést fog kapni a döntésről.\n– Köszönöm szépen, konzul úr. Bízom benne, hogy az eredmény jó lesz. További szép napot!",
+  "ru": "– Добрый день! Пожалуйста, присаживайтесь. Вы заявитель?\n– Добрый день, уважаемый господин консул! Да, я Кирилл Бабич, я заявитель.\n– Пожалуйста, перечислите, какие приложения вы приложили к заявлению!\n– Во-первых, свидетельство о рождении моего деда, выданное в 1951 году в Чумалёве. Во-вторых, свидетельства о рождении отца и моё собственное.\n– Они подтверждают восходящую линию?\n– Да: мой дед — отец моего отца, а мой отец — мой отец. Три свидетельства вместе показывают родословную.\n– Что подтверждает копия переписи?\n– То, что мой прадед в 1921 году жил в Чумалёве и родился в 1903 году, когда село относилось к Венгрии.\n– Ко всем документам есть заверенный перевод?\n– Да, все переводы заверены, а на оригиналах стоит апостиль. Архивную выписку на украинском языке я тоже перевёл.\n– Чего-нибудь не хватает среди приложений?\n– Насколько мне известно, ничего. Проверку я дважды сделал дома.\n– Спасибо. Резюме было ясным. Вы получите уведомление о решении.\n– Большое спасибо, господин консул. Надеюсь, что результат будет хорошим. Хорошего дня!",
+  "gloss": [
+   [
+    "kérelmező",
+    "заявитель"
+   ],
+   [
+    "sorolja fel",
+    "перечислите"
+   ],
+   [
+    "mellékletek",
+    "приложения"
+   ],
+   [
+    "csatolt",
+    "приложил"
+   ],
+   [
+    "saját",
+    "собственный"
+   ],
+   [
+    "felmenő ág",
+    "восходящая линия"
+   ],
+   [
+    "együtt",
+    "вместе"
+   ],
+   [
+    "tartozott",
+    "относилось"
+   ],
+   [
+    "lefordíttattam",
+    "я заказал перевод"
+   ],
+   [
+    "a mellékletek közül",
+    "среди приложений"
+   ],
+   [
+    "tudomásom szerint",
+    "насколько мне известно"
+   ],
+   [
+    "bízom benne",
+    "я надеюсь, верю"
+   ]
+  ],
+  "qs": [
+   "Какие три свидетельства о рождении приложил Кирилл?",
+   "Что подтверждает копия переписи, по словам Кирилла?",
+   "Сколько раз он проверил документы дома?"
+  ]
+ },
+ "275": {
+  "hu": "Röviden összefoglalom a családom történetét. A dédapám, Babics Fjodor ezerkilencszázháromban született Csománfalván, Máramaros vármegyében, a Magyar Királyságban. Cipész volt, a húszas években a franciaországi szénbányákban dolgozott, majd hazatért. A dédanyám, Alekszinec Anna ezerkilencszáztízben született Újbárdon; ortodox vallású ruszin család volt az övék. Ezerkilencszázhúsz után a falu Csehszlovákiához került, ezerkilencszázharminckilencben visszakerült Magyarországhoz, ezerkilencszáznegyvennégy után pedig a Szovjetunióhoz. A nagyapám, Iván ezerkilencszázötvenegyben született ugyanott. Fiatalon tengerész volt, azután favágó lett, és a hetvenes években az Urálba költözött. Az apám, Iván ezerkilencszázhetvennyolcban született Liszvában; az anyám, Mária tanár. Én kétezer-kettőben születtem Liszvában, és most Permben élek. Ez a mi családfánk: Kárpátaljától az Urálig, három ország és négy nemzedék.",
+  "ru": "Коротко подведу итог истории моей семьи. Мой прадед, Фёдор Бабич, родился в 1903 году в Чумалёве, в комитате Марамарош, в Королевстве Венгрия. Он был сапожником, в двадцатые годы работал в угольных шахтах во Франции, потом вернулся домой. Моя прабабушка, Анна Олексишенец, родилась в 1910 году в Новобарове; их семья была православной русинской. После 1920 года село отошло к Чехословакии, в 1939 году вернулось к Венгрии, а после 1944 года — к Советскому Союзу. Мой дед, Иван, родился в 1951 году там же. В молодости он был моряком, потом стал лесорубом и в семидесятые годы переехал на Урал. Мой отец, Иван, родился в 1978 году в Лысьве; моя мать, Мария, учительница. Я родился в 2002 году в Лысьве и сейчас живу в Перми. Вот наша родословная: от Закарпатья до Урала, три страны и четыре поколения.",
+  "gloss": [
+   [
+    "összefoglalom",
+    "я подведу итог"
+   ],
+   [
+    "vármegye",
+    "комитат"
+   ],
+   [
+    "a húszas években",
+    "в двадцатые годы"
+   ],
+   [
+    "hazatért",
+    "вернулся домой"
+   ],
+   [
+    "az övék",
+    "их (семья)"
+   ],
+   [
+    "került (valahova)",
+    "отошло (к)"
+   ],
+   [
+    "visszakerült",
+    "вернулось"
+   ],
+   [
+    "ugyanott",
+    "там же"
+   ],
+   [
+    "fiatalon",
+    "в молодости"
+   ],
+   [
+    "a hetvenes években",
+    "в семидесятые годы"
+   ],
+   [
+    "nemzedék",
+    "поколение"
+   ]
+  ],
+  "qs": [
+   "Где работал прадед в двадцатые годы?",
+   "К каким странам относилось село после 1920, в 1939 и после 1944 года?",
+   "Когда дед переехал на Урал?"
+  ]
+ },
+ "276": {
+  "hu": "Mit tervezek az állampolgárság után? Először is magyar útlevelet szeretnék igényelni, mert azzal szabadon utazhatok Európában. Jövő nyáron Magyarországra utazom: Budapestre, Debrecenbe és Beregszászra. Szeretném látni Csománfalvát, a nagyapám faluját, és megnézni a régi templomot. A munkámat Permben folytatom, de a cégem magyar partnerekkel is dolgozik, és ott hasznos lesz a nyelvtudásom. Később talán egy budapesti egyetemen tanulok tovább: történelmet vagy adatelemzést. Remélem, hogy a nagyapámmal együtt is eljutunk egyszer Kárpátaljára. A magyar nyelvet tovább tanulom, mert ez már a mindennapjaim része. Bízom benne, hogy a döntés eredményes lesz. A tervek megvannak, most már csak a válaszra várok.",
+  "ru": "Что я планирую после получения гражданства? Во-первых, я хочу запросить венгерский паспорт, потому что с ним смогу свободно ездить по Европе. Следующим летом я поеду в Венгрию: в Будапешт, Дебрецен и Берегово. Я хотел бы увидеть Чумалёво, село моего деда, и посмотреть старую церковь. Работу в Перми я продолжу, но моя компания работает и с венгерскими партнёрами, и там пригодится моё знание языка. Позже, возможно, продолжу учёбу в будапештском университете: история или анализ данных. Надеюсь, что вместе с дедом мы однажды доберёмся до Закарпатья. Венгерский я буду учить дальше, потому что он уже часть моих будней. Я верю, что решение будет успешным. Планы есть, теперь я жду только ответа.",
+  "gloss": [
+   [
+    "igényelni",
+    "запросить, подать на получение"
+   ],
+   [
+    "szabadon",
+    "свободно"
+   ],
+   [
+    "jövő nyáron",
+    "следующим летом"
+   ],
+   [
+    "folytatom",
+    "я продолжу"
+   ],
+   [
+    "partner",
+    "партнёр"
+   ],
+   [
+    "hasznos",
+    "полезный"
+   ],
+   [
+    "nyelvtudás",
+    "знание языка"
+   ],
+   [
+    "tanulok tovább",
+    "продолжу учёбу"
+   ],
+   [
+    "együtt",
+    "вместе"
+   ],
+   [
+    "eljutunk",
+    "мы доберёмся"
+   ],
+   [
+    "mindennapjaim része",
+    "часть моих будней"
+   ],
+   [
+    "eredményes",
+    "успешный, результативный"
+   ]
+  ],
+  "qs": [
+   "Зачем Кирилл хочет получить венгерский паспорт?",
+   "Куда он поедет следующим летом?",
+   "Что он, возможно, будет изучать в будапештском университете?"
+  ]
+ },
+ "277": {
+  "hu": "Tisztelt Konzul Úr!\nBabics Kirill vagyok, permi lakos; egyszerűsített honosítási kérelmet nyújtottam be önöknél. Ezúton küldöm a hiányzó mellékletet: a dédanyám levéltári kivonatának hiteles fordítását. Felsorolom a kérelemhez csatolt minden mellékletet: egy, a nagyapám születési anyakönyvi kivonata; kettő, az apám születési anyakönyvi kivonata; három, az én születési anyakönyvi kivonatom; négy, az ezerkilencszázhuszonegyes népszámlálás másolata; öt, a dédanyám levéltári kivonata. Minden okmányhoz hiteles fordítás és apostille tartozik. Kérem, értesítsen, ha bármi hiányzik. Köszönöm a segítségét. Várom a válaszát.\nTisztelettel: Babics Kirill\nPerm, kétezer-huszonhét július huszonötödike",
+  "ru": "Уважаемый господин консул!\nЯ Кирилл Бабич, житель Перми; я подал у вас заявление об упрощённой натурализации. Настоящим отправляю недостающее приложение: заверенный перевод архивной выписки о моей прабабушке. Перечисляю все приложения к заявлению: один, свидетельство о рождении деда; два, свидетельство о рождении отца; три, моё свидетельство о рождении; четыре, копия переписи 1921 года; пять, архивная выписка о прабабушке. К каждому документу прилагаются заверенный перевод и апостиль. Прошу сообщить, если чего-то не хватает. Благодарю за помощь и жду вашего ответа.\nС уважением, Кирилл Бабич\nПермь, 25 июля 2027 года",
+  "gloss": [
+   [
+    "tisztelt konzul úr",
+    "уважаемый господин консул"
+   ],
+   [
+    "lakos",
+    "житель"
+   ],
+   [
+    "nyújtottam be",
+    "я подал"
+   ],
+   [
+    "ezúton küldöm",
+    "настоящим отправляю"
+   ],
+   [
+    "hiányzó melléklet",
+    "недостающее приложение"
+   ],
+   [
+    "felsorolom",
+    "перечисляю"
+   ],
+   [
+    "csatolt",
+    "приложенный"
+   ],
+   [
+    "tartozik (hozzá)",
+    "прилагается (к нему)"
+   ],
+   [
+    "értesítsen",
+    "сообщите, уведомьте"
+   ],
+   [
+    "bármi",
+    "что-либо"
+   ],
+   [
+    "várom a válaszát",
+    "жду вашего ответа"
+   ],
+   [
+    "július",
+    "июль"
+   ]
+  ],
+  "qs": [
+   "Какое приложение Кирилл отправляет этим письмом?",
+   "Сколько приложений он перечисляет?",
+   "О чём он просит консула в конце письма?"
+  ]
+ },
+ "278": {
+  "hu": "– Jó napot kívánok! Foglaljon helyet. Mesélje el röviden a családja történetét!\n– Jó napot kívánok, tisztelt konzul asszony! A családom Kárpátaljáról származik. A dédapám, Babics Fjodor ezerkilencszázháromban született Csománfalván, amely akkor a Magyar Királysághoz tartozott.\n– Mi volt a dédapja foglalkozása, és milyen nemzetiségű volt?\n– Cipész volt, ruszin nemzetiségű és ortodox vallású. A húszas években Franciaországban dolgozott, szénbányában, majd hazatért a faluba.\n– És a dédanyja?\n– Alekszinec Anna ezerkilencszáztízben született Újbárdon, a técsői járásban. Ezerkilencszázharmincban házasodtak össze.\n– Mikor költözött a családja az Urálba?\n– A nagyapám, aki ezerkilencszázötvenegyben született, fiatalon tengerész volt, azután favágó lett, és a hetvenes években költözött az Urálba, Liszvába.\n– Ön miért szeretne magyar állampolgár lenni?\n– Mert a felmenőim magyar állampolgárok voltak, és ez az identitásom része. Történészként kutattam a családom múltját, és így találtam meg a gyökereimet.\n– Mit tervez az állampolgárság után?\n– Egyelőre Permben maradok és dolgozom, de jövő nyáron Magyarországra utazom, és később talán ott tanulok tovább.\n– Köszönöm, a válaszai világosak voltak. Minden jót kívánok!\n– Köszönöm szépen, konzul asszony, hálás vagyok a lehetőségért. Viszontlátásra!",
+  "ru": "– Добрый день! Присаживайтесь. Расскажите коротко историю вашей семьи!\n– Добрый день, уважаемая госпожа консул! Моя семья родом из Закарпатья. Мой прадед, Фёдор Бабич, родился в 1903 году в Чумалёве, которое тогда относилось к Королевству Венгрия.\n– Кем был ваш прадед и какой он был национальности?\n– Он был сапожником, русином по национальности и православным по вере. В двадцатые годы он работал во Франции, в угольной шахте, потом вернулся в село.\n– А ваша прабабушка?\n– Анна Олексишенец родилась в 1910 году в Новобарове, в Тячевском районе. Они поженились в 1930 году.\n– Когда ваша семья переехала на Урал?\n– Мой дед, который родился в 1951 году, в молодости был моряком, потом стал лесорубом и в семидесятые годы переехал на Урал, в Лысьву.\n– Почему вы хотите стать венгерским гражданином?\n– Потому что мои предки были венгерскими гражданами, и это часть моей идентичности. Как историк я исследовал прошлое моей семьи и так нашёл свои корни.\n– Что вы планируете после получения гражданства?\n– Пока я остаюсь в Перми и работаю, но следующим летом поеду в Венгрию, а позже, возможно, продолжу там учёбу.\n– Спасибо, ваши ответы были ясными. Всего вам доброго!\n– Большое спасибо, госпожа консул, я благодарен за возможность. До свидания!",
+  "gloss": [
+   [
+    "tisztelt konzul asszony",
+    "уважаемая госпожа консул"
+   ],
+   [
+    "jövő nyáron",
+    "следующим летом"
+   ],
+   [
+    "tartozott",
+    "относилось"
+   ],
+   [
+    "nemzetiségű",
+    "по национальности"
+   ],
+   [
+    "vallású",
+    "по вероисповеданию"
+   ],
+   [
+    "hazatért",
+    "вернулся домой"
+   ],
+   [
+    "házasodtak össze",
+    "поженились"
+   ],
+   [
+    "fiatalon",
+    "в молодости"
+   ],
+   [
+    "identitásom része",
+    "часть моей идентичности"
+   ],
+   [
+    "múltját",
+    "(её) прошлое"
+   ],
+   [
+    "gyökereimet",
+    "мои корни"
+   ],
+   [
+    "hálás vagyok",
+    "я благодарен"
+   ]
+  ],
+  "qs": [
+   "В каком году поженились прадед и прабабушка?",
+   "Как Кирилл нашёл свои корни?",
+   "Что он планирует следующим летом?"
+  ]
+ },
+ "279": {
+  "hu": "A második nagy próba után elégedett vagyok. Zoltán két meghallgatást csinált velem: az elsőn a dokumentumokról, a másodikon a családról és a terveimről beszéltünk. Mind a kettő eredményes volt: kevés hibát csináltam, és folyékonyan beszéltem. A legjobb az volt, hogy a felsorolást jól mondtam: első, második, harmadik melléklet. A dátumokat sem kevertem össze. Egy hibám volt: egyszer „Csehszlovákiába” helyett „Csehszlovákiához” kellett volna mondanom. Zoltán ezt azonnal kijavította, és én megismételtem. A végeredmény: sokkal nyugodtabb és magabiztosabb vagyok, mint két hete. Hálás vagyok Zoltánnak a sok segítségért. Még két és fél hónap, és jön az igazi meghallgatás.",
+  "ru": "После второй большой пробы я доволен. Золтан провёл со мной два собеседования: на первом мы говорили о документах, на втором — о семье и моих планах. Оба были успешными: я сделал мало ошибок и говорил бегло. Лучше всего было то, что перечисление я сказал правильно: первое, второе, третье приложение. Даты я тоже не перепутал. Одна ошибка была: один раз вместо «Csehszlovákiába» нужно было сказать «Csehszlovákiához». Золтан сразу это исправил, и я повторил. Итог: я гораздо спокойнее и увереннее, чем две недели назад. Я благодарен Золтану за большую помощь. Ещё два с половиной месяца — и настоящее собеседование.",
+  "gloss": [
+   [
+    "elégedett vagyok",
+    "я доволен"
+   ],
+   [
+    "eredményes",
+    "успешный"
+   ],
+   [
+    "folyékonyan",
+    "бегло"
+   ],
+   [
+    "felsorolás",
+    "перечисление"
+   ],
+   [
+    "melléklet",
+    "приложение"
+   ],
+   [
+    "kevertem össze",
+    "я перепутал"
+   ],
+   [
+    "helyett",
+    "вместо"
+   ],
+   [
+    "kellett volna mondanom",
+    "мне следовало сказать"
+   ],
+   [
+    "azonnal kijavította",
+    "сразу исправил"
+   ],
+   [
+    "végeredmény",
+    "итог"
+   ],
+   [
+    "hálás vagyok",
+    "я благодарен"
+   ]
+  ],
+  "qs": [
+   "О чём были первое и второе пробные собеседования?",
+   "Какую ошибку сделал Кирилл?",
+   "Сколько времени осталось до настоящего собеседования?"
+  ]
+ },
+ "280": {
+  "hu": "A meghallgatás vége ugyanolyan fontos, mint az eleje. Amikor a konzul azt mondja, hogy ez minden kérdése, köszönetet kell mondanom. Ezt mondom: „Köszönöm szépen a lehetőséget és a türelmét.” Ha a konzul azt mondja: „Minden jót kívánok!”, én azt felelem: „Köszönöm, önnek is, további szép napot!” Aztán felállok, és elbúcsúzom: „Viszontlátásra!” Nem kell sietni, és nem kell túl sokat beszélni a végén. Ha a konzul kezet nyújt, elfogadom. A dokumentumokat csak akkor veszem el az asztalról, ha a konzul visszaadja őket. Ezek a kis dolgok mutatják, hogy felkészült vagyok. Remélem, hogy októberben pontosan így lesz.",
+  "ru": "Конец собеседования так же важен, как и начало. Когда консул говорит, что это все его вопросы, мне нужно поблагодарить. Я говорю: «Большое спасибо за возможность и за ваше терпение». Если консул говорит: «Всего вам доброго!», я отвечаю: «Спасибо, вам тоже, хорошего дня!» Потом я встаю и прощаюсь: «До свидания!» Не нужно спешить и не нужно слишком много говорить в конце. Если консул протягивает руку, я её пожимаю. Документы я беру со стола только тогда, когда консул их возвращает. Эти мелочи показывают, что я подготовлен. Надеюсь, что в октябре будет именно так.",
+  "gloss": [
+   [
+    "ugyanolyan fontos, mint",
+    "так же важен, как"
+   ],
+   [
+    "az eleje",
+    "начало"
+   ],
+   [
+    "köszönetet mondani",
+    "поблагодарить"
+   ],
+   [
+    "türelmét",
+    "ваше терпение"
+   ],
+   [
+    "felelem",
+    "я отвечаю"
+   ],
+   [
+    "további szép napot",
+    "хорошего дня"
+   ],
+   [
+    "elbúcsúzom",
+    "я прощаюсь"
+   ],
+   [
+    "sietni",
+    "спешить"
+   ],
+   [
+    "kezet nyújt",
+    "протягивает руку"
+   ],
+   [
+    "elfogadom",
+    "я принимаю (пожимаю)"
+   ],
+   [
+    "visszaadja",
+    "возвращает"
+   ],
+   [
+    "dolgok",
+    "вещи, мелочи"
+   ]
+  ],
+  "qs": [
+   "Что говорит Кирилл, когда консул заканчивает вопросы?",
+   "Как он отвечает на «Minden jót kívánok!»?",
+   "Когда он забирает документы со стола?"
+  ]
+ },
+ "281": {
+  "hu": "– Szia, Kirill! Átnéztem a jegyzeteidet. Mik a gyenge pontjaid a próba után?\n– Szia, Eszter! Három dolog: a rendhagyó múlt idő, a névutók és a dátumok.\n– Kezdjük a múlt idővel. Mondd el, mit csinált a nagyapád fiatalon!\n– A nagyapám tengerész volt. Hajóval ment a tengerre, aztán hazajött, és favágó lett.\n– Jó! „Ment”, „jött”, „lett” – ezek rendhagyó igék. És mit evett a hajón?\n– Halat evett, és teát ivott. Nem vett kenyeret, mert nem volt.\n– Nagyon jó. Most a névutók: hol van a dédapád háza?\n– A templom mellett, a folyó és a hegy között, az iskola mögött.\n– Tökéletes. És a dátumok? Mikor született az apád?\n– Ezerkilencszázhetvennyolc március tizenhetedikén.\n– Látod, mindent tudsz, csak gyorsabban kell mondanod. Ez a tanulság.\n– Köszönöm. Akkor minden nap átismétlem ezeket.",
+  "ru": "– Привет, Кирилл! Я просмотрела твои записи. Какие у тебя слабые места после пробы?\n– Привет, Эстер! Три вещи: неправильное прошедшее время, послелоги и даты.\n– Начнём с прошедшего времени. Расскажи, что делал твой дед в молодости!\n– Мой дед был моряком. Он ходил на корабле в море, потом вернулся домой и стал лесорубом.\n– Хорошо! «Ment», «jött», «lett» — это неправильные глаголы. А что он ел на корабле?\n– Он ел рыбу и пил чай. Хлеб не покупал, потому что его не было.\n– Очень хорошо. Теперь послелоги: где дом твоего прадеда?\n– Рядом с церковью, между рекой и горой, за школой.\n– Отлично. А даты? Когда родился твой отец?\n– 17 марта 1978 года.\n– Видишь, ты всё знаешь, только нужно говорить быстрее. Вот и вывод.\n– Спасибо. Тогда я буду повторять это каждый день.",
+  "gloss": [
+   [
+    "átnéztem",
+    "я просмотрела"
+   ],
+   [
+    "jegyzet",
+    "записи, конспект"
+   ],
+   [
+    "gyenge pont",
+    "слабое место"
+   ],
+   [
+    "rendhagyó",
+    "неправильный (глагол)"
+   ],
+   [
+    "múlt idő",
+    "прошедшее время"
+   ],
+   [
+    "névutó",
+    "послелог"
+   ],
+   [
+    "dolog",
+    "вещь, дело"
+   ],
+   [
+    "tenger",
+    "море"
+   ],
+   [
+    "ige",
+    "глагол"
+   ],
+   [
+    "tökéletes",
+    "отлично, идеально"
+   ],
+   [
+    "tanulság",
+    "вывод, урок"
+   ],
+   [
+    "átismétlem",
+    "я повторю"
+   ]
+  ],
+  "qs": [
+   "Какие три слабых места назвал Кирилл?",
+   "Что дед ел и пил на корабле?",
+   "Где стоит дом прадеда?"
+  ]
+ },
+ "282": {
+  "hu": "A füzetemben van egy oldal, amelyre a legfontosabb szabályokat írtam. Az első szabály a hangrend: a mély hangrendű szavakhoz mély rag jár, a magas hangrendűekhez magas. Perm: magas, tehát Permben; Liszva: mély, tehát Liszvában. A második szabály a határozott ragozás: ha a tárgy előtt a vagy az van, a ragozás határozott. Látok egy templomot, de látom a templomot. A harmadik szabály az igekötő: ha a mondatban fókusz van, az igekötő elválik. Elolvastam a levelet, de nem olvastam el a levelet. A negyedik a birtokos: a nagyapám háza, a dédapám neve. Ezt az oldalt minden reggel elolvasom. Ez az emlékeztetőm.",
+  "ru": "В моей тетради есть страница, на которую я записал самые важные правила. Первое правило — гармония гласных: к словам заднего ряда присоединяется суффикс заднего ряда, к словам переднего ряда — переднего. Perm: передний ряд, значит Permben; Liszva: задний ряд, значит Liszvában. Второе правило — определённое спряжение: если перед дополнением стоит a или az, спряжение определённое. Látok egy templomot, но látom a templomot. Третье правило — приставка: если в предложении есть фокус, приставка отделяется. Elolvastam a levelet, но nem olvastam el a levelet. Четвёртое — притяжательность: a nagyapám háza, a dédapám neve. Эту страницу я перечитываю каждое утро. Это моя памятка.",
+  "gloss": [
+   [
+    "füzet",
+    "тетрадь"
+   ],
+   [
+    "oldal",
+    "страница"
+   ],
+   [
+    "szabály",
+    "правило"
+   ],
+   [
+    "hangrend",
+    "гармония гласных"
+   ],
+   [
+    "mély hangrendű",
+    "заднего ряда"
+   ],
+   [
+    "magas hangrendű",
+    "переднего ряда"
+   ],
+   [
+    "rag",
+    "суффикс, окончание"
+   ],
+   [
+    "tárgy",
+    "дополнение (объект)"
+   ],
+   [
+    "igekötő",
+    "приставка"
+   ],
+   [
+    "fókusz",
+    "фокус"
+   ],
+   [
+    "elválik",
+    "отделяется"
+   ],
+   [
+    "emlékeztető",
+    "памятка"
+   ]
+  ],
+  "qs": [
+   "Какое первое правило записано в тетради Кирилла?",
+   "Когда спряжение становится определённым?",
+   "Когда приставка отделяется от глагола?"
+  ]
+ },
+ "283": {
+  "hu": "Ma a rendhagyó múlt időt gyakorlom, ezért a nagyapám fiatalságáról írok. Tizennyolc éves korában elment Csománfalváról, és tengerész lett. Hajóval ment a tengerre, és sok országot látott. A hajón halat evett, és erős teát ivott. Amikor hazajött, csak két évig maradt a faluban. Azután favágó lett, és az Urálba vitte a családját. Liszvában vett egy kis házat, és abban élt az apámmal. Mindig hitt abban, hogy a gyerekeinek jobb élete lesz. Sokat tett ezért: sokat dolgozott az erdőben. Most hetvenhat éves, és még mindig Liszvában lakik. Ez a történet tele van rendhagyó igékkel: ment, lett, evett, ivott, jött, vitt, vett, hitt, tett.",
+  "ru": "Сегодня я тренирую неправильное прошедшее время, поэтому пишу о молодости моего деда. В восемнадцать лет он уехал из Чумалёва и стал моряком. Он ходил на корабле в море и видел много стран. На корабле он ел рыбу и пил крепкий чай. Когда он вернулся домой, он остался в селе только на два года. Потом он стал лесорубом и увёз семью на Урал. В Лысьве он купил маленький дом и жил в нём с моим отцом. Он всегда верил в то, что у его детей будет лучшая жизнь. Он многое для этого сделал: много работал в лесу. Сейчас ему семьдесят шесть лет, и он всё ещё живёт в Лысьве. Эта история полна неправильных глаголов: ment, lett, evett, ivott, jött, vitt, vett, hitt, tett.",
+  "gloss": [
+   [
+    "rendhagyó",
+    "неправильный"
+   ],
+   [
+    "múlt idő",
+    "прошедшее время"
+   ],
+   [
+    "fiatalság",
+    "молодость"
+   ],
+   [
+    "éves korában",
+    "в возрасте ... лет"
+   ],
+   [
+    "tenger",
+    "море"
+   ],
+   [
+    "evett",
+    "ел"
+   ],
+   [
+    "ivott",
+    "пил"
+   ],
+   [
+    "vitte",
+    "увёз"
+   ],
+   [
+    "hitt abban, hogy",
+    "верил в то, что"
+   ],
+   [
+    "tett",
+    "сделал"
+   ],
+   [
+    "tele van",
+    "полна"
+   ],
+   [
+    "ige",
+    "глагол"
+   ]
+  ],
+  "qs": [
+   "В каком возрасте дед уехал из Чумалёва?",
+   "Сколько лет он пробыл в селе после возвращения с моря?",
+   "Что он купил в Лысьве?"
+  ]
+ },
+ "284": {
+  "hu": "A névutókat a nagyapám falujával gyakorlom. Csománfalva a Tisza mellett fekszik, Técsőtől keletre, a hegyek között. A falu közepén áll a templom, és a templom mögött van a temető. A dédapám háza a templom mellett állt, az út és a kert között. A ház előtt egy nagy fa volt, a ház mögött pedig a műhely, ahol a dédapám cipőt csinált. A folyó a falu alatt folyik, a hegyek a falu fölött vannak. Az iskola a templommal szemben volt, a posta pedig az iskola mellett. A nagyapám szerint a falu ma is ugyanígy néz ki. Ezeket a mondatokat a térkép fölött mondom, és mutatom a helyeket. Így a névutók megmaradnak.",
+  "ru": "Послелоги я тренирую на селе моего деда. Чумалёво лежит у Тисы, к востоку от Тячева, между горами. В центре села стоит церковь, а за церковью — кладбище. Дом прадеда стоял рядом с церковью, между дорогой и садом. Перед домом было большое дерево, а за домом — мастерская, где прадед делал обувь. Река течёт ниже села, горы — над селом. Школа была напротив церкви, а почта — рядом со школой. По словам деда, село и сегодня выглядит так же. Эти предложения я говорю над картой и показываю места. Так послелоги запоминаются.",
+  "gloss": [
+   [
+    "névutó",
+    "послелог"
+   ],
+   [
+    "fekszik",
+    "лежит, расположено"
+   ],
+   [
+    "keletre",
+    "к востоку"
+   ],
+   [
+    "között",
+    "между"
+   ],
+   [
+    "közepén",
+    "в центре, посередине"
+   ],
+   [
+    "mögött",
+    "за, позади"
+   ],
+   [
+    "temető",
+    "кладбище"
+   ],
+   [
+    "fa",
+    "дерево"
+   ],
+   [
+    "alatt",
+    "под, ниже"
+   ],
+   [
+    "fölött",
+    "над"
+   ],
+   [
+    "szemben",
+    "напротив"
+   ],
+   [
+    "hely",
+    "место"
+   ]
+  ],
+  "qs": [
+   "Где расположено Чумалёво относительно Тячева?",
+   "Что находится за церковью?",
+   "Где была мастерская прадеда?"
+  ]
+ },
+ "285": {
+  "hu": "– Apa, segíts, kérlek: a dátumokat gyakorlom. Mikor született a nagyapa?\n– Ezerkilencszázötvenegy május kilencedikén.\n– És a nagymama?\n– Ezerkilencszázötvennégy február másodikán, Liszvában.\n– Mikor házasodtak össze?\n– Ezerkilencszázhetvenhat június tizenkettedikén.\n– Te mikor születtél?\n– Ezerkilencszázhetvennyolc március tizenhetedikén. Anyád pedig ezerkilencszáznyolcvan október harmadikán.\n– És én?\n– Kétezer-kettő április tizenkettedikén, reggel hatkor.\n– Mikor halt meg a dédapa?\n– Ezerkilencszáznyolcvankettőben, Csománfalván. A dédanya ezerkilencszáznyolcvankilencben.\n– Köszönöm, apa. Most ezeket leírom a füzetembe, és holnap kérdezd ki!\n– Jó, de akkor te is kérdezd ki engem oroszul!",
+  "ru": "– Папа, помоги, пожалуйста: я тренирую даты. Когда родился дед?\n– 9 мая 1951 года.\n– А бабушка?\n– 2 февраля 1954 года, в Лысьве.\n– Когда они поженились?\n– 12 июня 1976 года.\n– А ты когда родился?\n– 17 марта 1978 года. А мама — 3 октября 1980 года.\n– А я?\n– 12 апреля 2002 года, в шесть утра.\n– Когда умер прадед?\n– В 1982 году, в Чумалёве. Прабабушка — в 1989 году.\n– Спасибо, папа. Сейчас я запишу это в тетрадь, а завтра проверь меня!\n– Хорошо, но тогда и ты проверь меня по-русски!",
+  "gloss": [
+   [
+    "segíts, kérlek",
+    "помоги, пожалуйста"
+   ],
+   [
+    "dátum",
+    "дата"
+   ],
+   [
+    "május kilencedikén",
+    "девятого мая"
+   ],
+   [
+    "február másodikán",
+    "второго февраля"
+   ],
+   [
+    "házasodtak össze",
+    "поженились"
+   ],
+   [
+    "június tizenkettedikén",
+    "двенадцатого июня"
+   ],
+   [
+    "március tizenhetedikén",
+    "семнадцатого марта"
+   ],
+   [
+    "október harmadikán",
+    "третьего октября"
+   ],
+   [
+    "halt meg",
+    "умер"
+   ],
+   [
+    "leírom a füzetembe",
+    "запишу в тетрадь"
+   ],
+   [
+    "kérdezd ki",
+    "проверь (опроси) меня"
+   ]
+  ],
+  "qs": [
+   "Когда родилась бабушка Кирилла?",
+   "Когда поженились дед и бабушка?",
+   "В каком году умер прадед?"
+  ]
+ },
+ "286": {
+  "hu": "A határozott és a határozatlan ragozás még mindig a leggyengébb pontom, ezért ma csak erről írok. A szabály egyszerű: ha a tárgy határozott, az ige határozott ragozásban áll. Keresek egy dokumentumot – de keresem a dokumentumot. Olvasok egy könyvet – de olvasom a nagyapám levelét. Látok egy falut a térképen – de látom Csománfalvát. A nevek és a birtokos szavak is határozottak: ismerem Zoltánt, szeretem a családomat. A konzulnál sok ilyen mondat lesz: elhoztam a kivonatot, benyújtottam a kérelmet, lefordíttattam a dokumentumokat. Ha hibázom, a konzul érti, de jobb, ha nem hibázom. Eszter azt mondta, hogy a tárgy előtt mindig gondoljak egy pillanatra az a és az az szóra. Ez a tanulságom erre a hétre.",
+  "ru": "Определённое и неопределённое спряжение — всё ещё моё самое слабое место, поэтому сегодня я пишу только об этом. Правило простое: если дополнение определённое, глагол стоит в определённом спряжении. Keresek egy dokumentumot — но keresem a dokumentumot. Olvasok egy könyvet — но olvasom a nagyapám levelét. Látok egy falut a térképen — но látom Csománfalvát. Имена и притяжательные слова тоже определённые: ismerem Zoltánt, szeretem a családomat. У консула будет много таких предложений: elhoztam a kivonatot, benyújtottam a kérelmet, lefordíttattam a dokumentumokat. Если я ошибусь, консул поймёт, но лучше не ошибаться. Эстер сказала, чтобы перед дополнением я всегда на секунду думал о словах a и az. Это мой урок на эту неделю.",
+  "gloss": [
+   [
+    "határozott ragozás",
+    "определённое спряжение"
+   ],
+   [
+    "határozatlan ragozás",
+    "неопределённое спряжение"
+   ],
+   [
+    "leggyengébb pont",
+    "самое слабое место"
+   ],
+   [
+    "szabály",
+    "правило"
+   ],
+   [
+    "tárgy",
+    "дополнение (объект)"
+   ],
+   [
+    "ige",
+    "глагол"
+   ],
+   [
+    "birtokos",
+    "притяжательный"
+   ],
+   [
+    "benyújtottam",
+    "я подал"
+   ],
+   [
+    "lefordíttattam",
+    "я заказал перевод"
+   ],
+   [
+    "hibázom",
+    "я ошибаюсь"
+   ],
+   [
+    "gondoljak",
+    "чтобы я подумал"
+   ],
+   [
+    "tanulság",
+    "урок, вывод"
+   ]
+  ],
+  "qs": [
+   "Когда глагол стоит в определённом спряжении?",
+   "Какие примеры с именами и притяжательными словами приводит Кирилл?",
+   "Что посоветовала Эстер?"
+  ]
+ },
+ "287": {
+  "hu": "A negyvenegyedik hét véget ért, és levonom a következtetést. Az erős pontjaim: a családom története, a dokumentumok és a számok. A fejlesztendő pontjaim: a rendhagyó múlt idő és a határozott ragozás. A névutókat már jól tudom, mert a falu térképével gyakoroltam. A dátumokat az apámmal ismételtem át, és most már gyorsan mondom őket. A füzetemben van egy emlékeztető a legfontosabb ragokról: -ban/-ben, -ra/-re, -val/-vel, -hoz/-hez/-höz. A tanulság az, hogy a nyelvtan nem elég: beszélni kell, minden nap, hangosan. Több mint két hónap van az igazi meghallgatásig, és nyugodt vagyok. Jövő héten rádiót hallgatok, és híreket mesélek el Zoltánnak. Azt hiszem, készen állok.",
+  "ru": "Сорок первая неделя закончилась, и я делаю вывод. Мои сильные стороны: история семьи, документы и числа. Что нужно развивать: неправильное прошедшее время и определённое спряжение. Послелоги я уже хорошо знаю, потому что тренировался с картой села. Даты я повторил с отцом и теперь говорю их быстро. В тетради у меня есть памятка о самых важных суффиксах: -ban/-ben, -ra/-re, -val/-vel, -hoz/-hez/-höz. Урок в том, что грамматики недостаточно: нужно говорить, каждый день, вслух. До настоящего собеседования больше двух месяцев, и я спокоен. На следующей неделе я буду слушать радио и пересказывать новости Золтану. Думаю, я готов.",
+  "gloss": [
+   [
+    "véget ért",
+    "закончилась"
+   ],
+   [
+    "levonom a következtetést",
+    "я делаю вывод"
+   ],
+   [
+    "erős pont",
+    "сильная сторона"
+   ],
+   [
+    "fejlesztendő",
+    "требующий развития"
+   ],
+   [
+    "rendhagyó múlt idő",
+    "неправильное прошедшее время"
+   ],
+   [
+    "ismételtem át",
+    "я повторил"
+   ],
+   [
+    "emlékeztető",
+    "памятка"
+   ],
+   [
+    "rag",
+    "суффикс"
+   ],
+   [
+    "tanulság",
+    "урок, вывод"
+   ],
+   [
+    "hangosan",
+    "вслух"
+   ],
+   [
+    "készen állok",
+    "я готов"
+   ]
+  ],
+  "qs": [
+   "Какие сильные стороны называет Кирилл?",
+   "С кем он повторял даты?",
+   "В чём, по его мнению, главный урок недели?"
+  ]
+ },
+ "288": {
+  "hu": "– Szia, Zoli! Ma reggel hallgattam a Kossuth Rádiót, és szeretném elmesélni, mit értettem.\n– Szia! Figyelek, mondd!\n– A hírek szerint a kormány bejelentette, hogy jövőre drágább lesz a vonatjegy. Vagy olcsóbb? Nem vagyok biztos.\n– Itt félreértetted: azt mondták, hogy a diákoknak olcsóbb lesz. A lényeg: nem drágább, hanem olcsóbb.\n– Értem, köszönöm. Visszakérdezek: csak a diákoknak, vagy mindenkinek?\n– Csak a diákoknak és a nyugdíjasoknak.\n– Rendben. A második hír: valahol az ország keleti részén baleset volt, de senki sem halt meg.\n– Igen, Debrecen mellett, egy teherautó. Ezt jól értetted.\n– És az utolsó hír az időjárásról szólt: holnap mindenhol esik az eső.\n– Pontosítok: holnap nyugaton esik, keleten süt a nap.\n– Látod, a lényeget értem, de a részleteket még nem.\n– Ez normális. Jövő héten az összes hírt együtt hallgatjuk meg.",
+  "ru": "– Привет, Золи! Сегодня утром я слушал радио «Кошут» и хочу рассказать, что понял.\n– Привет! Я слушаю, говори!\n– По новостям, правительство объявило, что в следующем году билет на поезд подорожает. Или подешевеет? Я не уверен.\n– Здесь ты не так понял: сказали, что для студентов он станет дешевле. Суть: не дороже, а дешевле.\n– Понял, спасибо. Переспрошу: только для студентов или для всех?\n– Только для студентов и пенсионеров.\n– Хорошо. Вторая новость: где-то на востоке страны была авария, но никто не погиб.\n– Да, рядом с Дебреценом, грузовик. Это ты понял правильно.\n– А последняя новость была о погоде: завтра везде будет дождь.\n– Уточняю: завтра дождь на западе, на востоке солнце.\n– Видишь, суть я понимаю, а детали ещё нет.\n– Это нормально. На следующей неделе прослушаем все новости вместе.",
+  "gloss": [
+   [
+    "figyelek",
+    "я слушаю внимательно"
+   ],
+   [
+    "drágább",
+    "дороже"
+   ],
+   [
+    "félreértetted",
+    "ты неправильно понял"
+   ],
+   [
+    "a lényeg",
+    "суть"
+   ],
+   [
+    "visszakérdezek",
+    "переспрошу"
+   ],
+   [
+    "nyugdíjas",
+    "пенсионер"
+   ],
+   [
+    "keleti részén",
+    "в восточной части"
+   ],
+   [
+    "senki sem",
+    "никто не"
+   ],
+   [
+    "teherautó",
+    "грузовик"
+   ],
+   [
+    "pontosítok",
+    "уточняю"
+   ],
+   [
+    "részleteket",
+    "детали"
+   ],
+   [
+    "normális",
+    "нормально"
+   ]
+  ],
+  "qs": [
+   "Для кого билет на поезд станет дешевле?",
+   "Где произошла авария?",
+   "Какая погода ожидается завтра на западе и на востоке?"
+  ]
+ },
+ "289": {
+  "hu": "Ma reggel fél hétkor bekapcsoltam a rádiót, és figyelmesen hallgattam a híreket. Az első hír a parlamentről szólt: a képviselők új törvényről beszéltek, amely a kórházakról szól. A második hír szerint a miniszterelnök Bécsbe utazott, ahol az osztrák kormánnyal találkozott. A harmadik hír a gazdaságról szólt: a forint erősebb lett, és a kenyér ára nem változott. Utána sportot mondtak: a magyar válogatott vesztett egy nullára. Az utolsó hír az időjárás volt: ma huszonöt fok, holnap esik az eső. Mindegyik hírből leírtam a lényeget egy mondatban. Egyetlen hírt sem értettem félre, ezt Zoltán ellenőrizte. Röviden és tömören: a parlament, a miniszterelnök, a forint, a sport és az eső. Ez most már egy jó reggel nálam.",
+  "ru": "Сегодня утром в половине седьмого я включил радио и внимательно слушал новости. Первая новость была о парламенте: депутаты обсуждали новый закон, который касается больниц. По второй новости, премьер-министр поехал в Вену, где встретился с австрийским правительством. Третья новость была об экономике: форинт укрепился, а цена хлеба не изменилась. Потом говорили о спорте: сборная Венгрии проиграла один — ноль. Последняя новость была о погоде: сегодня двадцать пять градусов, завтра дождь. Из каждой новости я записал суть в одном предложении. Ни одну новость я не понял неправильно, это проверил Золтан. Коротко и ясно: парламент, премьер-министр, форинт, спорт и дождь. Это у меня теперь обычное хорошее утро.",
+  "gloss": [
+   [
+    "bekapcsoltam",
+    "я включил"
+   ],
+   [
+    "figyelmesen",
+    "внимательно"
+   ],
+   [
+    "képviselő",
+    "депутат"
+   ],
+   [
+    "szól (valamiről)",
+    "касается, (это) о"
+   ],
+   [
+    "erősebb lett",
+    "укрепился"
+   ],
+   [
+    "válogatott",
+    "сборная"
+   ],
+   [
+    "vesztett",
+    "проиграла"
+   ],
+   [
+    "mindegyik",
+    "каждый"
+   ],
+   [
+    "a lényeg",
+    "суть"
+   ],
+   [
+    "egyetlen ... sem",
+    "ни один"
+   ],
+   [
+    "félreértettem",
+    "я неправильно понял"
+   ],
+   [
+    "röviden és tömören",
+    "коротко и ясно"
+   ]
+  ],
+  "qs": [
+   "Куда поехал премьер-министр?",
+   "Как изменилась цена хлеба?",
+   "С каким счётом проиграла сборная?"
+  ]
+ },
+ "290": {
+  "hu": "Következik az időjárás-jelentés. Ma délelőtt az ország egész területén süt a nap, a hőmérséklet huszonkét és huszonhat fok között lesz. Délután nyugaton esik az eső, valahol a Dunántúlon. Este mindenhol csak tizenöt fok lesz. Holnap, csütörtökön Budapesten egész nap esik, Debrecenben csak délután. Az utolsó napokban a Balatonnál harminc fok volt, de a következő héten ez már sehol nem lesz. A hétvégén újra süt a nap. Az utakon figyeljenek az esőre, mert a forgalom nagy lesz. Ennyi volt az időjárás, a következő hírek nyolc órakor.",
+  "ru": "А теперь прогноз погоды. Сегодня до полудня на всей территории страны светит солнце, температура будет между двадцатью двумя и двадцатью шестью градусами. После полудня на западе пойдёт дождь, где-то в Задунайском крае. Вечером везде будет только пятнадцать градусов. Завтра, в четверг, в Будапеште дождь весь день, в Дебрецене — только после полудня. В последние дни у Балатона было тридцать градусов, но на следующей неделе этого уже нигде не будет. В выходные снова светит солнце. На дорогах будьте внимательны из-за дождя, потому что движение будет большим. Это была погода, следующие новости в восемь часов.",
+  "gloss": [
+   [
+    "következik",
+    "далее, следует"
+   ],
+   [
+    "időjárás-jelentés",
+    "прогноз погоды"
+   ],
+   [
+    "az ország egész területén",
+    "на всей территории страны"
+   ],
+   [
+    "hőmérséklet",
+    "температура"
+   ],
+   [
+    "nyugaton",
+    "на западе"
+   ],
+   [
+    "Dunántúl",
+    "Задунайский край"
+   ],
+   [
+    "mindenhol",
+    "везде"
+   ],
+   [
+    "az utolsó napokban",
+    "в последние дни"
+   ],
+   [
+    "sehol",
+    "нигде"
+   ],
+   [
+    "figyeljenek",
+    "будьте внимательны"
+   ],
+   [
+    "forgalom",
+    "движение, трафик"
+   ],
+   [
+    "ennyi volt",
+    "это всё, на этом всё"
+   ]
+  ],
+  "qs": [
+   "Какая температура ожидается сегодня до полудня?",
+   "Какая погода будет завтра в Будапеште и в Дебрецене?",
+   "Во сколько будут следующие новости?"
+  ]
+ },
+ "291": {
+  "hu": "Hírek, röviden és tömören. A parlament ma délelőtt új törvényt fogadott el: százhetvenöt képviselő mondott igent, hatvan nemet. A kormány bejelentette, hogy a következő választás jövő áprilisban lesz. A köztársasági elnök Budapesten találkozott a lengyel elnökkel; a lényeg: a két ország több projektet tervez a gazdaságban. A benzin ára holnaptól tíz forinttal drágul. Az ország keleti részén, Debrecen mellett baleset volt, de senki sem halt meg. A sportban: a magyar csapat két egyre nyert Prágában. Az időjárás: ma huszonnégy fok, holnap esik az eső. Az összes hírt bővebben a nyolc órás műsorban hallhatják. Köszönjük a figyelmet.",
+  "ru": "Новости, коротко и ясно. Парламент сегодня до полудня принял новый закон: сто семьдесят пять депутатов сказали «да», шестьдесят — «нет». Правительство объявило, что следующие выборы будут в апреле следующего года. Президент республики встретился в Будапеште с польским президентом; суть: две страны планируют больше проектов в экономике. Цена бензина с завтрашнего дня повышается на десять форинтов. На востоке страны, рядом с Дебреценом, была авария, но никто не погиб. В спорте: венгерская команда выиграла два — один в Праге. Погода: сегодня двадцать четыре градуса, завтра дождь. Все новости подробнее вы можете услышать в восьмичасовой передаче. Спасибо за внимание.",
+  "gloss": [
+   [
+    "törvényt fogadott el",
+    "принял закон"
+   ],
+   [
+    "képviselő",
+    "депутат"
+   ],
+   [
+    "választás",
+    "выборы"
+   ],
+   [
+    "köztársasági elnök",
+    "президент республики"
+   ],
+   [
+    "lengyel",
+    "польский"
+   ],
+   [
+    "benzin",
+    "бензин"
+   ],
+   [
+    "keleti részén",
+    "в восточной части"
+   ],
+   [
+    "holnaptól",
+    "с завтрашнего дня"
+   ],
+   [
+    "tíz forinttal drágul",
+    "дорожает на десять форинтов"
+   ],
+   [
+    "bővebben",
+    "подробнее"
+   ],
+   [
+    "műsor",
+    "передача"
+   ],
+   [
+    "köszönjük a figyelmet",
+    "спасибо за внимание"
+   ]
+  ],
+  "qs": [
+   "Сколько депутатов проголосовало за новый закон?",
+   "Когда будут следующие выборы?",
+   "На сколько форинтов подорожает бензин?"
+  ]
+ },
+ "292": {
+  "hu": "– Jó napot kívánok! Ma egy kicsit mást kérdezek. Szokott magyar híreket hallgatni?\n– Jó napot kívánok! Igen, minden reggel a rádiót hallgatom, és este a híreket nézem az interneten.\n– Mit hallott ma a hírekben?\n– Ma reggel azt hallottam, hogy a parlament új törvényt fogadott el, és hogy a miniszterelnök Bécsben volt.\n– Mindent megértett?\n– Nem mindent. A lényeget igen, de ha valaki gyorsan beszél, a részleteket néha félreértem.\n– Ez teljesen normális. És az időjárást?\n– Azt már jól értem: ma Budapesten huszonnégy fok van, holnap esik az eső.\n– Miért hallgat magyar rádiót?\n– Mert így minden nap hallom a nyelvet, és a konzuli meghallgatásra is készülök.\n– Nagyon jó. Van még valami, amit szeretne hozzátenni?\n– Csak annyit, hogy a magyar rádió nekem már nem idegen.",
+  "ru": "– Добрый день! Сегодня я спрошу немного о другом. Вы обычно слушаете венгерские новости?\n– Добрый день! Да, каждое утро я слушаю радио, а вечером смотрю новости в интернете.\n– Что вы слышали сегодня в новостях?\n– Сегодня утром я слышал, что парламент принял новый закон и что премьер-министр был в Вене.\n– Вы всё поняли?\n– Не всё. Суть — да, но если кто-то говорит быстро, детали я иногда понимаю неправильно.\n– Это совершенно нормально. А погоду?\n– Её я уже хорошо понимаю: сегодня в Будапеште двадцать четыре градуса, завтра дождь.\n– Почему вы слушаете венгерское радио?\n– Потому что так я каждый день слышу язык и готовлюсь к консульскому собеседованию.\n– Очень хорошо. Хотите что-нибудь добавить?\n– Только то, что венгерское радио для меня уже не чужое.",
+  "gloss": [
+   [
+    "szokott hallgatni",
+    "обычно слушает"
+   ],
+   [
+    "interneten",
+    "в интернете"
+   ],
+   [
+    "törvényt fogadott el",
+    "принял закон"
+   ],
+   [
+    "megértett",
+    "вы поняли"
+   ],
+   [
+    "a lényeg",
+    "суть"
+   ],
+   [
+    "részleteket",
+    "детали"
+   ],
+   [
+    "félreértem",
+    "понимаю неправильно"
+   ],
+   [
+    "teljesen normális",
+    "совершенно нормально"
+   ],
+   [
+    "készülök",
+    "я готовлюсь"
+   ],
+   [
+    "hozzátenni",
+    "добавить"
+   ],
+   [
+    "csak annyit, hogy",
+    "только то, что"
+   ],
+   [
+    "idegen",
+    "чужой"
+   ]
+  ],
+  "qs": [
+   "Когда Кирилл слушает радио, а когда смотрит новости?",
+   "Что он иногда понимает неправильно?",
+   "Почему он слушает венгерское радио?"
+  ]
+ },
+ "293": {
+  "hu": "Zoltán ma azt kérte, hogy mondjam el a családom történetét egyetlen percben, röviden és tömören. Ez nehezebb, mint hosszan beszélni, mert csak a lényeget szabad mondani. Ezt mondtam: A dédapám, Babics Fjodor ezerkilencszázháromban született Csománfalván, Máramaros vármegyében, és magyar állampolgár volt. A nagyapám ezerkilencszázötvenegyben született ugyanott, később az Urálba költözött. Az apám és én Liszvában születtünk. Ezért kérem az egyszerűsített honosítást. Ennyi, öt mondat. Zoltán azt mondta, hogy ez tökéletes, mert mindegyik mondatban van egy fontos adat. Ha a konzul bővebben kérdez, akkor kiegészítem a részletekkel. Ha nem, akkor ez az öt mondat az összes, amit mondanom kell.",
+  "ru": "Золтан сегодня попросил рассказать историю моей семьи за одну минуту, коротко и ясно. Это труднее, чем говорить долго, потому что можно говорить только суть. Я сказал так: Мой прадед, Фёдор Бабич, родился в 1903 году в Чумалёве, в комитате Марамарош, и был венгерским гражданином. Мой дед родился в 1951 году там же, позже переехал на Урал. Мой отец и я родились в Лысьве. Поэтому я прошу упрощённую натурализацию. Всё, пять предложений. Золтан сказал, что это идеально, потому что в каждом предложении есть важный факт. Если консул спросит подробнее, я дополню деталями. Если нет, то эти пять предложений — всё, что мне нужно сказать.",
+  "gloss": [
+   [
+    "egyetlen percben",
+    "за одну минуту"
+   ],
+   [
+    "röviden és tömören",
+    "коротко и ясно"
+   ],
+   [
+    "hosszan",
+    "долго"
+   ],
+   [
+    "a lényeg",
+    "суть"
+   ],
+   [
+    "ugyanott",
+    "там же"
+   ],
+   [
+    "ennyi",
+    "всё, вот и всё"
+   ],
+   [
+    "tökéletes",
+    "идеально"
+   ],
+   [
+    "mindegyik",
+    "каждый"
+   ],
+   [
+    "bővebben",
+    "подробнее"
+   ],
+   [
+    "kiegészítem",
+    "я дополню"
+   ],
+   [
+    "részletekkel",
+    "деталями"
+   ],
+   [
+    "az összes",
+    "всё"
+   ]
+  ],
+  "qs": [
+   "За какое время Кирилл должен был рассказать историю семьи?",
+   "Сколько предложений он сказал?",
+   "Что он сделает, если консул спросит подробнее?"
+  ]
+ },
+ "294": {
+  "hu": "A negyvenkettedik hét a hallgatásról szólt. Minden reggel rádiót hallgattam, és minden este leírtam a lényeget. Az első napokban sok mindent félreértettem: a számokat, a neveket, a helyeket. A hét végére már az összes hírből megértettem a fontos adatokat. Megtanultam visszakérdezni: „Elnézést, hogy mondta? Pontosítaná?” Ez a konzulnál is hasznos lesz, ha valamit nem értek. Zoltánnak háromszor meséltem el a híreket, és mindegyik alkalommal jobban ment. A leghasznosabb gyakorlat az időjárás volt, mert ugyanazokat a szavakat ismétlik minden nap. Most már nem nehéz, ha valaki gyorsan beszél. Jövő héten jön az utolsó hét: a teljes meghallgatás és az eskü szövege.",
+  "ru": "Сорок вторая неделя была о слушании. Каждое утро я слушал радио, и каждый вечер записывал суть. В первые дни я многое понимал неправильно: числа, имена, места. К концу недели я уже понимал важные данные из всех новостей. Я научился переспрашивать: «Извините, как вы сказали? Вы не могли бы уточнить?» Это пригодится и у консула, если я чего-то не пойму. Золтану я трижды пересказывал новости, и с каждым разом получалось лучше. Самым полезным упражнением была погода, потому что одни и те же слова повторяют каждый день. Теперь уже не трудно, если кто-то говорит быстро. На следующей неделе — последняя неделя: полное собеседование и текст присяги.",
+  "gloss": [
+   [
+    "hallgatás",
+    "слушание, аудирование"
+   ],
+   [
+    "a lényeg",
+    "суть"
+   ],
+   [
+    "félreértettem",
+    "я понял неправильно"
+   ],
+   [
+    "a hét végére",
+    "к концу недели"
+   ],
+   [
+    "visszakérdezni",
+    "переспрашивать"
+   ],
+   [
+    "pontosítaná?",
+    "вы не могли бы уточнить?"
+   ],
+   [
+    "hasznos",
+    "полезный"
+   ],
+   [
+    "alkalommal",
+    "раз (при каждом случае)"
+   ],
+   [
+    "leghasznosabb",
+    "самый полезный"
+   ],
+   [
+    "teljes",
+    "полный"
+   ],
+   [
+    "eskü",
+    "присяга"
+   ],
+   [
+    "szövege",
+    "(её) текст"
+   ]
+  ],
+  "qs": [
+   "Что Кирилл делал каждое утро и каждый вечер?",
+   "Какую фразу он научился говорить, чтобы переспросить?",
+   "Какое упражнение оказалось самым полезным и почему?"
+  ]
+ },
+ "295": {
+  "hu": "– Jó napot kívánok! Foglaljon helyet. Kérem, mutatkozzon be, és mondja el, miért van itt.\n– Jó napot kívánok, tisztelt konzul úr! Babics Kirill vagyok, huszonöt éves, Permben élek. Egyszerűsített honosítási kérelmet nyújtottam be, mert a felmenőim magyar állampolgárok voltak.\n– Hol és mikor születtek a felmenői?\n– A dédapám, Babics Fjodor ezerkilencszázháromban született Csománfalván, Máramaros vármegyében. A dédanyám, Alekszinec Anna ezerkilencszáztízben Újbárdon. A nagyapám, Iván ezerkilencszázötvenegyben, szintén Csománfalván.\n– Milyen dokumentumokkal igazolja ezt?\n– Születési anyakönyvi kivonatokkal, az ezerkilencszázhuszonegyes népszámlálás másolatával és a beregszászi levéltár kivonataival. Mindegyikhez hiteles fordítás és apostille tartozik.\n– Mi a foglalkozása, és mi a végzettsége?\n– Történész vagyok, a permi pedagógiai egyetemen végeztem. Adatelemzőként dolgozom egy IT-cégnél.\n– Mit jelent önnek Magyarország?\n– A gyökereimet jelenti. A családom története Kárpátaljáról indul, és én szeretném ezt a kötődést hivatalosan is vállalni.\n– Ha megkapja az állampolgárságot, leteszi az állampolgársági esküt?\n– Igen, természetesen. Tudom, hogy az eskü ünnepélyes fogadalom: hűség Magyarországhoz és az Alaptörvény tisztelete.\n– Köszönöm, ez minden. A válaszai világosak és pontosak voltak.\n– Köszönöm szépen, konzul úr, a türelmét és a lehetőséget. További szép napot, viszontlátásra!",
+  "ru": "– Добрый день! Присаживайтесь. Пожалуйста, представьтесь и скажите, почему вы здесь.\n– Добрый день, уважаемый господин консул! Я Кирилл Бабич, мне двадцать пять лет, живу в Перми. Я подал заявление об упрощённой натурализации, потому что мои предки были венгерскими гражданами.\n– Где и когда родились ваши предки?\n– Мой прадед, Фёдор Бабич, родился в 1903 году в Чумалёве, в комитате Марамарош. Моя прабабушка, Анна Олексишенец, — в 1910 году в Новобарове. Мой дед, Иван, — в 1951 году, тоже в Чумалёве.\n– Какими документами вы это подтверждаете?\n– Свидетельствами о рождении, копией переписи 1921 года и выписками из архива в Берегово. К каждому прилагаются заверенный перевод и апостиль.\n– Кто вы по профессии и какое у вас образование?\n– Я историк, окончил пермский педагогический университет. Работаю аналитиком данных в IT-компании.\n– Что для вас значит Венгрия?\n– Она означает мои корни. История моей семьи начинается в Закарпатье, и я хотел бы принять эту связь и официально.\n– Если вы получите гражданство, вы примете присягу гражданина?\n– Да, конечно. Я знаю, что присяга — торжественное обещание: верность Венгрии и уважение к Основному закону.\n– Спасибо, это всё. Ваши ответы были ясными и точными.\n– Большое спасибо, господин консул, за терпение и возможность. Хорошего дня, до свидания!",
+  "gloss": [
+   [
+    "mutatkozzon be",
+    "представьтесь"
+   ],
+   [
+    "pedagógiai",
+    "педагогический"
+   ],
+   [
+    "türelmét",
+    "ваше терпение"
+   ],
+   [
+    "tartozik (hozzá)",
+    "прилагается (к нему)"
+   ],
+   [
+    "végeztem",
+    "я окончил"
+   ],
+   [
+    "gyökereimet",
+    "мои корни"
+   ],
+   [
+    "kötődés",
+    "связь, привязанность"
+   ],
+   [
+    "hivatalosan",
+    "официально"
+   ],
+   [
+    "vállalni",
+    "принять (на себя)"
+   ],
+   [
+    "természetesen",
+    "конечно"
+   ],
+   [
+    "ünnepélyes fogadalom",
+    "торжественное обещание"
+   ],
+   [
+    "hűség",
+    "верность"
+   ]
+  ],
+  "qs": [
+   "Какими документами Кирилл подтверждает происхождение?",
+   "Что для Кирилла значит Венгрия?",
+   "Что, по словам Кирилла, означает присяга?"
+  ]
+ },
+ "296": {
+  "hu": "Ha a döntés pozitív lesz, az állampolgársági esküt a moszkvai konzulátuson teszem le. Az eskütétel ünnepélyes: a teremben ott van a magyar zászló és a címer, és a himnuszt is lejátsszák. Az eskü szövegét már most tanulom, mert nehéz, de gyönyörű. Így kezdődik: „Én, Babics Kirill esküszöm, hogy Magyarországot hazámnak tekintem.” Aztán ezt mondom: „Az Alaptörvényt tiszteletben tartom, és hazámat szolgálom.” Az eskü után átveszem a honosítási okiratot, és aláírom. Ezzel a nappal leszek magyar állampolgár. Utána jön az útlevéligénylés és a személyazonosító igazolvány. Ez még a jövő, de ma már a szöveg minden szavát értem. A nagyapám azt kérte, hogy ott legyen velem azon a napon.",
+  "ru": "Если решение будет положительным, присягу гражданина я приму в московском консульстве. Принесение присяги торжественное: в зале венгерский флаг и герб, и звучит гимн. Текст присяги я учу уже сейчас, потому что он трудный, но красивый. Начинается он так: «Я, Кирилл Бабич, клянусь, что считаю Венгрию своей родиной». Потом я говорю: «Я уважаю Основной закон и служу своей родине». После присяги я получаю свидетельство о натурализации и подписываю его. С этого дня я становлюсь венгерским гражданином. Потом — запрос паспорта и удостоверение личности. Это ещё будущее, но сегодня я уже понимаю каждое слово текста. Мой дед попросил, чтобы в тот день он был со мной.",
+  "gloss": [
+   [
+    "pozitív",
+    "положительный"
+   ],
+   [
+    "esküt teszem le",
+    "я приму присягу"
+   ],
+   [
+    "eskütétel",
+    "принесение присяги"
+   ],
+   [
+    "terem",
+    "зал"
+   ],
+   [
+    "zászló",
+    "флаг"
+   ],
+   [
+    "címer",
+    "герб"
+   ],
+   [
+    "himnusz",
+    "гимн"
+   ],
+   [
+    "hazámnak tekintem",
+    "считаю своей родиной"
+   ],
+   [
+    "tiszteletben tartom",
+    "я уважаю, соблюдаю"
+   ],
+   [
+    "honosítási okirat",
+    "свидетельство о натурализации"
+   ],
+   [
+    "átveszem",
+    "я получаю, принимаю"
+   ],
+   [
+    "szöveg",
+    "текст"
+   ]
+  ],
+  "qs": [
+   "Где Кирилл примет присягу?",
+   "Что есть в зале во время принесения присяги?",
+   "Что Кирилл получит и подпишет после присяги?"
+  ]
+ },
+ "297": {
+  "hu": "Ma hangosan felolvastam az összes dokumentumomat, mert a konzul kérheti, hogy mutassam be őket. Az első: „Születési anyakönyvi kivonat. Név: Babics Iván. Született: ezerkilencszázötvenegy május kilencedikén, Csománfalván. Apja: Babics Fjodor. Anyja: Alekszinec Anna.” A második az apám kivonata: „Babics Iván, született ezerkilencszázhetvennyolc március tizenhetedikén, Liszvában.” A harmadik az enyém: kétezer-kettő április tizenkettedike. A negyedik a népszámlálási ív másolata: „Babics Fjodor, ezerkilencszázhárom, ruszin, görögkatolikus, cipész, Csománfalva.” Az ötödik a beregszászi levéltár kivonata a dédanyámról: „Alekszinec Anna, született ezerkilencszáztíz, Újbárd.” Minden okmányon ott a hiteles fordítás és az apostille. Az igazolások szavait mind ismerem: név, születési hely, születési idő, apja neve. A felolvasás tíz percig tartott, és egyetlen szót sem hibáztam el. Az interneten is ellenőriztem, hogy a nevek ugyanúgy szerepelnek-e mindenhol.",
+  "ru": "Сегодня я вслух прочитал все свои документы, потому что консул может попросить их представить. Первый: «Свидетельство о рождении. Имя: Иван Бабич. Родился: 9 мая 1951 года, в Чумалёве. Отец: Фёдор Бабич. Мать: Анна Олексишенец». Второй — свидетельство отца: «Иван Бабич, родился 17 марта 1978 года, в Лысьве». Третье — моё: 12 апреля 2002 года. Четвёртый — копия переписного листа: «Фёдор Бабич, 1903, русин, греко-католик, сапожник, Чумалёво». Пятый — выписка из архива в Берегово о прабабушке: «Анна Олексишенец, родилась в 1910 году, Новобарово». На каждом документе есть заверенный перевод и апостиль. Все слова справок я знаю: имя, место рождения, дата рождения, имя отца. Чтение заняло десять минут, и я не ошибся ни в одном слове. В интернете я тоже проверил, везде ли имена написаны одинаково.",
+  "gloss": [
+   [
+    "hangosan",
+    "вслух"
+   ],
+   [
+    "felolvastam",
+    "я прочитал вслух"
+   ],
+   [
+    "kérheti",
+    "может попросить"
+   ],
+   [
+    "mutassam be",
+    "чтобы я представил"
+   ],
+   [
+    "az enyém",
+    "моё"
+   ],
+   [
+    "népszámlálási ív",
+    "переписной лист"
+   ],
+   [
+    "igazolás",
+    "справка"
+   ],
+   [
+    "születési idő",
+    "дата рождения"
+   ],
+   [
+    "tartott",
+    "заняло, длилось"
+   ],
+   [
+    "egyetlen szót sem",
+    "ни одного слова"
+   ],
+   [
+    "hibáztam el",
+    "я ошибся"
+   ],
+   [
+    "ugyanúgy szerepelnek-e",
+    "одинаково ли написаны"
+   ]
+  ],
+  "qs": [
+   "Какие данные указаны в свидетельстве о рождении деда?",
+   "Что написано в копии переписного листа о прадеде?",
+   "Сколько длилось чтение документов вслух?"
+  ]
+ },
+ "298": {
+  "hu": "A háromszázadik nap előtt köszönetet szeretnék mondani. Először a nagyapámnak, aki minden történetet elmesélt Csománfalváról, és aki türelmesen hallgatta a magyar mondataimat. Az apámnak, aki az összes régi okmányt megkereste a szekrényben. Az anyámnak, aki minden reggel megkérdezte: „Tanultál ma magyarul?” Zoltánnak, a tandem partneremnek, aki tíz hónapon át minden szerdán beszélt velem. Eszternek, a tanáromnak, aki a nyelvtant megmagyarázta. A kollégáimnak, akik szabadnapot adtak a konzuli időpontra. Hálás vagyok mindegyiküknek, mert egyedül nem sikerült volna. A nagyapám tegnap azt mondta oroszul: „Büszke vagyok rád, fiam.” Ez volt a legszebb mondat ezen a héten.",
+  "ru": "Перед трёхсотым днём я хочу сказать спасибо. Сначала деду, который рассказал все истории о Чумалёве и который терпеливо слушал мои венгерские предложения. Отцу, который нашёл в шкафу все старые документы. Маме, которая каждое утро спрашивала: «Ты сегодня учил венгерский?» Золтану, моему тандем-партнёру, который десять месяцев каждую среду говорил со мной. Эстер, моей учительнице, которая объяснила грамматику. Моим коллегам, которые дали выходной на день приёма в консульстве. Я благодарен каждому из них, потому что один я бы не справился. Дед вчера сказал по-русски: «Я горжусь тобой, сынок». Это было самое красивое предложение на этой неделе.",
+  "gloss": [
+   [
+    "köszönetet mondani",
+    "сказать спасибо, поблагодарить"
+   ],
+   [
+    "türelmesen",
+    "терпеливо"
+   ],
+   [
+    "szekrény",
+    "шкаф"
+   ],
+   [
+    "tandem partner",
+    "тандем-партнёр"
+   ],
+   [
+    "tíz hónapon át",
+    "в течение десяти месяцев"
+   ],
+   [
+    "megmagyarázta",
+    "объяснила"
+   ],
+   [
+    "szabadnap",
+    "выходной"
+   ],
+   [
+    "hálás vagyok",
+    "я благодарен"
+   ],
+   [
+    "mindegyiküknek",
+    "каждому из них"
+   ],
+   [
+    "egyedül",
+    "один, в одиночку"
+   ],
+   [
+    "nem sikerült volna",
+    "не получилось бы"
+   ],
+   [
+    "büszke vagyok rád",
+    "я горжусь тобой"
+   ]
+  ],
+  "qs": [
+   "За что Кирилл благодарит деда?",
+   "Что делала мама каждое утро?",
+   "Что сказал дед вчера?"
+  ]
+ },
+ "299": {
+  "hu": "– Szia, Kirill! Ma van az utolsó óránk. Hogy érzed magad?\n– Szia, Eszter! Nyugodt vagyok, és egy kicsit büszke. Háromszáz nap, és minden nap tanultam.\n– Gratulálok! Mondd el, mi volt a legnehezebb?\n– A határozott ragozás és a hangrend a gyors válaszokban. De a nagyapám történetét már álmomban is el tudom mondani.\n– És mi volt a legszebb?\n– Amikor a nagyapám először hallotta magyarul, hogy „Csománfalván született”. Mosolygott.\n– Az eskü szövegét tudod már?\n– Igen: „Magyarországot hazámnak tekintem, az Alaptörvényt tiszteletben tartom.” Ünnepélyes és nehéz, de értem minden szavát.\n– Tökéletes. Mikor van a meghallgatás?\n– Október tizenharmadikán, Moszkvában. Elviszem az összes okmányt, és nyugodtan fogok beszélni.\n– Biztos vagyok benne, hogy sikerülni fog. Utána írj nekem!\n– Persze. Köszönök mindent, Eszter. Megérte.\n– Nekem is megérte. Sok sikert, és viszontlátásra!",
+  "ru": "– Привет, Кирилл! Сегодня наш последний урок. Как ты себя чувствуешь?\n– Привет, Эстер! Я спокоен и немного горд. Триста дней, и каждый день я учился.\n– Поздравляю! Скажи, что было самым трудным?\n– Определённое спряжение и гармония гласных в быстрых ответах. Но историю деда я уже могу рассказать даже во сне.\n– А что было самым красивым?\n– Когда дед впервые услышал по-венгерски «Csománfalván született». Он улыбнулся.\n– Текст присяги ты уже знаешь?\n– Да: «Я считаю Венгрию своей родиной, уважаю Основной закон». Торжественно и трудно, но я понимаю каждое слово.\n– Отлично. Когда собеседование?\n– Тринадцатого октября, в Москве. Я возьму все документы и буду говорить спокойно.\n– Я уверена, что получится. Потом напиши мне!\n– Конечно. Спасибо за всё, Эстер. Это того стоило.\n– Для меня тоже. Удачи и до свидания!",
+  "gloss": [
+   [
+    "hogy érzed magad",
+    "как ты себя чувствуешь"
+   ],
+   [
+    "büszke",
+    "гордый"
+   ],
+   [
+    "gratulálok",
+    "поздравляю"
+   ],
+   [
+    "álmomban is",
+    "даже во сне"
+   ],
+   [
+    "mosolygott",
+    "улыбнулся"
+   ],
+   [
+    "eskü szövege",
+    "текст присяги"
+   ],
+   [
+    "hazámnak tekintem",
+    "считаю своей родиной"
+   ],
+   [
+    "tiszteletben tartom",
+    "уважаю, соблюдаю"
+   ],
+   [
+    "ünnepélyes",
+    "торжественный"
+   ],
+   [
+    "tökéletes",
+    "отлично"
+   ],
+   [
+    "biztos vagyok benne",
+    "я уверена"
+   ],
+   [
+    "megérte",
+    "это того стоило"
+   ]
+  ],
+  "qs": [
+   "Что для Кирилла было самым трудным?",
+   "Какой момент он называет самым красивым?",
+   "Когда и где будет собеседование?"
+  ]
+ },
+ "300": {
+  "hu": "Ma van a háromszázadik nap. Tíz hónappal ezelőtt csak annyit tudtam mondani: „Jó napot kívánok, a nevem Kirill.” Most el tudom mondani a családom egész történetét: Csománfalvától az Urálig, a dédapámtól magamig. Ismerem a dokumentumaimat, a dátumokat, a neveket és a helyeket. Értem a híreket, az időjárást és a konzul kérdéseit. Tudom, mit jelent az eskü: hűség, tisztelet, haza. Nem volt könnyű: voltak napok, amikor fáradt voltam, és nem akartam tanulni. De a nagyapám története erőt adott, és minden nap folytattam. Büszke vagyok a felmenőimre, és büszke vagyok magamra is. Megérte minden perc. Októberben Moszkvába utazom, és magyarul fogom elmondani, ki vagyok, és honnan jövök.",
+  "ru": "Сегодня трёхсотый день. Десять месяцев назад я мог сказать только: «Добрый день, меня зовут Кирилл». Теперь я могу рассказать всю историю моей семьи: от Чумалёва до Урала, от прадеда до самого себя. Я знаю свои документы, даты, имена и места. Я понимаю новости, погоду и вопросы консула. Я знаю, что значит присяга: верность, уважение, родина. Было нелегко: были дни, когда я уставал и не хотел учиться. Но история деда давала силы, и каждый день я продолжал. Я горжусь своими предками и горжусь собой тоже. Каждая минута того стоила. В октябре я поеду в Москву и по-венгерски расскажу, кто я и откуда.",
+  "gloss": [
+   [
+    "háromszázadik",
+    "трёхсотый"
+   ],
+   [
+    "ezelőtt",
+    "назад (тому)"
+   ],
+   [
+    "csak annyit",
+    "только столько"
+   ],
+   [
+    "magamig",
+    "до самого себя"
+   ],
+   [
+    "hűség",
+    "верность"
+   ],
+   [
+    "tisztelet",
+    "уважение"
+   ],
+   [
+    "haza",
+    "родина"
+   ],
+   [
+    "fáradt",
+    "усталый"
+   ],
+   [
+    "erőt adott",
+    "давала силы"
+   ],
+   [
+    "folytattam",
+    "я продолжал"
+   ],
+   [
+    "büszke vagyok",
+    "я горжусь"
+   ],
+   [
+    "megérte",
+    "того стоило"
+   ]
+  ],
+  "qs": [
+   "Что Кирилл умел сказать десять месяцев назад?",
+   "Что, по его словам, значит присяга?",
+   "Что давало ему силы в трудные дни?"
+  ]
+ }
+}

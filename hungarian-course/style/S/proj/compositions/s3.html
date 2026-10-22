@@ -1,0 +1,115 @@
+<template>
+<style>
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:200 900;font-display:block;src:url('assets/fonts/SS4var-roman-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+2000-206F;}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:200 900;font-display:block;src:url('assets/fonts/SS4var-roman-latinext.woff2') format('woff2');unicode-range:U+0100-02FF;}
+@font-face{font-family:'Source Serif 4';font-style:italic;font-weight:200 900;font-display:block;src:url('assets/fonts/SS4var-italic-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+2000-206F;}
+@font-face{font-family:'Source Serif 4';font-style:italic;font-weight:200 900;font-display:block;src:url('assets/fonts/SS4var-italic-cyrillic.woff2') format('woff2');unicode-range:U+0400-045F,U+2116;}
+#root{position:absolute;inset:0;overflow:hidden;font-family:'Source Serif 4',serif;color:#211B16;
+  --ink:#211B16;--ru:#6A584A;--paper:#F4EDDF;--green:#2D6A4F;--blue:#3B6E9B;--ochre:#9A6B1F;--rule:#CBBBA0;}
+#root .paper{position:absolute;left:0;top:0;width:1280px;height:720px;}
+#root .hd{position:absolute;left:64px;top:38px;font-style:italic;font-weight:420;font-size:30px;line-height:40px;color:#3A3029;white-space:nowrap;}
+#root .hu{font-weight:650;font-optical-sizing:auto;white-space:nowrap;}
+#root .ru{font-style:italic;font-weight:400;color:#6A584A;white-space:nowrap;}
+#root .g{color:#2D6A4F;} #root .b{color:#3B6E9B;} #root .o{color:#9A6B1F;}
+#root canvas.full{position:absolute;left:0;top:0;width:1280px;height:720px;}
+
+#s3-wrap{position:absolute;inset:0;}
+#root .pc{position:absolute;transform-origin:50% 50%;}
+#s3-card{position:absolute;left:868px;top:236px;width:356px;height:300px;background:#FBF8F1;
+  clip-path:polygon(0% 2%,8% 0%,22% 1.5%,40% 0.4%,61% 1.8%,79% 0.2%,100% 1.4%,99.2% 22%,100% 47%,98.8% 73%,99.6% 100%,78% 98.6%,55% 100%,31% 98.4%,12% 99.6%,0.6% 98%,0% 74%,1.2% 49%,0.2% 23%);}
+#s3-cardS{position:absolute;left:874px;top:244px;width:356px;height:300px;background:rgba(70,50,30,0.22);filter:blur(5px);}
+#s3-q{position:absolute;left:32px;top:30px;}
+#s3-q .hu{font-size:44px;line-height:52px;font-variation-settings:"wght" 700;}
+#s3-q .ru{font-size:30px;margin-left:12px;}
+#root #s3-e{display:inline-block;transform-origin:0% 100%;}
+#s3-w{position:absolute;left:30px;top:104px;font-size:84px;line-height:100px;font-variation-settings:"wght" 700;}
+#s3-tr{position:absolute;left:34px;top:214px;font-size:44px;line-height:52px;}
+
+</style>
+<div id="root" data-composition-id="s3" data-width="1280" data-height="720" data-duration="8.589">
+<div id="s3-wrap">
+  <img class="paper" src="assets/img/paper.jpg" alt="" />
+  <img class="pc" id="s3-wall" src="assets/img/wall.png" alt="" />
+  <img class="pc" id="s3-floor" src="assets/img/floor.png" alt="" />
+  <img class="pc" id="s3-window" src="assets/img/window.png" alt="" />
+  <img class="pc" id="s3-towel" src="assets/img/towel.png" alt="" />
+  <img class="pc" id="s3-chair" src="assets/img/chair.png" alt="" />
+  <canvas id="s3-cv" class="full" width="1280" height="720"></canvas>
+  <img class="pc" id="s3-table" src="assets/img/table.png" alt="" />
+  <img class="pc" id="s3-cup" src="assets/img/cup.png" alt="" />
+  <img class="pc" id="s3-bread" src="assets/img/bread.png" alt="" />
+  <img class="pc" id="s3-jug" src="assets/img/jug.png" alt="" />
+  <img class="pc" id="s3-lamp" src="assets/img/lamp.png" alt="" />
+  <div class="hd" id="s3-hd">Теперь он в доме</div>
+  <div id="s3-cardS"></div>
+  <div id="s3-card">
+    <div id="s3-q"><span class="hu b" id="s3-qh">Hol?</span><span class="ru" id="s3-qr">где?</span></div>
+    <div class="hu" id="s3-w">a ház<span class="b" id="s3-e">ban</span></div>
+    <div class="ru" id="s3-tr">в доме</div>
+  </div>
+</div>
+</div>
+<script>
+(function () {
+const T = {"dur": 7.989, "ru": [{"t": 0.6, "end": 5.666, "text": "Теперь он внутри, за столом. Это вопрос «где?».", "parts": [{"t": 0.6, "dur": 3.746, "text": "Теперь он внутри, за столом. Это вопрос", "w": [["Теперь", 0.7], ["он", 1.059], ["внутри", 1.186], ["за", 1.904], ["столом", 2.043], ["Это", 3.405], ["вопрос", 3.706]]}, {"t": 4.796, "dur": 0.82, "text": "где?", "w": [["где", 4.896]]}]}], "hu": [{"t": 5.966, "dur": 1.023, "text": "a házban.", "w": [["a", 6.075], ["házban", 6.222]]}], "parts": [{"t": 0.6, "dur": 3.746, "text": "Теперь он внутри, за столом. Это вопрос", "w": [["Теперь", 0.7], ["он", 1.059], ["внутри", 1.186], ["за", 1.904], ["столом", 2.043], ["Это", 3.405], ["вопрос", 3.706]]}, {"t": 4.796, "dur": 0.82, "text": "где?", "w": [["где", 4.896]]}], "slot": 8.589, "next": 6.944};
+
+const K = window.KIRILL, O = window.OBJ_MANIFEST;
+const cv = document.getElementById("s3-cv"), ctx = cv.getContext("2d");
+const clamp = (v, a, b) => (v < a ? a : v > b ? b : v), seg = (t, a, b) => clamp((t - a) / (b - a), 0, 1);
+const eo = (x) => 1 - Math.pow(1 - x, 3);
+// lay out each cut-out: (x, y) is the piece's own origin on screen
+const L = { wall: [426, 378, 0.84], floor: [426, 604, 0.86], window: [664, 346, 1.32], towel: [250, 214, 1.25], chair: [246, 606, 1.45], table: [478, 606, 1.45], cup: [392, 482, 1.5], bread: [478, 483, 1.35], jug: [560, 483, 1.55], lamp: [478, 162, 1.12] };
+for (const [k, [x, y, s]] of Object.entries(L)) { const m = O[k], el = document.getElementById("s3-" + k); el.style.left = (x + m.ox * s) + "px"; el.style.top = (y + m.oy * s) + "px"; el.style.width = (m.w / m.S * s) + "px"; el.style.height = (m.h / m.S * s) + "px"; }
+const KX = 252, KY = 606, KS = 1.45;
+// on twos: everything below is driven by an inner timeline sampled at 12 fps
+const inner = gsap.timeline({ paused: true });
+inner.fromTo(["#s3-wall", "#s3-floor"], { filter: "drop-shadow(2px 5px 3px rgba(70,48,26,0.30))" }, { filter: "drop-shadow(2px 5px 3px rgba(70,48,26,0.30))", duration: 0.1 }, 0);
+const ARR = [["window", 0.75, 340, -260, 14], ["towel", 1.05, 220, -300, -18], ["chair", 1.35, -320, 120, -22], ["table", 1.55, 380, 200, 16], ["lamp", 1.9, 60, -320, 10], ["cup", 2.55, -200, -240, -40], ["bread", 2.7, 120, -260, 30], ["jug", 2.85, 260, -200, 26]];
+for (const [k, t0, dx, dy, r] of ARR) {
+  const el = "#s3-" + k;
+  inner.fromTo(el, { x: dx, y: dy, rotation: r, opacity: 0 }, { x: 0, y: 0, rotation: 0, opacity: 1, duration: 0.75, ease: "power3.out" }, t0);
+  inner.fromTo(el, { filter: "drop-shadow(10px 26px 12px rgba(70,48,26,0.30))" }, { filter: "drop-shadow(2px 5px 3px rgba(70,48,26,0.30))", duration: 0.75, ease: "power2.in" }, t0);
+  inner.fromTo(el, { scale: 1.12 }, { scale: 1, duration: 0.75, ease: "power2.in" }, t0);
+}
+inner.fromTo("#s3-lamp", { rotation: 0 }, { keyframes: [{ rotation: 2.2, duration: 0.9, ease: "sine.inOut" }, { rotation: -1.6, duration: 1.1, ease: "sine.inOut" }, { rotation: 1.0, duration: 1.1, ease: "sine.inOut" }, { rotation: 0, duration: 1.0, ease: "sine.inOut" }] }, 2.7);
+// the text card is laid down on «где?»
+const q = T.ru[0].parts[1].t, hu = T.hu[0].w[1][1];
+inner.fromTo(["#s3-card", "#s3-cardS"], { x: 300, y: -40, rotation: 9, opacity: 0 }, { x: 0, y: 0, rotation: -1.5, opacity: 1, duration: 0.7, ease: "power3.out" }, q - 0.25);
+inner.fromTo("#s3-cardS", { x: 30, y: 40 }, { x: 0, y: 0, duration: 0.7, ease: "power2.in", immediateRender: false }, q - 0.25);
+inner.fromTo("#s3-e", { opacity: 0, y: -60, rotation: -8 }, { opacity: 1, y: 0, rotation: 0, duration: 0.5, ease: "power3.out" }, hu - 0.1);
+inner.fromTo("#s3-tr", { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, hu + 0.35);
+// Kirill, a cut-out too: slides onto the chair, then breathes and turns his head
+function render(t) {
+  ctx.clearRect(0, 0, 1280, 720);
+  const a = eo(seg(t, 2.0, 2.75)); if (a <= 0) return;
+  const P = Object.assign(K.sit(), { x: KX - 320 * (1 - a), y: KY - 80 * (1 - a) * (1 - a), s: KS });
+  P.head = -0.04 + 0.03 * Math.sin(t * 2.1) * seg(t, 3, 4); P.lean = -0.04 + 0.015 * Math.sin(t * 1.7);
+  ctx.save(); ctx.translate(P.x, P.y); ctx.rotate((1 - a) * -0.25); ctx.translate(-P.x, -P.y);
+  ctx.shadowColor = "rgba(70,48,26,0.30)"; ctx.shadowOffsetX = 2 + 8 * (1 - a); ctx.shadowOffsetY = 5 + 20 * (1 - a); ctx.shadowBlur = 3 + 9 * (1 - a);
+  K.draw(ctx, P, "cut"); ctx.shadowColor = "transparent"; K.draw(ctx, P);
+  ctx.restore();
+}
+const wrap = document.getElementById("s3-wrap");
+// transition in: we arrive through the doorway of the previous scene (same push-in curve)
+const DC = [318 + 92.5 * 0.95, 668 - 116 * 0.95], DW = 105 * 0.95, DH = 228 * 0.95;
+function door(tau) {
+  const u = clamp((tau + 0.25) / 0.9, 0, 1), z = 1 + 21 * u * u * u;
+  if (z > 13) { wrap.style.clipPath = "none"; return; }
+  const hw = (DW / 2) * z, hh = (DH / 2) * z;
+  wrap.style.clipPath = `inset(${(DC[1] - hh).toFixed(1)}px ${(1280 - DC[0] - hw).toFixed(1)}px ${(720 - DC[1] - hh).toFixed(1)}px ${(DC[0] - hw).toFixed(1)}px)`;
+}
+K.load().then(() => {
+  K.buildCut(2.6);
+  const tl = gsap.timeline({ paused: true, onUpdate: () => { const t = tl.time(), q = Math.floor(t * 12 + 1e-6) / 12; inner.seek(q, false); render(q); door(t); } });
+  tl.to({ v: 0 }, { v: 1, duration: T.slot, ease: "none" }, 0);
+  tl.fromTo("#s3-hd", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 0.4);
+  // transition out (shared axis): lift and soften as the next scene rises
+  tl.fromTo("#s3-wrap", { y: 0, filter: "blur(0px)" }, { y: -70, filter: "blur(10px)", duration: 0.6, ease: "power2.in" }, T.dur);
+  tl.seek(0); inner.seek(0); render(0); door(0);
+  window.__timelines = window.__timelines || {};
+  window.__timelines["s3"] = tl;
+});
+
+})();
+</script>
+</template>

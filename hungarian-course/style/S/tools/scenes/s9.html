@@ -1,0 +1,65 @@
+<!-- s9 · summary poster + Kirill waves goodbye -->
+<style>
+#s9-wrap{position:absolute;inset:0;}
+#s9-h{position:absolute;left:64px;top:40px;font-style:italic;font-weight:460;font-size:46px;line-height:56px;color:#211B16;white-space:nowrap;}
+#s9-svg{position:absolute;left:0;top:0;width:1280px;height:720px;}
+#root .col{position:absolute;top:150px;width:270px;}
+#root .col .q{display:block;font-size:50px;line-height:58px;font-variation-settings:"wght" 700;}
+#root .col .r{display:block;font-size:36px;line-height:44px;font-weight:500;margin-top:2px;}
+#root .col .e{display:block;font-size:96px;line-height:120px;font-variation-settings:"wght" 700;margin-top:42px;}
+#root .col .x{display:block;font-size:38px;line-height:46px;font-variation-settings:"wght" 650;color:#211B16;margin-top:26px;}
+#root .col .xr{display:block;font-size:26px;line-height:32px;margin-top:2px;}
+</style>
+<div id="s9-wrap">
+  <img class="paper" src="assets/img/paper.jpg" alt="" />
+  <svg id="s9-svg" viewBox="0 0 1280 720" data-layout-ignore>
+    <path id="s9-r0" d="M64 116 H1216" stroke="#211B16" stroke-width="1.6" fill="none"/>
+    <path id="s9-v1" d="M680 150 V640" stroke="#CBBBA0" stroke-width="1" fill="none"/>
+    <path id="s9-v2" d="M950 150 V640" stroke="#CBBBA0" stroke-width="1" fill="none"/>
+  </svg>
+  <canvas id="s9-cv" class="full" width="1280" height="720"></canvas>
+  <div id="s9-h">Три вопроса, три окончания</div>
+  <div class="col" id="s9-c1" style="left:420px"><span class="q g hu">Hova?</span><span class="r g ru">куда?</span><span class="e g hu" id="s9-e1">-ba</span><span class="x hu">ház<span class="g">ba</span></span><span class="xr ru">в дом</span></div>
+  <div class="col" id="s9-c2" style="left:704px"><span class="q b hu">Hol?</span><span class="r b ru">где?</span><span class="e b hu" id="s9-e2">-ban</span><span class="x hu">ház<span class="b">ban</span></span><span class="xr ru">в доме</span></div>
+  <div class="col" id="s9-c3" style="left:974px"><span class="q o hu">Honnan?</span><span class="r o ru">откуда?</span><span class="e o hu" id="s9-e3">-ból</span><span class="x hu">ház<span class="o">ból</span></span><span class="xr ru">из дома</span></div>
+</div>
+<script>
+const K = window.KIRILL;
+const cv = document.getElementById("s9-cv"), ctx = cv.getContext("2d");
+const clamp = (v, a, b) => (v < a ? a : v > b ? b : v), seg = (t, a, b) => clamp((t - a) / (b - a), 0, 1);
+const eio = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+const W = T.parts[0].w, bye = (W.find((w) => w[0].startsWith("встреч")) || [0, 5])[1];
+function render(t) {
+  ctx.clearRect(0, 0, 1280, 720);
+  const w1 = seg(t, 0.9, 1.35) * (1 - seg(t, 2.6, 3.05)), w2 = seg(t, bye - 0.9, bye - 0.45) * (1 - seg(t, T.slot - 0.9, T.slot - 0.3)), w = Math.max(w1, w2);
+  const P = w > 0 ? K.wave(t, eio(w)) : K.stand("F");
+  Object.assign(P, { x: 208, y: 676, s: 2.4, look: 1.2, bob: 0.5 * Math.sin(t * 1.9) });
+  K.shadow(ctx, P, 0.22); K.draw(ctx, P);
+}
+const wrap = document.getElementById("s9-wrap");
+const S = { m: 0 };
+function iris() { // grows out of the previous scene's card
+  const m = S.m, L = 320 * (1 - m), Tp = 150 * (1 - m), R = 1280 - 960 - (1280 - 960) * m, B = 720 - 570 - (720 - 570) * m, r = 34 * (1 - m);
+  wrap.style.clipPath = m >= 1 ? "none" : `inset(${Tp.toFixed(1)}px ${R.toFixed(1)}px ${B.toFixed(1)}px ${L.toFixed(1)}px round ${r.toFixed(1)}px)`;
+}
+const LEN = {}; ["#s9-r0", "#s9-v1", "#s9-v2"].forEach((k) => { const el = document.querySelector(k); LEN[k] = (el.getTotalLength && el.getTotalLength()) || 1200; });
+K.load().then(() => {
+  const tl = gsap.timeline({ paused: true, onUpdate: () => { render(tl.time()); iris(); } });
+  tl.to({ v: 0 }, { v: 1, duration: T.slot, ease: "none" }, 0);
+  tl.fromTo(S, { m: 0 }, { m: 1, duration: 0.8, ease: "power3.inOut" }, 0);
+  tl.fromTo("#s9-wrap", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power1.out" }, 0.05);
+  tl.fromTo("#s9-h", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 0.45);
+  const draw = (sel, at, d = 0.7) => { const el = document.querySelector(sel), L = LEN[sel]; tl.fromTo(el, { strokeDasharray: L, strokeDashoffset: L }, { strokeDashoffset: 0, duration: d, ease: "power2.inOut" }, at); };
+  draw("#s9-r0", 0.5, 0.8); draw("#s9-v1", 1.1); draw("#s9-v2", 1.25);
+  // «три вопроса»: the columns; «своё окончание»: the endings land
+  const tQ = (W.find((w) => w[0].startsWith("вопрос")) || [0, 1.6])[1], tE = (W.find((w) => w[0].startsWith("окончан")) || [0, 3.2])[1];
+  [1, 2, 3].forEach((i) => {
+    tl.fromTo(`#s9-c${i} .q, #s9-c${i} .r`, { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.55, ease: "power3.out", stagger: 0.06 }, tQ - 0.5 + i * 0.16);
+    tl.fromTo(`#s9-e${i}`, { opacity: 0, y: 40, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 0.8, ease: "elastic.out(1, 0.75)" }, tE - 0.3 + i * 0.14);
+    tl.fromTo(`#s9-c${i} .x, #s9-c${i} .xr`, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out", stagger: 0.08 }, tE + 0.4 + i * 0.12);
+  });
+  tl.seek(0); render(0); iris();
+  window.__timelines = window.__timelines || {};
+  window.__timelines["s9"] = tl;
+});
+</script>

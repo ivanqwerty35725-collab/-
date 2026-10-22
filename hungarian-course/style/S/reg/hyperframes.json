@@ -1,0 +1,74 @@
+{
+  "$schema": "https://hyperframes.heygen.com/schema/hyperframes.json",
+  "registry": "https://raw.githubusercontent.com/heygen-com/hyperframes/main/registry",
+  "paths": {
+    "blocks": "compositions",
+    "components": "compositions/components",
+    "assets": "assets"
+  },
+  "media": {
+    "autoProxy": true
+  },
+  "registryItems": [
+    {
+      "name": "ink-bleed-reveal",
+      "type": "hyperframes:component",
+      "target": "compositions/components/ink-bleed-reveal.html"
+    },
+    {
+      "name": "paper-collage-reveal",
+      "type": "hyperframes:component",
+      "target": "compositions/components/paper-collage-reveal.html"
+    },
+    {
+      "name": "torn-paper-rip",
+      "type": "hyperframes:component",
+      "target": "compositions/components/torn-paper-rip.html"
+    },
+    {
+      "name": "grain-overlay",
+      "type": "hyperframes:component",
+      "target": "compositions/components/grain-overlay.html"
+    },
+    {
+      "name": "typing-indicator",
+      "type": "hyperframes:component",
+      "target": "compositions/components/typing-indicator.html"
+    },
+    {
+      "name": "chat-message",
+      "type": "hyperframes:component",
+      "target": "compositions/components/chat-message.html"
+    },
+    {
+      "name": "focus-blur-resolve",
+      "type": "hyperframes:component",
+      "target": "compositions/components/focus-blur-resolve.html"
+    },
+    {
+      "name": "spring-pop",
+      "type": "hyperframes:component",
+      "target": "compositions/components/spring-pop.html"
+    },
+    {
+      "name": "variable-axis-type",
+      "type": "hyperframes:component",
+      "target": "compositions/components/variable-axis-type.html"
+    },
+    {
+      "name": "flowchart",
+      "type": "hyperframes:block",
+      "target": "compositions/flowchart.html"
+    },
+    {
+      "name": "transitions-blur",
+      "type": "hyperframes:block",
+      "target": "compositions/transitions-blur.html"
+    },
+    {
+      "name": "world-map",
+      "type": "hyperframes:block",
+      "target": "compositions/world-map.html"
+    }
+  ]
+}

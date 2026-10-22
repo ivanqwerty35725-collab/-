@@ -1,0 +1,95 @@
+<template>
+<style>
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:200 900;font-display:block;src:url('assets/fonts/SS4var-roman-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+2000-206F;}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:200 900;font-display:block;src:url('assets/fonts/SS4var-roman-latinext.woff2') format('woff2');unicode-range:U+0100-02FF;}
+@font-face{font-family:'Source Serif 4';font-style:italic;font-weight:200 900;font-display:block;src:url('assets/fonts/SS4var-italic-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+2000-206F;}
+@font-face{font-family:'Source Serif 4';font-style:italic;font-weight:200 900;font-display:block;src:url('assets/fonts/SS4var-italic-cyrillic.woff2') format('woff2');unicode-range:U+0400-045F,U+2116;}
+#root{position:absolute;inset:0;overflow:hidden;font-family:'Source Serif 4',serif;color:#211B16;
+  --ink:#211B16;--ru:#6A584A;--paper:#F4EDDF;--green:#2D6A4F;--blue:#3B6E9B;--ochre:#9A6B1F;--rule:#CBBBA0;}
+#root .paper{position:absolute;left:0;top:0;width:1280px;height:720px;}
+#root .hd{position:absolute;left:64px;top:38px;font-style:italic;font-weight:420;font-size:30px;line-height:40px;color:#3A3029;white-space:nowrap;}
+#root .hu{font-weight:650;font-optical-sizing:auto;white-space:nowrap;}
+#root .ru{font-style:italic;font-weight:400;color:#6A584A;white-space:nowrap;}
+#root .g{color:#2D6A4F;} #root .b{color:#3B6E9B;} #root .o{color:#9A6B1F;}
+#root canvas.full{position:absolute;left:0;top:0;width:1280px;height:720px;}
+
+#s5-wrap{position:absolute;inset:0;-webkit-mask-image:linear-gradient(90deg,#000 33.3%,transparent 50%);mask-image:linear-gradient(90deg,#000 33.3%,transparent 50%);-webkit-mask-size:300% 100%;mask-size:300% 100%;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:0% 0%;mask-position:0% 0%;}
+#s5-view{position:absolute;inset:0;-webkit-mask-image:linear-gradient(to bottom,transparent 64px,#000 122px);mask-image:linear-gradient(to bottom,transparent 64px,#000 122px);}
+#s5-board{position:absolute;left:0;top:0;width:1280px;height:720px;transform-origin:0 0;}
+#s5-svg{position:absolute;left:0;top:0;width:1280px;height:720px;overflow:visible;}
+#root .nd{position:absolute;background:#FBF8F1;border:1px solid #E0D3BC;border-radius:16px;box-shadow:0 2px 6px rgba(60,40,20,0.08);display:flex;flex-direction:column;align-items:center;justify-content:center;}
+#root .nd .qq{font-style:italic;font-weight:460;font-size:40px;line-height:48px;color:#211B16;white-space:nowrap;}
+#root .nd.out{border-width:2px;}
+#root .nd .h{font-size:34px;line-height:40px;font-variation-settings:"wght" 700;}
+#root .nd .r{font-style:italic;font-size:46px;line-height:52px;font-weight:500;}
+#root .nd .ex{font-size:30px;line-height:38px;font-variation-settings:"wght" 650;color:#211B16;margin-top:2px;}
+#root .el{position:absolute;font-style:italic;font-size:28px;line-height:34px;color:#5A4A3E;white-space:nowrap;background:#F4EDDF;padding:0 8px;}
+
+</style>
+<div id="root" data-composition-id="s5" data-width="1280" data-height="720" data-duration="13.59">
+<div id="s5-wrap">
+  <img class="paper" src="assets/img/paper.jpg" alt="" />
+  <div id="s5-view" data-layout-allow-overflow><div id="s5-board">
+    <svg id="s5-svg" viewBox="0 0 1280 720" data-layout-ignore>
+      <defs>
+        <marker id="s5-ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#211B16" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+        <marker id="s5-ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#3B6E9B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+        <marker id="s5-ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#2D6A4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+        <marker id="s5-ao" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#9A6B1F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+      </defs>
+      <path id="s5-e1" d="M560 202 C 470 250, 330 270, 300 318" fill="none" stroke="#3B6E9B" stroke-width="2" stroke-linecap="round"/>
+      <path id="s5-e2" d="M720 202 C 810 250, 900 270, 920 318" fill="none" stroke="#211B16" stroke-width="2" stroke-linecap="round"/>
+      <path id="s5-e3" d="M860 412 C 830 470, 760 490, 750 532" fill="none" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round"/>
+      <path id="s5-e4" d="M980 412 C 1010 470, 1080 490, 1090 532" fill="none" stroke="#9A6B1F" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+    <div class="nd" id="s5-n0" style="left:470px;top:112px;width:340px;height:92px"><span class="qq">Есть движение?</span></div>
+    <div class="nd out" id="s5-n1" style="left:160px;top:322px;width:280px;height:150px;border-color:#3B6E9B"><span class="h b">Hol?</span><span class="r b">где?</span><span class="ex">a ház<span class="b">ban</span></span></div>
+    <div class="nd" id="s5-n2" style="left:752px;top:322px;width:340px;height:92px"><span class="qq">К цели или от неё?</span></div>
+    <div class="nd out" id="s5-n3" style="left:610px;top:536px;width:280px;height:150px;border-color:#2D6A4F"><span class="h g">Hova?</span><span class="r g">куда?</span><span class="ex">a ház<span class="g">ba</span></span></div>
+    <div class="nd out" id="s5-n4" style="left:950px;top:536px;width:280px;height:150px;border-color:#9A6B1F"><span class="h o">Honnan?</span><span class="r o">откуда?</span><span class="ex">a ház<span class="o">ból</span></span></div>
+    <div class="el" id="s5-l1" style="left:370px;top:226px">нет</div>
+    <div class="el" id="s5-l2" style="left:850px;top:226px">да</div>
+    <div class="el" id="s5-l3" style="left:690px;top:450px">к цели</div>
+    <div class="el" id="s5-l4" style="left:1060px;top:450px">от цели</div>
+  </div></div>
+  <div class="hd" id="s5-hd">Как выбрать окончание</div>
+</div>
+</div>
+<script>
+(function () {
+const T = {"dur": 12.99, "ru": [{"t": 0.5, "end": 3.096, "text": "Спросите себя: есть ли движение?", "parts": [{"t": 0.5, "dur": 2.546, "text": "Спросите себя: есть ли движение?", "w": [["Спросите", 0.6], ["себя", 1.213], ["есть", 1.862], ["ли", 2.163], ["движение", 2.301]]}]}, {"t": 3.346, "end": 6.553, "text": "Если нет, это вопрос «где?».", "parts": [{"t": 3.346, "dur": 1.887, "text": "Если нет, это вопрос", "w": [["Если", 3.446], ["нет", 3.978], ["это", 4.465], ["вопрос", 4.638]]}, {"t": 5.683, "dur": 0.82, "text": "где?", "w": [["где", 5.783]]}]}, {"t": 6.753, "end": 12.24, "text": "Если есть, то «куда?» или «откуда?».", "parts": [{"t": 6.753, "dur": 1.655, "text": "Если есть, то", "w": [["Если", 6.853], ["есть", 7.397], ["то", 7.987]]}, {"t": 8.858, "dur": 0.757, "text": "куда?", "w": [["куда", 8.958]]}, {"t": 10.016, "dur": 0.729, "text": "или", "w": [["или", 10.116]]}, {"t": 11.195, "dur": 0.995, "text": "откуда?", "w": [["откуда", 11.295]]}]}], "hu": [], "parts": [{"t": 0.5, "dur": 2.546, "text": "Спросите себя: есть ли движение?", "w": [["Спросите", 0.6], ["себя", 1.213], ["есть", 1.862], ["ли", 2.163], ["движение", 2.301]]}, {"t": 3.346, "dur": 1.887, "text": "Если нет, это вопрос", "w": [["Если", 3.446], ["нет", 3.978], ["это", 4.465], ["вопрос", 4.638]]}, {"t": 5.683, "dur": 0.82, "text": "где?", "w": [["где", 5.783]]}, {"t": 6.753, "dur": 1.655, "text": "Если есть, то", "w": [["Если", 6.853], ["есть", 7.397], ["то", 7.987]]}, {"t": 8.858, "dur": 0.757, "text": "куда?", "w": [["куда", 8.958]]}, {"t": 10.016, "dur": 0.729, "text": "или", "w": [["или", 10.116]]}, {"t": 11.195, "dur": 0.995, "text": "откуда?", "w": [["откуда", 11.295]]}], "slot": 13.59, "next": 12.107};
+
+const board = document.getElementById("s5-board");
+const C = { x: 640, y: 180, z: 1.55 };            // camera: focus point + zoom
+const cam = () => { board.style.transform = `translate(${(640 - C.x * C.z).toFixed(2)}px, ${(380 - C.y * C.z).toFixed(2)}px) scale(${C.z.toFixed(4)})`; };
+const tl = gsap.timeline({ paused: true, onUpdate: cam });
+const R = T.parts;                            // 0 question · 1 «если нет» · 2 где · 3 «если есть» · 4 куда · 5 или · 6 откуда
+// transition in: horizontal soft-edge wipe
+tl.fromTo("#s5-wrap", { webkitMaskPosition: "100% 0%", maskPosition: "100% 0%" }, { webkitMaskPosition: "0% 0%", maskPosition: "0% 0%", duration: 0.75, ease: "power2.inOut" }, 0);
+tl.fromTo("#s5-hd", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 0.5);
+const pop = (sel, at) => tl.fromTo(sel, { opacity: 0, scale: 0.92, y: 14 }, { opacity: 1, scale: 1, y: 0, duration: 0.6, ease: "power3.out" }, at);
+const MK = { "#s5-e1": "s5-ab", "#s5-e2": "s5-ah", "#s5-e3": "s5-ag", "#s5-e4": "s5-ao" };
+const draw = (sel, at, d = 0.7) => { const el = document.querySelector(sel), L = (el.getTotalLength && el.getTotalLength()) || 300; tl.fromTo(el, { strokeDasharray: L + 12, strokeDashoffset: L + 12 }, { strokeDashoffset: 0, duration: d, ease: "power2.inOut" }, at); tl.set(el, { attr: { "marker-end": `url(#${MK[sel]})` } }, at + d - 0.08); };
+const lab = (sel, at) => tl.fromTo(sel, { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, at);
+pop("#s5-n0", 0.55);
+// «если нет» -> где
+tl.to(C, { x: 470, y: 290, z: 1.3, duration: 1.1, ease: "power2.inOut" }, R[1].t - 0.2);
+draw("#s5-e1", R[1].t + 0.15); lab("#s5-l1", R[1].t + 0.35);
+pop("#s5-n1", R[2].t - 0.35);
+// «если есть» -> к цели или от неё
+tl.to(C, { x: 820, y: 300, z: 1.25, duration: 1.1, ease: "power2.inOut" }, R[3].t - 0.25);
+draw("#s5-e2", R[3].t + 0.05); lab("#s5-l2", R[3].t + 0.3);
+pop("#s5-n2", R[3].t + 0.6);
+// куда / откуда, then the whole tree
+tl.to(C, { x: 900, y: 470, z: 1.22, duration: 1.0, ease: "power2.inOut" }, R[4].t - 0.6);
+draw("#s5-e3", R[4].t - 0.3, 0.55); lab("#s5-l3", R[4].t - 0.1); pop("#s5-n3", R[4].t);
+draw("#s5-e4", R[6].t - 0.45, 0.55); lab("#s5-l4", R[6].t - 0.25); pop("#s5-n4", R[6].t - 0.1);
+tl.to(C, { x: 690, y: 400, z: 1.04, duration: 1.0, ease: "power2.inOut" }, R[6].t + 0.45);
+tl.set({}, {}, T.slot);
+cam();
+window.__timelines = window.__timelines || {};
+window.__timelines["s5"] = tl;
+
+})();
+</script>
+</template>

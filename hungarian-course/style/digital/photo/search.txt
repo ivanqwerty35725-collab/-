@@ -1,0 +1,123 @@
+{
+ "title": "File:Hollókői Falumúzeum.jpg",
+ "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Holl%C3%B3k%C5%91i_Falum%C3%BAzeum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+ "thumb": "https://upload.wikimedia.org/wikipedia/commons/2/21/Holl%C3%B3k%C5%91i_Falum%C3%BAzeum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+ "desc": "https://commons.wikimedia.org/wiki/File:Holl%C3%B3k%C5%91i_Falum%C3%BAzeum.jpg",
+ "w": 3456,
+ "h": 2592,
+ "LicenseShortName": "CC BY-SA 3.0",
+ "LicenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+ "Artist": "<a href=\"https://en.wikipedia.org/wiki/hu:User:P%C3%A1szt%C3%B6rperc\" class=\"extiw\" title=\"w:hu:User:Pásztörperc\">Pásztörperc</a> at <a href=\"https://en.wikipedia.org/wiki/hu:\" class=\"extiw\" title=\"w:hu:\">Hungarian Wikipedia</a>",
+ "Credit": "<bdi lang=\"en\" dir=\"ltr\">Transferred from <span class=\"plainlinks\"><a class=\"external text\" data-mw-original-href=\"//hu.wikipedia.org\" href=\"https://hu.wikipedia.org\">hu.wikipedia</a></span> to Commons.</bdi>",
+ "ImageDescription": "<a href=\"https://hu.wikipedia.org/wiki/Falum%C3%BAzeum_Holl%C3%B3k%C5%91n\" class=\"extiw\" title=\"hu:Falumúzeum Hollókőn\">Falumúzeum Hollókőn</a>, Kossuth út 82.",
+ "DateTimeOriginal": "2010-08-11"
+}
+Traceback (most recent call last):
+  File "/tmp/claude-0/-home-user--/26b0ee40-e351-58da-864e-84e1c80e1382/scratchpad/hu/style/digital/tools/commons.py", line 35, in <module>
+    for p in d["query"]["pages"].values():
+             ~^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+l%C3%B3k%C5%91_Kossuth_99-101.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+ "desc": "https://commons.wikimedia.org/wiki/File:Holl%C3%B3k%C5%91_Kossuth_99-101.jpg",
+ "w": 3456,
+ "h": 2592,
+ "LicenseShortName": "CC BY-SA 3.0",
+ "LicenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+ "Artist": "<a href=\"https://en.wikipedia.org/wiki/hu:User:P%C3%A1szt%C3%B6rperc\" class=\"extiw\" title=\"w:hu:User:Pásztörperc\">Pásztörperc</a> at <a href=\"https://en.wikipedia.org/wiki/hu:\" class=\"extiw\" title=\"w:hu:\">Hungarian Wikipedia</a>",
+ "Credit": "<bdi lang=\"en\" dir=\"ltr\">Transferred from <span class=\"plainlinks\"><a class=\"external text\" data-mw-original-href=\"//hu.wikipedia.org\" href=\"https://hu.wikipedia.org\">hu.wikipedia</a></span> to Commons by <a href=\"//commons.wikimedia.org/wiki/User:Rlevente\" title=\"User:Rlevente\">rlevente</a>.</bdi>",
+ "ImageDescription": "Hollókő, Kossuth u. 99–101., Hungary - monument house, museum",
+ "DateTimeOriginal": "2010-08-11 12:36:49"
+}
+== Tihany thatched house
+  File:Balaton House Restaurant. - Pisky Promenade, Tihany.JPG | 2272x1704 | CC BY-SA 3.0
+  File:Dwelling house. - 12 Petőfi Street, Tihany, Veszprém County.JPG | 2272x1704 | CC BY-SA 3.0
+  File:Dwelling house. - Petőfi Street, Tihany.JPG | 2272x1704 | CC BY-SA 3.0
+  File:Dwelling house. Listed ID 10480. Roof. - 22 Batthyány Street, Tihany.JPG | 2272x1704 | CC BY-SA 3.0
+  File:Dwelling house. Listed ID 10493. Thatched roof. - 51 Csokonai street, Tihany.JPG | 2272x1704 | CC BY-SA 3.0
+  File:Dwelling house. Listed ID 10495. Garden. - 55 Csokonai street, Tihany.JPG | 2272x1704 | CC BY-SA 3.0
+  File:Dwelling house. Listed ID 10524. - 61 Kossuth Street, Tihany.JPG | 2272x1704 | CC BY-SA 3.0
+  File:Dwelling house. Listed ID 10529. Window. - 6 Petőfi St, Tihany.JPG | 2272x1704 | CC BY-SA 3.0
+  File:Dwelling house. Listed ID 10530. Garden side. - 7 Petőfi St., Tihany.JPG | 2272x1704 | CC BY-SA 3.0
+  File:Dwelling house. Listed ID 10531. Garden side. - 13 Petőfi Street, Tihany.JPG | 2272x1704 | CC BY-SA 3.0
+  File:Restaurant. Listed ID 10514. Chimney. - 19 Kossuth St, Tihany.JPG | 2272x1704 | CC BY-SA 3.0
+  File:Thatched house. - 14 Batthyány St, Tihany.JPG | 2272x1704 | CC BY-SA 3.0
+  File:Thatched roof and 'IHS' at Borsos Miklós Square, Tihany.JPG | 1704x2272 | CC BY-SA 3.0
+  File:Tihany 1988 03.jpg | 693x1040 | CC BY-SA 4.0
+== Hollókő house village
+  File:Hollókői Falumúzeum.jpg | 3456x2592 | CC BY-SA 3.0
+== Szentendre skanzen house
+  File:Bakony1.JPG | 2048x1536 | CC BY-SA 3.0
+  File:Skanzen II-Tallya.JPG | 2528x1816 | CC BY-SA 3.0
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/urllib/request.py", line 1331, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/http/client.py", line 1386, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/http/client.py", line 1432, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/http/client.py", line 1381, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/http/client.py", line 1141, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "/usr/lib/python3.13/http/client.py", line 1085, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/client.py", line 1527, in connect
+    self.sock = self._context.wrap_socket(self.sock,
+                ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+                                          server_hostname=server_hostname)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/ssl.py", line 469, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/lib/python3.13/ssl.py", line 1087, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/ssl.py", line 1383, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/tmp/claude-0/-home-user--/26b0ee40-e351-58da-864e-84e1c80e1382/scratchpad/hu/style/digital/tools/commons.py", line 18, in <module>
+    if mode == "search":
+                ^^^^^^^^
+        for q in sys.argv[2:]:
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/claude-0/-home-user--/26b0ee40-e351-58da-864e-84e1c80e1382/scratchpad/hu/style/digital/tools/commons.py", line 11, in api
+    r = json.load(urllib.request.urlopen(req, context=ctx)); time.sleep(32); return r
+                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/urllib/request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/urllib/request.py", line 489, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.13/urllib/request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/usr/lib/python3.13/urllib/request.py", line 466, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.13/urllib/request.py", line 1379, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/urllib/request.py", line 1334, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 104] Connection reset by peer>

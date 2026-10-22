@@ -1,0 +1,19 @@
+{
+ "title": "File:Régi présház a kéthelyi szőlőhegyen.JPG",
+ "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/R%C3%A9gi_pr%C3%A9sh%C3%A1z_a_k%C3%A9thelyi_sz%C5%91l%C5%91hegyen.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+ "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/3e/R%C3%A9gi_pr%C3%A9sh%C3%A1z_a_k%C3%A9thelyi_sz%C5%91l%C5%91hegyen.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+ "desc": "https://commons.wikimedia.org/wiki/File:R%C3%A9gi_pr%C3%A9sh%C3%A1z_a_k%C3%A9thelyi_sz%C5%91l%C5%91hegyen.JPG",
+ "w": 2304,
+ "h": 1728,
+ "LicenseShortName": "CC0",
+ "LicenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+ "Artist": "<a href=\"//commons.wikimedia.org/wiki/User:Zerind\" title=\"User:Zerind\">Zerind</a>",
+ "Credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+ "ImageDescription": "Régi présház a kéthelyi szőlőhegyen",
+ "DateTimeOriginal": "2014-08-17"
+}
+Traceback (most recent call last):
+  File "/tmp/claude-0/-home-user--/26b0ee40-e351-58da-864e-84e1c80e1382/scratchpad/hu/style/digital/tools/commons.py", line 37, in <module>
+    for p in d["query"]["pages"].values():
+             ~^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable

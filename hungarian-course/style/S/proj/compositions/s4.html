@@ -1,0 +1,102 @@
+<template>
+<style>
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:200 900;font-display:block;src:url('assets/fonts/SS4var-roman-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+2000-206F;}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:200 900;font-display:block;src:url('assets/fonts/SS4var-roman-latinext.woff2') format('woff2');unicode-range:U+0100-02FF;}
+@font-face{font-family:'Source Serif 4';font-style:italic;font-weight:200 900;font-display:block;src:url('assets/fonts/SS4var-italic-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+2000-206F;}
+@font-face{font-family:'Source Serif 4';font-style:italic;font-weight:200 900;font-display:block;src:url('assets/fonts/SS4var-italic-cyrillic.woff2') format('woff2');unicode-range:U+0400-045F,U+2116;}
+#root{position:absolute;inset:0;overflow:hidden;font-family:'Source Serif 4',serif;color:#211B16;
+  --ink:#211B16;--ru:#6A584A;--paper:#F4EDDF;--green:#2D6A4F;--blue:#3B6E9B;--ochre:#9A6B1F;--rule:#CBBBA0;}
+#root .paper{position:absolute;left:0;top:0;width:1280px;height:720px;}
+#root .hd{position:absolute;left:64px;top:38px;font-style:italic;font-weight:420;font-size:30px;line-height:40px;color:#3A3029;white-space:nowrap;}
+#root .hu{font-weight:650;font-optical-sizing:auto;white-space:nowrap;}
+#root .ru{font-style:italic;font-weight:400;color:#6A584A;white-space:nowrap;}
+#root .g{color:#2D6A4F;} #root .b{color:#3B6E9B;} #root .o{color:#9A6B1F;}
+#root canvas.full{position:absolute;left:0;top:0;width:1280px;height:720px;}
+
+#s4-wrap{position:absolute;inset:0;}
+#s4-h{position:absolute;left:64px;top:40px;font-style:italic;font-weight:460;font-size:50px;line-height:60px;color:#211B16;white-space:nowrap;}
+#s4-svg{position:absolute;left:0;top:0;width:1280px;height:720px;}
+#root .ch{position:absolute;top:150px;width:290px;text-align:left;}
+#root .ch .hu{display:block;font-size:30px;line-height:36px;font-variation-settings:"wght" 700;}
+#root .ch .ru{display:block;font-size:44px;line-height:50px;font-weight:500;}
+#root .rl{position:absolute;left:186px;width:150px;}
+#root .rl .hu{display:block;font-size:36px;line-height:42px;font-variation-settings:"wght" 650;color:#211B16;}
+#root .rl .ru{display:block;font-size:26px;line-height:32px;}
+#root .ic{position:absolute;}
+#root .cell{position:absolute;font-size:50px;line-height:60px;font-variation-settings:"wght" 650;white-space:nowrap;}
+#root .cell span{display:inline-block;}
+
+</style>
+<div id="root" data-composition-id="s4" data-width="1280" data-height="720" data-duration="7.544">
+<div id="s4-wrap">
+  <img class="paper" src="assets/img/paper.jpg" alt="" />
+  <div id="s4-h">Девять окончаний в одной таблице</div>
+  <svg id="s4-svg" viewBox="0 0 1280 720" data-layout-ignore>
+    <path id="s4-r0" d="M64 118 H1216" stroke="#211B16" stroke-width="2.2" fill="none"/>
+    <path id="s4-r0b" d="M64 124 H1216" stroke="#211B16" stroke-width="0.8" fill="none"/>
+    <path id="s4-r1" d="M64 252 H1216" stroke="#211B16" stroke-width="1.4" fill="none"/>
+    <path id="s4-r2" d="M64 400 H1216" stroke="#CBBBA0" stroke-width="1" fill="none"/>
+    <path id="s4-r3" d="M64 548 H1216" stroke="#CBBBA0" stroke-width="1" fill="none"/>
+    <path id="s4-r4" d="M64 680 H1216" stroke="#211B16" stroke-width="1.4" fill="none"/>
+    <path id="s4-v1" d="M350 142 V664" stroke="#CBBBA0" stroke-width="1" fill="none"/>
+    <path id="s4-v2" d="M638 142 V664" stroke="#CBBBA0" stroke-width="1" fill="none"/>
+    <path id="s4-v3" d="M926 142 V664" stroke="#CBBBA0" stroke-width="1" fill="none"/>
+  </svg>
+  <div class="ch" id="s4-c1" style="left:374px"><span class="hu g">Hova?</span><span class="ru g">куда?</span></div>
+  <div class="ch" id="s4-c2" style="left:662px"><span class="hu b">Hol?</span><span class="ru b">где?</span></div>
+  <div class="ch" id="s4-c3" style="left:950px"><span class="hu o">Honnan?</span><span class="ru o">откуда?</span></div>
+  <img class="ic" id="s4-i1" src="assets/img/house.png" alt="" style="left:62px;top:262px;width:112px;height:auto" />
+  <img class="ic" id="s4-i2" src="assets/img/table.png" alt="" style="left:60px;top:444px;width:116px;height:auto" />
+  <img class="ic" id="s4-i3" src="assets/img/steth.png" alt="" style="left:76px;top:560px;width:88px;height:auto" />
+  <div class="rl" id="s4-l1" style="top:296px"><span class="hu">ház</span><span class="ru">дом</span></div>
+  <div class="rl" id="s4-l2" style="top:444px"><span class="hu">asztal</span><span class="ru">стол</span></div>
+  <div class="rl" id="s4-l3" style="top:588px"><span class="hu">orvos</span><span class="ru">врач</span></div>
+  <div class="cell hu" id="s4-a1" style="left:374px;top:296px" data-w="ház|ba|g"></div>
+  <div class="cell hu" id="s4-a2" style="left:662px;top:296px" data-w="ház|ban|b"></div>
+  <div class="cell hu" id="s4-a3" style="left:950px;top:296px" data-w="ház|ból|o"></div>
+  <div class="cell hu" id="s4-b1" style="left:374px;top:444px" data-w="asztal|ra|g"></div>
+  <div class="cell hu" id="s4-b2" style="left:662px;top:444px" data-w="asztal|on|b"></div>
+  <div class="cell hu" id="s4-b3" style="left:950px;top:444px" data-w="asztal|ról|o"></div>
+  <div class="cell hu" id="s4-d1" style="left:374px;top:588px" data-w="orvos|hoz|g"></div>
+  <div class="cell hu" id="s4-d2" style="left:662px;top:588px" data-w="orvos|nál|b"></div>
+  <div class="cell hu" id="s4-d3" style="left:950px;top:588px" data-w="orvos|tól|o"></div>
+</div>
+</div>
+<script>
+(function () {
+const T = {"dur": 6.944, "ru": [{"t": 0.5, "end": 4.694, "text": "Таких окончаний девять, и все они укладываются в одну простую таблицу.", "parts": [{"t": 0.5, "dur": 4.144, "text": "Таких окончаний девять, и все они укладываются в одну простую таблицу.", "w": [["Таких", 0.6], ["окончаний", 1.017], ["девять", 1.572], ["и", 2.22], ["все", 2.267], ["они", 2.463], ["укладываются", 2.625], ["в", 3.239], ["одну", 3.285], ["простую", 3.575], ["таблицу", 3.957]]}]}], "hu": [], "parts": [{"t": 0.5, "dur": 4.144, "text": "Таких окончаний девять, и все они укладываются в одну простую таблицу.", "w": [["Таких", 0.6], ["окончаний", 1.017], ["девять", 1.572], ["и", 2.22], ["все", 2.267], ["они", 2.463], ["укладываются", 2.625], ["в", 3.239], ["одну", 3.285], ["простую", 3.575], ["таблицу", 3.957]]}], "slot": 7.544, "next": 12.99};
+
+// slugs: one span per letter, root in ink, ending in the colour of its column
+document.querySelectorAll("#s4-wrap .cell").forEach((el) => {
+  const [r, e, c] = el.dataset.w.split("|");
+  el.innerHTML = [...r].map((ch) => `<span class="lr">${ch}</span>`).join("") + [...e].map((ch) => `<span class="le ${c}">${ch}</span>`).join("");
+});
+const tl = gsap.timeline({ paused: true });
+// transition in: rise and come into focus (shared axis)
+tl.fromTo("#s4-wrap", { y: 80, opacity: 0, filter: "blur(10px)" }, { y: 0, opacity: 1, filter: "blur(0px)", duration: 0.65, ease: "power3.out" }, 0);
+tl.fromTo("#s4-h", { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "power3.out" }, 0.25);
+const draw = (sel, at, d = 0.6) => { const el = document.querySelector(sel), L = el.getTotalLength ? el.getTotalLength() || 1200 : 1200; tl.fromTo(el, { strokeDasharray: L, strokeDashoffset: L }, { strokeDashoffset: 0, duration: d, ease: "power2.inOut" }, at); };
+draw("#s4-r0", 0.35); draw("#s4-r0b", 0.42); draw("#s4-r1", 0.7); ["#s4-v1", "#s4-v2", "#s4-v3"].forEach((s, i) => draw(s, 0.8 + i * 0.08, 0.7));
+["#s4-c1", "#s4-c2", "#s4-c3"].forEach((s, i) => tl.fromTo(s, { y: -18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 0.95 + i * 0.12));
+// rows are set like type: the roots first, then the endings in a second colour
+const rows = [["a", "#s4-i1", "#s4-l1", "#s4-r2"], ["b", "#s4-i2", "#s4-l2", "#s4-r3"], ["d", "#s4-i3", "#s4-l3", "#s4-r4"]];
+rows.forEach(([k, ic, lb, rule], i) => {
+  const t0 = 1.45 + i * 0.95;
+  tl.fromTo(ic, { scale: 0.7, opacity: 0, rotation: -6 }, { scale: 1, opacity: 1, rotation: 0, duration: 0.55, ease: "back.out(1.4)" }, t0);
+  tl.fromTo(lb, { x: -16, opacity: 0 }, { x: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, t0 + 0.08);
+  [1, 2, 3].forEach((c) => {
+    const cell = "#s4-" + k + c;
+    tl.fromTo(cell + " .lr", { y: -22, opacity: 0 }, { y: 0, opacity: 1, duration: 0.18, ease: "power2.out", stagger: 0.028 }, t0 + 0.12 + (c - 1) * 0.1);
+    tl.fromTo(cell + " .le", { y: -22, opacity: 0, scale: 1.25 }, { y: 0, opacity: 1, scale: 1, duration: 0.22, ease: "power2.out", stagger: 0.04 }, t0 + 0.42 + (c - 1) * 0.1);
+  });
+  draw(rule, t0 + 0.2, 0.7);
+});
+// the ending column breathes once at the end of the line
+tl.fromTo("#s4-wrap .le", { color: null }, { keyframes: [{ opacity: 0.55, duration: 0.2 }, { opacity: 1, duration: 0.35 }], stagger: 0.03 }, 4.75);
+tl.set({}, {}, T.slot);
+window.__timelines = window.__timelines || {};
+window.__timelines["s4"] = tl;
+
+})();
+</script>
+</template>

@@ -1,0 +1,456 @@
+<title>Венгерский до присяги</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: ledger of days. Left rail of views, one column of records with codes like a source register. */
+:root{
+  --bg:#f5f6f2; --panel:#ffffff; --fg:#1c2226; --muted:#5d6871; --line:#d8ddd6;
+  --accent:#2d6a4f; --accent-ink:#ffffff; --soft:#e4efe8; --warn:#9a6b1f; --warn-bg:#f6ecd8; --bad:#9b3b3b; --bad-bg:#f5e1e1;
+  --display:"Source Serif 4",Georgia,serif; --body:"IBM Plex Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#15191b;--panel:#1d2225;--fg:#e4e7e2;--muted:#9aa5a9;--line:#2f373b;--accent:#6fbf94;--accent-ink:#0f1a14;--soft:#1f2f27;--warn:#d9b35c;--warn-bg:#2d2615;--bad:#e08a8a;--bad-bg:#331d1d;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#15191b;--panel:#1d2225;--fg:#e4e7e2;--muted:#9aa5a9;--line:#2f373b;--accent:#6fbf94;--accent-ink:#0f1a14;--soft:#1f2f27;--warn:#d9b35c;--warn-bg:#2d2615;--bad:#e08a8a;--bad-bg:#331d1d;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.5;margin:0}
+.wrap{max-width:900px;margin:0 auto;padding-block:18px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1{font-family:var(--display);font-weight:700;font-size:28px;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:600;font-size:20px;margin:0 0 8px;text-wrap:balance}
+h3{font-size:15px;font-weight:600;margin:0 0 6px}
+.sub{color:var(--muted);font-size:13px;margin-top:2px}
+.top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:flex-end;border-bottom:1px solid var(--line);padding-bottom:12px}
+.stat{font-family:var(--mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.stat b{color:var(--fg);font-weight:500}
+nav{display:flex;gap:4px;flex-wrap:wrap;margin:14px 0 18px}
+nav button{background:none;border:1px solid var(--line);color:var(--fg);padding:6px 12px;border-radius:999px;font:inherit;font-size:13px;cursor:pointer}
+nav button[aria-current="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+nav button:focus-visible,button:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.code{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.02em}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:14px 16px;margin-bottom:12px;min-width:0}
+.card.done{border-color:var(--accent)}
+.head{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:baseline}
+.kind{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.theme{font-family:var(--display);font-size:17px;font-weight:600;margin:6px 0 10px}
+ul.tasks{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+ul.tasks li{display:grid;grid-template-columns:22px 1fr auto;gap:10px;align-items:start}
+ul.tasks input{width:18px;height:18px;margin:3px 0 0;accent-color:var(--accent)}
+ul.tasks .min{font-family:var(--mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+ul.tasks a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--soft)}
+ul.tasks li.cp{background:var(--warn-bg);padding:6px 8px;border-radius:4px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}
+button.b{background:var(--accent);color:var(--accent-ink);border:0;padding:7px 12px;border-radius:4px;font:inherit;font-size:13px;font-weight:600;cursor:pointer}
+button.g{background:none;border:1px solid var(--line);color:var(--fg);padding:6px 10px;border-radius:4px;font:inherit;font-size:13px;cursor:pointer}
+select,textarea{font:inherit;font-size:14px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg);padding:6px 8px}
+textarea{width:100%;min-height:90px;resize:vertical}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.dcell{border:1px solid var(--line);border-radius:4px;padding:8px;background:var(--panel);cursor:pointer;min-width:0}
+.dcell.done{background:var(--soft);border-color:var(--accent)}
+.dcell.today{outline:2px solid var(--accent)}
+.dcell .d{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.bar{height:6px;background:var(--line);border-radius:3px;overflow:hidden;margin-top:6px}
+.bar i{display:block;height:100%;background:var(--accent)}
+.out{white-space:pre-wrap;background:var(--soft);border-radius:4px;padding:10px 12px;margin-top:8px;font-size:14px;min-width:0;overflow-wrap:anywhere}
+.msg{padding:8px 10px;border-radius:4px;margin-top:6px;white-space:pre-wrap;overflow-wrap:anywhere}
+.msg.u{background:var(--panel);border:1px solid var(--line)}
+.msg.a{background:var(--soft)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+.tbl{overflow-x:auto}
+.tag{font-family:var(--mono);font-size:11px;padding:1px 6px;border-radius:3px;background:var(--soft)}
+.tag.ne{background:var(--warn-bg);color:var(--warn)}
+.tag.bad{background:var(--bad-bg);color:var(--bad)}
+.note{color:var(--muted);font-size:13px}
+.hid{display:none}
+.sub2{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:12px}
+.sub2 button{background:none;border:1px solid var(--line);color:var(--fg);padding:5px 10px;border-radius:4px;font:inherit;font-size:13px;cursor:pointer}
+.sub2 button[aria-current="true"]{background:var(--soft);border-color:var(--accent);font-weight:600}
+.fc{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:28px 18px;text-align:center;min-height:150px;display:flex;flex-direction:column;justify-content:center;gap:8px}
+.fc .hu{font-family:var(--display);font-size:30px;font-weight:600;overflow-wrap:anywhere}
+.fc .ru{font-size:17px;color:var(--muted)}
+.spk{background:none;border:1px solid var(--line);border-radius:999px;width:34px;height:34px;cursor:pointer;color:var(--accent);font-size:16px;vertical-align:middle}
+.opt{display:block;width:100%;text-align:left;background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:8px 10px;margin-top:6px;font:inherit;cursor:pointer;color:var(--fg)}
+.opt.ok{border-color:var(--accent);background:var(--soft)}
+.opt.no{border-color:var(--bad);background:var(--bad-bg)}
+.q{font-size:16px;margin-top:14px;font-weight:500}
+.diff .ok{color:var(--accent)}.diff .no{color:var(--bad);text-decoration:line-through}.diff .miss{color:var(--warn);font-weight:600}
+.mm{list-style:none;padding-left:18px;border-left:2px solid var(--line);margin:4px 0}
+.mm>li{margin:4px 0;position:relative}
+.mm>li::before{content:"";position:absolute;left:-18px;top:11px;width:14px;height:2px;background:var(--line)}
+.mm .root{font-family:var(--display);font-size:18px;font-weight:600}
+.mm .k{font-weight:600}
+svg text{font-family:var(--body)}
+.svgbox{overflow-x:auto}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+ .anim{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:16px;min-height:120px;overflow:hidden}
+.morph{display:flex;gap:0;align-items:baseline;font-family:var(--display);font-size:40px;font-weight:600;min-height:60px;flex-wrap:wrap}
+.morph .m{display:inline-block;padding:2px 6px;border-radius:4px;animation:slidein .45s cubic-bezier(.16,1,.3,1)}
+.morph .m.root{background:var(--soft)}.morph .m.suf{color:var(--accent)}
+@keyframes slidein{from{transform:translateX(40px);opacity:0}to{transform:none;opacity:1}}
+.chip{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:4px 12px;margin:3px;cursor:pointer;background:var(--panel);font-family:var(--mono);font-size:13px;user-select:none}
+.chip:hover{border-color:var(--accent)}.chip.sel{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.bins{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.bin{border:2px dashed var(--line);border-radius:6px;min-height:90px;padding:8px}
+.bin.back{border-color:var(--warn)}.bin.front{border-color:var(--accent)}
+.bin h4{margin:0 0 6px;font-size:13px;color:var(--muted);font-weight:600}
+.pre{display:inline-block;transition:transform .5s cubic-bezier(.16,1,.3,1),color .3s}
+.sent{font-family:var(--display);font-size:34px;font-weight:600;min-height:48px}
+svg .arrow{stroke:var(--accent);stroke-width:4;fill:none;stroke-dasharray:400;stroke-dashoffset:400;transition:stroke-dashoffset .6s ease-out}
+svg .arrow.on{stroke-dashoffset:0}
+.shadow-ctl{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.hl{background:var(--soft);border-radius:3px}
+.err-row{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:8px;align-items:start;border-bottom:1px solid var(--line);padding:6px 0;font-size:14px}
+@media (max-width:600px){.err-row{grid-template-columns:1fr}}
+.isl{border:1px solid var(--line);border-radius:6px;padding:10px 12px;margin-bottom:8px}
+.isl .hu{font-family:var(--display);font-size:18px}
+@media (prefers-reduced-motion:reduce){.morph .m{animation:none}.pre{transition:none}svg .arrow{transition:none}}
+kbd{font-family:var(--mono);font-size:12px;border:1px solid var(--line);border-radius:3px;padding:0 4px}
+@media (prefers-reduced-motion:no-preference){.bar i{transition:width .3s}}
+</style>
+<div class="wrap">
+<div class="top">
+  <div><h1>Венгерский до присяги</h1><div class="sub">300 дней, старт 24 октября 2026, без выходных. Цель: беседа с консулом на упрощённой натурализации.</div></div>
+  <div class="stat" id="stat">день — · выполнено — · слов —</div>
+</div>
+<nav id="nav">
+  <button data-v="today" aria-current="true">Сегодня</button>
+  <button data-v="week">Неделя</button>
+  <button data-v="month">Месяц</button>
+  <button data-v="plan">Весь план</button>
+  <button data-v="train">Тренажёр</button>
+  <button data-v="schemes">Схемы и анимации</button>
+  <button data-v="video">Видео</button>
+  <button data-v="res">Ресурсы и правила</button>
+</nav>
+<div id="view"></div>
+<div class="card" id="claudebox">
+  <h2>Разобрать задание с Claude</h2>
+  <div class="note" id="cbctx">Контекст: день не выбран</div>
+  <textarea id="cbin" placeholder="Вставьте свой текст по-венгерски, или напишите «дай упражнение», или ответьте консулу"></textarea>
+  <div class="row">
+    <button class="b" id="cbgo">Разобрать задание</button>
+    <button class="g" id="cbconsul">Диалог с консулом</button>
+    <button class="g" id="cbclear">Очистить</button>
+    <span class="note">В режиме консула первая строка ответа озвучивается.</span>
+    <span class="note" id="cbstate"></span>
+  </div>
+  <div id="cbout"></div>
+</div>
+</div>
+<script>
+const P = __PLAN__;
+const DAYS=P.days, WEEKS=P.weeks, RES=P.res;
+const state={progress:{},weeks:{},work:{},cards:{},phr:{},isl:{},errors:{}}; let db=null,sample=null,uid=null,view='today',sel=null;
+const todayIdx=()=>{const t=new Date();t.setHours(0,0,0,0);const s=new Date(P.start+'T00:00:00');const i=Math.round((t-s)/864e5);return Math.min(299,Math.max(0,i));};
+function lsGet(k){try{return JSON.parse(localStorage.getItem(k)||'null')}catch(e){return null}}
+function lsSet(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+async function save(col,id,data){state[col][id]=Object.assign({},state[col][id]||{},data);lsSet(col+'/'+id,state[col][id]);
+  if(db){try{await db.collection(col).doc(id).set(state[col][id])}catch(e){setState('Не сохранилось в базу: '+(e.message||e.code))}}
+  render();}
+function setState(t){document.getElementById('cbstate').textContent=t}
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+function doneCount(d){const p=state.progress[d.id];return p&&p.done?Object.keys(p.done).filter(k=>p.done[k]).length:0}
+function isDone(d){return doneCount(d)===d.tasks.length}
+function dayCard(d,full){const p=state.progress[d.id]||{};const w=WEEKS[d.w-1];
+  let h=`<div class="card ${isDone(d)?'done':''}" id="day-${d.n}"><div class="head"><span class="code">${d.id} · ${d.date} · ${d.dow}</span><span class="kind">${d.kind}${d.cp?' · контрольная точка '+d.cp:''}</span></div>`;
+  h+=`<div class="theme">Неделя ${d.w}: ${esc(w.theme)}</div>`;
+  h+=`<ul class="tasks">`+d.tasks.map((t,i)=>{const r=RES[t.r];const link=r?`<a href="${r[1]}" target="_blank" rel="noopener">${esc(r[0])}</a> · `:'';
+    const go=t.go?` <button class="g" data-go="${t.go}" data-day="${d.n}" style="padding:1px 8px;font-size:12px">открыть</button>`:'';
+    return `<li class="${t.r==='consul'&&t.t.startsWith('КОНТР')?'cp':''}"><input type="checkbox" id="c-${d.n}-${i}" data-d="${d.id}" data-i="${i}" ${p.done&&p.done[i]?'checked':''}><label for="c-${d.n}-${i}">${(r&&r[1])?link:''}${esc(t.t)}${go}</label><span class="min">${t.m} мин</span></li>`}).join('')+`</ul>`;
+  if(full){h+=`<div class="row"><button class="g" data-ctx="${d.n}">Выбрать для разбора</button>`;
+    if(d.dow==='вс'){h+=`<label class="note">Самооценка недели ${d.w}: <select data-w="${d.w}" id="w-${d.w}"><option value="">—</option><option value="ok" ${state.weeks[d.w]?.a==='ok'?'selected':''}>усвоена</option><option value="part" ${state.weeks[d.w]?.a==='part'?'selected':''}>частично</option><option value="redo" ${state.weeks[d.w]?.a==='redo'?'selected':''}>переделать</option></select></label>`}
+    h+=`</div><div class="row"><textarea id="n-${d.n}" data-note="${d.id}" placeholder="Заметка дня: что было трудно, что повторить" style="min-height:48px">${esc(p.note||'')}</textarea></div>`;
+    h+=`<div class="note" style="margin-top:8px">Грамматика недели: ${w.grammar.map(esc).join(' · ')}. Лексика: ${esc(w.vocab)}. Duolingo: ${esc(w.duo)}. Вопрос консула: <b>${esc(w.q)}</b></div>`;
+    if(state.work[d.id]?.a){h+=`<div class="out"><b>Последний разбор Claude</b>\n${esc(state.work[d.id].a)}</div>`}}
+  return h+`</div>`}
+function render(){const v=document.getElementById('view');const ti=todayIdx();const done=DAYS.filter(isDone).length;
+  document.getElementById('stat').innerHTML=`день <b>${ti+1}</b>/300 · выполнено <b>${done}</b> дней · слов ≈ <b>${Math.min(3500,DAYS.slice(0,ti+1).filter(isDone).length*12)}</b>`;
+  document.querySelectorAll('#nav button').forEach(b=>b.setAttribute('aria-current',b.dataset.v===view));
+  let h='';
+  if(view==='today'){const d=DAYS[ti];sel=sel??d.n;h+=dayCard(DAYS[sel-1],true);
+    if(sel!==d.n)h=`<div class="note" style="margin-bottom:8px">Показан день ${sel}. <button class="g" id="back">К сегодняшнему</button></div>`+h;}
+  else if(view==='week'){const d=DAYS[sel?sel-1:ti];const wk=WEEKS[d.w-1];h+=`<div class="card"><h2>Неделя ${d.w}: ${esc(wk.theme)}</h2><div class="note">Грамматика: ${wk.grammar.map(esc).join(' · ')}<br>Лексика: ${esc(wk.vocab)} · Duolingo: ${esc(wk.duo)} · <a href="${wk.hr}" target="_blank" rel="noopener">раздел Hungarian Reference</a><br>Письменное задание недели: ${esc(wk.writing)}<br>Вопрос консула: <b>${esc(wk.q)}</b></div></div>`;
+    h+=DAYS.filter(x=>x.w===d.w).map(x=>dayCard(x,true)).join('')}
+  else if(view==='month'){const d=DAYS[sel?sel-1:ti];const m=d.m;const md=DAYS.filter(x=>x.m===m);const dn=md.filter(isDone).length;
+    h+=`<div class="card"><h2>Месяц ${m}</h2><div class="note">Контрольная точка: ${esc(P.cp[m])}</div><div class="bar"><i style="width:${dn/md.length*100}%"></i></div><div class="note">${dn} из ${md.length} дней выполнено</div><div class="row">`+[1,2,3,4,5,6,7,8,9,10].map(i=>`<button class="g" data-m="${i}">М${i}</button>`).join('')+`</div></div><div class="grid">`;
+    h+=md.map(x=>`<div class="dcell ${isDone(x)?'done':''} ${x.n===ti+1?'today':''}" data-open="${x.n}"><div class="d">${x.id.slice(8)} · ${x.date.slice(5)} ${x.dow}</div><div>${esc(x.kind)}${x.cp?' · КТ'+x.cp:''}</div><div class="bar"><i style="width:${doneCount(x)/x.tasks.length*100}%"></i></div></div>`).join('')+`</div>`}
+  else if(view==='plan'){h+=`<div class="card"><h2>43 недели</h2><div class="tbl"><table><tr><th>Нед.</th><th>Даты</th><th>Тема</th><th>Duolingo</th><th>Вопрос консула</th><th>Оценка</th></tr>`+WEEKS.map(w=>{const f=DAYS[(w.n-1)*7];const l=DAYS[Math.min(299,w.n*7-1)];const a=state.weeks[w.n]?.a;return `<tr><td class="code"><a href="#" data-wk="${w.n}">W${String(w.n).padStart(2,'0')}</a></td><td class="code">${f.date.slice(5)}–${l.date.slice(5)}</td><td>${esc(w.theme)}</td><td class="code">${esc(w.duo)}</td><td>${esc(w.q)}</td><td>${a?`<span class="tag ${a==='redo'?'bad':a==='part'?'ne':''}">${{ok:'усвоена',part:'частично',redo:'переделать'}[a]}</span>`:'—'}</td></tr>`}).join('')+`</table></div></div>`;
+    h+=`<div class="card"><h2>Контрольные точки</h2><div class="tbl"><table><tr><th>КТ</th><th>День</th><th>Задача</th></tr>`+Object.keys(P.cp).map(k=>`<tr><td class="code">${k}</td><td class="code">D${String(k*30).padStart(3,'0')} · ${DAYS[k*30-1].date}</td><td>${esc(P.cp[k])}</td></tr>`).join('')+`</table></div></div>`}
+  else if(view==='train'){h+=renderTrain()}
+  else if(view==='schemes'){h+=renderSchemes()}
+  else if(view==='video'){h+=renderVideo()}
+  else{h+=document.getElementById('restpl').innerHTML}
+  v.innerHTML=h;afterRender();}
+document.getElementById('nav').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;view=b.dataset.v;render()});
+document.getElementById('view').addEventListener('change',e=>{const t=e.target;
+  if(t.dataset.d){const p=state.progress[t.dataset.d]||{};const done=Object.assign({},p.done||{});done[t.dataset.i]=t.checked;save('progress',t.dataset.d,{done})}
+  else if(t.dataset.w){save('weeks',t.dataset.w,{a:t.value})}
+  else if(t.dataset.note){save('progress',t.dataset.note,{note:t.value})}});
+document.getElementById('view').addEventListener('click',e=>{const t=e.target.closest('[data-go],[data-ctx],[data-open],[data-m],[data-wk],#back');if(!t)return;
+  if(t.id==='back'){sel=null;render();return}
+  if(t.dataset.go){sel=+t.dataset.day;const g=t.dataset.go;if(g==='claude'||g==='consul'){setCtx();document.getElementById('claudebox').scrollIntoView({behavior:'smooth'});if(g==='consul')ask('consul');}else{const sch={schemes:'schemes',anim:'anim'};view=(g==='schemes')?'schemes':'train';sub=(g==='schemes')?'schemes':g;render();window.scrollTo({top:0,behavior:'smooth'})}return}
+  if(t.dataset.ctx){sel=+t.dataset.ctx;setCtx();document.getElementById('claudebox').scrollIntoView({behavior:'smooth'});return}
+  if(t.dataset.open){sel=+t.dataset.open;view='today';render();setCtx();return}
+  if(t.dataset.m){sel=(+t.dataset.m-1)*30+1;render();return}
+  if(t.dataset.wk){e.preventDefault();sel=(+t.dataset.wk-1)*7+1;view='week';render();}});
+function setCtx(){const d=DAYS[(sel??todayIdx()+1)-1];document.getElementById('cbctx').textContent=`Контекст: ${d.id} · неделя ${d.w} «${WEEKS[d.w-1].theme}»`}
+function sysPrompt(mode){const d=DAYS[(sel??todayIdx()+1)-1];const w=WEEKS[d.w-1];
+  const base=`Ты преподаватель венгерского языка как иностранного. Ученик: Кирилл, русскоязычный, учит венгерский с нуля для собеседования в консульстве Венгрии по упрощённой натурализации (предки из Чумалёво и Новобарово, Закарпатье; прадед Фёдор Бабич 1903 г., прабабушка Анна Олексишенец 1910 г., дед Иван Фёдорович 1951 г., Чумалёво; сам родился в Лысьве в 2002 г., историк, работает в Яндексе). Сегодня день ${d.n} из 300, неделя ${d.w}, тема недели: «${w.theme}». Грамматика недели: ${w.grammar.join('; ')}. Лексика: ${w.vocab}. Письменное задание недели: ${w.writing}. Используй только грамматику и лексику пройденных недель (недели 1–${d.w}). Отвечай по-русски, венгерские примеры давай с переводом.`;
+  if(mode==='consul')return base+` Режим: ролевая игра «собеседование у консула». Ты консул Венгрии. Говори по-венгерски, коротко, на уровне недели ${d.w}, по одному вопросу за реплику, начни с вопроса «${w.q}». Если ученик пишет по-русски или ошибается, дай в скобках по-русски короткую подсказку и правильный вариант, затем продолжай по-венгерски. После 6 реплик ученика подведи итог по-русски: 3 главные ошибки и что повторить.`;
+  return base+` Режим: разбор задания. Если ученик прислал текст по-венгерски: исправь каждую ошибку, объясни правило в одну-две строки, покажи правильную версию целиком, затем дай 3 коротких упражнения на те же ошибки. Если ученик просит упражнение: дай 8 предложений для перевода или заполнения пропусков по грамматике дня, затем после его ответа проверь. Будь конкретен и краток.`;}
+let consulMsgs=null;
+async function ask(mode){if(!sample){setState('Кнопка работает только внутри claude.ai, здесь Claude недоступен.');return}
+  const inp=document.getElementById('cbin').value.trim();const out=document.getElementById('cbout');const d=DAYS[(sel??todayIdx()+1)-1];
+  let msgs;
+  if(mode==='consul'){if(!consulMsgs)consulMsgs=[];if(inp)consulMsgs.push({role:'user',content:inp});if(!consulMsgs.length||consulMsgs[consulMsgs.length-1].role!=='user')consulMsgs.push({role:'user',content:'Jó napot kívánok!'});
+    msgs=[{role:'user',content:sysPrompt('consul')+'\n\nНачинаем.'},{role:'assistant',content:'Rendben, kezdjük.'},...consulMsgs];}
+  else{if(!inp){setState('Напишите текст или «дай упражнение».');return}consulMsgs=null;msgs=[{role:'user',content:sysPrompt('task')+'\n\nТекст ученика:\n'+inp}]}
+  setState('Claude думает…');const box=document.createElement('div');box.className='msg a';box.textContent='…';out.appendChild(box);
+  if(inp){const u=document.createElement('div');u.className='msg u';u.textContent=inp;out.insertBefore(u,box)}
+  try{const r=await sample(msgs,{cache:false,onText:t=>{box.textContent=t.text||'…'}});box.textContent=r.text;setState('');
+    if(mode==='consul'){consulMsgs.push({role:'assistant',content:r.text});const hu=r.text.replace(/\([^)]*\)/g,'').split('\n')[0];speak(hu)}
+    await save('work',d.id,{q:inp,a:r.text,mode,ts:Date.now()});document.getElementById('cbin').value='';if(mode==='task')extractErrors(inp,r.text);}
+  catch(e){box.textContent='Ошибка: '+(e.message||e.code);setState('')}}
+document.getElementById('cbgo').onclick=()=>ask('task');
+document.getElementById('cbconsul').onclick=()=>ask('consul');
+document.getElementById('cbclear').onclick=()=>{document.getElementById('cbout').innerHTML='';consulMsgs=null;setState('')};
+
+// ---------- TTS ----------
+let voice=null,voicesReady=false;
+function pickVoice(){const vs=speechSynthesis.getVoices();voice=vs.find(v=>/^hu/i.test(v.lang))||null;voicesReady=true;document.querySelectorAll('.ttsnote').forEach(n=>n.textContent=voice?`Голос: ${voice.name}`:'Венгерского голоса на устройстве нет: добавьте венгерский в настройках речи системы (Windows: язык и речь; Android: Google TTS; iPhone: Универсальный доступ, Устная речь, Голоса).')}
+if('speechSynthesis' in window){pickVoice();speechSynthesis.onvoiceschanged=pickVoice}
+const AUD=P.audio||{};let audEl=null,audTimer=null;
+function playSprite(k,slow){const a=AUD[k];if(!a)return false;if(!audEl){audEl=new Audio()}clearTimeout(audTimer);audEl.pause();audEl.src=a[0];audEl.playbackRate=slow?0.7:1;audEl.currentTime=a[1];audEl.play().catch(()=>{});audTimer=setTimeout(()=>audEl.pause(),a[2]*1000/(slow?0.7:1)+80);return true}
+function say(t,slow){if(playSprite(t,slow))return;speak(t,slow)}
+function speak(t,slow){if(!('speechSynthesis' in window)){setState('Синтез речи недоступен в этом браузере.');return}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang='hu-HU';if(voice)u.voice=voice;u.rate=slow?0.6:0.9;speechSynthesis.speak(u)}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-say]');if(b){say(b.dataset.say,b.dataset.slow==='1')}});
+// ---------- trainer ----------
+let sub='cards',card=null,exSet=null,exI=0,exScore=0,listenState=null;
+const ALLW=[];Object.keys(P.words).forEach(w=>P.words[w].forEach((p,i)=>ALLW.push({id:`w${w}-${i}`,w:+w,hu:p[0],ru:p[1]})));
+const curWeek=()=>DAYS[(sel??todayIdx()+1)-1].w;
+const BOX=[0,1,3,7,14,30,60];
+function dueCards(){const now=Date.now();const wk=curWeek();return ALLW.filter(c=>c.w<=wk).map(c=>({c,s:state.cards[c.id]||{box:0,due:0}})).filter(x=>x.s.due<=now)}
+function nextCard(){const d=dueCards();const unseen=d.filter(x=>!state.cards[x.c.id]);const old=d.filter(x=>state.cards[x.c.id]);const seenToday=Object.values(state.cards).filter(s=>s.first&&s.first>Date.now()-864e5).length;
+  const pool=(seenToday<15&&unseen.length)?[...old,...unseen.slice(0,15-seenToday)]:old; if(!pool.length)return null;return pool[Math.floor(Math.random()*pool.length)].c}
+function grade(ok){if(!card)return;const s=state.cards[card.id]||{box:0,first:Date.now()};const box=ok?Math.min(6,s.box+1):0;const due=Date.now()+BOX[box]*864e5;save('cards',card.id,{box,due,first:s.first||Date.now()});card=null}
+
+const PAIRS=[[["kor","возраст"],["kór","болезнь"]],[["örül","радуется"],["őrül","сходит с ума"]],[["hat","шесть"],["hát","спина; ну"]],[["agy","мозг"],["ágy","кровать"]],[["kerek","круглый"],["kerék","колесо"]],[["tör","ломает"],["tőr","кинжал"]],[["szel","режет"],["szél","ветер"]],[["sas","орёл"],["szász","саксонец"]],[["fiú","мальчик"],["fű","трава"]],[["ül","сидит"],["ű","буква ű"]]];
+let pairPick={},phrCur=null,islLast=null;
+const ALLP=[];Object.keys(P.ph).forEach(w=>P.ph[w].forEach((p,i)=>ALLP.push({id:`p${w}-${i}`,w:+w,p})));
+function duePhr(){const now=Date.now();const wk=curWeek();return ALLP.filter(c=>c.w<=wk).filter(c=>((state.phr[c.id]||{due:0}).due)<=now)}
+function gradePhr(ok){if(!phrCur)return;const s=state.phr[phrCur.id]||{box:0};const box=ok?Math.min(6,s.box+1):0;save('phr',phrCur.id,{box,due:Date.now()+BOX[box]*864e5});phrCur=null}
+async function extractErrors(studentText,review){if(!sample)return;try{const r=await sample.json(`Из разбора учителя выпиши ошибки ученика в JSON. Текст ученика: «${studentText}». Разбор: «${review.slice(0,3000)}». Верни ТОЛЬКО {"errors":[{"wrong":"как написал","right":"как правильно","rule":"правило в 5–8 словах по-русски"}]} (0–6 записей, только реальные ошибки).`,{modelTier:'quick'});
+  for(const e of (r.errors||[]).slice(0,6)){const id='e'+Date.now().toString(36)+Math.random().toString(36).slice(2,6);await save('errors',id,{wrong:e.wrong,right:e.right,rule:e.rule,st:'open',ts:Date.now()})}}catch(e){}}
+async function genErrEx(){if(!sample){setState('Claude недоступен здесь.');return}const errs=Object.values(state.errors).filter(e=>e.st!=='closed').slice(0,12);if(!errs.length){setState('Нет открытых ошибок.');return}setState('Claude составляет упражнение…');
+  try{const r=await sample.json(`Ошибки ученика (венгерский, A1–A2): ${JSON.stringify(errs)}. Составь 5 заданий с пропуском ___ или выбором, каждое целится в одну из этих ошибок, 3 варианта, верный ответ, объяснение по-русски в одну строку. Верни ТОЛЬКО {"items":[{"q":"...","opts":["..","..",".."],"a":"...","why":"..."}]}`,{modelTier:'default'});
+    exSet=r.items.map(x=>[x.q,x.opts,x.a,x.why]);exI=0;exScore=0;sub='ex';setState('');render()}catch(e){setState('Не вышло: '+(e.message||e.code))}}
+async function checkText(){if(!sample){setState('Claude недоступен здесь.');return}const d=DAYS[(sel??todayIdx()+1)-1];const T=P.texts[String(d.n)];const ans=T.qs.map((q,i)=>`${i+1}. ${q} — ${document.getElementById('tq-'+i).value}`).join('\n');const box=document.getElementById('tres');box.innerHTML='<div class="msg a">…</div>';
+  try{const r=await sample(`Текст по-венгерски: «${T.hu}». Вопросы и ответы ученика (русскоязычный, уровень недели ${d.w}): \n${ans}\nОцени каждый ответ: понял ли текст, исправь венгерский, объясни по-русски кратко. В конце: сколько из 3 верно.`,{cache:false,onText:t=>{box.firstChild.textContent=t.text||'…'}});box.firstChild.textContent=r.text;await save('work',d.id,{q:ans,a:r.text,mode:'text',ts:Date.now()});extractErrors(ans,r.text)}catch(e){box.firstChild.textContent='Ошибка: '+(e.message||e.code)}}
+let shadowTimer=null;
+function shadowRun(){const spans=[...document.querySelectorAll('.sent-s')];let i=0;clearTimeout(shadowTimer);const step=()=>{spans.forEach(s=>s.classList.remove('hl'));if(i>=spans.length)return;const s=spans[i];s.classList.add('hl');const txt=s.textContent.replace('▶','').trim();say(txt);const ms=Math.max(1800,txt.length*95);i++;shadowTimer=setTimeout(step,ms+1200)};step()}
+function renderTrain(){const wk=curWeek();let h=`<div class="sub2">`+[['cards','Карточки'],['phr','Фразы'],['text','Текст дня'],['pairs','Фонетика'],['dict','Диктант'],['ex','Упражнения'],['isl','Острова'],['err','Ошибки'],['listen','Аудирование']].map(([k,n])=>`<button data-sub="${k}" aria-current="${sub===k}">${n}</button>`).join('')+`</div><div class="note ttsnote" style="margin-bottom:8px"></div>`;
+  if(sub==='cards'){const due=dueCards().length;const learned=Object.values(state.cards).filter(s=>s.box>=3).length;if(!card)card=nextCard();
+    h+=`<div class="card"><div class="head"><span class="code">недели 1–${wk} · к повтору: ${due} · выучено (ящик 3+): ${learned} из ${ALLW.filter(c=>c.w<=wk).length}</span><span class="note">15 новых в день, интервалы 1·3·7·14·30·60 дней</span></div>`;
+    if(card){const rev=(state.cards[card.id]?.box||0)>=2&&(card.id.charCodeAt(card.id.length-1)%2===0);
+      h+= rev? `<div class="fc" id="fc"><div class="ru" style="font-size:22px">${esc(card.ru)}</div><div class="hu hid" id="fchu">${esc(card.hu)} <button class="spk" data-say="${esc(card.hu)}" title="озвучить">▶</button></div><div class="ru hid" id="fcru">скажите вслух, потом откройте</div></div>`
+             : `<div class="fc" id="fc"><div class="hu">${esc(card.hu)} <button class="spk" data-say="${esc(card.hu)}" title="озвучить">▶</button></div><div class="ru hid" id="fcru">${esc(card.ru)}</div></div>`;h+=`<div class="row"><button class="b" id="fcshow">Показать перевод</button><button class="g" id="fcno">Не помню</button><button class="g" id="fcok">Помню</button><span class="note">ящик ${(state.cards[card.id]||{box:0}).box}</span></div>`}
+    else h+=`<div class="fc"><div class="ru">На сегодня карточек нет. Следующие появятся по интервалам или с новой неделей.</div></div>`;
+    h+=`<details style="margin-top:12px"><summary class="note">Слова недели ${wk}</summary><div class="tbl"><table>`+P.words[wk].map(p=>`<tr><td>${esc(p[0])} <button class="spk" data-say="${esc(p[0])}">▶</button></td><td>${esc(p[1])}</td></tr>`).join('')+`</table></div></details></div>`}
+  if(sub==='dict'){const ss=P.dict[wk];h+=`<div class="card"><h2>Диктант, неделя ${wk}</h2><div class="note">Нажмите ▶, напишите услышанное, проверьте. Медленно: ▷. Буквы с диакритикой обязательны.</div>`;
+    ss.forEach((s,i)=>{h+=`<div class="q">${i+1}. <button class="spk" data-say="${esc(s[0])}">▶</button> <button class="spk" data-say="${esc(s[0])}" data-slow="1">▷</button> <span class="note">${esc(s[1])}</span></div><div class="row"><input id="dict-${i}" style="flex:1;min-width:200px;font:inherit;padding:6px 8px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg)" placeholder="напишите по-венгерски" lang="hu" autocomplete="off"><button class="g" data-dchk="${i}">Проверить</button></div><div class="diff note" id="dres-${i}"></div>`});
+    h+=`</div>`}
+  if(sub==='ex'){h+=`<div class="card"><h2>Упражнения, неделя ${wk}</h2>`;
+    if(!exSet){const built=P.ex[wk];h+=`<div class="note">${built?'Встроенный набор из 5 заданий с объяснениями.':'Для этой недели набор генерирует Claude по грамматике недели: 8 заданий с автопроверкой.'}</div><div class="row">${built?'<button class="b" id="exstart">Начать встроенный</button>':''}<button class="${built?'g':'b'}" id="exgen">Сгенерировать с Claude</button></div>`}
+    else if(exI<exSet.length){const q=exSet[exI];h+=`<div class="note">${exI+1} из ${exSet.length} · верно: ${exScore}</div><div class="q">${esc(q[0])}</div>`+q[1].map(o=>`<button class="opt" data-opt="${esc(o)}">${esc(o)}</button>`).join('')+`<div class="out hid" id="exwhy"></div><div class="row"><button class="g hid" id="exnext">Дальше</button></div>`}
+    else{h+=`<div class="q">Готово: ${exScore} из ${exSet.length}.</div><div class="row"><button class="b" id="exreset">Ещё раз</button><button class="g" id="exgen">Новый набор от Claude</button></div>`}
+    h+=`</div>`}
+
+  if(sub==='phr'){const wk=curWeek();const due=duePhr();if(!phrCur)phrCur=due[0]||null;
+    h+=`<div class="card"><div class="head"><span class="code">фразы недель 1–${wk} · к повтору: ${due.length}</span><span class="note">Переведите и впишите пропущенное слово. Интервалы те же, что у карточек.</span></div>`;
+    if(phrCur){const p=phrCur.p;const masked=p[0].replace(p[2],'_____');h+=`<div class="fc"><div class="ru" style="font-size:20px">${esc(p[1])}</div><div class="hu" style="font-size:26px">${esc(masked)}</div></div><div class="row"><input id="phrin" lang="hu" autocomplete="off" placeholder="пропущенное слово" style="flex:1;min-width:160px;font:inherit;padding:6px 8px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg)"><button class="b" id="phrchk">Проверить</button><button class="g" id="phrskip">Не знаю</button></div><div id="phrres" class="note"></div>`}
+    else h+=`<div class="fc"><div class="ru">Все фразы на сегодня повторены.</div></div>`;
+    h+=`<details style="margin-top:12px"><summary class="note">Фразы недели ${wk}</summary><div class="tbl"><table>`+P.ph[wk].map(p=>`<tr><td>${esc(p[0])} <button class="spk" data-say="${esc(p[0])}">▶</button></td><td>${esc(p[1])}</td></tr>`).join('')+`</table></div></details></div>`}
+  if(sub==='text'){const d=DAYS[(sel??todayIdx()+1)-1];const T=P.texts[String(d.n)];
+    h+=`<div class="card"><h2>Текст дня ${d.n}</h2>`;
+    if(!T)h+=`<div class="note">Текст для этого дня ещё не загружен. Используйте «Аудирование» или попросите текст у Claude.</div>`;
+    else{const sents=T.hu.split(/(?<=[.!?])\s+/);h+=`<div class="row" style="margin:0 0 8px"><button class="b" data-say="${esc(T.hu)}">▶ Весь текст</button><button class="g" data-say="${esc(T.hu)}" data-slow="1">▷ Медленно</button><button class="g" id="shadow">Шэдоуинг по фразам</button><button class="g" id="tru">Перевод</button></div>`;
+      h+=`<div class="out" style="font-size:17px;line-height:1.7;background:var(--panel);border:1px solid var(--line)" id="ttext">`+sents.map((s,i)=>`<span class="sent-s" data-i="${i}">${esc(s)} <button class="spk" data-say="${esc(s)}" style="width:26px;height:26px;font-size:12px">▶</button></span> `).join('')+`</div>`;
+      h+=`<div class="out hid" id="trutext">${esc(T.ru)}</div>`;
+      h+=`<details open style="margin-top:8px"><summary class="note">Глоссарий</summary><div class="tbl"><table>`+T.gloss.map(g=>`<tr><td>${esc(g[0])} <button class="spk" data-say="${esc(g[0])}" style="width:26px;height:26px;font-size:12px">▶</button></td><td>${esc(g[1])}</td></tr>`).join('')+`</table></div></details>`;
+      h+=`<div class="q">Вопросы (ответ по-венгерски, коротко):</div>`+T.qs.map((q,i)=>`<div class="note" style="margin-top:6px">${i+1}. ${esc(q)}</div><input id="tq-${i}" lang="hu" autocomplete="off" style="width:100%;font:inherit;padding:6px 8px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg)">`).join('')+`<div class="row"><button class="b" id="tcheck">Проверить с Claude</button></div><div id="tres"></div>`}
+    h+=`</div>`}
+  if(sub==='pairs'){h+=`<div class="card"><h2>Минимальные пары</h2><div class="note">Нажмите ▶, выберите, что прозвучало. Долгота гласного меняет смысл.</div>`;
+    PAIRS.forEach((p,i)=>{const which=pairPick[i]??(pairPick[i]=Math.random()<0.5?0:1);h+=`<div class="q"><button class="spk" data-say="${esc(p[which][0])}">▶</button> <button class="g" data-pair="${i}" data-c="0">${esc(p[0][0])} <span class="note">${esc(p[0][1])}</span></button> <button class="g" data-pair="${i}" data-c="1">${esc(p[1][0])} <span class="note">${esc(p[1][1])}</span></button> <span class="note" id="pr-${i}"></span></div>`});
+    h+=`<div class="row"><button class="g" id="pairsre">Перемешать</button></div><h3 style="margin-top:14px">Шэдоуинг: 5 фраз недели</h3><div class="note">Нажмите ▶ и повторяйте вслух одновременно с голосом, с отставанием в полслова. Три раза каждую.</div>`+P.ph[curWeek()].slice(0,5).map(p=>`<div class="q" style="font-size:15px"><button class="spk" data-say="${esc(p[0])}">▶</button> <button class="spk" data-say="${esc(p[0])}" data-slow="1">▷</button> ${esc(p[0])} <span class="note">${esc(p[1])}</span></div>`).join('')+`</div>`}
+  if(sub==='isl'){const wk=curWeek();const avail=P.isl.map((x,i)=>({x,i})).filter(o=>o.x[2]<=wk);h+=`<div class="card"><h2>Острова консула</h2><div class="note">Опорные ответы, которые должны звучать автоматически. Прочитайте, прослушайте, затем «Рассказать без подсказки» и впишите по памяти. Доступно ${avail.length} из ${P.isl.length}.</div>`;
+    avail.forEach(({x,i})=>{const s=state.isl[i]||{box:0};h+=`<div class="isl"><div class="row" style="margin:0 0 6px"><span class="code">#${i+1} · ящик ${s.box}</span><button class="spk" data-say="${esc(x[0])}">▶</button><button class="spk" data-say="${esc(x[0])}" data-slow="1">▷</button><button class="g" data-islhide="${i}">Рассказать без подсказки</button></div><div class="hu" id="islhu-${i}">${esc(x[0])}</div><div class="note">${esc(x[1])}</div><div class="${islLast&&islLast.i===i?'':'hid'}" id="islbox-${i}"><textarea id="islin-${i}" lang="hu" placeholder="напишите по памяти" style="min-height:60px;margin-top:6px"></textarea><div class="row"><button class="b" data-islchk="${i}">Сверить</button></div><div class="diff note" id="islres-${i}">${islLast&&islLast.i===i?islLast.html:''}</div></div></div>`});
+    h+=`</div>`}
+  if(sub==='err'){const errs=Object.entries(state.errors).sort((a,b)=>(b[1].ts||0)-(a[1].ts||0));h+=`<div class="card"><h2>Журнал ошибок</h2><div class="note">Сюда попадают ошибки из разборов Claude. Статусы как в родословной базе: открыта / повторяется / закрыта. «Закрыть» ставьте, когда три раза подряд написали верно.</div><div class="row"><button class="b" id="errgen">Упражнение из моих ошибок</button><span class="note">открытых: ${errs.filter(e=>e[1].st!=='closed').length}</span></div><div id="errex"></div>`;
+    if(!errs.length)h+=`<div class="note" style="margin-top:10px">Пока пусто. Отправьте письменное задание через «Разобрать задание».</div>`;
+    errs.forEach(([id,e])=>{h+=`<div class="err-row"><span><s class="note">${esc(e.wrong)}</s></span><b>${esc(e.right)}</b><span class="note">${esc(e.rule||'')}</span><span><select data-errst="${id}"><option value="open" ${e.st==='open'||!e.st?'selected':''}>открыта</option><option value="rep" ${e.st==='rep'?'selected':''}>повторяется</option><option value="closed" ${e.st==='closed'?'selected':''}>закрыта</option></select></span></div>`});
+    h+=`</div>`}
+  if(sub==='listen'){const L=P.listen[wk];h+=`<div class="card"><h2>Аудирование, неделя ${wk}</h2>`;
+    const cur=listenState&&listenState.w===wk?listenState:(L?{w:wk,text:L[0],qs:L[1]}:null);
+    if(cur){h+=`<div class="row"><button class="b" data-say="${esc(cur.text)}">▶ Прослушать</button><button class="g" data-say="${esc(cur.text)}" data-slow="1">▷ Медленно</button><button class="g" id="lshow">Показать текст</button></div><div class="out hid" id="ltext">${esc(cur.text)}</div><div class="q">Ответьте по-венгерски (можно коротко):</div>`+cur.qs.map((q,i)=>`<div class="note" style="margin-top:6px">${i+1}. ${esc(q)}</div><input id="lq-${i}" style="width:100%;font:inherit;padding:6px 8px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg)" lang="hu" autocomplete="off">`).join('')+`<div class="row"><button class="b" id="lcheck">Проверить с Claude</button><button class="g" id="lgen">Новый текст от Claude</button></div><div id="lres"></div>`}
+    else h+=`<div class="note">Для этой недели текст создаёт Claude по лексике недели: 4–5 предложений и 3 вопроса.</div><div class="row"><button class="b" id="lgen">Создать текст</button></div><div id="lres"></div>`;
+    h+=`</div>`}
+  return h}
+function norm(s){return s.toLowerCase().replace(/[.,!?;:«»"']/g,'').replace(/\s+/g,' ').trim()}
+function diffWords(a,b){const A=norm(a).split(' '),B=norm(b).split(' ');let out='';const m=Math.max(A.length,B.length);let ok=0;for(let i=0;i<m;i++){if(A[i]===B[i]){out+=`<span class="ok">${esc(B[i]||'')}</span> `;ok++}else out+=`<span class="no">${esc(A[i]||'·')}</span> <span class="miss">${esc(B[i]||'')}</span> `}return {html:out,score:ok+'/'+B.length}}
+async function genEx(){if(!sample){setState('Claude недоступен здесь.');return}const wk=curWeek(),w=WEEKS[wk-1];setState('Claude составляет упражнения…');
+  try{const r=await sample.json(`Составь 8 заданий по венгерскому для недели ${wk}: тема «${w.theme}», грамматика: ${w.grammar.join('; ')}, лексика: ${w.vocab}. Ученик русскоязычный, уровень A1${wk>20?'-A2':''}, знает только материал недель 1–${wk}. Каждое задание: предложение с пропуском ___ или короткий вопрос, 3 варианта (один верный), объяснение правила по-русски в одну строку. Верни ТОЛЬКО JSON: {"items":[{"q":"...","opts":["..","..",".."],"a":"верный вариант","why":"..."}]}`,{modelTier:'default'});
+    exSet=r.items.map(x=>[x.q,x.opts,x.a,x.why]);exI=0;exScore=0;setState('');render()}catch(e){setState('Не вышло: '+(e.message||e.code))}}
+async function genListen(){if(!sample){setState('Claude недоступен здесь.');return}const wk=curWeek(),w=WEEKS[wk-1];setState('Claude пишет текст…');
+  try{const r=await sample.json(`Напиши короткий текст по-венгерски (4–5 простых предложений) для аудирования, неделя ${wk}, тема «${w.theme}», лексика: ${w.vocab}, грамматика только из недель 1–${wk}. Персонаж: Кирилл из Перми, предки из Чумалёво (Csománfalva), Закарпатье. Затем 3 вопроса по тексту по-русски. Верни ТОЛЬКО JSON: {"text":"...","qs":["..","..",".."]}`,{modelTier:'default'});
+    listenState={w:wk,text:r.text,qs:r.qs};setState('');render()}catch(e){setState('Не вышло: '+(e.message||e.code))}}
+async function checkListen(){if(!sample){setState('Claude недоступен здесь.');return}const wk=curWeek();const cur=listenState&&listenState.w===wk?listenState:{text:P.listen[wk][0],qs:P.listen[wk][1]};const ans=cur.qs.map((q,i)=>`${i+1}. ${q} — ${document.getElementById('lq-'+i).value}`).join('\n');const box=document.getElementById('lres');box.innerHTML='<div class="msg a">…</div>';
+  try{const r=await sample(`Текст по-венгерски: «${cur.text}». Вопросы и ответы ученика (русскоязычный, A1): \n${ans}\nОцени каждый ответ: понял ли текст, исправь венгерский, объясни по-русски кратко. В конце: сколько из ${cur.qs.length} верно.`,{cache:false,onText:t=>{box.firstChild.textContent=t.text||'…'}});box.firstChild.textContent=r.text;await save('work',DAYS[(sel??todayIdx()+1)-1].id,{q:ans,a:r.text,mode:'listen',ts:Date.now()})}catch(e){box.firstChild.textContent='Ошибка: '+(e.message||e.code)}}
+function afterRender(){const v=document.getElementById('view');
+  v.querySelectorAll('[data-sub]').forEach(b=>b.onclick=()=>{sub=b.dataset.sub;render()});
+  const $=id=>document.getElementById(id);
+  if($('fcshow'))$('fcshow').onclick=()=>{$('fcru').classList.remove('hid');$('fchu')&&$('fchu').classList.remove('hid');say(card.hu)};
+  if($('fcok'))$('fcok').onclick=()=>grade(true); if($('fcno'))$('fcno').onclick=()=>grade(false);
+  v.querySelectorAll('[data-dchk]').forEach(b=>b.onclick=()=>{const i=+b.dataset.dchk;const r=diffWords($('dict-'+i).value,P.dict[curWeek()][i][0]);$('dres-'+i).innerHTML=r.html+` <b>${r.score}</b>`});
+  if($('exstart'))$('exstart').onclick=()=>{exSet=P.ex[curWeek()];exI=0;exScore=0;render()};
+  if($('exgen'))$('exgen').onclick=genEx; if($('exreset'))$('exreset').onclick=()=>{exI=0;exScore=0;render()};
+  v.querySelectorAll('[data-opt]').forEach(b=>b.onclick=()=>{if($('exnext').classList.contains('hid')===false)return;const q=exSet[exI];const ok=b.dataset.opt===q[2];b.classList.add(ok?'ok':'no');if(ok)exScore++;else v.querySelectorAll('[data-opt]').forEach(x=>{if(x.dataset.opt===q[2])x.classList.add('ok')});$('exwhy').textContent=(ok?'Верно. ':'Неверно. ')+q[3];$('exwhy').classList.remove('hid');$('exnext').classList.remove('hid')});
+  if($('exnext'))$('exnext').onclick=()=>{exI++;render()};
+  if($('lshow'))$('lshow').onclick=()=>$('ltext').classList.toggle('hid');
+  if($('lgen'))$('lgen').onclick=genListen; if($('lcheck'))$('lcheck').onclick=checkListen;
+  if($('phrchk'))$('phrchk').onclick=()=>{const v=norm($('phrin').value);const ok=v===norm(phrCur.p[2]);$('phrres').innerHTML=ok?'<span class="diff"><span class="ok">Верно.</span></span> '+esc(phrCur.p[0]):'<span class="diff"><span class="no">'+esc($('phrin').value||'·')+'</span> <span class="miss">'+esc(phrCur.p[2])+'</span></span> → '+esc(phrCur.p[0]);say(phrCur.p[0]);setTimeout(()=>{gradePhr(ok)},ok?900:2500)};
+  if($('phrskip'))$('phrskip').onclick=()=>{$('phrres').textContent=phrCur.p[0];say(phrCur.p[0]);setTimeout(()=>gradePhr(false),2000)};
+  if($('phrin'))$('phrin').addEventListener('keydown',e=>{if(e.key==='Enter')$('phrchk').click()});
+  if($('tcheck'))$('tcheck').onclick=checkText; if($('shadow'))$('shadow').onclick=shadowRun; if($('tru'))$('tru').onclick=()=>$('trutext').classList.toggle('hid');
+  v.querySelectorAll('[data-pair]').forEach(b=>b.onclick=()=>{const i=+b.dataset.pair;const ok=+b.dataset.c===pairPick[i];$('pr-'+i).textContent=ok?'верно':'нет, это было '+PAIRS[i][pairPick[i]][0]});
+  if($('pairsre'))$('pairsre').onclick=()=>{pairPick={};render()};
+  v.querySelectorAll('[data-islhide]').forEach(b=>b.onclick=()=>{const i=b.dataset.islhide;$('islhu-'+i).classList.toggle('hid');$('islbox-'+i).classList.toggle('hid')});
+  v.querySelectorAll('[data-islchk]').forEach(b=>b.onclick=()=>{const i=+b.dataset.islchk;const r=diffWords($('islin-'+i).value,P.isl[i][0]);islLast={i,html:r.html+' <b>'+r.score+'</b>'};const [a,c]=r.score.split('/').map(Number);const ok=a/c>=0.85;const s=state.isl[i]||{box:0};save('isl',i,{box:ok?Math.min(6,s.box+1):0,due:Date.now()+BOX[ok?Math.min(6,s.box+1):0]*864e5})});
+  if($('errgen'))$('errgen').onclick=genErrEx;
+  v.querySelectorAll('[data-errst]').forEach(s=>s.onchange=()=>{const e=state.errors[s.dataset.errst];save('errors',s.dataset.errst,Object.assign({},e,{st:s.value}))});
+  v.querySelectorAll('[data-anim]').forEach(b=>b.onclick=()=>animClick(b));
+  if(voicesReady)pickVoice();
+  v.querySelectorAll('.mermaid').forEach(()=>{});}
+// ---------- schemes ----------
+function harmonySVG(){const back=['a','á','o','ó','u','ú'],front=['e','é','i','í'],round=['ö','ő','ü','ű'];
+  const grp=(x,title,arr,col)=>`<g><rect x="${x}" y="30" width="200" height="120" rx="8" fill="var(--soft)" stroke="var(--line)"/><text x="${x+100}" y="55" text-anchor="middle" font-size="13" font-weight="600" fill="var(--fg)">${title}</text>`+arr.map((v,i)=>`<text x="${x+25+i*30}" y="95" text-anchor="middle" font-size="22" font-family="Source Serif 4,serif" fill="var(--accent)">${v}</text>`).join('')+`<text x="${x+100}" y="130" text-anchor="middle" font-size="12" fill="var(--muted)">${col}</text></g>`;
+  return `<div class="svgbox"><svg viewBox="0 0 660 260" width="100%" style="max-width:660px" role="img" aria-label="Гармония гласных"><text x="330" y="18" text-anchor="middle" font-size="14" font-weight="600" fill="var(--fg)">Гармония гласных: окончание повторяет ряд последнего гласного корня</text>${grp(10,'Задний ряд (mély)',back,'-ban · -nak · -ból · -hoz · -val · -ul')}${grp(230,'Передний неогубл. (magas)',front,'-ben · -nek · -ből · -hez · -vel · -ül')}${grp(450,'Передний огубл.',round,'-ben · -nek · -ből · -höz · -vel · -ül')}<text x="20" y="185" font-size="13" fill="var(--fg)">ház → ház<tspan fill="var(--accent)" font-weight="600">ban</tspan>, Perm → Perm<tspan fill="var(--accent)" font-weight="600">ben</tspan>, Csománfalva → Csománfalvá<tspan fill="var(--accent)" font-weight="600">n</tspan>, Técső → Técső<tspan fill="var(--accent)" font-weight="600">höz</tspan></text><text x="20" y="210" font-size="13" fill="var(--fg)">Смешанные слова: решает последний гласный (Kirill → Kirill<tspan fill="var(--accent)" font-weight="600">nek</tspan>; sofőr → sofőr<tspan fill="var(--accent)" font-weight="600">nek</tspan>).</text><text x="20" y="235" font-size="13" fill="var(--muted)">i, í, e, é в корнях заднего ряда бывают нейтральными: híd → hídon, cél → célból.</text></svg></div>`}
+function casesTable(){const r=[['','Hova? куда','Hol? где','Honnan? откуда'],['внутрь (в)','-ba / -be','-ban / -ben','-ból / -ből'],['на поверхности (на)','-ra / -re','-n / -on / -en / -ön','-ról / -ről'],['рядом (к, у)','-hoz / -hez / -höz','-nál / -nél','-tól / -től']];
+  return `<div class="tbl"><table>`+r.map((row,i)=>`<tr>${row.map((c,j)=>i===0||j===0?`<th>${c}</th>`:`<td class="code">${c}</td>`).join('')}</tr>`).join('')+`</table></div><div class="note">Движение в город: Budapest<b>re</b>, Perm<b>be</b> (иностранные города обычно -ba/-be, венгерские чаще -ra/-re). Проверка: hol → ban/n/nál, hova → ba/ra/hoz, honnan → ból/ról/tól.</div>`}
+function conjTable(){const h=['','tanul (задн.)','beszél (перед.)','ül (огубл.)','olvas (-s)','lakik (ikes)'];const rows=[['én','tanulok','beszélek','ülök','olvasok','lakom'],['te','tanulsz','beszélsz','ülsz','olvasol','laksz'],['ő / ön','tanul','beszél','ül','olvas','lakik'],['mi','tanulunk','beszélünk','ülünk','olvasunk','lakunk'],['ti','tanultok','beszéltek','ültök','olvastok','laktok'],['ők / önök','tanulnak','beszélnek','ülnek','olvasnak','laknak']];
+  return `<div class="tbl"><table><tr>${h.map(x=>`<th>${x}</th>`).join('')}</tr>`+rows.map(r=>`<tr>${r.map((c,j)=>j?`<td class="code">${c}</td>`:`<th>${c}</th>`).join('')}</tr>`).join('')+`</table></div>`}
+function defTable(){const rows=[['én','látok','látom'],['te','látsz','látod'],['ő / ön','lát','látja'],['mi','látunk','látjuk'],['ti','láttok','látjátok'],['ők / önök','látnak','látják']];
+  return `<div class="tbl"><table><tr><th></th><th>неопределённое: egy házat, valamit, без объекта</th><th>определённое: a házat, Csománfalvát, őt, azt</th></tr>`+rows.map(r=>`<tr><th>${r[0]}</th><td class="code">${r[1]}</td><td class="code">${r[2]}</td></tr>`).join('')+`</table></div><div class="note">Определённый объект: артикль a/az, имя собственное, притяжательное (a házam), őt/őket/önt, ezt/azt, придаточное с hogy. Объект 1–2 лица (engem, téged, minket, titeket): неопределённое. Особый случай: -lak/-lek = я тебя.</div>`}
+function pastTable(){const rows=[['én','tanultam','tanultam','voltam','mentem'],['te','tanultál','tanultad','voltál','mentél'],['ő','tanult','tanulta','volt','ment'],['mi','tanultunk','tanultuk','voltunk','mentünk'],['ti','tanultatok','tanultátok','voltatok','mentetek'],['ők','tanultak','tanulták','voltak','mentek']];
+  return `<div class="tbl"><table><tr><th></th><th>неопр.</th><th>опр.</th><th>van</th><th>megy</th></tr>`+rows.map(r=>`<tr><th>${r[0]}</th>${r.slice(1).map(c=>`<td class="code">${c}</td>`).join('')}</tr>`).join('')+`</table></div><div class="note">Показатель -t-/-tt-: olvas → olvasott, ért → értett, fizet → fizetett. Даты: 1903-ban = ezerkilencszázháromban.</div>`}
+function mindmap(wk){const w=WEEKS[wk-1];const d=DAYS.slice((wk-1)*7,wk*7);
+  return `<ul class="mm"><li><span class="root">Неделя ${wk}: ${esc(w.theme)}</span><ul class="mm"><li><span class="k">Грамматика</span><ul class="mm">${w.grammar.map(g=>`<li>${esc(g)}</li>`).join('')}</ul></li><li><span class="k">Лексика</span>: ${esc(w.vocab)}<ul class="mm">${P.words[wk].slice(0,8).map(p=>`<li>${esc(p[0])} <span class="note">${esc(p[1])}</span></li>`).join('')}<li class="note">… всего 25 слов, см. Карточки</li></ul></li><li><span class="k">Письмо</span>: ${esc(w.writing)}</li><li><span class="k">Вопрос консула</span>: ${esc(w.q)} <button class="spk" data-say="${esc(w.q)}">▶</button></li><li><span class="k">Diktálás</span><ul class="mm">${P.dict[wk].map(s=>`<li>${esc(s[0])} <button class="spk" data-say="${esc(s[0])}">▶</button></li>`).join('')}</ul></li><li><span class="k">Duolingo</span>: ${esc(w.duo)}</li></ul></li></ul>`}
+
+// ---------- animations ----------
+const MORPH={ház:[['ház','дом'],['am','мой'],['ai','мн.ч. (мои)'],['ban','в']],barát:[['barát','друг'],['om','мой'],['mal','с']],ember:[['ember','человек'],['ek','мн.ч.'],['nek','кому']]};
+let morphWord='ház',morphN=1,prefState=0,harmDone={},caseOn=null;
+const HARM=[['ház','b'],['ember','f'],['Perm','f'],['Budapest','f'],['Csománfalva','b'],['Técső','f'],['könyv','f'],['asztal','b'],['iskola','b'],['öröm','f'],['tanár','b'],['kert','f'],['város','b'],['egyetem','f'],['munka','b'],['szék','f'],['orvos','b'],['sör','f'],['kávé','b'],['híd','b']];
+const HSUF={b:'-ban',f:'-ben'};
+function morphView(){const parts=MORPH[morphWord];let h=`<div class="morph">`;for(let i=0;i<morphN;i++){const p=parts[i];h+=`<span class="m ${i?'suf':'root'}" title="${esc(p[1])}">${esc(p[0])}</span>`}h+=`</div><div class="note">`+parts.slice(0,morphN).map(p=>`<b>${esc(p[0])}</b> ${esc(p[1])}`).join(' + ')+`</div>`;return h}
+function renderAnimations(){let h=`<div class="card"><h2>Собиратель морфем</h2><div class="note">Венгерское слово растёт справа. Нажимайте «+ суффикс» и смотрите, что добавляет каждый.</div><div class="row" style="margin:6px 0">`+Object.keys(MORPH).map(k=>`<span class="chip ${k===morphWord?'sel':''}" data-anim="mw" data-k="${k}">${k}</span>`).join('')+`</div><div class="anim" id="morphbox">${morphView()}</div><div class="row"><button class="b" data-anim="m+">+ суффикс</button><button class="g" data-anim="m-">− суффикс</button><button class="g" data-say="${esc(MORPH[morphWord].slice(0,morphN).map(p=>p[0]).join(''))}">▶ произнести</button></div></div>`;
+  h+=`<div class="card"><h2>Hova? Hol? Honnan?</h2><div class="note">Нажмите на суффикс: стрелка покажет направление.</div><div class="row" style="margin:6px 0">`+[['ba','Hova? → в'],['ban','Hol? внутри'],['ból','Honnan? ← из'],['ra','Hova? → на'],['n','Hol? на'],['ról','Honnan? ← с'],['hoz','Hova? → к'],['nál','Hol? у'],['tól','Honnan? ← от']].map(x=>`<span class="chip ${caseOn===x[0]?'sel':''}" data-anim="case" data-k="${x[0]}" title="${x[1]}">-${x[0]}</span>`).join('')+`</div><div class="anim svgbox">${houseSVG()}</div><div class="note" id="casenote">${caseOn?caseText(caseOn):'a ház = дом'}</div></div>`;
+  h+=`<div class="card"><h2>Сортировка по гармонии</h2><div class="note">Куда идёт слово: в задний ряд (-ban) или в передний (-ben)? Нажмите на слово, потом на корзину.</div><div id="harmpool">`+HARM.filter(w=>!harmDone[w[0]]).map(w=>`<span class="chip ${harmSel===w[0]?'sel':''}" data-anim="hs" data-k="${w[0]}">${w[0]}</span>`).join('')+`</div><div class="bins"><div class="bin back" data-anim="hb" data-k="b"><h4>задний ряд: a á o ó u ú → -ban</h4>${HARM.filter(w=>harmDone[w[0]]==='b').map(w=>`<span class="chip">${w[0]}ban</span>`).join('')}</div><div class="bin front" data-anim="hb" data-k="f"><h4>передний ряд: e é i í ö ő ü ű → -ben</h4>${HARM.filter(w=>harmDone[w[0]]==='f').map(w=>`<span class="chip">${w[0]}ben</span>`).join('')}</div></div><div class="note" id="harmnote">верно: ${harmScore[0]} · ошибок: ${harmScore[1]}</div><div class="row"><button class="g" data-anim="hr">Заново</button></div></div>`;
+  const PS=[['Megnézem a házat.','Я посмотрю дом.'],['Nem nézem meg a házat.','Я не буду смотреть дом.'],['Meg akarom nézni a házat.','Я хочу посмотреть дом.'],['A házat nézem meg.','Именно дом я посмотрю.']];
+  h+=`<div class="card"><h2>Приставка уезжает</h2><div class="note">При отрицании и фокусе приставка meg- отделяется и встаёт после глагола.</div><div class="anim"><div class="sent" id="prefsent">${prefSent(prefState)}</div><div class="note">${esc(PS[prefState][1])}</div></div><div class="row">`+PS.map((p,i)=>`<button class="${i===prefState?'b':'g'}" data-anim="pf" data-k="${i}">${i+1}</button>`).join('')+`<button class="g" data-say="${esc(PS[prefState][0])}">▶</button></div></div>`;
+  h+=`<div class="card"><h2>Долгота гласного</h2><div class="note">Нажмите ▶ и услышьте разницу. Это те же минимальные пары, что во вкладке «Фонетика».</div>`+PAIRS.slice(0,6).map(p=>`<div class="q" style="font-size:16px"><button class="spk" data-say="${esc(p[0][0])}">▶</button> ${esc(p[0][0])} <span class="note">${esc(p[0][1])}</span> &nbsp; <button class="spk" data-say="${esc(p[1][0])}">▶</button> ${esc(p[1][0])} <span class="note">${esc(p[1][1])}</span></div>`).join('')+`</div>`;
+  return h}
+let harmSel=null,harmScore=[0,0];
+function prefSent(s){const H=['<span class="pre" style="color:var(--accent)">meg</span>','<span class="pre" style="color:var(--accent)">meg</span>'];
+  return [`<span class="pre" style="color:var(--accent)">Meg</span>nézem a házat.`,`Nem nézem <span class="pre" style="color:var(--accent)">meg</span> a házat.`,`<span class="pre" style="color:var(--accent)">Meg</span> akarom nézni a házat.`,`A házat nézem <span class="pre" style="color:var(--accent)">meg</span>.`][s]}
+function houseSVG(){return `<svg viewBox="0 0 520 220" width="100%" style="max-width:520px" role="img" aria-label="дом и стрелки"><polygon points="200,60 300,20 400,60 400,180 200,180" fill="var(--soft)" stroke="var(--line)"/><rect x="280" y="120" width="40" height="60" fill="var(--panel)" stroke="var(--line)"/><text x="300" y="100" text-anchor="middle" font-size="18" fill="var(--fg)">ház</text>
+  <path id="ar-in" class="arrow" d="M40,120 L190,120"/><polygon id="ah-in" points="185,112 200,120 185,128" fill="var(--accent)" opacity="0"/>
+  <path id="ar-out" class="arrow" d="M410,120 L480,120"/><polygon id="ah-out" points="475,112 490,120 475,128" fill="var(--accent)" opacity="0"/>
+  <circle id="ar-at" cx="300" cy="150" r="10" fill="var(--accent)" opacity="0"/>
+  <path id="ar-on" class="arrow" d="M300,10 L300,55"/><circle id="ah-on" cx="300" cy="58" r="8" fill="var(--accent)" opacity="0"/>
+  <path id="ar-near" class="arrow" d="M60,180 L170,180"/><circle id="ah-near" cx="178" cy="180" r="8" fill="var(--accent)" opacity="0"/>
+  <text x="40" y="205" font-size="13" fill="var(--muted)">Hova? →</text><text x="300" y="205" text-anchor="middle" font-size="13" fill="var(--muted)">Hol?</text><text x="480" y="205" text-anchor="end" font-size="13" fill="var(--muted)">→ Honnan?</text></svg>`}
+function caseText(k){return {ba:'a házba megyek — я иду в дом',ban:'a házban vagyok — я в доме',ból:'a házból jövök — я иду из дома',ra:'a házra mászom — я лезу на дом',n:'a házon ül a macska — кошка на доме',ról:'a házról beszélek — я говорю о доме / с дома',hoz:'a házhoz megyek — я иду к дому',nál:'a háznál állok — я стою у дома',tól:'a háztól indulok — я отправляюсь от дома'}[k]}
+function animClick(b){const a=b.dataset.anim,k=b.dataset.k;
+  if(a==='mw'){morphWord=k;morphN=1}else if(a==='m+'){morphN=Math.min(MORPH[morphWord].length,morphN+1)}else if(a==='m-'){morphN=Math.max(1,morphN-1)}
+  else if(a==='case'){caseOn=k;render();const g={ba:'in',ban:'at',ból:'out',ra:'on',n:'on',ról:'out',hoz:'near',nál:'near',tól:'out'}[k];requestAnimationFrame(()=>{const p=document.getElementById('ar-'+g),hh=document.getElementById('ah-'+g);if(p)p.classList.add('on');if(hh)hh.style.opacity=1;if(g==='at')p.style.opacity=1;say('a ház'+k)});return}
+  else if(a==='hs'){harmSel=k}else if(a==='hb'){if(!harmSel)return;const w=HARM.find(x=>x[0]===harmSel);const ok=w[1]===k;if(ok){harmDone[harmSel]=k;harmScore[0]++;say(harmSel+(k==='b'?'ban':'ben'))}else{harmScore[1]++;setState('Нет: '+harmSel+' → '+HSUF[w[1]]);}harmSel=null}
+  else if(a==='hr'){harmDone={};harmScore=[0,0];harmSel=null}
+  else if(a==='pf'){prefState=+k}
+  render()}
+// ---------- infographics ----------
+function posterCourse(){const M=[['Фонетика','гласные, ударение, van'],['Быт','время, город, еда'],['Направления','Hova/Hol/Honnan, мн. ч.'],['Объект','-t, прилагательные'],['Обладание','kell, nekem van, volt'],['Прошлое','-tam/-tem, приставки, опр. спр.'],['Семья','притяжательность, даты'],['Консул','ön, hogy, aki, будущее'],['Мнение','императив, сравнение'],['Финал','история, документы, прогоны']];
+  let s=`<svg viewBox="0 0 900 330" width="100%" role="img" aria-label="карта курса"><text x="20" y="30" font-size="20" font-weight="700" font-family="Source Serif 4,serif" fill="var(--fg)">300 дней: 24.10.2026 → 19.08.2027</text>`;
+  M.forEach((m,i)=>{const x=20+i*86;s+=`<rect x="${x}" y="50" width="80" height="150" rx="6" fill="${i%2?'var(--soft)':'var(--panel)'}" stroke="var(--line)"/><text x="${x+40}" y="75" text-anchor="middle" font-size="12" font-weight="600" fill="var(--accent)">М${i+1}</text><text x="${x+40}" y="100" text-anchor="middle" font-size="12" font-weight="600" fill="var(--fg)">${m[0]}</text>`;m[1].split(', ').forEach((l,j)=>{s+=`<text x="${x+40}" y="${122+j*16}" text-anchor="middle" font-size="10" fill="var(--muted)">${esc(l)}</text>`});s+=`<text x="${x+40}" y="190" text-anchor="middle" font-size="10" fill="var(--warn)">КТ${i+1}</text>`});
+  s+=`<rect x="20" y="220" width="860" height="14" rx="7" fill="var(--line)"/><rect x="20" y="220" width="${860*Math.min(1,(todayIdx()+1)/300)}" height="14" rx="7" fill="var(--accent)"/><text x="20" y="260" font-size="12" fill="var(--muted)">ежедневно: карточки 10 · фразы 10 · текст и шэдоуинг 20 · Duolingo 15 · блок дня 15 = 70 мин</text><text x="20" y="282" font-size="12" fill="var(--muted)">пн ср пт грамматика · вт чт письмо и ошибки · сб Tandem и консул · вс острова и самооценка</text><text x="20" y="310" font-size="12" fill="var(--muted)">слов: 1075 · фраз: 430 · текстов: 300 · островов: 15 · контрольных точек: 10</text></svg>`;return s}
+function posterHistory(){const E=[[1876,'Babics Vasil, Csománfalva','Королевство Венгрия'],[1903,'Fjodor, прадед','Королевство Венгрия'],[1910,'Anna, прабабушка, Újbárd','Королевство Венгрия'],[1920,'Трианон','→ Чехословакия'],[1921,'перепись','Чехословакия'],[1939,'возврат Венгрии','→ Венгрия'],[1944,'приход СССР','→ СССР'],[1951,'Iván, дед, Csománfalva','УССР'],[1976,'переезд на Урал',''],[1978,'Iván, отец, Берёзовка',''],[2002,'Kirill, Лысьва',''],[2027,'присяга','Венгрия']];
+  const x0=40,x1=860,y=120,t0=1870,t1=2030;const X=yr=>x0+(x1-x0)*(yr-t0)/(t1-t0);
+  let s=`<svg viewBox="0 0 900 260" width="100%" role="img" aria-label="от Трианона до присяги"><text x="20" y="30" font-size="20" font-weight="700" font-family="Source Serif 4,serif" fill="var(--fg)">Линия Бабичей: чьё гражданство и когда</text>`;
+  const bands=[[1870,1920,'var(--soft)','Венгрия'],[1920,1939,'var(--warn-bg)','Чехословакия'],[1939,1944,'var(--soft)','Венгрия'],[1944,1991,'var(--bad-bg)','СССР'],[1991,2030,'var(--panel)','Украина / Россия']];
+  bands.forEach(b=>{s+=`<rect x="${X(b[0])}" y="${y-30}" width="${X(b[1])-X(b[0])}" height="60" fill="${b[2]}" stroke="var(--line)"/><text x="${(X(b[0])+X(b[1]))/2}" y="${y+5}" text-anchor="middle" font-size="11" fill="var(--fg)">${b[3]}</text>`});
+  E.forEach((e,i)=>{const x=X(e[0]);const up=i%2===0;s+=`<line x1="${x}" y1="${y-30}" x2="${x}" y2="${up?y-60:y+60}" stroke="var(--accent)" stroke-width="2"/><circle cx="${x}" cy="${y-30}" r="4" fill="var(--accent)"/><text x="${x}" y="${up?y-66:y+74}" text-anchor="middle" font-size="11" font-weight="600" fill="var(--fg)">${e[0]}</text><text x="${x}" y="${up?y-80:y+88}" text-anchor="middle" font-size="10" fill="var(--muted)">${esc(e[1])}</text>`});
+  s+=`<text x="20" y="235" font-size="12" fill="var(--muted)">Фёдор и Анна родились венгерскими гражданами (закон L/1879), утратили гражданство по Трианону (1921, ст. 61), вернули его в 1939 (закон VI/1939), стали советскими в 1945. Основание для упрощённой натурализации: закон LV/1993, §4(3).</text></svg>`;return s}
+function renderVideo(){const V=P.videos||[];let h=`<div class="card"><h2>Видео</h2><div class="note">Объясняющие ролики по ключевым темам, с венгерской озвучкой и подсветкой слов. Каждый 30–60 секунд. Смотреть перед соответствующей неделей, потом повторять по вкладке «Схемы».</div></div>`;
+  if(!V.length)h+=`<div class="card"><div class="note">Ролики ещё рендерятся. Пока используйте анимации во вкладке «Схемы и анимации».</div></div>`;
+  V.forEach(v=>{h+=`<div class="card"><h3>${esc(v.title)} <span class="code">· неделя ${v.week} · ${Math.round(v.dur)} с</span></h3><video controls preload="metadata" style="width:100%;max-width:720px;border-radius:6px;background:#000" src="video/${esc(v.file)}"></video><div class="note" style="margin-top:6px">${esc(v.summary)}</div></div>`});
+  return h}
+function renderSchemes(){const wk=curWeek();let h=`<div class="sub2">`+[['schemes','Майндкарта недели'],['anim','Анимации'],['harm','Гармония гласных'],['cases','Карта падежей'],['conj','Настоящее время'],['def','Определённое спряжение'],['past','Прошедшее время'],['poster','Инфографика']].map(([k,n])=>`<button data-sub="${k}" aria-current="${sub===k}">${n}</button>`).join('')+`</div>`;
+  if(sub==='anim')h+=renderAnimations();
+  if(sub==='poster')h+=`<div class="card"><h2>Карта курса</h2><div class="svgbox">${posterCourse()}</div></div><div class="card"><h2>От Трианона до присяги</h2><div class="svgbox">${posterHistory()}</div></div>`;
+  if(sub==='schemes'||!['anim','poster','harm','cases','conj','def','past'].includes(sub)){h+=`<div class="card"><div class="row" style="margin:0 0 8px"><button class="g" id="wkprev">← неделя</button><span class="code">W${String(wk).padStart(2,'0')}</span><button class="g" id="wknext">неделя →</button></div>${mindmap(wk)}</div>`}
+  if(sub==='harm')h+=`<div class="card"><h2>Гармония гласных</h2>${harmonySVG()}</div>`;
+  if(sub==='cases')h+=`<div class="card"><h2>Карта падежей места: 3×3</h2>${casesTable()}<h3 style="margin-top:14px">Остальные частые</h3><div class="note">-t винительный (házat) · -nak/-nek дательный и обладание (nekem van) · -val/-vel с кем/чем (busszal) · -kor время (hétkor) · -ig до (estig) · -ért ради (miért) · -ként в качестве (történészként) · -ul/-ül на языке (magyarul)</div></div>`;
+  if(sub==='conj')h+=`<div class="card"><h2>Настоящее время, неопределённое спряжение</h2>${conjTable()}<div class="note">-s/-sz/-z в 2 л.: olvasol, nézel, főzöl. Ikes: -om/-em/-öm в 1 л. Неправильные: megy → megyek, mész, megy; jön → jövök, jössz, jön; van → vagyok, vagy, van, vagyunk, vagytok, vannak.</div></div>`;
+  if(sub==='def')h+=`<div class="card"><h2>Определённое и неопределённое спряжение</h2>${defTable()}</div>`;
+  if(sub==='past')h+=`<div class="card"><h2>Прошедшее время</h2>${pastTable()}</div>`;
+  return h}
+document.getElementById('view').addEventListener('click',e=>{if(e.target.id==='wkprev'||e.target.id==='wknext'){const wk=curWeek()+(e.target.id==='wkprev'?-1:1);if(wk<1||wk>43)return;sel=(wk-1)*7+1;render()}});
+
+// boot
+(function(){for(const d of DAYS){const p=lsGet('progress/'+d.id);if(p)state.progress[d.id]=p;const w=lsGet('work/'+d.id);if(w)state.work[d.id]=w}for(let i=1;i<=43;i++){const w=lsGet('weeks/'+i);if(w)state.weeks[i]=w}for(const c of ALLW){const s=lsGet('cards/'+c.id);if(s)state.cards[c.id]=s}for(const k of Object.keys(localStorage||{})){try{const [col,id]=k.split('/');if(['phr','isl','errors'].includes(col))state[col][id]=JSON.parse(localStorage.getItem(k))}catch(e){}}render();setCtx();})();
+(async()=>{if(!window.claude?.use)return;
+  const [u,d,s]=await Promise.all([claude.use('user'),claude.use('db'),claude.use('sample')]);sample=s;
+  if(s)setState('');else setState('Разбор с Claude недоступен в этом просмотре.');
+  if(!d)return;db=d;
+  for(const col of ['progress','weeks','work','cards','phr','isl','errors']){db.collection(col).onSnapshot(snap=>{snap.docs.forEach(doc=>{state[col][doc.id]=doc.data()});render()},()=>{})}
+})();
+</script>
+<template id="restpl">
+<div class="card"><h2>Ресурсы: что проверено, что нет</h2>
+<div class="note" style="margin-bottom:8px">Пометки как в родословной базе: <span class="tag">документ</span> проверено 21.10.2026 по самому сайту; <span class="tag ne">НЕ ТОЧНО</span> проверить не удалось, использовать с оглядкой.</div>
+<div class="tbl"><table><tr><th>Ресурс</th><th>Роль в плане</th><th>Что проверено</th><th>Статус</th></tr>
+<tr><td><a href="https://www.duolingo.com/course/hu/en/Learn-Hungarian" target="_blank" rel="noopener">Duolingo, венгерский с английского</a></td><td>Скелет курса, ежедневно 15 мин</td><td>110 юнитов: секция 1 (9, вводная), секции 2–3 (по 30, A1), секция 4 (41, A2). План проходит 1–3 полностью и 4-ю до 41-го юнита с ускорением в конце.</td><td><span class="tag">документ</span></td></tr>
+<tr><td><a href="https://ankiweb.net/shared/info/593843988" target="_blank" rel="noopener">Anki: Hungarian spoonfed</a></td><td>Словарь и предложения, ежедневно 15 мин</td><td>Предложения с аудио из Tatoeba и FSI, отсортированы так, что частые слова вводятся по одному. Исходники открыты на GitHub (vlecomte/hungarian-spoonfed). Число карточек не проверено.</td><td><span class="tag">документ</span></td></tr>
+<tr><td><a href="https://www.hungarianreference.com/" target="_blank" rel="noopener">Hungarian Reference</a></td><td>Грамматический справочник, пн/ср/пт</td><td>Разделы: алфавит и произношение, существительные и падежи, глаголы, притяжательность, порядок слов. Отдельной страницы про гармонию гласных нет, её даю я.</td><td><span class="tag">документ</span></td></tr>
+<tr><td><a href="https://www.hungarianpod101.com/free-pathway" target="_blank" rel="noopener">HungarianPod101, бесплатный аккаунт</a></td><td>Аудирование, вт/чт, первые 20 недель</td><td>Бесплатно: первые 3 урока каждой серии, новые уроки 3 недели после выхода, слово дня, списки слов. Остальное платно. Серии Absolute Beginner Season 1 (25 уроков), Can Introduce Yourself, Top 25 Questions.</td><td><span class="tag">документ</span></td></tr>
+<tr><td><a href="https://tandem.net/" target="_blank" rel="noopener">Tandem</a></td><td>Живая речь, суббота</td><td>Бесплатно: переписка, аудио- и видеозвонки, исправления. Лимиты на переводы и число новых собеседников в день, цифры не подтверждены.</td><td><span class="tag ne">НЕ ТОЧНО</span></td></tr>
+<tr><td><a href="https://www.clozemaster.com/languages/learn-hungarian-online" target="_blank" rel="noopener">Clozemaster</a></td><td>Слова в контексте, с 17-й недели</td><td>Группы по частотности от 100 до 50 000 слов, Fast Track. Бесплатная регистрация, лимиты не указаны. Сам сайт советует его не начинающим.</td><td><span class="tag">документ</span></td></tr>
+<tr><td><a href="https://www.youtube.com/@HungarianPod101" target="_blank" rel="noopener">YouTube: HungarianPod101</a></td><td>Видео, вт/чт, недели 21–30</td><td>Канал существует, около 40 тыс. подписчиков по стороннему обзору. Каналы «Easy Hungarian» и «Hungarian with Sziszi» подтвердить не удалось, из плана убраны.</td><td><span class="tag ne">НЕ ТОЧНО</span></td></tr>
+<tr><td><a href="https://mediaklikk.hu/kossuth-radio-elo/" target="_blank" rel="noopener">Médiaklikk, Kossuth Rádió</a></td><td>Фон, воскресенья и вт/чт с 31-й недели</td><td>Официальный портал венгерского общественного вещания. Доступность из России не проверена, при блокировке подойдёт любое венгерское радио.</td><td><span class="tag ne">НЕ ТОЧНО</span></td></tr>
+<tr><td><a href="https://mnyi.eu/en/oktatasi-anyagok/magyarok-tankonyvcsalad" target="_blank" rel="noopener">MagyarOK A1 Kompakt</a></td><td>Источник последовательности грамматики</td><td>Учебник теперь только печатный и платный, PDF издатель объявляет нелегальными, бесплатных онлайн-упражнений нет. В план вошла его последовательность тем (главы 2–8), а не сам учебник. Покупка (около 30–40 евро) не обязательна.</td><td><span class="tag">документ</span></td></tr>
+<tr><td>Balassi Intézet, курсы для диаспоры</td><td>Не в плане</td><td>Бесплатного онлайн-курса для диаспоры на 2026 год не найдено. Есть летний университет в Будапеште (4 недели, стипендия, срок подачи на 2026 истёк в марте). Узнать в консульстве о курсах для заявителей.</td><td><span class="tag bad">не подтверждено</span></td></tr>
+</table></div></div>
+<div class="card"><h2>Что делается внутри страницы</h2>
+<div class="tbl"><table><tr><th>Формат</th><th>Как реализовано</th><th>Ограничение</th></tr>
+<tr><td>Аудио</td><td>Предозвучка голосом Microsoft Tamás (hu-HU) для слов, фраз, диктантов, текстов и островов; для всего остального синтез речи устройства</td><td>Ответы консула и новые тексты Claude озвучивает голос устройства</td></tr>
+<tr><td>Карточки и фразы</td><td>1075 слов в обе стороны и 430 фраз RU→HU с пропуском, интервалы Лейтнера 1·3·7·14·30·60 дней, прогресс в базе</td><td>Только материал плана; Anki остаётся по желанию</td></tr>
+<tr><td>Текст дня и шэдоуинг</td><td>300 текстов под словарь недели, глоссарий, озвучка, режим шэдоуинга по фразам, 3 вопроса с проверкой Claude</td><td>Проверка ответов только внутри claude.ai</td></tr>
+<tr><td>Острова консула</td><td>15 опорных ответов, заучивание по интервалам, сверка по памяти</td><td>—</td></tr>
+<tr><td>Журнал ошибок</td><td>Ошибки из разборов попадают в реестр со статусами, кнопка делает упражнение из них</td><td>Извлечение ошибок только внутри claude.ai</td></tr>
+<tr><td>Анимации</td><td>Собиратель морфем, стрелки падежей, сортировка по гармонии, отделение приставки, долгота гласных</td><td>—</td></tr>
+<tr><td>Диктант</td><td>129 предложений, по 3 на неделю, сверка по словам с подсветкой</td><td>Проверка по словам, не по буквам внутри слова</td></tr>
+<tr><td>Упражнения</td><td>Недели 1–8 встроены с объяснениями, остальные генерирует Claude в JSON, страница проверяет сама</td><td>Генерация только внутри claude.ai</td></tr>
+<tr><td>Аудирование</td><td>Тексты с озвучкой, вопросы, проверку ответов делает Claude</td><td>Встроено 4 текста, остальные от Claude</td></tr>
+<tr><td>Схемы и майндкарты</td><td>Гармония гласных, карта падежей, 3 таблицы спряжений, майндкарта каждой недели</td><td>Статичны, рисованы вручную</td></tr>
+<tr><td>Видео</td><td>Ролики, отрендеренные кодом (HyperFrames), с голосом Tamás и подсветкой слов, лежат внутри страницы</td><td>Без субтитров на русском; правило дублируется текстом</td></tr>
+<tr><td>Ваша речь</td><td>Нет</td><td>Микрофон недоступен; произношение проверяет собеседник в Tandem</td></tr>
+</table></div></div>
+<div class="card"><h2>Правила плана</h2>
+<ul style="margin:0;padding-left:18px">
+<li><b>База каждый день, 55 мин:</b> карточки 10, фразы 10, текст дня с шэдоуингом 20, Duolingo 15. В тяжёлый день делайте хотя бы карточки и фразы.</li>
+<li><b>Пропорция:</b> половина времени на ввод (текст, слушание), треть на извлечение (карточки, фразы), остальное на вывод. Так по данным исследований усвоения второго языка.</li>
+<li><b>Недели 1–2 только фонетика:</b> долгота, ударение, гармония. Грамматика с третьей недели.</li>
+<li><b>Пн, ср, пт:</b> схема и анимация темы, упражнение с автопроверкой. <b>Вт, чт:</b> письмо, разбор, ошибки в журнал, упражнение из ошибок. <b>Сб:</b> Tandem и консул. <b>Вс:</b> острова и самооценка.</li>
+<li><b>Самооценка «переделать»</b> означает: следующую неделю повторяем ту же тему, остальной план сдвигается на неделю. Это нормально.</li>
+<li><b>Контрольная точка</b> каждые 30 дней сдаётся через «Диалог с консулом» и получает статус в заметке дня: сдано / не сдано.</li>
+<li><b>Если день пропущен,</b> его не навёрстывают: ставят галочки только за сделанное и идут дальше. Важна цепочка, а не идеальность.</li>
+<li><b>Прогресс</b> хранится в базе страницы, если вы вошли в claude.ai, и дублируется в браузере. Claude в чате может прочитать ваши галочки и заметки и скорректировать план.</li>
+</ul></div>
+</template>

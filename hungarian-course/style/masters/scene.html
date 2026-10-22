@@ -1,0 +1,32 @@
+<!doctype html><html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:'Ruslan';src:url('fonts/RuslanDisplay.ttf') format('truetype');font-display:block;}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:600;src:url('fonts/SourceSerif4-600-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+2000-206F;}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:600;src:url('fonts/SourceSerif4-600-latin-ext.woff2') format('woff2');unicode-range:U+0100-02FF;}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:600;src:url('fonts/SourceSerif4-600-cyrillic.woff2') format('woff2');unicode-range:U+0400-045F;}
+@font-face{font-family:'Source Serif 4';font-style:italic;font-weight:400 600;src:url('fonts/SourceSerif4-italic-cyrillic.woff2') format('woff2');unicode-range:U+0400-045F;}
+@font-face{font-family:'Source Serif 4';font-style:italic;font-weight:400 600;src:url('fonts/SourceSerif4-italic-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+2000-206F;}
+@font-face{font-family:'Source Serif 4';font-style:italic;font-weight:400 600;src:url('fonts/SourceSerif4-italic-latin-ext.woff2') format('woff2');unicode-range:U+0100-02FF;}
+html,body{margin:0;background:#000;width:1280px;height:720px;overflow:hidden}
+canvas{display:block}
+</style></head><body>
+<canvas id="out" width="1280" height="720"></canvas>
+<script src="lib.js"></script>
+<script>
+const NAME = new URLSearchParams(location.search).get("s");
+const s = document.createElement("script"); s.src = NAME + ".js";
+s.onload = async () => {
+  try {
+    await Promise.all([
+      document.fonts.load("40px Ruslan", "a házba ő"),
+      document.fonts.load("600 40px 'Source Serif 4'", "a házba ő"),
+      document.fonts.load("italic 400 40px 'Source Serif 4'", "в доме ő"),
+    ]);
+    const t0 = performance.now();
+    await window.SCENE.build();
+    window.BUILD_MS = performance.now() - t0;
+    window.READY = true;
+  } catch (e) { window.ERR = String(e && e.stack || e); }
+};
+document.body.appendChild(s);
+</script></body></html>

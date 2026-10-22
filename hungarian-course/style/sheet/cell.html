@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8">
+<link rel="stylesheet" href="fonts.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:800px;height:533px;overflow:hidden;background:#f4efe6}
+#art{position:absolute;left:0;top:0;width:800px;height:477px;overflow:hidden;background:#fff}
+#art > *{position:absolute;left:0;top:0}
+#cap{position:absolute;left:0;top:477px;width:800px;height:56px;background:#f4efe6;border-top:1px solid #d9d0c0;
+  display:flex;align-items:center;gap:14px;padding:0 26px;color:#2a2420;font-family:'Source Serif 4',serif}
+#cap .n{font-weight:700;font-size:25px;color:#8a3b22;min-width:16px}
+#cap .t{font-style:italic;font-weight:400;font-size:24px;letter-spacing:.1px}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute">
+  <filter id="rough-s" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="12" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <filter id="rough-m" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="3" seed="8" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="8" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <filter id="lino" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.09" numOctaves="2" seed="5" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <filter id="wob" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="9" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+<div id="art"></div>
+<div id="cap"><span class="n"></span><span class="t"></span></div>
+<script src="common.js"></script>
+<script>
+const n = +new URLSearchParams(location.search).get("n") || 1;
+document.querySelector("#cap .n").textContent = n;
+document.querySelector("#cap .t").textContent = U.CAPTIONS[n - 1];
+const pre = n === 1 ? ["paint-ext.js"] : [];
+function load(src){return new Promise((ok,err)=>{const s=document.createElement("script");s.src=src;s.onload=ok;s.onerror=err;document.body.appendChild(s);});}
+(async()=>{
+  try{
+    for(const p of pre) await load(p);
+    await load("s"+n+".js");
+    await document.fonts.ready;
+    await window.STYLE(document.getElementById("art"));
+    window.DONE = true;
+  }catch(e){window.ERR = String(e && e.stack || e); window.DONE = true;}
+})();
+</script>
+</body></html>
