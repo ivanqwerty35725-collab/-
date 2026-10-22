@@ -25,3 +25,20 @@
 - Страница: `./build.sh` (нужны `audio/map.json` и `video/videos.json`).
 - Озвучка: `python3 tts.py w01 … w43 t01 … t43 isl`.
 - Ролик 03: `cd build && python3 v03f.py`, затем `npx --yes hyperframes@0.8.185 render` в папке проекта.
+
+## Перенос на свой компьютер
+
+Скрипты сборки написаны в облачном контейнере и ссылаются на абсолютный путь
+`/tmp/claude-0/-home-user--/26b0ee40-e351-58da-864e-84e1c80e1382/scratchpad/hu`.
+После клонирования замените его на путь к этой папке одной командой из корня репозитория:
+
+```bash
+OLD=/tmp/claude-0/-home-user--/26b0ee40-e351-58da-864e-84e1c80e1382/scratchpad/hu
+NEW="$(pwd)/hungarian-course"
+grep -rlI "$OLD" hungarian-course | xargs sed -i "s|$OLD|$NEW|g"
+```
+
+На macOS вместо `sed -i` используйте `sed -i ''`.
+
+Нужные программы: Python 3.11+, Node.js 22, ffmpeg, Chromium для Playwright (`npx playwright install chromium`),
+`pip install edge-tts piper-tts`, навыки HyperFrames (`npx skills add heygen-com/hyperframes --all`).
